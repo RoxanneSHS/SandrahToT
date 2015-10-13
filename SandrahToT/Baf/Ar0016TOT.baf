@@ -1,0 +1,21 @@
+IF
+Global("SanToTRRepl","GLOBAL",1)
+THEN
+RESPONSE #100
+StartCutSceneMode()
+FadeToColor([30.0],0)
+ActionOverride("CVSandr",JoinParty())
+SetGlobal("SandrahJoined","GLOBAL",1)
+Wait(1)
+ActionOverride(Player1,PlayDead(0))
+ForceSpell(Player1,SKIN_DANCER_RESTORE)
+ActionOverride("TRSKIN01",DestroySelf())
+Wait(2)
+ActionOverride("CVSandr",LeaveAreaLUA("RTF123","",[2878.672],2))
+Wait(4)
+SetGlobal("SanToTRRepl","GLOBAL",2)
+SetGlobal("SanToTStart","GLOBAL",1)
+FadeFromColor([30.0],0) 
+Wait(2) 
+EndCutSceneMode()
+END

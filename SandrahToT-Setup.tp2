@@ -1,0 +1,94 @@
+BACKUP ~SandrahTOT/backup~
+AUTHOR ~Roxanne - Contact Roxanne@shsforums.net~
+
+VERSION ~v1.01.b~
+AUTO_TRA ~SandrahNPC/TRA/%s~
+
+LANGUAGE ~English~ ~english~ ~SandrahTot/Tra/SandrahTot.tra~
+
+
+BEGIN
+~Sandrah Times of Trouble Revisited~
+
+APPEND ~pdialog.2da~
+~TOPellig *** *** *** TOPelliP TOPellig TOPelliD TOPellig~
+UNLESS ~TOPellig~
+
+APPEND ~pdialog.2da~
+~TOCyric *** *** *** TOCyricP TOCyric TOCyricD TOCyric~
+UNLESS ~TOCyric~
+
+APPEND ~pdialog.2da~
+~TOAdon *** *** *** TOAdonP TOAdon TOAdonD TOAdon~
+UNLESS ~TOAdon~
+
+APPEND ~pdialog.2da~
+~TOKelem *** *** *** TOKelemP TOKelem TOKelemD TOKelem~
+UNLESS ~TOKelem~
+
+APPEND ~pdialog.2da~
+~TOLini *** *** *** TOLiniP TOLini TOLiniD TOLini~
+UNLESS ~TOLini~
+
+COMPILE
+~SandrahTOT/Baf/CVSantot.baf~
+~SandrahTOT/Baf/TOCyric.baf~
+~SandrahTOT/Baf/ToKelem.baf~
+~SandrahTOT/Baf/ToLini.baf~
+~SandrahTOT/Baf/TOPellig.baf~
+~SandrahTOT/Baf/TOAdon.baf~
+
+
+EXTEND_TOP
+~AR0016.bcs~ ~SandrahTOT/Baf/Ar0016TOT.baf~
+EXTEND_TOP
+~RTF123.bcs~ ~SandrahTOT/Baf/RTF123Party.Baf~
+EXTEND_TOP
+~ara100.bcs~ ~SandrahTOT/Baf/ara100lini.baf~
+EXTEND_TOP
+~CVSan25d.bcs~ ~SandrahTOT/Baf/CVSandrDToT.baf~
+
+COMPILE
+~SandrahTOT/Dialogues~
+
+EXTEND_TOP
+~CVSan25.bcs~ ~SandrahTOT/Baf/Santot.baf~
+
+COPY ~SandrahTOT/Baf/Santot.2DA~ ~override/SanTot.2DA~
+REPLACE ~ 99996~ @003
+REPLACE ~ 99996~ @003
+
+COPY ~SandrahTOT/Baf/Santot.2DA~ ~override/ToTQu1.2DA~
+REPLACE ~ 99996~ @013
+REPLACE ~ 99996~ @013
+
+COPY ~SandrahTOT/Misc~ ~Override~
+
+COPY ~SandrahTOT/Cre/Toadon.cre~ ~Override~
+SAY NAME1 Adon
+SAY NAME2 Adon
+SAY BIO @004
+
+COPY ~SandrahTOT/Cre/Tokelem.cre~ ~Override~
+SAY NAME1 Kelemvor
+SAY NAME2 Kelemvor
+SAY BIO @005
+
+COPY ~SandrahTOT/Cre/Tocyric.cre~ ~Override~
+SAY NAME1 Cyric
+SAY NAME2 Cyric
+SAY BIO @006
+
+COPY ~SandrahTOT/Cre/ToPellig.CRE~ ~override~
+SAY NAME1 Pelligram
+SAY NAME2 Pelligram
+SAY BIO @007
+
+COPY ~SandrahTOT/Cre/ToLini.CRE~ ~override~
+SAY NAME1 @010
+SAY NAME2 @011
+SAY BIO @012
+
+COPY ~SandrahTOT/Cre/Tosneak.CRE~ ~override~
+SAY NAME1 @008
+SAY NAME2 @008

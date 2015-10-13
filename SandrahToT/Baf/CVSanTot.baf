@@ -1,0 +1,63 @@
+IF
+Die()
+THEN
+RESPONSE #100
+Kill(Player1)
+END
+
+IF
+Global("SanToTRRepl","GLOBAL",3)
+THEN
+RESPONSE #100
+SetGlobal("SanToTRRepl","GLOBAL",4)
+TextScreen("SanToT")
+END
+
+IF
+Global("SanToTRRepl","GLOBAL",4)
+THEN
+RESPONSE #100
+SetGlobal("SanToTRRepl","GLOBAL",5)
+StartCutSceneMode()
+ReallyForceSpellRES("ToPort",Myself)
+Wait(2)
+DestroyItem("Sanring")
+DestroyItem("Sanrin2")
+DestroyItem("Sanwdsty")
+DestroyItem("Sanbook")
+Wait(1)
+EndCutSceneMode()
+Wait(2)
+DisplayStringWait(Myself,@002)
+END
+
+IF
+Global("SanToTRRepl","GLOBAL",5)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanToTRRepl","GLOBAL",6)
+SaveGame(4)
+END
+
+IF
+Global("TotParty","RTF123",1)
+InParty("TOCyric")
+See("TOCyric")
+Delay(6)
+THEN
+RESPONSE #100
+SetGlobal("TotParty","RTF123",2)
+SetGlobal("Sanpoints","GLOBAL",20)
+StartDialogNoSet("CVSandr")
+END
+
+IF
+Global("SanToTRRepl","GLOBAL",6)
+Global("TotBioChange","LOCALS",0)
+THEN
+RESPONSE #100
+SetPlayerSound(Myself,@014,EXISTANCE5)
+SetGlobal("TotBioChange","LOCALS",1)
+END
+

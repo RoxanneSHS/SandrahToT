@@ -1,0 +1,36 @@
+IF
+Global("SanToTStart","GLOBAL",1)
+Global("TotParty","RTF123",0)
+THEN
+RESPONSE #100
+SetGlobal("TotParty","RTF123",1)
+CreateCreature("Tocyric",[1782.785],11)
+CreateCreature("Toadon",[1618.859],8)
+CreateCreature("ToKelem",[1731.834],8)
+CreateCreature("ToPellig",[1915.996],13)
+TakePartyGold(2000000)
+Wait(1)
+GivePartyGold(900)
+END
+
+IF
+Global("TotParty","RTF123",3)
+THEN
+RESPONSE #100
+SetGlobal("TotParty","RTF123",4)
+CreateCreature("Tosneak",[1764.1585],11)
+CreateCreature("obshal04",[1618.1859],8)
+CreateCreature("obshal04",[1731.1834],8)
+CreateCreature("obshal04",[1915.1996],13)
+END
+
+IF
+Global("TotParty","RTF123",5)
+THEN
+RESPONSE #100
+SetGlobal("TotParty","RTF123",6)
+CreateCreature("obshal01",[1241.1346],8)
+CreateCreature("obshal04",[1331.1234],8)
+CreateCreature("obshal04",[1323.1261],8)
+CreateCreature("obshal03",[1228.1296],13)
+END

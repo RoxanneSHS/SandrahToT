@@ -1,0 +1,23 @@
+IF
+Die()
+THEN
+RESPONSE #100
+Kill(Player1)
+END
+
+IF
+AreaCheck("rtf123")
+Global("ToPellJoin","RTF123",0)
+Range([PC],5)
+THEN
+RESPONSE #100
+SetGlobal("ToPellJoin","RTF123",1)
+JoinParty()
+END
+
+IF
+Global("ToPellJoin","RTF123",1)
+THEN
+RESPONSE #100
+StartDialogueNoSet("TOPellig")
+END

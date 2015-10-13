@@ -1,0 +1,21 @@
+IF
+Global("TOHasBane","Global",2)
+InParty("ToKelem")
+Global("ToSleep","Global",0)
+THEN
+RESPONSE #100
+SetGlobal("ToSleep","Global",1)
+RealSetGlobalTimer("SANDREAMTALKTIME","Global",3600)
+StartDialogueNoSet("CVSandr")
+END
+
+IF
+Global("ToSleep","Global",2)
+RealGlobalTimerExpired("SANDREAMTALKTIME","Global")
+InParty("TOLini")
+THEN
+RESPONSE #100
+SetGlobal("ToSleep","Global",3)
+RealSetGlobalTimer("SANDREAMTALKTIME","Global",3600)
+ActionOverride("Tolini",StartDialogueNoSet("Tolini"))
+END

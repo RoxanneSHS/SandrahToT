@@ -1,0 +1,45 @@
+IF
+Global("ToLini","ara100",1)
+THEN
+RESPONSE #100
+SetGlobal("ToLini","ara100",2)
+GiveItem("Dagg15","CVSlaw")
+GiveItem("Slng04","CVSlaw")
+END
+
+IF
+Global("ToLini","ara100",2)
+Range([PC],50)
+NumTimesTalkedTo(0)
+See([PC])
+THEN
+RESPONSE #100
+StartDialogueNoSet("ToLini")
+END
+
+IF
+Global("ToLini","ara100",3)
+Global("Toliniflee","ara100",0)
+THEN
+RESPONSE #100
+SetGlobal("Toliniflee","ara100",1)
+MoveToPoint([4136.2232])
+END
+
+IF
+Global("ToLini","ara100",3)
+Dead("CVSlaw")
+!See([ENEMY])
+See("CVSandr")
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("ToLini","ara100",4)
+MoveToObject("CVSandr")
+StartDialogNoSet("TOLini")
+END
+
+
+
+

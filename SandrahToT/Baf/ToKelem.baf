@@ -1,0 +1,31 @@
+IF
+Die()
+THEN
+RESPONSE #100
+Kill(Player1)
+END
+
+IF
+Global("KelSpeak","RTF123",0)
+Global("TOHasBane","Global",2)
+InParty(Myself)
+Delay(12)
+See("CVSandr")
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("KelSpeak","RTF123",1)
+END
+
+IF
+Global("KelSpeak","RTF123",1)
+InParty(Myself)
+!See([ENEMY])
+See("CVSandr")
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+StartDialogNoSet("TOKelem")
+END

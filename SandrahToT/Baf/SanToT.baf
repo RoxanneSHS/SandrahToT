@@ -1,0 +1,9 @@
+IF
+Global("SanToTRRepl","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("SanToTRRepl","GLOBAL",3)
+SetName(@001)
+Wait(1)
+ActionOverride(Myself,ChangeAIScript("CVSanToT",OVERRIDE))
+END
