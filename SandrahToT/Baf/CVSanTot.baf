@@ -25,6 +25,14 @@ DestroyItem("Sanring")
 DestroyItem("Sanrin2")
 DestroyItem("Sanwdsty")
 DestroyItem("Sanbook")
+DestroyItem("Sanparc")
+DestroyItem("CVMysClk")
+DestroyItem("Sanamul")
+DestroyItem("Sanhamy")
+DestroyItem("Sanarmm")
+Wait(1)
+CreateItem("Chan08",0,0,0)
+CreateItem("Hamm05",0,0,0)
 Wait(1)
 EndCutSceneMode()
 Wait(2)
@@ -37,7 +45,6 @@ Delay(12)
 THEN
 RESPONSE #100
 SetGlobal("SanToTRRepl","GLOBAL",6)
-SaveGame(4)
 END
 
 IF
@@ -49,7 +56,7 @@ THEN
 RESPONSE #100
 SetGlobal("TotParty","RTF123",2)
 SetGlobal("Sanpoints","GLOBAL",20)
-StartDialogNoSet("CVSandr")
+ActionOverride("CVSandr",Dialogue("TOCyric"))
 END
 
 IF

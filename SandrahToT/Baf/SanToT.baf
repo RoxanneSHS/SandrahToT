@@ -5,5 +5,16 @@ RESPONSE #100
 SetGlobal("SanToTRRepl","GLOBAL",3)
 SetName(@001)
 Wait(1)
-ActionOverride(Myself,ChangeAIScript("CVSanToT",OVERRIDE))
+ChangeAIScript("CVSanToT",OVERRIDE)
+END
+
+IF
+AreaCheck("RTF123")
+Global("SanToTRRepl","GLOBAL",3)
+Global("SanToTStart","GLOBAL",1)
+Global("TotScript","RTF123",0)
+THEN
+RESPONSE #100
+SetGlobal("TotScript","RTF123",1)
+ChangeAIScript("CVSanToT",OVERRIDE)
 END

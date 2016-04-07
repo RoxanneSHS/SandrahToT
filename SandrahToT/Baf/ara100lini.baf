@@ -1,9 +1,9 @@
 IF
 Global("SanToTStart","GLOBAL",1)
-Global("ToLini","ara100",0)
+Global("ToLini","BG4100",0)
 THEN
 RESPONSE #100
-SetGlobal("ToLini","ara100",1)
+SetGlobal("ToLini","BG4100",1)
 SetGlobal("SPRITE_IS_DEADCVSLAW","Global",0)
 CreateCreature("ToLini",[3882.2131],8)
 CreateCreature("CVSlaw",[3839.2177],8)
@@ -20,19 +20,19 @@ InParty("TOKelem")
 InParty("ToPellig")
 InParty("ToCyric")
 InParty("TOAdon")
-Global("Tolini","ara100",3)
+Global("Tolini","BG4100",3)
 THEN
 RESPONSE #100
-SetGlobal("Tolini","ara100",4)
-RealSetGlobalTimer("Ara100screen","ara100",120)
+SetGlobal("Tolini","BG4100",4)
+RealSetGlobalTimer("Ara100screen","BG4100",120)
 END
 
 IF
-Global("Tolini","ara100",4)
-RealGlobalTimerExpired("Ara100screen","ara100")
+Global("Tolini","BG4100",4)
+RealGlobalTimerExpired("Ara100screen","BG4100")
 THEN
 RESPONSE #100
-SetGlobal("Tolini","ara100",5)
+SetGlobal("Tolini","BG4100",5)
 TextScreen("ToTQu1")
 END
 

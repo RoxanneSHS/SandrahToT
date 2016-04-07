@@ -2,7 +2,7 @@ BACKUP ~SandrahTOT/backup~
 AUTHOR ~Roxanne - Contact Roxanne@shsforums.net~
 
 VERSION ~v1.01.b~
-AUTO_TRA ~SandrahNPC/TRA/%s~
+AUTO_TRA ~SandrahTot/TRA/%s~
 
 LANGUAGE ~English~ ~english~ ~SandrahTot/Tra/SandrahTot.tra~
 
@@ -44,7 +44,7 @@ EXTEND_TOP
 EXTEND_TOP
 ~RTF123.bcs~ ~SandrahTOT/Baf/RTF123Party.Baf~
 EXTEND_TOP
-~ara100.bcs~ ~SandrahTOT/Baf/ara100lini.baf~
+~BG4100.bcs~ ~SandrahTOT/Baf/ara100lini.baf~
 EXTEND_TOP
 ~CVSan25d.bcs~ ~SandrahTOT/Baf/CVSandrDToT.baf~
 
