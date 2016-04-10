@@ -31,8 +31,13 @@ DestroyItem("Sanamul")
 DestroyItem("Sanhamy")
 DestroyItem("Sanarmm")
 Wait(1)
+DestroyAllEquipment()
+Wait(1)
 CreateItem("Chan08",0,0,0)
 CreateItem("Hamm05",0,0,0)
+CreateItem("CVMidshi",0,0,0)
+CreateItem("CVMyBelt",0,0,0)
+CreateItem("Potn55",2,1,1)
 Wait(1)
 EndCutSceneMode()
 Wait(2)
@@ -45,6 +50,8 @@ Delay(12)
 THEN
 RESPONSE #100
 SetGlobal("SanToTRRepl","GLOBAL",6)
+RemoveSpellRES("Sanwdho")
+RemoveSpellRES("Sanwdre")
 END
 
 IF
