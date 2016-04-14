@@ -22,6 +22,19 @@ END
 ++~Forget my moods, Kelemvor, we know how you can improve them, oh, yes, I know you can!~DO~RestParty()~EXIT
 
 CHAIN
+IF~Global("Tolini","BG4100",8)~THEN ToAdon Mine1
+~The mine site those slaves were bound for is quite near, we should see if more of those bastards are around waiting for our swords to pierce them.~
+DO~SetGlobal("Tolini","BG4100",9)~
+==ToCyric~Hihi, my new sword is ready to strike, a marvelous weapon.~
+==ToLini~Be careful friends, from what I have seen these slavers are no easy prey.~
+==ToKelem~Let's finish what we begun.~
+==TOPellig~We do not want them on our back, so let us rather face them before they find their dead companions.~
+END
+++~Enough bloodshed for one day, I say.~EXIT
+++~I hate unfinished business, let us pay them a visit.~EXIT
+
+//Liriel' Quest
+CHAIN
 IF~Global("ToSleep","Global",3)~THEN Tolini TOLiniQuest1
 ~So, Midnight, you are more or less famous adventurers from what I heard from our comrades so far?~
 ==TOCyric~It's sometimes not too desireable to be too famous, my dark beauty, hihi. (oh, these drow women...they are really up to their reputation, at least this specimen.)~

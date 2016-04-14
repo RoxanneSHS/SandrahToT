@@ -29,5 +29,5 @@ IF~Global("ToLini","BG4100",4) ~THEN Tolini Pris2
 ==TOKelem~We leave nobody out in the wilderness, alone and helpless.~
 ==Tolini~My name is Liriel Baenre. These bastards took my possessions, allow me to search them for what is mine.~
 END
-++~Kelemvor spoke for all of us, come with us, Liriel.~DO~SetGlobal("ToLini","BG4100",4)  ActionOverride("Tolini",JoinParty())~EXIT
-++~Seems I have nothing to say in this case other than *yes*. So, welcome, Liriel.~ DO~SetGlobal("ToLini","BG4100",4)  ActionOverride("Tolini",JoinParty())~EXIT
+++~Kelemvor spoke for all of us, come with us, Liriel.~DO~SetGlobal("ToLini","BG4100",5)  ActionOverride("Tolini",JoinParty())~EXIT
+++~Seems I have nothing to say in this case other than *yes*. So, welcome, Liriel.~ DO~SetGlobal("ToLini","BG4100",5)  ActionOverride("Tolini",JoinParty())~EXIT

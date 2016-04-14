@@ -20,20 +20,32 @@ InParty("TOKelem")
 InParty("ToPellig")
 InParty("ToCyric")
 InParty("TOAdon")
-Global("Tolini","BG4100",3)
+Global("Tolini","BG4100",5)
 THEN
 RESPONSE #100
-SetGlobal("Tolini","BG4100",4)
-RealSetGlobalTimer("Ara100screen","BG4100",120)
+SetGlobal("Tolini","BG4100",6)
+RealSetGlobalTimer("Ara100screen","BG4100",90)
 END
 
 IF
-Global("Tolini","BG4100",4)
+Global("Tolini","BG4100",6)
 RealGlobalTimerExpired("Ara100screen","BG4100")
 THEN
 RESPONSE #100
-SetGlobal("Tolini","BG4100",5)
+SetGlobal("Tolini","BG4100",7)
 TextScreen("ToTQu1")
+END
+
+IF
+Global("Tolini","BG4100",9)
+THEN
+RESPONSE #100
+SetGlobal("Tolini","BG4100",10)
+CreateCreature("slarch1",[3050.1398],8)
+CreateCreature("CVslap",[2981.1468],8)
+CreateCreature("cvslao",[2914.1516],13)
+CreateCreature("slarch1",[2978.1232],1)
+CreateCreature("slarch1",[3027.1229],9)
 END
 
 
