@@ -1,0 +1,34 @@
+IF
+Global("TOLiriquest","Global",1)
+InParty("Tolini")
+THEN
+RESPONSE #100
+SetGlobal("TOLiriquest","Global",2)
+StartCutSceneMode()
+Wait(2)
+CreateCreature("ammerc77",[935.2004],0)
+CreateCreature("ppmur",[938.1968],0)
+Wait(2)
+CreateCreature("CVbande1",[848.1927],0)
+CreateCreature("CVbande1",[1124.1884],2)
+CreateCreature("CVbande1",[1264.2047],5)
+CreateCreature("CVbande1",[1156.1802],3)
+CreateCreature("CVbande1",[929.1725],6)
+Wait(6)
+EndCutSceneMode()
+ActionOverride("Ammerc77",Dialog(Player1))
+END
+
+IF
+Global("TOLiriquest","Global",3)
+Delay(12)
+CombatCounter(0)
+Dead("ammerc77")
+InParty("Tolini")
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+!StateCheck("Tolini",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("TOLiriquest","Global",4)
+ActionOverride("Tolini",Dialog(Player1))
+END

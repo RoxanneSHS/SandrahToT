@@ -42,7 +42,7 @@ IF~Global("ToSleep","Global",3)~THEN Tolini TOLiniQuest1
 ==TOAdon~Liriel, I have the feeling this is not a hypothetical discussion at all.~
 ==TOKelem~There are those organised thiefs that make their fortune because they are well known and people hire them for a lot of gold to get them the artifacts they desire.~
 END
-++~Like the Bregan D'aerthe of your kin?~DO~SetGlobal("ToSleep","Global",4) SetGlobal("TOLiriquest","Global",1)~ + TOLiniQuest2
+++~Like the Bregan D'aerthe of your kin, Liriel?~DO~SetGlobal("ToSleep","Global",4) SetGlobal("TOLiriquest","Global",1)~ + TOLiniQuest2
 ++~Like the shadow thieves of Athkatla?~DO~SetGlobal("ToSleep","Global",4) SetGlobal("TOLiriquest","Global",1)~ + TOLiniQuest2
 
 CHAIN
@@ -70,14 +70,79 @@ IF~~THEN Tolini TOLiniQuest3
 =~...the Dragon's Hoard are an organisation specialised in assassination, slave trade and the retrieval of otherwise unachievable artifacts. They are led by a drow wizard named Nisstyre. They are rumored to have strongholds at Skullport and High Forest. And that, my friends, is about all I know about them. ~
 =~Ah, and yes, they have Windwalker and they knew I was after it, that is why they captured me and tried to force me into slavery in their new mine.~
 END
-++~Provided we take up that quest, the place to start investigating would be Waterdeep. Skullport would be somewhere within Undermountain.~DO~AddexperienceParty(6000) RestParty()~EXIT
-++~The High Forest is out of question without any further hints. That would be searching a needle in a haystack. Skullport is unaccessible they say...Or shall I say *it was* because WE never tried until now.~DO~AddexperienceParty(7000) RestParty()~EXIT
+++~Provided we take up that quest, the place to start investigating would be Waterdeep. Skullport would be somewhere within Undermountain.~DO~AddJournalEntry(@015,QUEST) AddexperienceParty(6000) RestParty()~EXIT
+++~The High Forest is out of question without any further hints. That would be searching a needle in a haystack. Skullport is unaccessible they say...Or shall I say *it was* because WE never tried until now.~DO~AddJournalEntry(@015,QUEST) AddexperienceParty(7000) RestParty()~EXIT
 ++~I am not sure we should embark on this quest.~DO~IncrementGlobal("Sanpoints","Global",-1) ScreenShake([1600.1604],5)Wait(2) ReallyForceSpellRES("TOSpint","CVSandr") ~ EXTERN Tocyric TOLiniQuest4
 
 CHAIN
 IF~~THEN Tocyric TOLiniQuest4
-~I'd call everone aside our beloved Midnight a coward for such words, hihi, but maybe our heroine is just a bit too cautious today. My dear, no risk no fun!~
-==TOAdon~For once mad Cyric is right, Midnight. There is a risk, but Eilestrae's followers are very close to those of your own goddess Mystra, it is almost as if you were tasked by her.~
+~I'd call everyone aside our beloved Midnight a coward for such words, hihi, but maybe our heroine is just a bit too cautious today. My dear, no risk no fun!~
+==TOPellig~For once mad Cyric is right, Midnight. There is a risk, but Eilestrae's followers are very close to those of your own goddess Mystra, it is almost as if you were tasked by her.~
 END
-++~So be it. Let us go to Waterdeep.~DO~RestParty()~EXIT
-++~This may really be a quest for Mystra, so be it.~DO~RestParty()~EXIT
+++~So be it. Let us go to Waterdeep.~DO~AddJournalEntry(@015,QUEST) RestParty()~EXIT
+++~This may really be a quest for Mystra, so be it.~DO~AddJournalEntry(@015,QUEST) RestParty()~EXIT
+
+CHAIN
+IF~Global("TOLiriquest","Global",4)~THEN Tolini TOLiniQuest10
+~This may not make our task easier. I had the slight hope that my escape from the slavers may remain unnoticed here in Waterdeep.~
+DO~SetGlobal("TOLiriquest","Global",5)~
+==TOPellig~Do you think they know you will come to finish your task?~
+==Tolini~If they had doubts before, they will soon know we are here.~
+==Tocyric~They will count 2 and 2 together and see why we came, hihi.~
+==Tokelem~THEY may even come up with some reasonable result in their calculation, thief.~
+==TOPellig~Waterdeep is a big city. We should focus on finding access to Undermountain.~
+END
+++~I know it. There is an old graveyard east of Mystra's temple. The entrance to one part of the cave system is there.~EXIT
+++~I will lead on from here. I have been to my goddess temple here in town. We once sealed the entrance to some caves in a graveyard east of the temple. It is said these caves have a connection to Undermountain.~EXIT
+
+CHAIN
+IF~Global("TOHaiass","Global",1) ~THEN Tocyric TOHaiCit
+~This wolf is abnormal in his way to follow you, Pelli-darling.~
+DO~SetGlobal("TOHaiass","Global",2) ~
+==ToPellig~Haiass is loyal to me ever since we met. But maybe *loyalty* is not a word you are too familiar with.~
+==Tocyric~I just hope you won't get us in trouble, hihi, walking city streets accompanied by a beast.~
+==CVSan25J~Are you now talking about Haiass or about yourself?~
+==ToPellig~A beast like you can get us in trouble much easier than my animal companion. I trust him more than I trust you.~
+==Tocyric~Uh? Our girls are easily upset these days, hihi. Let's find an inn and raise a glass to friendship and loyalty.~
+END
+++~The first decent words I heard from you today, Cyric.~EXIT
+++~Ha, and I will have Adon lecture you about those two words you just issued without even getting red in the face.~EXIT
+++~Oh, yes, I need a drink, I need to get some really weird thoughts out of my mind quickly.~EXIT
+
+
+//_______________________________________________________________________
+CHAIN
+IF WEIGHT #-2~Global("TOLiriquest","Global",2)~THEN Ammerc07 Linisee
+~News travels faster than you, drow. Quite stupid to return.~
+DO~SetGlobal("TOLiriquest","Global",3) ~
+==Tolini~My capturer again. Thank you for coming, it spares us the trouble to seek for you.~
+==Tocyric~Fool, can't you see our drow beauty is not alone this time, hihi. Pleeease, do us a favour and try to touch her, so we have reason to kill you, pleeease.~
+==TOAdon~The gallantry of a madman, Cyric. Whatever your motif, the outcome is the same. Try to touch her, so we have reason to kill you.~
+==Ammerc07~I've orders to discuss nothing. You will be laid in chains - and while we're at it, those others will bring a nice extra price, I guess.~ DO~Enemy()~EXIT
+
+CHAIN
+IF WEIGHT #-2~Global("TOLiriquest","Global",5)~THEN Ammerc07 Linisee2
+~The drow and her bunch are stupid enough to persue the Dragon's Hoard, it seems.~
+DO~SetGlobal("TOLiriquest","Global",6) ~
+==CVSan25J~Has anyone doubted that we came to the right place?~
+==ToPellig~No doubt, Midnight. Only too bad they await us.~
+==ToCyric~Yeah, some sneak attack would've been easier, hihi.~
+==Tolini~Friends, we are not turning away just because of some hirelings standing in our path?~
+==ToCyric~Drow baby, watcha think of us, the fun is just starting (oh, those sparkling eyes when she gets angry...)~
+==Ammerc07~What a pathetic bunch of fools. You seem to have no idea whom that they are facing.~DO~ENEMY()~
+END
+++~We are on this quest with you, Liriel, no doubt.~EXIT
+++~This just gets more interesting with every new step.~EXIT
+
+CHAIN
+IF WEIGHT #-41~Global("SanTotStart","Global",1) ~THEN SaMystp1 InTot
+~We swear allegiance to the Lady, Mistress of the Mysteries, Mystra.~
+=~ Greetings, Mylady Midnight. It is a pleasure to greet the most talented disciple of the Deepingdale temple as our guest today.~
+END
+++ ~ Chosen Priestess Rhathona, we greet you but we have no need for the Temple's services today.~EXIT
+++~ Thank you for the warm welcome, Chosen Priestess Rhathona, what does your house offer to us?~ DO ~ StartStore("CVMystem",LastTalkedToBy(Myself))~ EXIT
+
+CHAIN
+IF WEIGHT #-4~Global("SanTotStart","Global",1) ~THEN SAMYSTP2  InTot2
+~We swear allegiance to the Lady, Mistress of the Mysteries, Mystra.~
+=~Welcome, be our guests.~EXIT

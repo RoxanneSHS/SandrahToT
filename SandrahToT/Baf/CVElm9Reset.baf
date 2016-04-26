@@ -1,0 +1,27 @@
+IF
+Global("TOLiriquest","Global",5)
+Global("TotDoor","CVElm9",0)
+THEN
+RESPONSE #100
+SetGlobal("TotDoor","CVElm9",1)
+CreateCreature("ammerc77",[959.991],5)
+CreateCreature("cvbandf5",[1058.1020],7)
+Wait(2)
+ActionOverride("Ammerc77",Dialog(Player1))
+END
+
+IF
+Global("TotDoor","CVElm9",1)
+Dead("CVBandf5")
+THEN
+RESPONSE #100
+SetGlobal("TotDoor","CVElm9",2)
+END
+
+IF
+Global("TotDoor","CVElm9",2)
+THEN
+RESPONSE #100
+SetGlobal("TotDoor","CVElm9",3)
+TriggerActivation("Down",TRUE)
+END

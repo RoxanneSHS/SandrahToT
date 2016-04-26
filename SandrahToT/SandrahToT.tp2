@@ -37,7 +37,7 @@ COMPILE
 ~SandrahTOT/Baf/ToLini.baf~
 ~SandrahTOT/Baf/TOPellig.baf~
 ~SandrahTOT/Baf/TOAdon.baf~
-
+~SandrahTOT/Baf/CVBandf5.baf~
 
 EXTEND_TOP
 ~AR0016.bcs~ ~SandrahTOT/Baf/Ar0016TOT.baf~
@@ -45,6 +45,15 @@ EXTEND_TOP
 ~RTF123.bcs~ ~SandrahTOT/Baf/RTF123Party.Baf~
 EXTEND_TOP
 ~BG4100.bcs~ ~SandrahTOT/Baf/ara100lini.baf~
+EXTEND_BOTTOM
+~CVRoa1.bcs~ ~SandrahTOT/Baf/CVRoa1lini.baf~
+EXTEND_BOTTOM
+~CVElm3.bcs~ ~SandrahTOT/Baf/CVElm3Reset.baf~
+EXTEND_BOTTOM
+~CVElm1.bcs~ ~SandrahTOT/Baf/CVElm1Reset.baf~
+EXTEND_BOTTOM
+~CVElm9.bcs~ ~SandrahTOT/Baf/CVElm9Reset.baf~
+
 EXTEND_TOP
 ~CVSan25d.bcs~ ~SandrahTOT/Baf/CVSandrDToT.baf~
 
@@ -92,3 +101,13 @@ SAY BIO @012
 COPY ~SandrahTOT/Cre/Tosneak.CRE~ ~override~
 SAY NAME1 @008
 SAY NAME2 @008
+
+COPY ~SandrahTOT/Cre/Ammerc77.cre~ ~Override~
+SAY NAME1 ~Mercenary~
+SAY NAME2 ~Mercenary~
+
+COPY ~SandrahTOT/Cre/CVBandf5.cre~ ~Override~
+SAY NAME1 ~Dragon's Hoard Lieutenant~
+SAY NAME2 ~Dragon's Hoard Lieutenant~
+
+ADD_JOURNAL @015 USING ~SandrahToT/TRA/SandrahToT.tra~

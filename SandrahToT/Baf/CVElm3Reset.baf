@@ -1,0 +1,9 @@
+IF
+Global("SanTotStart","Global",1)
+Global("TotDoor","CVElm3",0)
+THEN
+RESPONSE #100
+SetGlobal("TotDoor","CVElm3",1)
+TriggerActivation("Undermountain",FALSE)
+ActionOverride("CVRingo",DestroySelf())
+END

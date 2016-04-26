@@ -1,0 +1,16 @@
+IF
+Global("Helpers","LOCALS",0)
+GlobalGT("TOLiriquest","Global",5)
+THEN
+RESPONSE #100
+SetGlobal("Helpers","LOCALS",1)
+CreateCreatureObjectOffset("CVBanDE1",Myself,[150.100])
+CreateCreatureObjectOffset("CVBanDE1",Myself,[100.100])
+CreateCreatureObjectOffset("CVBanDE1",Myself,[150.-100])
+CreateCreatureObjectOffset("CVBanDE1",Myself,[-150.100])
+CreateCreatureObjectOffset("CVBanDE1",Myself,[-150.-100])
+CreateCreatureObjectOffset("CVBanDE1",Myself,[70.10])
+CreateCreatureObjectOffset("CVBanDE1",Myself,[-70.100])
+Wait(2)
+Attack(NearestEnemyOf(Myself))
+END

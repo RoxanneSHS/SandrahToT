@@ -18,7 +18,20 @@ SetGlobal("TOHasBane","Global",1)
 END
 
 IF
+Global("TOHaiass","Global",0)
+CombatCounter(0)
+AreaType(CITY)
+!See([ENEMY])
+InMyArea("Haiass")
+THEN
+RESPONSE #100
+SetGlobal("TOHaiass","Global",1)
+END
+
+IF
+OR(2)
 Global("TOHasBane","Global",1)
+Global("TOHaiass","Global",1)
 InParty(Myself)
 !See([ENEMY])
 See("CVSandr")

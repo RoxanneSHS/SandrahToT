@@ -1,0 +1,9 @@
+IF
+Global("SanTotStart","Global",1)
+Global("TotDoor","CVElm1",0)
+THEN
+RESPONSE #100
+SetGlobal("TotDoor","CVElm1",1)
+TriggerActivation("Elmhouse",FALSE)
+TriggerActivation("Elms House",FALSE)
+END

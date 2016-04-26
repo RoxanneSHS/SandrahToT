@@ -5,7 +5,7 @@ Global("ToSleep","Global",0)
 THEN
 RESPONSE #100
 SetGlobal("ToSleep","Global",1)
-RealSetGlobalTimer("SANDREAMTALKTIME","Global",3600)
+RealSetGlobalTimer("SANDREAMTALKTIME","Global",600)
 StartDialogueNoSet("CVSandr")
 END
 
