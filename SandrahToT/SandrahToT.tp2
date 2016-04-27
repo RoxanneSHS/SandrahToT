@@ -6,9 +6,34 @@ AUTO_TRA ~SandrahTot/TRA/%s~
 
 LANGUAGE ~English~ ~english~ ~SandrahTot/Tra/SandrahTot.tra~
 
+BEGIN
+~Sandrah Times of Trouble Revisited Areas~
+
+EXTEND_TOP
+~AR0016.bcs~ ~SandrahTOT/Area/Ar0016TOT.baf~
+EXTEND_TOP
+~RTF123.bcs~ ~SandrahTOT/Area/RTF123Party.Baf~
+EXTEND_TOP
+~BG4100.bcs~ ~SandrahTOT/Area/ara100lini.baf~
+EXTEND_BOTTOM
+~CVRoa1.bcs~ ~SandrahTOT/Area/CVRoa1lini.baf~
+EXTEND_BOTTOM
+~CVElm3.bcs~ ~SandrahTOT/Area/CVElm3Reset.baf~
+EXTEND_BOTTOM
+~CVElm1.bcs~ ~SandrahTOT/Area/CVElm1Reset.baf~
+EXTEND_BOTTOM
+~CVElm9.bcs~ ~SandrahTOT/Area/CVElm9Reset.baf~
+EXTEND_BOTTOM
+~RTF020.bcs~ ~SandrahTOT/Area/RTF020ToT.baf~
+EXTEND_BOTTOM
+~RTF021.bcs~ ~SandrahTOT/Area/RTF021Kelem.baf~
+EXTEND_TOP
+~RTF022.bcs~ ~SandrahTOT/Area/RTF022ToT.baf~
+EXTEND_TOP
+~RTF023.bcs~ ~SandrahTOT/Area/RTF023ToT.baf~
 
 BEGIN
-~Sandrah Times of Trouble Revisited~
+~Sandrah Times of Trouble Revisited Compiles~
 
 APPEND ~pdialog.2da~
 ~TOPellig *** *** *** TOPelliP TOPellig TOPelliD TOPellig~
@@ -30,6 +55,8 @@ APPEND ~pdialog.2da~
 ~TOLini *** *** *** TOLiniP TOLini TOLiniD TOLini~
 UNLESS ~TOLini~
 
+ADD_JOURNAL @015 @016 USING ~SandrahToT/TRA/SandrahToT.tra~
+
 COMPILE
 ~SandrahTOT/Baf/CVSantot.baf~
 ~SandrahTOT/Baf/TOCyric.baf~
@@ -38,30 +65,15 @@ COMPILE
 ~SandrahTOT/Baf/TOPellig.baf~
 ~SandrahTOT/Baf/TOAdon.baf~
 ~SandrahTOT/Baf/CVBandf5.baf~
-
-EXTEND_TOP
-~AR0016.bcs~ ~SandrahTOT/Baf/Ar0016TOT.baf~
-EXTEND_TOP
-~RTF123.bcs~ ~SandrahTOT/Baf/RTF123Party.Baf~
-EXTEND_TOP
-~BG4100.bcs~ ~SandrahTOT/Baf/ara100lini.baf~
-EXTEND_BOTTOM
-~CVRoa1.bcs~ ~SandrahTOT/Baf/CVRoa1lini.baf~
-EXTEND_BOTTOM
-~CVElm3.bcs~ ~SandrahTOT/Baf/CVElm3Reset.baf~
-EXTEND_BOTTOM
-~CVElm1.bcs~ ~SandrahTOT/Baf/CVElm1Reset.baf~
-EXTEND_BOTTOM
-~CVElm9.bcs~ ~SandrahTOT/Baf/CVElm9Reset.baf~
+~SandrahTOT/Baf/ToKeGut.baf~
 
 EXTEND_TOP
 ~CVSan25d.bcs~ ~SandrahTOT/Baf/CVSandrDToT.baf~
+EXTEND_TOP
+~CVSan25.bcs~ ~SandrahTOT/Baf/Santot.baf~
 
 COMPILE
 ~SandrahTOT/Dialogues~
-
-EXTEND_TOP
-~CVSan25.bcs~ ~SandrahTOT/Baf/Santot.baf~
 
 COPY ~SandrahTOT/Baf/Santot.2DA~ ~override/SanTot.2DA~
 REPLACE ~ 99996~ @003
@@ -110,4 +122,7 @@ COPY ~SandrahTOT/Cre/CVBandf5.cre~ ~Override~
 SAY NAME1 ~Dragon's Hoard Lieutenant~
 SAY NAME2 ~Dragon's Hoard Lieutenant~
 
-ADD_JOURNAL @015 USING ~SandrahToT/TRA/SandrahToT.tra~
+COPY ~SandrahTOT/Cre/CVGuntt.cre~ ~Override~
+SAY NAME1 ~Guntharr Lyonsbane~
+SAY NAME2 ~Guntharr Lyonsbane~
+

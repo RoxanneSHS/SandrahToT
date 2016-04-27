@@ -1,0 +1,36 @@
+IF
+Global("ToKelemcurse","Global",0)
+THEN
+RESPONSE #100
+SetGlobal("ToKelemcurse","Global",1)
+CreateCreature("cvguntt",[1301.1381],4)
+END
+
+IF
+Global("ToKelemcurse","Global",2)
+THEN
+RESPONSE #100
+SetGlobal("ToKelemcurse","Global",3)
+CreateCreature("cvbandf5",[1343.1444],7)
+CreateCreature("battho",[1398.1291],5)
+CreateCreature("battho",[1428.1197],7)
+CreateCreature("icfung02",[2874.1307],5)
+CreateCreature("icfung02",[2861.1371],5)
+CreateCreature("icfung02",[2740.1404],5)
+CreateCreature("icfung02",[2656.1305],5)
+END
+
+IF
+Global("ToKelemcurse","Global",3)
+Dead("CVGuntt")
+CombatCounter(0)
+THEN
+RESPONSE #100
+ActionOverride("Tokelem",Polymorph(FIGHTER_MALE_HUMAN))
+Wait(2)
+ActionOverride("Tokelem",DestroyItem("ImoSlHP1"))
+Wait(2)
+ApplySpellRES("CVSLEEP","Tokelem")
+SetGlobal("ToKelemcurse","Global",4)
+AddJournalEntry(@016,QUEST)
+END

@@ -1,0 +1,15 @@
+IF
+Global("SanTotStart","Global",1)
+Global("TotCre","RTF020",0)
+THEN
+RESPONSE #100
+SetGlobal("TotCre","RTF020",1)
+CreateCreature("battho",[1649.1391],5)
+CreateCreature("cvbandf5",[1685.2244],7)
+CreateCreature("battho",[1668.1091],5)
+CreateCreature("battho",[1758.1720],7)
+CreateCreature("mistwa01",[2759.1991],5)
+CreateCreature("cvbandf5",[2107.1320],7)
+CreateCreature("mistwa01",[1959.1991],5)
+CreateCreature("mistwa01",[1058.1020],7)
+END

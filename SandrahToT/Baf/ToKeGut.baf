@@ -1,0 +1,16 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(2)
+ActionOverride("ToKelem",CreateItem("ImoSlHP1",0,0,0)) 
+Wait(2)
+ActionOverride("Tokelem",FillSlot(SLOT_AMULET)) 
+Wait(2) 
+ActionOverride("Tokelem",Polymorph(GREATCAT_PANTHER)) 
+Wait(6) 
+EndCutSceneMode() 
+ActionOverride("CVGuntt",Enemy())
+ActionOverride("Tokelem",Attack("CVGuntt"))
+END

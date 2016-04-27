@@ -1,0 +1,24 @@
+IF
+Global("SanTotStart","Global",1)
+Global("TotDoorOp","RTF023",0)
+THEN
+RESPONSE #100
+SetGlobal("TotDoorOp","RTF023",1)
+TriggerActivation("InTot",TRUE)
+TriggerActivation("DeadEnd",FALSE)
+Continue()
+END
+
+IF
+Global("TotDoorOp","RTF023",1)
+THEN
+RESPONSE #100
+SetGlobal("TotDoorOp","RTF023",2)
+CreateCreature("cvbandf5",[1149.960],1)
+CreateCreature("cvbandf5",[560.1090],7)
+CreateCreature("cvslao",[1500.1430],5)
+CreateCreature("cvslao",[1358.1440],7)
+CreateCreature("cvslap",[980.1500],5)
+CreateCreature("cvslao",[1690.950],7)
+CreateCreature("cvslao",[1689.1135],5)
+END

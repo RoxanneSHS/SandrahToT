@@ -1,0 +1,22 @@
+IF
+Global("SanTotStart","Global",1)
+Global("TotCre","RTF022",0)
+THEN
+RESPONSE #100
+SetGlobal("TotCre","RTF022",1)
+CreateCreature("cvslaw",[1149.960],1)
+CreateCreature("cvbandf5",[560.1090],7)
+CreateCreature("cvslao",[1500.1430],5)
+CreateCreature("cvslao",[1358.1440],7)
+CreateCreature("cvslap",[980.1500],5)
+CreateCreature("cvslao",[1690.950],7)
+CreateCreature("cvslao",[1689.1135],5)
+END
+
+IF
+Global("TotCre","RTF022",1)
+THEN
+RESPONSE #100
+SetGlobal("TotCre","RTF022",2)
+TriggerActivation("Up",FALSE)
+END

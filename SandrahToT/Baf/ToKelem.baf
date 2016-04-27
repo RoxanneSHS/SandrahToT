@@ -18,14 +18,25 @@ SetGlobal("KelSpeak","RTF123",1)
 END
 
 IF
+OR(2)
+Global("ToKelemcurse","Global",4)
 Global("KelSpeak","RTF123",1)
 InParty(Myself)
 !See([ENEMY])
 See("CVSandr")
 !StateCheck("CVSandr",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
 CombatCounter(0)
 THEN
 RESPONSE #100
 MoveToObject("CVSandr")
 StartDialogNoSet("TOKelem")
+END
+
+IF
+GlobalGT("ToKelemcurse","Global",1)
+!Dead("CVGuntt")
+THEN
+RESPONSE #100
+Attack("CVGuntt")
 END
