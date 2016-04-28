@@ -1,3 +1,7 @@
+BEGIN ToDrizzt
+BEGIN TONyssty
+BEGIN TODrowL
+
 CHAIN
 IF~Global("ToSleep","Global",1)~THEN CVSan25J Sleepkel1
 ~*At first you shudder as a body enters your bedroll as you just started to doze off. But then - your body seems to automatically respond to the man's nearness.*~
@@ -57,13 +61,13 @@ END
 
 CHAIN
 IF~~THEN Tolini TOLiniQuest3
-~I am drow but I follow Eilestrae, not Llolth, that much you know already. Thus I was forced to leave Underdark and to live on the surface.~
+~I am drow but I follow Eilistraee, not Llolth, that much you know already. Thus I was forced to leave Underdark and to live on the surface.~
 =~(Sigh) Not everything drowish is despiteful and hateful for me. My kin has valuable smiths and inventors as well as capable mages.~
 ==TOCyric~You being one of them, if I may say, hihi.~
 ==Tolini~I could do much better if the drow on the surface could use their waponry and magical items up here in the sunlight.~
 ==TOAdon~I heard rumours of some artifact that could provide this. Is that where your tale will lead us to?~
-==Tolini~You're right, Adon, there is such a thing and I was to acquire it for Eilestrae's followers. It is named Windwalker but it was stolen before I could get it, stolen by the Dragon's Hoard.~
-==TOCyric~Let me guess, hihi, our mind blowing beautiful young companion will now ask us to face this organisation for her - and we will say yes and get rich, famous, even if the price is to help such goody good doers like followers of Eilestrae.~
+==Tolini~You're right, Adon, there is such a thing and I was to acquire it for Eilistraee's followers. It is named Windwalker but it was stolen before I could get it, stolen by the Dragon's Hoard.~
+==TOCyric~Let me guess, hihi, our mind blowing beautiful young companion will now ask us to face this organisation for her - and we will say yes and get rich, famous, even if the price is to help such goody good doers like followers of Eilistraee.~
 ==Tolini~I am one of them, Cyric.~
 ==TOCyric~None of us is perfect, hihi, my otherwise nearly perfect beauty. (Ouch, that might have backfired...)~
 ==Tolini~If Cyric would let me continue, please...~
@@ -77,7 +81,7 @@ END
 CHAIN
 IF~~THEN Tocyric TOLiniQuest4
 ~I'd call everyone aside our beloved Midnight a coward for such words, hihi, but maybe our heroine is just a bit too cautious today. My dear, no risk no fun!~
-==TOPellig~For once mad Cyric is right, Midnight. There is a risk, but Eilestrae's followers are very close to those of your own goddess Mystra, it is almost as if you were tasked by her.~
+==TOPellig~For once mad Cyric is right, Midnight. There is a risk, but Eilistraee's followers are very close to those of your own goddess Mystra, it is almost as if you were tasked by her.~
 END
 ++~So be it. Let us go to Waterdeep.~DO~AddJournalEntry(@015,QUEST) RestParty()~EXIT
 ++~This may really be a quest for Mystra, so be it.~DO~AddJournalEntry(@015,QUEST) RestParty()~EXIT
@@ -135,6 +139,18 @@ END
 ++~This just gets more interesting with every new step.~EXIT
 
 CHAIN
+IF~ Global("TOLiriquest","Global",6)~THEN TODrowL Found1
+~Why have you come to this place? Any other reason then to search your doom?~
+DO~SetGlobal("TOLiriquest","Global",7)~
+==Tolini~All signs we followed have indicated that we may find the Dragon's Hoard right here.~
+==TODrowL~And if it were true, wouldn't it mean just the same - your doom?~
+==ToAdon~We will not pretend we came as new recruits for your gang, so much is true.~
+==TOCyric~Old spoilsport, hihi, we could've tried to pretend just that. Just to see their astonished faces when they woke up with their throats slit, hihi.~
+==TODrowL~Fine, you are no new recruits and we don't hire anyway. The knowledge about this place is already enough reason to kill you. But the boss may want to question you still about your reason for coming.~
+==TOCyric~Ha, who would've guessed it's SOOO easy to get an audience with Nisstyre, hihi.~
+==TODrowL~It's not so much an audience but rather a trial. Few survive it with Nisstyre. It's better you follow me now - there is no way back for you anymore.~DO~MoveToPoint([1734.58]) Wait(2) MoveBetweenAreas("tot002",[1188.439],7)~EXIT
+
+CHAIN
 IF WEIGHT #-41~Global("SanTotStart","Global",1) ~THEN SaMystp1 InTot
 ~We swear allegiance to the Lady, Mistress of the Mysteries, Mystra.~
 =~ Greetings, Mylady Midnight. It is a pleasure to greet the most talented disciple of the Deepingdale temple as our guest today.~
@@ -146,3 +162,50 @@ CHAIN
 IF WEIGHT #-4~Global("SanTotStart","Global",1) ~THEN SAMYSTP2  InTot2
 ~We swear allegiance to the Lady, Mistress of the Mysteries, Mystra.~
 =~Welcome, be our guests.~EXIT
+
+CHAIN
+IF~ Global("TOLiriquest","Global",7)~THEN TONyssty Found2
+~Visitors or voluntary additions to my petrified pet collectiion?~
+DO~SetGlobal("TOLiriquest","Global",8)~
+==TOCyric~Ha, have you ever heard that - a humourous drow, hihi. Liriel-baby, that's worth the price of admission alone!~
+==TONyssty~Liriel-baby?~
+=~Liriel?~
+=~Baenre?~
+==Tolini~The very same. You did not expect me?~
+==TONyssty~I had reports that the problem was solved. Wasn't that what you said, Tsabrak?~
+==TODrowL ~She was on the caravan that left for the mines near Blackstaff tower some while ago.~
+==TONyssty~Now she is here. I doubt that some suicidal imposter would use that name, do you agree, Tsabrak?~
+==TODrowL~Those adventurers must have helped her escape. She must have persuaded them to assist her in the foolish attempt to gain Windwalker.~
+==TONyssty~Tstststs...you see Windwalker, Liriel? Right here, my new favourite pet wears it. Another renegade drow, just like you.~
+=~Hm, that would look wonderful - you and him, a pair of fools, side by side in stone. Yes, I think that's how we do it.~
+=~Ready, Tsabrak?~
+==TODrowL~Just give us the sign, master.~DO~Enemy()~
+==TONyssty~NOW!~DO~ForceSpell(Player1,HELL_BUFFET) Wait(4) ForceSpell(Myself,DO_SOME_EFFECTS) CreateVisualEffectObject("SPFIREPI",Myself) Enemy()~EXIT
+
+CHAIN
+IF~ Global("TOLiriquest","Global",8)~THEN TODrizzt Found3
+~And so a drow comes to release me from the stone prison a drow confined me to?~
+DO~SetGlobal("TOLiriquest","Global",9)~
+==Tolini~I am...YOU are Drizzt! Drizzt Do'Urden!!~
+==TODrizzt~I was, at least last time I could move my limbs.~
+==Tolini~Liriel Baenre, and you have nothing to fear from us, myself I am a follower of Eilistraee.~
+=~This is Midnight, priestess of Mystra, and those are Pelligram, Cyric, Adon and Kelemvor.~
+==TODrizzt~Well met, and thank you for my rescue. However I assume you did not come here to rescue a drow who just has escaped the Underdark.~
+==CVSan25J~You are correct, Drizzt. We came to help Liriel to retrieve an artefact, actually the very amulet your capturer used to decorate you with.~
+==TODrizzt~It is not mine and I am happy to give it to you in gratitude for my rescue. I am just curious what it is that it makes you face such an opponent.~
+==Tolini~I do not seek it for myself but for the benefit of all of us who have fled the Underdark. The Windwalker may allow drow to use their items and magic on the surface.~
+==TODrizzt~My own swords are not depending on the Faerzress, the Underdark radiation required by our magic. But I imagine, such a thing is of great value for those who follow your goddess.~DO~GiveItem("Toliamu","Tolini")~
+==CVSan25J~Thank you, Drizzt. The way we came is cleared. If you follow our path, you eventually will come to the surface in a town called Waterdeep. Not far from where you come out of the Undermountain is a temple of Mystra. Tell them that Ariel Manx of Deepingdale sends you and you will have an initial shelter on the surface.~
+==TODrizzt~I will do that, Ariel, who calls herself Midnight. ~DO~MoveBetweenAreas("CVelm3",[352.380],12) ~EXIT
+
+CHAIN
+IF~ Global("TOLiriquest","Global",10)~THEN TOCyric Found4
+~And, my drow beauty, what is it we do with that thingy that made us come here? (Ah, it would grace your beautiful neck just so splendid...)~
+DO~SetGlobal("TOLiriquest","Global",11)~
+==Tolini~It has to be brought to the right location to expell its power from there all over Faerun.~
+==ToAdon~Huh, and this place may by any chance not be just around the corner.~
+==ToPellig~One quest starts where another just finished - the life of an adventurer.~
+==ToKelem~When I look into Liriel's face, I see despair. There may be some difficulty expected with that place we seek.~
+==Tolini~There may or maybe not. (Sigh) Maybe in your company we have a chance. The place is in the High Forest of Tethir.~
+==CVSan25J~Elven territory, not the best place for a drow to visit.~
+==Tolini~You hit the spot, Midnight. We need to go to a clearing just outside of Suldanessalar. It is not to be expected that we can go there unnoticed by my surface brothers. I can just hope, they give a dark elf the chance to declare her alignment before they perforate me with arrows.~DO~AddexperienceParty(12200) AddJournalEntry(@020,QUEST)~EXIT

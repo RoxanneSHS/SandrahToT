@@ -22,3 +22,11 @@ CreateCreature("cvslap",[980.1500],5)
 CreateCreature("cvslao",[1690.950],7)
 CreateCreature("cvslao",[1689.1135],5)
 END
+
+IF
+Global("PapInChest","RTF023",0)
+THEN
+RESPONSE #100
+SetGlobal("PapInChest","RTF023",1)
+ActionOverride("Container 3",CreateItem("scrlpet",0,0,0)) 
+END

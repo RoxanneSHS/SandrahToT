@@ -32,6 +32,22 @@ EXTEND_TOP
 EXTEND_TOP
 ~RTF023.bcs~ ~SandrahTOT/Area/RTF023ToT.baf~
 
+COPY ~SandrahToT\Area/TOT001.ARE~ ~override\TOT001.ARE~
+COPY ~SandrahToT\Area/TOT001.mos~ ~override\TOT001.mos~
+COPY ~SandrahToT\Area/TOT001.tis~ ~override\TOT001.tis~
+COPY ~SandrahToT\Area/TOT001.wed~ ~override\TOT001.wed~
+COPY ~SandrahToT\Area/TOT001HT.bmp~ ~override\TOT001HT.bmp~
+COPY ~SandrahToT\Area/TOT001LM.bmp~ ~override\TOT001LM.bmp~
+COPY ~SandrahToT\Area/TOT001SR.bmp~ ~override\TOT001SR.bmp~
+
+COPY ~SandrahToT\Area/TOT002.ARE~ ~override\TOT002.ARE~
+COPY ~SandrahToT\Area/TOT002.mos~ ~override\TOT002.mos~
+COPY ~SandrahToT\Area/TOT002.tis~ ~override\TOT002.tis~
+COPY ~SandrahToT\Area/TOT002.wed~ ~override\TOT002.wed~
+COPY ~SandrahToT\Area/TOT002HT.bmp~ ~override\TOT002HT.bmp~
+COPY ~SandrahToT\Area/TOT002LM.bmp~ ~override\TOT002LM.bmp~
+COPY ~SandrahToT\Area/TOT002SR.bmp~ ~override\TOT002SR.bmp~
+
 BEGIN
 ~Sandrah Times of Trouble Revisited Compiles~
 
@@ -55,7 +71,7 @@ APPEND ~pdialog.2da~
 ~TOLini *** *** *** TOLiniP TOLini TOLiniD TOLini~
 UNLESS ~TOLini~
 
-ADD_JOURNAL @015 @016 USING ~SandrahToT/TRA/SandrahToT.tra~
+ADD_JOURNAL @015 @016 @020 USING ~SandrahToT/TRA/SandrahToT.tra~
 
 COMPILE
 ~SandrahTOT/Baf/CVSantot.baf~
@@ -126,3 +142,20 @@ COPY ~SandrahTOT/Cre/CVGuntt.cre~ ~Override~
 SAY NAME1 ~Guntharr Lyonsbane~
 SAY NAME2 ~Guntharr Lyonsbane~
 
+COPY ~SandrahTOT/Cre/TodrowL.cre~ ~Override~
+SAY NAME1 ~Tsabrak~
+SAY NAME2 ~Tsabrak~
+
+COPY ~SandrahTOT/Cre/ToNyssty.cre~ ~Override~
+SAY NAME1 ~Nisstyre~
+SAY NAME2 ~Nisstyre~
+
+COPY ~SandrahTOT/Cre/Todrizzt.cre~ ~Override~
+SAY NAME1 Drizzt
+SAY NAME2 Drizzt
+SAY BIO @017
+
+COPY ~SandrahTot/ITM/ToLiAmu.itm~ ~override~
+SAY NAME1 @019
+SAY NAME2 @019
+SAY DESC @018

@@ -29,9 +29,19 @@ SetGlobal("TOHaiass","Global",1)
 END
 
 IF
-OR(2)
+Global("TOLiriquest","Global",9)
+!InMyArea("Todrizzt")
+Delay(6)
+THEN
+RESPONSE #100
+SetGlobal("TOLiriquest","Global",10)
+END
+
+IF
+OR(3)
 Global("TOHasBane","Global",1)
 Global("TOHaiass","Global",1)
+Global("TOLiriquest","Global",10)
 InParty(Myself)
 !See([ENEMY])
 See("CVSandr")
