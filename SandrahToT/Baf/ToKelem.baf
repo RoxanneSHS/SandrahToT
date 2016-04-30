@@ -18,9 +18,10 @@ SetGlobal("KelSpeak","RTF123",1)
 END
 
 IF
-OR(2)
+OR(3)
 Global("ToKelemcurse","Global",4)
 Global("KelSpeak","RTF123",1)
+Global("TOKelemQuest","Global",2)
 InParty(Myself)
 !See([ENEMY])
 See("CVSandr")
@@ -39,4 +40,15 @@ GlobalGT("ToKelemcurse","Global",1)
 THEN
 RESPONSE #100
 Attack("CVGuntt")
+END
+
+IF
+Global("TOKelemQuest","Global",1)
+AreaCheck("ar2600")
+Global("TOLiriquest","Global",17)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("Chapter","Global",32)
+SetGlobal("TOKelemQuest","Global",2)
 END

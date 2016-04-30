@@ -43,6 +43,7 @@ END
 CHAIN
 IF~Global("ToSleep","Global",3)~THEN Tolini TOLiniQuest1
 ~So, Midnight, you are more or less famous adventurers from what I heard from our comrades so far?~
+DO~SetGlobal("Chapter","Global",31)~
 ==TOCyric~It's sometimes not too desireable to be too famous, my dark beauty, hihi. (oh, these drow women...they are really up to their reputation, at least this specimen.)~
 ==Tolini~You mean as a thief? Well, you may be right. Unless you are so famous that your possible employers deem you capable to steal just about everything.~
 ==TOAdon~Liriel, I have the feeling this is not a hypothetical discussion at all.~
@@ -224,9 +225,9 @@ DO~SetGlobal("TOLiriquest","Global",13)~
 ==C6Elhan2~You come on some purpose I assume. I give you one minute to justify the presence of the DROW before I give my archers the command to fire.~
 ==CVSan25J~The drow - her name is Liriel Baenre - is the reason we came.~
 ==Warsage~True, their feelings for the drow female are friendly.~
-==Tolini~Judge not by colour alone, elf. The friendship with my comrads is possible because I do not follow the ways of my kin and the ways of Lloth. I swear my allegiance to Eillestraee.~
+==Tolini~Judge not by colour alone, elf. The friendship with my comrads is possible because I do not follow the ways of my kin and the ways of Lloth. I swear my allegiance to Eilistraee.~
 ==Warsage~True, completely true.~
-==C6Elhan2~Fine - the minute is over and my archers will not fire. The Dark Lady is better than the Spider Queen and we have not seen harm done by her followers. You will live but I see no reason yet to let you transgress further into our city.~
+==C6Elhan2~Fine - the minute is over and my archers will not fire. The Dark Maiden is better than the Spider Queen and we have not seen harm done by her followers. You will live but I see no reason yet to let you transgress further into our city.~
 ==Tolini~We have not come to visit the city and you may only have to endure our unwanted presence for a short while. Our destination is a small clearing to the northeast of the city.~
 ==Warsage~True, true they only want access to the clearing.~
 ==ToCyric~Oh, shut up already!! You know we tell the truth and your elven pomp is of no interest to us.~
@@ -274,7 +275,7 @@ CHAIN
 IF ~ Global("TOLiriquest","Global",13)~THEN Toiren FoundJ
 ~Ha, the outsider scum approaches, my queen.~
 DO~SetGlobal("TOLiriquest","Global",14)~
-==RTElles~Let us greet them, Joneleth. I heard the drow is a follower of Eilestrsee.~
+==RTElles~Let us greet them, Joneleth. I heard the drow is a follower of Eilistraee.~
 ==Toiren~Pfft, that makes her even more pathetic than her kin usually is.~
 ==Tolini~I greet you queen Ellesime and I thank you for hearing me out. It is just a little thing I came to ask you for and we will leave your city as soon a possible again.~
 ==Toiren~As if you had any choice, *drow*. You will do as you are told or feel our wraith.~
@@ -285,7 +286,7 @@ DO~SetGlobal("TOLiriquest","Global",14)~
 ==RTElles~Your Midnight is correct in this, the place was sacred even before Rillifane blessed this settlement. In a way that gives even a drow that is not hostile towards us a right to go there.~
 ==Toiren~To do what, my queen? Surely not to contemplate on the landscape. What treachery is in your dark mind?~
 ==TOCyric~Hihi, I like the guy, how he plays the bad bad protector of his goody-good queen...~
-==Tolini~We have gained an old item that needs the magic of the old sanctum. From that location it can enable Eilestraee's followers to use their magic and items on the surface.~
+==Tolini~We have gained an old item that needs the magic of the old sanctum. From that location it can enable Eilistraee's followers to use their magic and items on the surface.~
 ==Toiren~Bah, treachery! Not only any follower of your goddess but ANY DROW would be able to use their items and magic on the surface - AGAINST US!~
 ==RTElles~As much as I understand your request, Liriel, but here Joneleth is correct. Any drow item could be used with your device, regardless of who uses it.~
 ==ToPellig~Queen Ellesime, would it not be possible that your most potent mage, the man you trust most of all, can help us with this?~
@@ -301,7 +302,7 @@ CHAIN
 IF WEIGHT #-11~AreaCheck("ar2807") Global("adalon","ar2807",1) !PartyHasItem("ToLiAm2")~THEN Udsilver  WrongIt
 ~The presence of a powerful item in your possession has caught my attention.~
 DO~SetGlobal("TOLiriquest","Global",15) SetGlobal("adalon","ar2807",2)~
-==Tolini~It is Windwalker, an item that from this location will allow the followers of my goddess Eilestraee to use the magic and items of my race on the surface.~
+==Tolini~It is Windwalker, an item that from this location will allow the followers of my goddess Eilistraee to use the magic and items of my race on the surface.~
 ==Udsilver~Yes, it will do that. You are a follower of a good goddess unlike the majority of your kin.~
 =~Ever since the dark elves descended down to the First City, my task has been to prevent an invasion of one elven race against the other. Your intention may be good but it is causing this stability to be broken.~
 ==Tolini~But why?~
@@ -312,7 +313,7 @@ CHAIN
 IF WEIGHT #-11~AreaCheck("ar2807") Global("adalon","ar2807",1) PartyHasItem("ToLiAm2")~THEN Udsilver  RightIt
 ~The presence of a powerful item in your possession has caught my attention.~
 DO~SetGlobal("TOLiriquest","Global",15) SetGlobal("adalon","ar2807",4)~
-==Tolini~It is Windwalker, an item that from this location will allow the followers of my goddess Eilestraee to use the magic and items of my race on the surface.~
+==Tolini~It is Windwalker, an item that from this location will allow the followers of my goddess Eilistraee to use the magic and items of my race on the surface.~
 ==Udsilver~Yes, it will do that. You are a follower of a good goddess unlike the majority of your kin.~
 =~Ever since the dark elves descended down to the First City, my task has been to prevent an invasion of one elven race against the other. ~
 ==Tolini~The mage Irenicus has modified the item to prevent its use by all that are of evil nature. It will give me and my friends a chance to survive on the surface but grant no advantage to the slaves of Lolth.~
@@ -322,7 +323,7 @@ CHAIN
 IF~AreaCheck("ar2800")Global("SanTotStart","Global",1)~THEN RTElles InToT1
 ~Here they are, as announced.~
 END
-++~Greetins, Ellesime~ EXTERN TOIren FoundJ
+++~Greetins, Ellesime.~ EXTERN TOIren FoundJ
 
 CHAIN
 IF WEIGHT #-9~Global("TOLiriquest","Global",16)~THEN Sudemin Killjon1
@@ -332,7 +333,7 @@ DO~SetGlobal("TOLiriquest","Global",17)~
 ==Sudemin~I have overheard both your conversation with Elhan and Ellesime, so I know about your suspicion concerning Irenicus.~
 =~I am Demin, high priestess of Rillifane Rallathil who founded Suldanessalar. I am also protector of the Tree of Life, the source of our existance.~
 ==ToPellig~Even if Midnight's and your suspicions are correct when it comes to your Queen's protege, we are nothing but outsiders passing through.~
-==Sudemin~This makes you valuable as you can act where my friends and me cannot. Irenicus is the most powerful mage we have ever had, but he and his sister Bodhi are fuelled by hunger and greed for ever more power. Ellesime is blind to all warnings and lets Irenicus do *experiments* on the Tree of Life itself.~
+==Sudemin~This makes you valuable as you can act where my friends and I cannot. Irenicus is the most powerful mage we have ever had, but he and his sister Bodhi are fuelled by hunger and greed for ever more power. Ellesime is blind to all warnings and lets Irenicus do *experiments* on the Tree of Life itself.~
 ==CVSan25J~History books are full of that story - the mage getting more and more power until he thinks he can even challenge the gods.~
 ==Sudemin~I see that you understand, my friend. It may be just a matter of time until Bodhi will drive her brother to commence some sacrilege on the Tree and raise the anger of the Seldarine.~
 ==ToCyric~Hihi, a little backstabbing may remove your problems.~

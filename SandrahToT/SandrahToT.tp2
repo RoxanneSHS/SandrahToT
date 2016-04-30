@@ -95,6 +95,7 @@ COMPILE
 ~SandrahTOT/Baf/CVBandf5.baf~
 ~SandrahTOT/Baf/ToKeGut.baf~
 ~SandrahTOT/Baf/ToCente.baf~
+~SandrahTOT/Baf/Togowa.baf~
 
 EXTEND_TOP
 ~CVSan25d.bcs~ ~SandrahTOT/Baf/CVSandrDToT.baf~
@@ -179,6 +180,14 @@ SAY NAME2 Bodhi
 COPY ~SandrahTOT/Cre/ToCente.cre~ ~Override~
 SAY NAME1 ~Centeol~
 SAY NAME2 ~Centeol~
+
+COPY ~SandrahTOT/Cre/Togowa01.cre~ ~Override~
+SAY NAME1 Pirat
+SAY NAME2 Pirat
+
+COPY ~SandrahTOT/Cre/Togowa02.cre~ ~Override~
+SAY NAME1 Pirat
+SAY NAME2 Pirat
 
 COPY ~SandrahTot/ITM/ToLiAmu.itm~ ~override~
 SAY NAME1 @019

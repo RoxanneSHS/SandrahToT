@@ -15,7 +15,9 @@ SetGlobal("Tolini","BG4100",8)
 END
 
 IF
+OR(2)
 Global("Tolini","BG4100",8)
+Global("TOKelemQuest","Global",4)
 InParty(Myself)
 !See([ENEMY])
 See(Player1)
@@ -28,3 +30,13 @@ MoveToObject(Player1)
 StartDialogNoSet(Player1)
 END
 
+IF
+Global("TOKelemQuest","Global",3) 
+RealGlobalTimerExpired("ToGodsearchT","Global")
+CombatCounter(0)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck("CVsandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("TOKelemQuest","Global",4) 
+END
