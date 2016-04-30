@@ -31,6 +31,16 @@ EXTEND_TOP
 ~RTF022.bcs~ ~SandrahTOT/Area/RTF022ToT.baf~
 EXTEND_TOP
 ~RTF023.bcs~ ~SandrahTOT/Area/RTF023ToT.baf~
+EXTEND_BOTTOM
+~CVElm5.bcs~ ~SandrahTOT/Area/CVElm5House.baf~
+EXTEND_BOTTOM
+~ar2800.bcs~ ~SandrahTOT/Area/Ar2800Tolini.baf~
+EXTEND_BOTTOM
+~ar2807.bcs~ ~SandrahTOT/Area/Ar2807Tolini.baf~
+EXTEND_BOTTOM
+~ar2600.bcs~ ~SandrahTOT/Area/ar2600Omen.baf~
+EXTEND_TOP
+~BG2301.bcs~ ~SandrahTOT/Area/BG2301New.baf~
 
 COPY ~SandrahToT\Area/TOT001.ARE~ ~override\TOT001.ARE~
 COPY ~SandrahToT\Area/TOT001.mos~ ~override\TOT001.mos~
@@ -47,6 +57,8 @@ COPY ~SandrahToT\Area/TOT002.wed~ ~override\TOT002.wed~
 COPY ~SandrahToT\Area/TOT002HT.bmp~ ~override\TOT002HT.bmp~
 COPY ~SandrahToT\Area/TOT002LM.bmp~ ~override\TOT002LM.bmp~
 COPY ~SandrahToT\Area/TOT002SR.bmp~ ~override\TOT002SR.bmp~
+
+COPY ~SandrahToT\Area/TOT003.ARE~ ~override\TOT003.ARE~
 
 BEGIN
 ~Sandrah Times of Trouble Revisited Compiles~
@@ -82,6 +94,7 @@ COMPILE
 ~SandrahTOT/Baf/TOAdon.baf~
 ~SandrahTOT/Baf/CVBandf5.baf~
 ~SandrahTOT/Baf/ToKeGut.baf~
+~SandrahTOT/Baf/ToCente.baf~
 
 EXTEND_TOP
 ~CVSan25d.bcs~ ~SandrahTOT/Baf/CVSandrDToT.baf~
@@ -155,7 +168,24 @@ SAY NAME1 Drizzt
 SAY NAME2 Drizzt
 SAY BIO @017
 
+COPY ~SandrahTOT/Cre/Toiren.cre~ ~Override~
+SAY NAME1 @021
+SAY NAME2 @021
+
+COPY ~SandrahTOT/Cre/Tobodhi.cre~ ~Override~
+SAY NAME1 Bodhi
+SAY NAME2 Bodhi
+
+COPY ~SandrahTOT/Cre/ToCente.cre~ ~Override~
+SAY NAME1 ~Centeol~
+SAY NAME2 ~Centeol~
+
 COPY ~SandrahTot/ITM/ToLiAmu.itm~ ~override~
 SAY NAME1 @019
 SAY NAME2 @019
 SAY DESC @018
+
+COPY ~SandrahTot/ITM/ToLiAmu.itm~ ~override/ToLiAm2.itm~
+SAY NAME1 @023
+SAY NAME2 @023
+SAY DESC @022

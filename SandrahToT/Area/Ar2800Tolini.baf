@@ -1,0 +1,55 @@
+IF
+Global("SanTotStart","Global",1)
+Global("TOLiriquest","Global",11)
+THEN
+RESPONSE #100
+SetGlobal("TOLiriquest","Global",12)
+CreateCreature("RTElles",[2985.1133],6)
+CreateCreature("ToIren",[2905.994],4)
+CreateCreature("c6elhan",[4408.3222],7)
+CreateCreature("suendel2",[4353.3196],2)
+CreateCreature("suendel4",[4478.3172],3)
+CreateCreature("suendel5",[4408.3112],11)
+CreateCreature("warsage",[4291.3279],14)
+END
+
+IF
+Global("SanTotStart","Global",1)
+Global("TotDoors","ar2800",0)
+THEN
+RESPONSE #100
+SetGlobal("TotDoors","ar2800",1)
+CloseDoor("Door02")
+Lock("Door02")
+TriggerActivation("Tran2804",FALSE)
+END
+
+IF
+Global("TOLiriquest","Global",13)
+Global("ToMeetBo","ar2800",0)
+THEN
+RESPONSE #100
+SetGlobal("ToMeetBo","ar2800",1)
+CreateCreature("Tobodhi",[2125.1680],6)
+CreateCreature("ToCente",[2310.1681],8)
+END
+
+IF 
+OR(4)
+Dead("Toiren")
+Dead("RTElles")
+Dead("c6elhan")
+Dead("ToBodhi")
+THEN
+RESPONSE #100
+Kill(Player1)
+Kill(Player2)
+END
+
+IF
+Global("TOLiriquest","Global",15)
+THEN
+RESPONSE #100
+SetGlobal("TOLiriquest","Global",16)
+CreateCreature("sudemin",[595.809],9)
+END

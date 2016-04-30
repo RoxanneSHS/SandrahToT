@@ -1,0 +1,6 @@
+IF
+!Range("ToBodhi",10)
+THEN
+RESPONSE #100
+MoveToObjectFollow("ToBodhi")
+END

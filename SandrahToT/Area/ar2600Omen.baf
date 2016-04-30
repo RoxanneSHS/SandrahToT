@@ -1,0 +1,8 @@
+IF
+Global("SanTotStart","Global",1)
+Global("TotOmen","ar2600",0)
+THEN
+RESPONSE #100
+SetGlobal("TotOmen","ar2600",1)
+CreateCreature("Portal",[3870.861],12)
+END

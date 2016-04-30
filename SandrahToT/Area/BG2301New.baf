@@ -1,0 +1,17 @@
+IF
+Global("SanToTStart","GLOBAL",1)
+OR(2)
+Global("InToTArm","GLOBAL",0)
+Global("InToTArm","GLOBAL",1)
+THEN
+RESPONSE #100
+ClearAllActions()
+SetGlobal("InToTArm","GLOBAL",1)
+SetMasterArea("BG2300")
+ActionOverride(Player1,LeaveAreaLUA("TOT003","",[1018.895],7))
+ActionOverride(Player2,LeaveAreaLUA("TOT003","",[1018.895],7))
+ActionOverride(Player3,LeaveAreaLUA("TOT003","",[1018.895],7))
+ActionOverride(Player4,LeaveAreaLUA("TOT003","",[1018.895],7))
+ActionOverride(Player5,LeaveAreaLUA("TOT003","",[1018.895],7))
+ActionOverride(Player6,LeaveAreaLUA("TOT003","",[1018.895],7))
+END

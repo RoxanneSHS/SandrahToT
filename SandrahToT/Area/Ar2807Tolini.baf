@@ -1,0 +1,30 @@
+IF
+GlobalGT("TOLiriquest","Global",12)
+Global("adalon","ar2807",0)
+THEN
+RESPONSE #100
+SetGlobal("adalon","ar2807",1)
+CreateCreature("udsilver",[450.880],10)
+TriggerActivation("tran2800",FALSE)
+END
+
+IF
+Global("adalon","ar2807",2)
+Dead("udsilver")
+THEN
+RESPONSE #100
+SetGlobal("adalon","ar2807",3)
+SetCursorState(FALSE)
+EndCredits()
+END
+
+IF
+Global("adalon","ar2807",4)
+THEN
+RESPONSE #100
+SetGlobal("adalon","ar2807",5)
+TriggerActivation("tran2800",TRUE)
+EraseJournalEntry(@020)
+EraseJournalEntry(@015)
+AddexperienceParty(40000)
+END

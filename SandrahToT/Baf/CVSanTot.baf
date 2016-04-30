@@ -75,3 +75,11 @@ SetPlayerSound(Myself,@014,EXISTANCE5)
 SetGlobal("TotBioChange","LOCALS",1)
 END
 
+IF
+Global("InToTArm","GLOBAL",2)
+!AreaCheck("ToT003")
+THEN
+RESPONSE #100
+SetGlobal("InToTArm","GLOBAL",0)
+END
+

@@ -38,10 +38,21 @@ SetGlobal("TOLiriquest","Global",10)
 END
 
 IF
-OR(3)
+Global("ToKelemcurse","Global",5)
+AreaType(FOREST)
+TimeOfDay(NIGHT)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("ToKelemcurse","Global",6)
+END
+
+IF
+OR(4)
 Global("TOHasBane","Global",1)
 Global("TOHaiass","Global",1)
 Global("TOLiriquest","Global",10)
+Global("ToKelemcurse","Global",6)
 InParty(Myself)
 !See([ENEMY])
 See("CVSandr")
