@@ -43,6 +43,8 @@ EXTEND_TOP
 ~BG2301.bcs~ ~SandrahTOT/Area/BG2301New.baf~
 EXTEND_TOP
 ~BG2900.bcs~ ~SandrahTOT/Area/BG2900malar.baf~
+EXTEND_BOTTOM
+~CVRoan.bcs~ ~SandrahTOT/Area/CVRoanWauk.baf~
 
 COPY ~SandrahToT\Area/TOT001.ARE~ ~override\TOT001.ARE~
 COPY ~SandrahToT\Area/TOT001.mos~ ~override\TOT001.mos~
@@ -85,7 +87,7 @@ APPEND ~pdialog.2da~
 ~TOLini *** *** *** TOLiniP TOLini TOLiniD TOLini~
 UNLESS ~TOLini~
 
-ADD_JOURNAL @015 @016 @020 @024 @025 USING ~SandrahToT/TRA/SandrahToT.tra~
+ADD_JOURNAL @015 @016 @020 @024 @025 @026 @027 USING ~SandrahToT/TRA/SandrahToT.tra~
 
 COMPILE
 ~SandrahTOT/Baf/CVSantot.baf~
@@ -99,6 +101,7 @@ COMPILE
 ~SandrahTOT/Baf/ToCente.baf~
 ~SandrahTOT/Baf/Togowa.baf~
 ~SandrahTOT/Baf/Tomalar.baf~
+~SandrahTOT/Baf/ToWaEsc.baf~
 
 EXTEND_TOP
 ~CVSan25d.bcs~ ~SandrahTOT/Baf/CVSandrDToT.baf~
@@ -195,6 +198,10 @@ SAY NAME2 Pirat
 COPY ~SandrahTOT/Cre/Tomalar.cre~ ~Override~
 SAY NAME1 Malar
 SAY NAME2 Malar
+
+COPY ~SandrahTOT/Cre/Towaukee.cre~ ~Override~
+SAY NAME1 ~Waukeen~
+SAY NAME2 ~Waukeen~
 
 COPY ~SandrahTOT/Cre/CVDrud4.cre~ ~Override~
 SAY NAME1 ~Shadow Druid~

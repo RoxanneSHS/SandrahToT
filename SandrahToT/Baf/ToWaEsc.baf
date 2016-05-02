@@ -1,0 +1,22 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutsceneID(Player1)
+ApplySpellRES("BGSleep","CVWDWauk")
+Wait(2)
+CreateVisualEffect("SPSumGTE",[789.798])
+Wait(6)
+ActionOverride("Towaukee",MoveToPoint([789.798]))
+SmallWait(5)
+CreateVisualEffect("SPSumGTE",[789.798])
+Wait(6)
+CreateVisualEffect("SPPortal",[789.798])
+Wait(2)
+ActionOverride("Towaukee",DestroySelf())
+Wait(2)
+CreateVisualEffect("SPSolbrd",[789.798])
+SetGlobal("ToWaukGo","Global",5)
+EndCutSceneMode()
+ActionOverride("Grazzt02",Enemy())
+END

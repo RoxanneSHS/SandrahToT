@@ -114,7 +114,7 @@ AreaCheck("CVroa9")
 THEN
 RESPONSE #100
 SetGlobal("ToGodwalk","Global",3)
-CreateCreatureObjectOffset("Prihel",Myself,[-25.-25])
+CreateCreatureObjectOffset("Prihel",Myself,[25.25])
 ActionOverride("Prihel",Dialog(Player1))
 END
 
@@ -125,7 +125,19 @@ AreaType(OUTDOOR)
 THEN
 RESPONSE #100
 SetGlobal("ToGodwalk","Global",5)
-CreateCreatureObjectOffset("CVPotngi",Myself,[-125.-125])
+CreateCreatureObjectOffset("CVPotngi",Myself,[125.125])
+END
+
+IF
+GlobalGT("ToGodwalk","Global",5)
+AreaCheck("CVRoa2")
+See("Barrel3")
+Global("ToWaukGo","Global",0)
+THEN
+RESPONSE #100
+SetGlobal("ToWaukGo","Global",1)
+CreateCreatureObjectOffset("CVwdwauk",Myself,[55.55])
+ActionOverride("CVwdwauk",Dialog(Player1))
 END
 
 IF

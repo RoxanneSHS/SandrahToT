@@ -1,5 +1,6 @@
 BEGIN ToGoWa02
 BEGIN ToMalar
+BEGIN ToWaukee
 
 CHAIN
 IF WEIGHT #-5~GlobalGT("TOLiriquest","Global",8) Global("TOKelemQuest","Global",0)~ THEN              Portal  warnpon1
@@ -164,3 +165,62 @@ DO~SetGlobal("ToGodwalk","Global",8)~
 ==CVSan25J~You still have a chance to leave these woods peacefully, Malar.~
 ==ToMalar~And who are you to demand such? (Sniff) This is MY domain now, the forests of Faerun return to the regime of the beasts.~ DO~Enemy()~
 ==TOAdon~There is nothing natural in lycanthropy, it is a desease to be stopped from spreading further.~EXIT
+
+CHAIN
+IF WEIGHT #-3~Global("ToWaukGo","Global",1)~THEN CVWDWauk WauGo1
+~Assault...help!! Help!! There are demons in the Temple of Splendor.~
+DO~SetGlobal("ToWaukGo","Global",2)~
+==ToCyric~What could they seek there, they want to go shopping, hihi?~
+==CVWDWauk~We need help...our goddess...~
+==CVSan25J~Your goddess is in there too, is it so? The demons are after her?~
+==CVWDWauk~...yes...We need help... ~ DO~EscapeAreaDestroy(50)~
+END
+++~With Waukeen, everything has a price. We will help you. Do not forget to pay afterwards.~EXIT
+++~Demons do not scare us and the Golden Lady will surely reward us.~EXIT
+++~(Sigh) Another day, another battle, let us go, friends.~EXIT
+
+CHAIN
+IF~Global("ToWaukGo","Global",3) ~THEN ToWaukee WauEscape
+~You have indeed come as you promised thus the first step for the deal is done.~
+DO~SetGlobal("ToWaukGo","Global",4)~
+==Grazzt02~Toril has become a dangerous place, I have witnessed it myself during my short stay here.~
+==TOWaukee~You know about my identity, so how about introducing yourself to me.~
+==Grazzt02~I am Graz'zt, a great demon prince of Hell. The name may strike a chord as will other enemies of mine like Orcus and Demogorgon. Your ambassadors assured me that you are open minded and you patronise the merchant as well as the smuggler. My reputation should not be a hinderance for our deal.~
+==ToWaukee~Celestia is closed and Toril not safe. Logic tells me that your domain is safe - provided our agreement is solid.~
+==Grazzt02~I have nothing to gain by betraying you, Waukeen. We both will be winners once this struggle with AO is over and we can restore you as the figurehead of our alliance whom the mortals can see and worship.~
+=~The portal is ready for your use.~
+==ToCyric~Hihi, not an ambush like those priests were made to believe but a clever escape plan. My respect, Waukeen.~
+==ToAdon~This kidnapping obviously is a business case of a quite perculiar nature...~
+==Grazzt02~Step through the portal, fair Golden Lady, I will take care of these unexpected intruders.~DO~AddJournalEntry(@027,QUEST) ClearAllActions() StartCutsceneMode() StartCutScene("ToWaEsc")~EXIT
+
+CHAIN
+IF WEIGHT #-4~Global("ToWaukGo","Global",6)~THEN CVWDWauk WauGo2
+~What has happened. I was unconsciuos, it seems.~
+DO~SetGlobal("ToWaukGo","Global",7)~
+==ToCyric~You missed the best part of the play, hihi.~
+==Tolini~Your goddess is obviously one who knows no scruples when it comes to business associates.~
+==CVWDWauk~What do you mean by that, where is she now?~
+==ToCyric~Waukeen has just left the building, as they say.~
+==TOPellig~Waukeen has just left Toril, this is what you intended to say, Cyric.~
+==ToKelem~She figured that the Prime was not a save place for her during these troubled times.~
+==CVWDWauk~Are you trying to imply thatWaukeen has sought shelter with those demons? ~
+==ToCyric~Business is business, isn't it. Looks like she made a deal. You may pray that she did not buy a one-way ticket.~
+==Tolini~Pray, Cyric? It looks like in these *Times of Trouble* as we now may very well call them, there is nobody left to send prayers, too.~
+END
+++~What Liriel just said expresses well the situation we are in now. We are on our own in this trouble. Or we could say, the Prime is now fully ours, the plane of the mortals.~EXTERN Tokelem Waukgo3
+
+CHAIN
+IF~~THEN Tokelem Waukgo3
+~I object to this statement, Midnight. We cannot ignore the presence of the gods even if they are mortal now. They are - at least some of them are - the most powerful and dangerous beings on the Prime.~
+==TOAdon~Right, Kelemvor, and we see that any of them may be just around the corner.~
+==ToCyric~Ha, you sissies, don't you see the opportunities? Just tell me - who will gain their portefolio should we meet one and defeat him or her?~
+==ToLini~That will be decided by AO, or not?~
+==ToCyric~Oh, my dark beauty, how you err...I tell you, the winner takes all, the strongest will survive - kill one and take what you need.~
+==TOKelem~Madman, are you proposing to hunt down gods and grab their domains or what?~
+==ToPellig~Friends, I am afraid that Cyric's vision is not so totally absurd as it may sound. There will be casualties sooner or later, and - just as Cyric already stated, there will be vacancies. ~
+=~At one point this situation will end. There will be a vacuum of power in some domains and it must be filled to prevent further chaos.~
+==ToCyric~Pellig-babe, I knew you'd understand...I have to make up my mind about which portefolio I should go for.~
+==CVSan25J~How about murder, your specialty - or take strife...Cyric, Cyric...~
+==ToCyric~Splendid ideas, girls, you are great inspirations, really. But why chose - why not take both and maybe even...~
+==TOKelem~Stop it. madman!! And you, Pelligram, Midnight, what do you think you do? You put fuel to that idiot's fire! Just imagine he really starts to believe in such stuff. He's dangerous enough already.~
+==TOAdon~Come. let us move before this gets out of hand.~EXIT

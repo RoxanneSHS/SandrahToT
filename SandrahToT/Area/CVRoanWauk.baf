@@ -1,0 +1,28 @@
+IF
+Global("ToWaukGo","Global",2)
+THEN
+RESPONSE #100
+SetGlobal("ToWaukGo","Global",3)
+CreateCreature("Towaukee",[882.959],10)
+CreateCreature("Grazzt02",[958.814],2)
+END
+
+IF
+Global("ToWaukGo","Global",5)
+HPPercentLT("Grazzt02",30)
+THEN
+RESPONSE #100
+SetGlobal("ToWaukGo","Global",6)
+CreateVisualEffectObject("SPPortal","Grazzt02")
+Wait(2)
+ActionOverride("Grazzt02",DestroySelf())
+AddexperienceParty(9300)
+END
+
+IF
+Global("ToWaukGo","Global",6)
+!StateCheck("CVWDWauk",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+ActionOverride("CVwdwauk",Dialog(Player1))
+END
