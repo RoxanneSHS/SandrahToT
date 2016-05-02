@@ -1,0 +1,54 @@
+IF
+Range([PC],10)
+NumTimesTalkedTo(0)
+See([PC])
+Allegiance(Myself,NEUTRAL)
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("ToGodwalk","Global",8)
+Allegiance(Myself,NEUTRAL)
+THEN
+RESPONSE #100
+Enemy()
+END
+
+IF
+Global("ToGodwalk","Global",8)
+Global("Forces","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("Forces","LOCALS",1)
+CreateCreatureObjectOffset("weregrdr",Myself,[-125.-125])
+CreateCreatureObjectOffset("weregrdr",Myself,[125.-125])
+CreateCreatureObjectOffset("weregrdr",Myself,[-125.125])
+END
+
+IF
+Global("Forces","LOCALS",1)
+HPPercentLT(Myself,25)
+THEN
+RESPONSE #100
+SetGlobal("Forces","LOCALS",2)
+ReallyForceSpell(Myself,DRYAD_TELEPORT)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+!Range(NearestEnemyOf(Myself),10)
+THEN
+RESPONSE #100
+EquipRanged()
+AttackReevaluate(NearestEnemyOf(Myself),20)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+Range(NearestEnemyOf(Myself),10)
+THEN
+RESPONSE #100
+RunAwayFrom(NearestEnemyOf(Myself),20)
+END

@@ -1,4 +1,5 @@
 BEGIN ToGoWa02
+BEGIN ToMalar
 
 CHAIN
 IF WEIGHT #-5~GlobalGT("TOLiriquest","Global",8) Global("TOKelemQuest","Global",0)~ THEN              Portal  warnpon1
@@ -23,7 +24,7 @@ END
 CHAIN
 IF~Global("TOKelemQuest","Global",2)~THEN ToKelem Whatwrong1
 ~Some of your reactions in the elven city were really disturbing, my love. You seem to know more than...how can I say...it is like you were a fortune teller.~
-DO~SetGlobal("TOKelemQuest","Global",3) RealSetGlobalTimer("ToGodsearchT","Global",600)~
+DO~SetGlobal("TOKelemQuest","Global",3) AddJournalEntry(@024,QUEST) RealSetGlobalTimer("ToGodsearchT","Global",600)~
 ==CVSan25J~These things appear like some deja vu at times, like I met people before whom I have never seen.~
 ==ToKelem~This Bodhi and her brother Irenicus?~
 ==CVSan25J~They play a role in my life, and they are dangerous, more I cannot say.~
@@ -59,7 +60,7 @@ IF~~THEN  ToKelem Whatwrong4
 ~Which brings me to the topic of the Lyonsbane's curse and what is known about it.~
 =~My great-grandfather was a sorcerer of quite some skills. He spent a lot of time with research about curses and cases like ours.~
 END
-++~Did he find a clue - obviously he did not find the cure itself.~ +  Whatwrong5
+++~Did he find a clue - obviously he did not find the cure itself?~ +  Whatwrong5
 
 CHAIN
 IF~~THEN ToKelem Whatwrong3
@@ -85,14 +86,14 @@ DO~SetGlobal("TOKelemQuest","Global",5)RealSetGlobalTimer("ToGodsearchT","Global
 ==ToAdon~I have not seen it under this aspect, (laughs), oh, Midnight sometimes you can be so...flippant. Truth is that I feel I need to find out if the rumour is true and also whether my goddess is involved.~
 =~The Lady Firehair is the deity of beauty, love and passion, and even if those can be found all over Faerun, our Prime is as well a plane full of evil and danger. There are gods with far more dangerous powers than Sune has.~
 ==CVSan25J~I had never considered a goddess to be a being needing protection, but you may well be right. If your goddess is vulnerable on the Prime she better not cross the wrong mortals or even one of her evil competitors. What do you propose?~
-==ToAdon~There is a Sune temple in the north of Waterdeep. I suggest to go there to gain information. I have no plan yet laid out, it is too eraly for that. We should just try to gather the facts about the whole situation.~
+==ToAdon~There is a Sune temple in the north of Waterdeep. I suggest to go there to gain information. I have no plan yet laid out, it is too early for that. We should just try to gather the facts about the whole situation.~
 END
-++~A valid proposal, we may as well check for my goddess as well.~EXIT
+++~A valid proposal, we may as well check for my goddess as well.~DO~AddJournalEntry(@024,QUEST)~EXIT
 ++~I was considering Waterdeep already to inquire at Mystra's temple - we put Sune's on our list for visiting.~DO~AddJournalEntry(@024,QUEST)~EXIT
 
 CHAIN
 IF~Global("ToGodwalk","Global",1)~THEN ToGoWa02 Umber1
-~See what she's done! my comrads!~
+~See what she's done! My comrads turned to stone!~
 DO~SetGlobal("ToGodwalk","Global",2)~
 ==ToAdon~Whoever *she* was, she seems to have done the right thing, scum.~
 ==TOCyric~I like *her* handywork, a nice collection, hihi.~
@@ -114,9 +115,9 @@ IF WEIGHT #-8~Global("ToGodwalk","Global",3)~THEN Prihel NotHel1
 DO~SetGlobal("ToGodwalk","Global",4)~
 ==ToPellig~Excuse me, priest, we came too late to hear all of your report. Are you saying that AO banned some gods to the Prime?~
 ==Prihel~Hm, I see priests among you, seems you have been in the wilderness and have not yet received the news.~
-=~AO has indeed cast ALL gods out of Celestia and banned to the Prime to dwell here as mortals. Not just that, they are not just avatars while their immortal essence stayed at home, no, they are now vulnerable though still devastatingly powerful.~
-==ToAdon~Does anyone know why such a thing happened.~
-==Prihel~There was a theft, the Tablets of Fate are gone and the gods are relegated by angry AO until the thieves are found and the clay tablets returened.~
+=~AO has indeed cast ALL gods out of Celestia and banned to the Prime to dwell here as mortals. Not only that, they are not just avatars while their immortal essence stayed at home, no, they are now vulnerable though still devastatingly powerful.~
+==ToAdon~Does anyone know why such a thing happened?~
+==Prihel~There was a theft, the Tablets of Fate are gone and the gods are relegated by angry AO until the thieves are found and the clay tablets returned.~
 ==ToPellig~The only reason for such a deed can be one or more deities trying to gain power outside their portefolio which are chiseled onto those steles.~
 ==Prihel~Only the Unsleeping Eye, my master Helm, remains in full power to prevent any of the others to return.~
 ==CVSan25J~Absurd to assume that Mystra would do such a deed.~
@@ -130,3 +131,36 @@ END
 ++~Pelligram is right, it is the only way to get those overpowered nursery childs back to where they belong and where they can do only limited harm to the mortals.~DO~AddJournalEntry(@025,QUEST)~ EXIT
 ++~Not only would we do the Prime a favour, we may gain ourselves significantly in the process.~ DO~AddJournalEntry(@025,QUEST)~ EXIT
 ++~Apart from AO's gratitude we may even get the chance to eliminate some evil bastards while they are vulnerable.~DO~AddJournalEntry(@025,QUEST)~ EXIT
+
+CHAIN
+IF WEIGHT #-2~Global("ToGodwalk","Global",5)~THEN CVPotngi Malar
+~Give me a minute please, mighty adventurers.~
+DO~SetGlobal("ToGodwalk","Global",6)~
+==ToPellig~Sure, I can see you are a healer.~
+==CVPotngi~Not really, although I try to support them best I can with the herbs I collect.~
+=~Which brings me right to the topic.~
+==ToCyric~Hihi, helping gnomish herb collectors, is there anything we NOT do to prove ourselves fools? ~
+==ToAdon~You proof yourself a fool each time you open your mouth, thief.~
+==CVSan25J~Let the girl speak and then we decide if it is foolish or not, boys.~
+==CVPotngi~I was collecting Aescalus herb leaves in the Larswood. They grow particularly rich near the old druid circles there. But I just escaped with life hanging on a thread this time.~
+==ToCyric~Fine, some bandits for Godsbane to slaughter, let's go, hihi.~
+==CVPotngi~Oh, no, I can take care of bandits, they don't get to see a small one like me in the woods. There is greater danger out there these days. Druids and beasts, I think they were werewolves - and a new leader, I heard the name *Maller*.~
+END
+++~Gods walk Faerun now, you heard correctly, it must be Malar, the Beastlord.~ + Malar2
+++~We may look into this, from your description the new leader may be Malar himself.~+ Malar2
+
+CHAIN
+IF~~THEN CVPotngi Malar2
+~These gathered forces may be some challenge even for you, friends. You should get some silver weapons for this task. And you may have use of these potions if you decide to face them.~DO~GiveItemCreate("potn55",Player1,3,0,0) AddJournalEntry(@026,QUEST) EscapeAreaDestroy(60)~EXIT
+
+CHAIN
+IF~Global("ToGodwalk","Global",7)~THEN Tomalar Malar3
+~Unbelievers are approaching. (Sniff) Hateful Mystra...(Sniff) Stinking Sune...~
+DO~SetGlobal("ToGodwalk","Global",8)~
+==ToPellig~A nice gathering, Beastlord.~
+==ToCyric~Hihi, this pelt looks like it makes a nice cloak for you, Pelli-babe.~
+==ToPellig~You will never get the smell of its evil former owner out of it, Cyric. It is something to be left in their beloved nature to rot and feed the worms.~
+==ToCyric~I understand you perfectly, the endless cycle of nature and so on and blah and blah.~
+==CVSan25J~You still have a chance to leave these woods peacefully, Malar.~
+==ToMalar~And who are you to demand such? (Sniff) This is MY domain now, the forests of Faerun return to the regime of the beasts.~ DO~Enemy()~
+==TOAdon~There is nothing natural in lycanthropy, it is a desease to be stopped from spreading further.~EXIT

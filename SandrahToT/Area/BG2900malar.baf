@@ -1,0 +1,19 @@
+IF
+Global("ToGodwalk","Global",6)
+THEN
+RESPONSE #100
+SetGlobal("ToGodwalk","Global",7)
+CreateCreature("CVdrud4",[4367.1097],2)
+CreateCreature("CVDrud3",[4724.1006],8)
+CreateCreature("Tomalar",[4610.700],0)
+CreateCreature("werewogr",[4610.700],0)
+CreateCreature("werewogr",[4519.766],3)
+CreateCreature("werewogr",[4610.800],6)
+CreateCreature("werewogr",[4510.740],9)
+CreateCreature("werewogr",[4410.900],12)
+CreateCreature("werewogr",[4310.930],15)
+CreateCreature("werewogr",[4690.640],2)
+CreateCreature("werewogr",[4410.700],8)
+ActionOverride("CVdrud3",Enemy())
+ActionOverride("CVdrud4",Enemy())
+END

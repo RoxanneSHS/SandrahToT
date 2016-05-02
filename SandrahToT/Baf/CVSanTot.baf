@@ -115,6 +115,17 @@ THEN
 RESPONSE #100
 SetGlobal("ToGodwalk","Global",3)
 CreateCreatureObjectOffset("Prihel",Myself,[-25.-25])
+ActionOverride("Prihel",Dialog(Player1))
+END
+
+IF
+Global("ToGodwalk","Global",4)
+AreaType(CITY)
+AreaType(OUTDOOR)
+THEN
+RESPONSE #100
+SetGlobal("ToGodwalk","Global",5)
+CreateCreatureObjectOffset("CVPotngi",Myself,[-125.-125])
 END
 
 IF
