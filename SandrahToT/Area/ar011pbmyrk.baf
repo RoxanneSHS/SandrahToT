@@ -13,6 +13,9 @@ CreateCreature("CVVenne2",[508.3058],6)
 CreateCreature("orc01",[1076.3090],11)
 CreateCreature("orc04",[759.2627],14)
 CreateCreature("orc04",[1086.2839],6)
+CreateCreature("orc03",[763.3042],6)
+CreateCreature("orc04",[3506.2202],14)
+CreateCreature("orc04",[3579.2161],13)
 END
 
 IF
@@ -23,14 +26,34 @@ RESPONSE #100
 StartCutSceneMode()
 ActionOverride("CVVenne2",MoveViewObject(Myself,INSTANT))
 Wait(2)
-ActionOverride("CVVenne2",Dialog("CVShPri"))
+ActionOverride("ToAdon",JumpToPoint([438.3223]))
+SetGlobal("ToOrcActive","ar01pb",2)
+EndCutSceneMode()
+ActionOverride("CVVenne2",Dialog("Orc03"))
 END
 
 IF
 Global("ToOrcActive","ar01pb",3)
-PartyHasItemIdentified("ToScrl1")
 THEN
 RESPONSE #100
 SetGlobal("ToOrcActive","ar01pb",4)
+ActionOverride("Container1",CreateItem("Toscrl1",0,0,0))
+END
+
+IF
+Global("ToOrcActive","ar01pb",4)
+HPPercentLT("CVVenne2",70)
+THEN
+RESPONSE #100
+SetGlobal("ToOrcActive","ar01pb",5)
+ActionOverride("CVVenne2",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+END
+
+IF
+Global("ToOrcActive","ar01pb",5)
+PartyHasItemIdentified("ToScrl1")
+THEN
+RESPONSE #100
+SetGlobal("ToOrcActive","ar01pb",6)
 IncrementGlobal("ToTablet1","Global",1)
 END

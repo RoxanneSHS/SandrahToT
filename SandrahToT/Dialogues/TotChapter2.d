@@ -266,7 +266,7 @@ IF~Global("ToOrcActive","ar01pb",2) ~THEN CVShPri InTot1
 ~So says the Lord of Bones: *Know me and fear me. My embrace is for all and is patient but sure. The dead can always find you. My hand is everywhere - there is no door I cannot pass, nor guardian who can withstand me.* ~
 DO~SetGlobal("ToOrcActive","ar01pb",3)~
 ==Orc04~Hail Lord Myrkul!~
-==CVShPri~Hail The Reaper. And...death to the intruders I sense near. Get them.~ DO~		ActionOverride(Player1,MoveViewObject(Myself,INSTANT)) Wait(2) EndCutSceneMode()~EXIT
+==CVShPri~Hail The Reaper. And...death to the intruders I sense near. Get them.~ DO~ ActionOverride("ToAdon",JumpToPoint([5000.3700])) ActionOverride(Player1,MoveViewObject(Myself,INSTANT)) Wait(2) EndCutSceneMode()~EXIT
 
 CHAIN
 IF~Global("ToTablet1","Global",4)~THEN ToPellig Tab1Start2
