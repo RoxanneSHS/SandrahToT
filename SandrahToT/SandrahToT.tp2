@@ -7,7 +7,7 @@ AUTO_TRA ~SandrahTot/TRA/%s~
 LANGUAGE ~English~ ~english~ ~SandrahTot/Tra/SandrahTot.tra~
 
 BEGIN
-~Sandrah Times of Trouble Revisited Areas~
+~Sandrah Time of Trouble Revisited Areas~
 
 EXTEND_TOP
 ~AR0016.bcs~ ~SandrahTOT/Area/Ar0016TOT.baf~
@@ -45,6 +45,12 @@ EXTEND_TOP
 ~BG2900.bcs~ ~SandrahTOT/Area/BG2900malar.baf~
 EXTEND_BOTTOM
 ~CVRoan.bcs~ ~SandrahTOT/Area/CVRoanWauk.baf~
+EXTEND_BOTTOM
+~rtf005.bcs~ ~SandrahTOT/Area/rtf005sune.baf~
+EXTEND_BOTTOM
+~ar01pb.bcs~ ~SandrahTOT/Area/ar011pbmyrk.baf~
+EXTEND_TOP
+~bd7230.bcs~ ~SandrahTOT/Area/bd7230bhaal.baf~
 
 COPY ~SandrahToT\Area/TOT001.ARE~ ~override\TOT001.ARE~
 COPY ~SandrahToT\Area/TOT001.mos~ ~override\TOT001.mos~
@@ -65,7 +71,7 @@ COPY ~SandrahToT\Area/TOT002SR.bmp~ ~override\TOT002SR.bmp~
 COPY ~SandrahToT\Area/TOT003.ARE~ ~override\TOT003.ARE~
 
 BEGIN
-~Sandrah Times of Trouble Revisited Compiles~
+~Sandrah Time of Trouble Revisited Compiles~
 
 APPEND ~pdialog.2da~
 ~TOPellig *** *** *** TOPelliP TOPellig TOPelliD TOPellig~
@@ -111,13 +117,17 @@ EXTEND_TOP
 COMPILE
 ~SandrahTOT/Dialogues~
 
-COPY ~SandrahTOT/Baf/Santot.2DA~ ~override/SanTot.2DA~
+COPY ~SandrahTOT/Baf/Santot.2DA~ ~override~
 REPLACE ~ 99996~ @003
 REPLACE ~ 99996~ @003
 
 COPY ~SandrahTOT/Baf/Santot.2DA~ ~override/ToTQu1.2DA~
 REPLACE ~ 99996~ @013
 REPLACE ~ 99996~ @013
+
+COPY ~SandrahTOT/Baf/Tablete.2DA~ ~override~
+REPLACE ~ 289371~ @030
+REPLACE ~ 289371~ @030
 
 COPY ~SandrahTOT/Misc~ ~Override~
 
@@ -207,15 +217,36 @@ COPY ~SandrahTOT/Cre/CVDrud4.cre~ ~Override~
 SAY NAME1 ~Shadow Druid~
 SAY NAME2 ~Shadow Druid~
 
+COPY ~SandrahTOT/Cre/Tomyst.cre~ ~Override~
+SAY NAME1 Mystra
+SAY NAME2 Mystra
+
+COPY ~SandrahTOT/Cre/Tosune.cre~ ~Override~
+SAY NAME1 Sune
+SAY NAME2 Sune
+
+COPY_EXISTING ~prihel.cre~ ~override~
+              WRITE_ASCII 0x280 ~prihel~
+COPY_EXISTING ~orc04.cre~ ~override~
+              WRITE_ASCII 0x2cc ~Orc04~
 COPY ~SandrahTot/ITM/ToLiAmu.itm~ ~override~
 SAY NAME1 @019
 SAY NAME2 @019
 SAY DESC @018
 
-COPY_EXISTING ~prihel.cre~ ~override~
-              WRITE_ASCII 0x280 ~prihel~
-
 COPY ~SandrahTot/ITM/ToLiAmu.itm~ ~override/ToLiAm2.itm~
 SAY NAME1 @023
 SAY NAME2 @023
 SAY DESC @022
+
+COPY ~SandrahTot/ITM/Toscrl1.itm~ ~override~
+SAY NAME1 Letter
+SAY NAME2 Letter
+SAY UNIDENTIFIED_DESC Letter
+SAY DESC @031
+
+COPY ~SandrahTot/ITM/Toscrl2.itm~ ~override~
+SAY NAME1 Letter
+SAY NAME2 Letter
+SAY UNIDENTIFIED_DESC Letter
+SAY DESC @032

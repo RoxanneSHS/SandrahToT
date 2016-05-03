@@ -1,6 +1,9 @@
 BEGIN ToGoWa02
 BEGIN ToMalar
 BEGIN ToWaukee
+BEGIN ToMyst
+BEGIN ToSune
+BEGIN Orc04
 
 CHAIN
 IF WEIGHT #-5~GlobalGT("TOLiriquest","Global",8) Global("TOKelemQuest","Global",0)~ THEN              Portal  warnpon1
@@ -46,7 +49,7 @@ END
 
 CHAIN
 IF~~THEN ToKelem Whatwrong12
-~You mean that we may not all survive those *Times of Trouble*?~
+~You mean that we may not all survive this *Time of Trouble*?~
 ==CVSan25J~(Try to smile.) We are adventurers, we live a dangerous life from day to day.~
 ==ToKelem~You were never bothered about that in the way you are now.~
 ==CVSan25J~Gods in their avatars are still powerful beings, even when mortal. Chances are that people like us will cross their path.~
@@ -203,9 +206,9 @@ DO~SetGlobal("ToWaukGo","Global",7)~
 ==ToCyric~Waukeen has just left the building, as they say.~
 ==TOPellig~Waukeen has just left Toril, this is what you intended to say, Cyric.~
 ==ToKelem~She figured that the Prime was not a save place for her during these troubled times.~
-==CVWDWauk~Are you trying to imply thatWaukeen has sought shelter with those demons? ~
+==CVWDWauk~Are you trying to suggest that Waukeen has sought shelter with those demons? ~
 ==ToCyric~Business is business, isn't it. Looks like she made a deal. You may pray that she did not buy a one-way ticket.~
-==Tolini~Pray, Cyric? It looks like in these *Times of Trouble* as we now may very well call them, there is nobody left to send prayers, too.~
+==Tolini~Pray, Cyric? It looks like in this *Time of Trouble* as we now may very well call them, there is nobody left to send prayers, too.~
 END
 ++~What Liriel just said expresses well the situation we are in now. We are on our own in this trouble. Or we could say, the Prime is now fully ours, the plane of the mortals.~EXTERN Tokelem Waukgo3
 
@@ -224,3 +227,63 @@ IF~~THEN Tokelem Waukgo3
 ==ToCyric~Splendid ideas, girls, you are great inspirations, really. But why chose - why not take both and maybe even...~
 ==TOKelem~Stop it. madman!! And you, Pelligram, Midnight, what do you think you do? You put fuel to that idiot's fire! Just imagine he really starts to believe in such stuff. He's dangerous enough already.~
 ==TOAdon~Come. let us move before this gets out of hand.~EXIT
+
+CHAIN
+IF~Global("ToTablet1","Global",1)~THEN ToMyst Tab1Start1
+~Greetings, it is good that you finally found your way to us.~
+DO~ SetGlobal("ToTablet1","Global",2)~
+==Tosune~We knew you would come. I greet you, adventurers - Adon of Arabel, it is good you are now here.~
+==TOAdon~My lady Sune, you are as beautiful as I ever dreamt you were.~
+==ToPellig~Mystra, we have seen already a number of events giving us an initial impression about the current situation. With both of you being present here, our worst fears are confirmed.~
+==CVSan25J~Lady Mystra, my goddess, it is true that it was really you who gave me your attention in my student days. Each time I saw you in my dreams, I found that spells, which I had labored over for weeks, would suddenly work without any problem. ~
+==Tosune~Our power is limited on the Prime and we have joined our forces to call you to this place. Mystra protects me as good as she can, as she is partly one with the Weave and not even AO can fully separate the two.~
+==ToPellig~I have recognised that our spells are still intact even though followers of other gods seem to be limited in their use of magic.~
+==ToMyst~If you see spellcasters using their magic you can easily tell that the avatar of their god must be within some distance. Only in this case they can participate from the power of their celestial guardian.~
+=~Midnight, Pelligram, all of you, listen. We need your help. The Prime is your plane and your joint powers can almost match those of a cast out god. We need to return to Celestia and this is only by way of finding the stolen tablets.~
+==ToCyric~You know who has them, do you, hihi?~
+==ToSune~Not exactly, we just have some suspicion.~
+==CVSan25J~Obviously it is the deed of an evil power and maybe more than one god is required to face AO in that manner.~
+==ToMyst~Midnight, our thoughts are aligned in this...also we think it must be some gods who are still struggling with their role and trying to establish themselves.~
+==CVSan25J~The dead three...~
+==ToKelem~I never heard this expression.~
+==Tolini~Who would that be?~
+==CVSan25J~Eh...I mean...they are not dead - yet. Probably soon, when we find them. Actually I meant those three gods that put Jergal to death and divided his portilolio among each other.~
+==ToCyric~Clever deduction, that makes sense, the soon-to-be-dead three, Jergal's heirs...~
+==ToSune~Myrkul, Bane and Bhaal.~
+==ToPellig~They worked together in the past to gain immortality. They do it again to enrich their portefolios.~
+==ToCyric~And we eliminate them and acquire their power, wonderful, hihi.~
+==Tomyst~We will see about that last part. With the first half, to hunt and eliminate them, we can agree.~
+==ToSune~We are sure from our divinations that at least one of them and one of the tablets are in these parts of the Realms.~
+==ToPellig~I know of two places where we might start an investigation.~
+==CVSan25J~One may be a Bhaal temple somewhere in the vicinity of Boareskyr Bridge, Pelligram. Which is the other?~
+==ToPellig~Myrkul is worshipped by the Clan Orcs. In the Northern Woods between Secomber and Elturel there should be a stone cycle of his priests.~
+==ToMyst~Valid places to start an investigation. We trust you in this. Sooner or later those three may become aware of your pursuit. You may be lucky - or unlucky - in that they may as well try to find and get rid of you. We can only assist you in a limited way.~
+=~Pelligram, I will entrust you with this item which will grant your company some direct access to the Weave and your spells even now.~
+==ToPellig~The Simbul - I will be its guardian, mylady.~DO~AddJournalEntry(@030,QUEST) GiveItemCreate("Simbul","ToPellig",0,0,0) TextScreen("Tablete")~EXIT
+
+CHAIN
+IF~Global("ToOrcActive","ar01pb",2) ~THEN CVShPri InTot1
+~So says the Lord of Bones: *Know me and fear me. My embrace is for all and is patient but sure. The dead can always find you. My hand is everywhere - there is no door I cannot pass, nor guardian who can withstand me.* ~
+DO~SetGlobal("ToOrcActive","ar01pb",3)~
+==Orc04~Hail Lord Myrkul!~
+==CVShPri~Hail The Reaper. And...death to the intruders I sense near. Get them.~ DO~		ActionOverride(Player1,MoveViewObject(Myself,INSTANT)) Wait(2) EndCutSceneMode()~EXIT
+
+CHAIN
+IF~Global("ToTablet1","Global",4)~THEN ToPellig Tab1Start2
+~So we have learned a bit about what is going on by now.~
+DO~ SetGlobal("ToTablet1","Global",5)~
+==ToCyric~Oh, Pelli-babe, I so adore your intelligence, hihi. Just - what is it that we have learned?~
+==CVSan25J~Some B and B and M are working on a plan to find a better place to hide the tablets we search.~
+==ToAdon~B,B and M proofs our initial suspicion about the not-yet-dead-three.~
+==TOlini~I wonder what Tiamat has to do with those three, she is the Dragon Queen.~
+==ToPellig~The dragon is not part of AO's pantheon of Celestia - thus she is not subject to the overall crisis, hm.~
+==ToCyric~They lack your genius, admireable Pelli, maybe they don't know that. And maybe a little dragon breath can solve our problem with those goons.~
+==ToKelem~Hardly imaginable, madman. How would they not know about Tiamat?~
+==CVSan25J~What if the riddle is much easier - *With her blood spilled the access to the hideout for the tablets will be ours.* They need a bit of her blood to open the gate to where they want to secure the tablets.~
+==ToAdon~Not a bad analysis, I dare say. So what kind of gate is it that can be opened with dragon's blood only?~
+==ToCyric~??~
+==TOKelem~??~
+==ToPellig~Why not ask the Mistress of Mysteries?~
+END
+++~We may first try to consult a library of Oghma. Candlekeep comes to my mind here.~EXIT
+++~Yes, let us consult Mystra and Sune, the joint wisdom of two goddesses may help.~EXIT

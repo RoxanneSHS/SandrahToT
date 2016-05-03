@@ -1,0 +1,36 @@
+IF
+GlobalGT("ToTablet1","Global",1)
+Global("ToOrcActive","ar01pb",0)
+THEN
+RESPONSE #100
+SetGlobal("ToOrcActive","ar01pb",1)
+CreateCreature("orc01",[423.3042],0)
+CreateCreature("orc01",[4076.2554],10)
+CreateCreature("orc04",[3983.2689],4)
+CreateCreature("orc01",[1085.2713],6)
+CreateCreature("orc01",[3953.2582],9)
+CreateCreature("CVVenne2",[508.3058],6)
+CreateCreature("orc01",[1076.3090],11)
+CreateCreature("orc04",[759.2627],14)
+CreateCreature("orc04",[1086.2839],6)
+END
+
+IF
+Global("ToOrcActive","ar01pb",1)
+Delay(6)
+THEN
+RESPONSE #100
+StartCutSceneMode()
+ActionOverride("CVVenne2",MoveViewObject(Myself,INSTANT))
+Wait(2)
+ActionOverride("CVVenne2",Dialog("CVShPri"))
+END
+
+IF
+Global("ToOrcActive","ar01pb",3)
+PartyHasItemIdentified("ToScrl1")
+THEN
+RESPONSE #100
+SetGlobal("ToOrcActive","ar01pb",4)
+IncrementGlobal("ToTablet1","Global",1)
+END

@@ -1,0 +1,8 @@
+IF
+Global("ToBhaalActive","bd7230",2)
+PartyHasItemIdentified("ToScrl2")
+THEN
+RESPONSE #100
+SetGlobal("ToBhaalActive","bd7230",3)
+IncrementGlobal("ToTablet1","Global",1)
+END

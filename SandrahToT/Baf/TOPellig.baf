@@ -16,7 +16,9 @@ JoinParty()
 END
 
 IF
+OR(2)
 Global("ToPellJoin","RTF123",1)
+Global("ToTablet1","Global",4)
 THEN
 RESPONSE #100
 StartDialogueNoSet("TOPellig")

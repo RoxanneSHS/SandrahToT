@@ -1,0 +1,10 @@
+IF
+Global("SanTotStart","Global",1)
+GlobalGT("ToGodwalk","Global",5)
+Global("ToTablet1","Global",0)
+THEN
+RESPONSE #100
+SetGlobal("ToTablet1","Global",1)
+CreateCreature("Tosune",[1343.1489],4)
+CreateCreature("Tomyst",[1487.1459],6)
+END
