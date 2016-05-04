@@ -225,6 +225,22 @@ COPY ~SandrahTOT/Cre/Tosune.cre~ ~Override~
 SAY NAME1 Sune
 SAY NAME2 Sune
 
+COPY ~SandrahTOT/Cre/Tobhaal.cre~ ~Override~
+SAY NAME1 Bhaal
+SAY NAME2 Bhaal
+
+COPY ~SandrahTOT/Cre/Toalaun.cre~ ~Override~
+SAY NAME1 Alaundo
+SAY NAME2 Alaundo
+
+COPY ~SandrahTOT/Cre/Toaliann.cre~ ~Override~
+SAY NAME1 Alianna
+SAY NAME2 Alianna
+
+COPY ~SandrahTOT/Cre/Tosarevm.cre~ ~Override~
+SAY NAME1 Saliera
+SAY NAME2 Saliera
+
 COPY_EXISTING ~prihel.cre~ ~override~
               WRITE_ASCII 0x280 ~prihel~
 COPY_EXISTING ~orc04.cre~ ~override~
