@@ -38,22 +38,37 @@ THEN
 RESPONSE #100
 SetGlobal("ToOrcActive","ar01pb",4)
 ActionOverride("Container1",CreateItem("Toscrl1",0,0,0))
+TriggerActivation("TOMBDOOR",TRUE)
+TriggerActivation("FALSEDOOR",FALSE)
 END
 
 IF
 Global("ToOrcActive","ar01pb",4)
-HPPercentLT("CVVenne2",70)
 THEN
 RESPONSE #100
 SetGlobal("ToOrcActive","ar01pb",5)
-ActionOverride("CVVenne2",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+CreateCreature("sanclaho",[3983.2689],4)
+CreateCreature("sanclaho",[1085.2713],6)
+CreateCreature("sanclaho",[3953.2582],9)
+CreateCreature("sanclaho",[3425.3194],4)
+CreateCreature("sanclaho",[3348.980],6)
+CreateCreature("sanclaho",[1680.927],9)
 END
 
 IF
 Global("ToOrcActive","ar01pb",5)
-PartyHasItemIdentified("ToScrl1")
+HPPercentLT("CVVenne2",70)
 THEN
 RESPONSE #100
 SetGlobal("ToOrcActive","ar01pb",6)
+ActionOverride("CVVenne2",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+END
+
+IF
+Global("ToOrcActive","ar01pb",6)
+PartyHasItemIdentified("ToScrl1")
+THEN
+RESPONSE #100
+SetGlobal("ToOrcActive","ar01pb",7)
 IncrementGlobal("ToTablet1","Global",1)
 END

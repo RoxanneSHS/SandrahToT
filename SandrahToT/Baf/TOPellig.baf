@@ -16,9 +16,21 @@ JoinParty()
 END
 
 IF
+Global("ToTablet1","Global",4)
+!AreaCheck("bd7230")
+!AreaCheck("ar01pb")
+CombatCounter(0)
+!See([ENEMY])
+Delay(6)
+THEN
+RESPONSE #100
+SetGlobal("ToTablet1","Global",5)
+END
+
+IF
 OR(2)
 Global("ToPellJoin","RTF123",1)
-Global("ToTablet1","Global",4)
+Global("ToTablet1","Global",5)
 THEN
 RESPONSE #100
 StartDialogueNoSet("TOPellig")

@@ -5,7 +5,7 @@ THEN
 RESPONSE #100
 SetGlobal("ToBhaalActive","bd7230",1)
 CreateCreature("Toaliann",[763.1242],6)
-CreateCreature("Mel01",[457.1295],14)
+CreateCreature("TotMel",[457.1295],14)
 CreateCreature("Tosarevm",[557.1235],8)
 CreateCreature("BDCult21",[2457.1245],14)
 CreateCreature("BDCult20",[2257.1045],11)
@@ -18,4 +18,16 @@ THEN
 RESPONSE #100
 SetGlobal("ToBhaalActive","bd7230",3)
 IncrementGlobal("ToTablet1","Global",1)
+END
+
+IF
+OR(3)
+Dead("totmel01")
+Dead("Toaliann")
+Dead("Tosarevm")
+THEN
+RESPONSE #100
+Kill(Player1)
+Kill(Player2)
+Kill(Player3)
 END

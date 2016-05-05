@@ -4,6 +4,9 @@ BEGIN ToWaukee
 BEGIN ToMyst
 BEGIN ToSune
 BEGIN Orc04
+BEGIN Toaliann
+BEGIN Tosarevm
+BEGIN ToHelm
 
 CHAIN
 IF WEIGHT #-5~GlobalGT("TOLiriquest","Global",8) Global("TOKelemQuest","Global",0)~ THEN              Portal  warnpon1
@@ -269,9 +272,36 @@ DO~SetGlobal("ToOrcActive","ar01pb",3)~
 ==CVShPri~Hail The Reaper. And...death to the intruders I sense near. Get them.~ DO~ ActionOverride("ToAdon",JumpToPoint([5000.3700])) ActionOverride(Player1,MoveViewObject(Myself,INSTANT)) Wait(2) EndCutSceneMode()~EXIT
 
 CHAIN
-IF~Global("ToTablet1","Global",4)~THEN ToPellig Tab1Start2
+IF~Global("ToBhaalActive","bd7230",1)~THEN Tosarevm Mothers1
+~You seek for our Lord Bhaal in vain here, intruders.~
+DO~SetGlobal("ToBhaalActive","bd7230",2)~
+==SarMel01~You are bloodhounds, hunters, I see it. You are so arrogant as to chase gods.~
+==ToKelem~Woman, if there ever was a bloodhound worse than any other than it's the god of murder.~
+==Toaliann~Our beloved Lord has seen you coming but he will not die.~
+==ToCyric~He will have a hard time withstanding Godsbane.~
+==ToPellig~Cyric, I sometimes think you have the gift to see the future...~
+==ToCyric~You need no prophet for that, hihi, that guy's portefolio just would suit me too well, Pelli-babe.~
+==Tosarevm~Blasphemer...no one will take Lord Bhaal's place.~
+==CVSan25J~(Whispers almost like in a trance) Bhaal will not die, some bhaalspawns are already seeded...~
+==SarMel01~WHAT? Who are you, woman? How come you to know anything about our Lord's plans?~
+==ToCyric~Seems someone else sees the future as well, hihi.~
+==TOLini~Some of these women indeed seem to be pregnant.~
+==ToAdon~If they carry Bhaal's seed they must die!~
+==Tosarevm~No, you murderer! Mellisan, do something. Nobody shall hurt my little Sarevok.~
+==CVSan25J~We cannot do that, Adon. We are not like them. We cannot kill mothers with their innocent children.~
+==ToKelem~Innocent children? They are Bhaal's spawns!~
+==ToPellig~Midnight is right - they are innocent. Their blood does not define who they will be in later life.~
+==CVSan25J IF~Global("Sanrompath","Global",1)~THEN~Alianna, your son may one day become the God of Love and Hope despite his heritage.~
+==CVSan25J IF~Global("Sanrompath","Global",2)~THEN~Alianna, your daughter may one day become the Goddess of Love and Hope despite her heritage.~
+==Toaliann~Let the unborn live, we beg of you. I will give you what you are searching, take it and leave.~DO~GiveItemCreate("ToScrl2","ToPellig",0,0,0)~
+END
+++~We will leave, your life is doomed and there is no hope for any of you. Your children have the right to decide on their own fate, and I swear they will.~EXIT
+++~We will leave but others will come to end this. Bhaal will die soon and he will never return.~EXIT
+
+CHAIN
+IF~Global("ToTablet1","Global",5)~THEN ToPellig Tab1Start2
 ~So we have learned a bit about what is going on by now.~
-DO~ SetGlobal("ToTablet1","Global",5)~
+DO~ SetGlobal("ToTablet1","Global",6)~
 ==ToCyric~Oh, Pelli-babe, I so adore your intelligence, hihi. Just - what is it that we have learned?~
 ==CVSan25J~Some B and B and M are working on a plan to find a better place to hide the tablets we search.~
 ==ToAdon~B,B and M proofs our initial suspicion about the not-yet-dead-three.~
@@ -287,3 +317,34 @@ DO~ SetGlobal("ToTablet1","Global",5)~
 END
 ++~We may first try to consult a library of Oghma. Candlekeep comes to my mind here.~EXIT
 ++~Yes, let us consult Mystra and Sune, the joint wisdom of two goddesses may help.~EXIT
+
+CHAIN
+IF~ Global("ToTablet1","Global",6)~THEN ToSune Tab1Start3
+~You return with good or bad news, friends?~
+DO~ SetGlobal("ToTablet1","Global",7)~
+==Tomyst~Any news is welcome, I would say.~
+==ToCyric~Don't blame the messengers, hihi. Those soon-to-be the *Dead Three* are involved, just we had already suspected.~
+==ToPellig~We have some correspondence between B and B and M concerning the tablets. Those renegades seek a better hiding place for their booty, if we read those scribbles correctly.~
+==ToAdon~They want to hide it in a place requiring Tiamat's blood to access.~
+==ToMyst~Not so dumb of them - the horde of the Dragon goddess is shielded from any scrutiny, be it by mortal or mortal god or even immortal AO.~
+==ToKelem~We have no idea where such a place would be found.~
+==ToSune~Hm...~
+==CVSan25J~I had the idea that a library of Oghma may have such information.~
+==ToMyst~In deed - even I have no such lore but the ancient scrolls and books may tell you.~
+END
+++~We will try to enter Candlekeep further south on the Coast, it is the nearest place to hold such knowledge.~EXIT
+++~We found some additional disturbing evidence concerning Bhaal. He prepares for his eventual return already for the case he may not survive the current avatar crisis.~EXTERN ToMyst Bhaalwarn1
+
+CHAIN
+IF~~THEN ToMyst Bhaalwarn1
+~How could that be accomplished? Hm, he would need to secure his celestial essence somehow to later reclaim it. Anyway it would weaken him while he walks the Prime.~
+==ToKelem~He seeds children with different mothers, probably each of them inheriting some of his essence...~
+==ToAdon~But - would he not need to have these children killed to regain their essence when he needs it?~
+==ToCyric~Hihi, that's no problem for the guy, hey, he's the god of murder, after all!~
+==ToPellig~His loyal followers would happily sacrifice those children once the crisis is over and their lord and master is ready to return.~
+==ToMyst~First things first, friends. At the moment all of the three renegades are still alive and the tablets are our initial priority.~
+==CVSan25J~So our next step is Candlekeep and then we will see what hints we get there.~EXIT 
+
+CHAIN
+IF~True()~THEN ToHelm init
+~No trespassing the Celestial Stairs.~EXIT

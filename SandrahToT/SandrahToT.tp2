@@ -51,6 +51,8 @@ EXTEND_BOTTOM
 ~ar01pb.bcs~ ~SandrahTOT/Area/ar011pbmyrk.baf~
 EXTEND_TOP
 ~bd7230.bcs~ ~SandrahTOT/Area/bd7230bhaal.baf~
+EXTEND_TOP
+~rtf004.bcs~ ~SandrahTOT/Area/RTF004trans.baf~
 
 COPY ~SandrahToT\Area/TOT001.ARE~ ~override\TOT001.ARE~
 COPY ~SandrahToT\Area/TOT001.mos~ ~override\TOT001.mos~
@@ -69,6 +71,35 @@ COPY ~SandrahToT\Area/TOT002LM.bmp~ ~override\TOT002LM.bmp~
 COPY ~SandrahToT\Area/TOT002SR.bmp~ ~override\TOT002SR.bmp~
 
 COPY ~SandrahToT\Area/TOT003.ARE~ ~override\TOT003.ARE~
+
+COPY ~SandrahToT\Area/TOT004.ARE~ ~override\TOT004.ARE~
+COPY ~SandrahToT\Area/TOT004.mos~ ~override\TOT004.mos~
+COPY ~SandrahToT\Area/TOT004.tis~ ~override\TOT004.tis~
+COPY ~SandrahToT\Area/TOT004.wed~ ~override\TOT004.wed~
+COPY ~SandrahToT\Area/TOT004HT.bmp~ ~override\TOT004HT.bmp~
+COPY ~SandrahToT\Area/TOT004LM.bmp~ ~override\TOT004LM.bmp~
+COPY ~SandrahToT\Area/TOT004SR.bmp~ ~override\TOT004SR.bmp~
+
+COPY ~SandrahToT\Area/TOT005.ARE~ ~override\TOT005.ARE~
+COPY ~SandrahToT\Area/TOT005.mos~ ~override\TOT005.mos~
+COPY ~SandrahToT\Area/TOT005.tis~ ~override\TOT005.tis~
+COPY ~SandrahToT\Area/TOT005.wed~ ~override\TOT005.wed~
+COPY ~SandrahToT\Area/TOT005HT.bmp~ ~override\TOT005HT.bmp~
+COPY ~SandrahToT\Area/TOT005LM.bmp~ ~override\TOT005LM.bmp~
+COPY ~SandrahToT\Area/TOT005SR.bmp~ ~override\TOT005SR.bmp~
+COMPILE ~SandrahToT\Area/TOTG05.BAF~
+
+EXTEND_BOTTOM
+~tot001.bcs~ ~SandrahTOT/Area/pellfoll.baf~
+EXTEND_BOTTOM
+~tot002.bcs~ ~SandrahTOT/Area/pellfoll.baf~
+EXTEND_BOTTOM
+~tot003.bcs~ ~SandrahTOT/Area/pellfoll.baf~
+EXTEND_BOTTOM
+~tot004.bcs~ ~SandrahTOT/Area/pellfoll.baf~
+EXTEND_BOTTOM
+~tot005.bcs~ ~SandrahTOT/Area/pellfoll.baf~
+
 
 BEGIN
 ~Sandrah Time of Trouble Revisited Compiles~
@@ -240,6 +271,18 @@ SAY NAME2 Alianna
 COPY ~SandrahTOT/Cre/Tosarevm.cre~ ~Override~
 SAY NAME1 Saliera
 SAY NAME2 Saliera
+
+COPY ~SandrahTOT/Cre/Totmel.cre~ ~Override~
+SAY NAME1 Melissan
+SAY NAME2 Melissan
+
+COPY ~SandrahTOT/Cre/ToHelm.cre~ ~Override~
+SAY NAME1 Helm
+SAY NAME2 Helm
+
+COPY ~SandrahTOT/Cre/ToPriHel.cre~ ~Override~
+SAY NAME1 ~Priest of Helm~
+SAY NAME2 ~Priest of Helm~
 
 COPY_EXISTING ~prihel.cre~ ~override~
               WRITE_ASCII 0x280 ~prihel~
