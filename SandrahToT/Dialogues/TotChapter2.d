@@ -8,6 +8,8 @@ BEGIN Toaliann
 BEGIN Tosarevm
 BEGIN ToHelm
 BEGIN ToInnke
+BEGIN ToBhaal
+BEGIN ToAlaun
 
 CHAIN
 IF WEIGHT #-5~GlobalGT("TOLiriquest","Global",8) Global("TOKelemQuest","Global",0)~ THEN              Portal  warnpon1
@@ -353,3 +355,37 @@ IF~True()~THEN ToHelm init
 CHAIN
 IF~True()~THEN ToInnke sell
 ~We got ale, we got armor, we got... Ah hell, this is old hat. Ye know what it is we all got.~DO~StartStore("Inn2616",LastTalkedToBy(Myself))~EXIT
+
+CHAIN
+IF~ Global("ToTablet1","Global",7)~THEN ToBhaal Alaun1
+~YOU WILL NOT CHANGE A SINGLE SILABLE OF THIS DICTATE, OGHMA'S SLAVE!~
+DO~ SetGlobal("ToTablet1","Global",8)~
+==ToAlaun~I...I have noted down every word as you spoke it, my-my L-Lord.~
+==ToBhaal~This - YOUR PROPHESY - will be spread through the Realms from here, this is my command. Beginning exactly one mortal year from this day, the text will be recited each noon within the walls of Candlekeep or Candlekeep will be destroyed down to its catacombs. This is my will.~
+==ToAlaun~The recitations and the copies will be done as you have commanded, I-i h-have seen your power, L-Lord. No more murders, w-we do as told.~
+=~May O-Oghma forgive me.~
+==ToBhaal~Spare me your babbling, your fear makes you a mad but useful instrument - as long as you play my tune, I will spare your pathetic Candlekeep.~DO~Polymorph(SLAYER) Wait(4) MoveToPoint([1108.788]) Wait(4) DestroySelf()~EXIT
+
+CHAIN
+IF~ Global("ToTablet1","Global",8)~THEN ToAlaun Alaun2
+~(The eyes of the monk are wide with fear, his stare is mad from the encounter he just survived.)~
+DO~ SetGlobal("ToTablet1","Global",9)~
+==ToKelem~Who was that visitor, did he murder those monks?~
+==ToAlaun~The Lord of Murder shall perish
+But in his doom he shall spawn a score of mortal progeny...~
+==CVSan25J~...Chaos will be sown from their passing
+So sayeth the wise Alaundo.~
+==ToAlaun~These and the other words that were revealed to me will be sung in the garden each day at noon or Candlekeep will be destroyed.~
+==ToPellig~This is what your visitor has demanded and he promised to let you and your remaining brothers of Oghma stay alive for it.~
+==ToLini~What else did he give you to *prohesize*?~
+==ToAlaun~The spawn of the Lord of Murder are fated to come into their inheritance through bloodshed and misery. It is the hope of their father that only one shall remain alive to inherit his legacy. I foresee that the children of Bhaal shall kill each other in a bloody massacre.~
+==CVSan25J~It seems that we interupted your guest before he could finish his sermon.~
+=~Write:
+*During the days of the Avatars, the Lord of Murder will spawn a score of mortal progeny. These offspring will be aligned good and evil, but chaos will flow through them all. When the Beast's bastard children come of age, they will bring havoc to the lands of the Sword Coast. One of these children must rise above the rest and claim their father's legacy. This inheritor will shape the history of the Sword Coast for centuries to come.~
+==ToAlaun~Are we finished now...? I-I must rest.~DO~ApplySpellRES("BGSLEEP","ToAlaun")~
+==CVSan25J~Yes, that is all.~
+==ToCyric~Hihi, Midnight, I must admit you're really god at that - I have the feeling you know who that scary guy was?~
+==ToKelem~This is madness, Midnight, what game do you play here?~
+==CVSan25J~This creature was Bhaal himself and he planted the seed of his contingency plan here today.~
+==ToKelem~And you help him with that?~
+==CVSan25J~Not at all, I gave the turning wheel a little extra spin. When the roulette finally will stop, Bhaal will find himself the loser in his own game.~EXIT

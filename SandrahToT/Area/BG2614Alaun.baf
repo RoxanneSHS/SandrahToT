@@ -1,0 +1,34 @@
+IF
+Global("ToTablet1","Global",7)
+Global("PapInChest","BG2614",1)
+THEN
+RESPONSE #100
+SetGlobal("PapInChest","BG2614",2)
+ActionOverride("Container 6",CreateItem("ToDrabok",0,0,0))
+ActionOverride("Tethtoril2",DestroySelf())
+ActionOverride("Ulraunt",DestroySelf())
+END
+
+IF
+Global("PapInChest","BG2614",2)
+Global("ToTablet1","Global",7)
+THEN
+RESPONSE #100
+SetGlobal("PapInChest","BG2614",3)
+CreateCreature("Toalaun",[1084.665],0)
+CreateCreature("Tobhaal",[858.691],12)
+CreateCreature("ToDedMon",[850.671],12)
+CreateCreature("ToDedMon",[830.651],7)
+CreateCreature("ToDedMon",[858.700],1)
+CreateCreature("ToDedMon",[770.671],9)
+END
+
+IF
+Global("PapInChest","BG2614",3)
+THEN
+RESPONSE #100
+SetGlobal("PapInChest","BG2614",4)
+Kill("Gatewa2")
+Wait(4)
+ActionOverride("Tobhaal",Dialogue("Tobhaal"))
+END

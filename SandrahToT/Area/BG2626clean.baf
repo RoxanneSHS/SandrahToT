@@ -6,3 +6,10 @@ RESPONSE #100
 SetGlobal("Gorstatue","BG2626",2)
 ActionOverride("Gorions",DestroySelf())
 END
+
+IF
+Global("ToTablet1","Global",6)
+THEN
+RESPONSE #100
+SetGlobal("ToTablet1","Global",7)
+END
