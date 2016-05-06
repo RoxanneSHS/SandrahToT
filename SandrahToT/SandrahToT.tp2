@@ -53,6 +53,10 @@ EXTEND_TOP
 ~bd7230.bcs~ ~SandrahTOT/Area/bd7230bhaal.baf~
 EXTEND_TOP
 ~rtf004.bcs~ ~SandrahTOT/Area/RTF004trans.baf~
+EXTEND_TOP
+~bg2629.bcs~ ~SandrahTOT/Area/bg2629clean.baf~
+EXTEND_TOP
+~bg2626.bcs~ ~SandrahTOT/Area/bg2626clean.baf~
 
 COPY ~SandrahToT\Area/TOT001.ARE~ ~override\TOT001.ARE~
 COPY ~SandrahToT\Area/TOT001.mos~ ~override\TOT001.mos~
@@ -283,11 +287,12 @@ SAY NAME2 Helm
 COPY ~SandrahTOT/Cre/ToPriHel.cre~ ~Override~
 SAY NAME1 ~Priest of Helm~
 SAY NAME2 ~Priest of Helm~
+ 
+COPY_EXISTING ~innke2.cre~ ~override/ToInnke.cre~
+SAY NAME1 Gustaf
+SAY NAME2 Gustaf
+WRITE_ASCII 0x2cc ~Toinnke~
 
-COPY_EXISTING ~prihel.cre~ ~override~
-              WRITE_ASCII 0x280 ~prihel~
-COPY_EXISTING ~orc04.cre~ ~override~
-              WRITE_ASCII 0x2cc ~Orc04~
 COPY ~SandrahTot/ITM/ToLiAmu.itm~ ~override~
 SAY NAME1 @019
 SAY NAME2 @019

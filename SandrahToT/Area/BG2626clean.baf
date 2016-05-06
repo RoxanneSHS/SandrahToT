@@ -1,0 +1,8 @@
+IF
+Global("SanTotStart","Global",1)
+Global("Gorstatue","BG2626",1)
+THEN
+RESPONSE #100
+SetGlobal("Gorstatue","BG2626",2)
+ActionOverride("Gorions",DestroySelf())
+END

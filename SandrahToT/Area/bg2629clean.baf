@@ -1,0 +1,9 @@
+IF
+Global("SanTotStart","Global",1)
+Global("TotClean","bg2629",0)
+THEN
+RESPONSE #100
+SetGlobal("TotClean","bg2629",1)
+ActionOverride("winthr2",DestroySelf())
+CreateCreature("ToInnke",[648.399],4)
+END

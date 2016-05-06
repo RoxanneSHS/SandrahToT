@@ -7,6 +7,7 @@ BEGIN Orc04
 BEGIN Toaliann
 BEGIN Tosarevm
 BEGIN ToHelm
+BEGIN ToInnke
 
 CHAIN
 IF WEIGHT #-5~GlobalGT("TOLiriquest","Global",8) Global("TOKelemQuest","Global",0)~ THEN              Portal  warnpon1
@@ -323,7 +324,7 @@ IF~ Global("ToTablet1","Global",6)~THEN ToSune Tab1Start3
 ~You return with good or bad news, friends?~
 DO~ SetGlobal("ToTablet1","Global",7)~
 ==Tomyst~Any news is welcome, I would say.~
-==ToCyric~Don't blame the messengers, hihi. Those soon-to-be the *Dead Three* are involved, just we had already suspected.~
+==ToCyric~Don't blame the messengers, hihi. Those soon-to-be the *Dead Three* are involved, just like we had already suspected.~
 ==ToPellig~We have some correspondence between B and B and M concerning the tablets. Those renegades seek a better hiding place for their booty, if we read those scribbles correctly.~
 ==ToAdon~They want to hide it in a place requiring Tiamat's blood to access.~
 ==ToMyst~Not so dumb of them - the horde of the Dragon goddess is shielded from any scrutiny, be it by mortal or mortal god or even immortal AO.~
@@ -343,8 +344,12 @@ IF~~THEN ToMyst Bhaalwarn1
 ==ToCyric~Hihi, that's no problem for the guy, hey, he's the god of murder, after all!~
 ==ToPellig~His loyal followers would happily sacrifice those children once the crisis is over and their lord and master is ready to return.~
 ==ToMyst~First things first, friends. At the moment all of the three renegades are still alive and the tablets are our initial priority.~
-==CVSan25J~So our next step is Candlekeep and then we will see what hints we get there.~EXIT 
+==CVSan25J~So our next step is Candlekeep and then we will see what hints we get there.~EXIT
 
 CHAIN
 IF~True()~THEN ToHelm init
 ~No trespassing the Celestial Stairs.~EXIT
+
+CHAIN
+IF~True()~THEN ToInnke sell
+~We got ale, we got armor, we got... Ah hell, this is old hat. Ye know what it is we all got.~DO~StartStore("Inn2616",LastTalkedToBy(Myself))~EXIT
