@@ -53,3 +53,28 @@ END
 ++~(You take him in your arms and soothe him wordlessly.)~EXIT
 ++~You are strong now, strong enough not to let it happen again - not to me.~EXIT
 ++~You are not alone anymore, you and me, we are strong together.~EXIT
+
+CHAIN
+IF~Global("CVabaz","AR6005",6)~THEN ToBane Abalair2
+~Hold, mortals, whoever you are...we seem to be weaker on your Plane than we thought.~
+DO~SetGlobal("CVabaz","AR6005",7)~
+==ToLini~Do you surrender, Bane?~
+==ToCyric~Hihi, we have defeated a GOD, hihi.~
+==ToBane~Not so fast...Gods do not surrender, nor do they die, nor are they ever defeated.~
+==ToPellig~(Mumbles) I heard this erroneous statement before...~
+==ToBane~Gods make offers. Call it a bargain.~
+==ToKelem~You think you can buy your miserable forfeit existance from us with a petty gift, you has-been deity?~
+==ToBane~Kelemvor Lyonsbane - I may have something to offer to you that may change your attitude.~
+END
+++~Kelemvor, my love, listen to him. You told me that the sorceress who cursed your family was drawing her powers from The Black Hand. He can remove your curse.~ + Abalair3
+++~Kelemvor, my love, do not listen to him, he will trick you with the promise to remove the Lyonsbane curse from you. We follow a higher goal.~+ Abalair3
+
+CHAIN
+IF~~THEN ToBane Abalair3
+~The curse of the Lyonsbanes. It will be gone forever, Kelemvor. I will walk through this portal and yours and Midnight's children and all future generations will be free of that.~
+==ToPellig~Do it, Kelemvor, take this chance, we tracked him once and we know where he will go to meet his allies. We will get them again.~
+==ToCyric~Dare it, you traitor, there is more at stake here than your silly family plans.~
+==ToAdon~Pelligram is right, we will trap the three of them together pretty soon but your chance may be gone by that time.~
+==ToKelem~I would never take a personal benefit from an evil being like you, Bane. But it is not me alone, I have to think of the one I love and my children and children's children...~
+=~I accept your offer - you are free to go.~
+==ToBane~A wise decision.~DO~ StartCutSceneMode() Wait(2) CreateVisualEffectObject("SPUNHOLY","Tokelem") Wait(6) CreateVisualEffectObject("SPUNHOLY","Tokelem") Wait(6) MoveToPoint([779.495]) Wait(4) EndCutSceneMode() DestroySelf()~EXIT

@@ -59,6 +59,12 @@ EXTEND_TOP
 ~bg2626.bcs~ ~SandrahTOT/Area/bg2626clean.baf~
 EXTEND_TOP
 ~bg2614.bcs~ ~SandrahTOT/Area/BG2614Alaun.baf~
+EXTEND_TOP
+~ar6000.bcs~ ~SandrahTOT/Area/ar6000tia.baf~
+EXTEND_TOP
+~ar6001.bcs~ ~SandrahTOT/Area/ar6001tot.baf~
+EXTEND_TOP
+~ar6005.bcs~ ~SandrahTOT/Area/ar6005abaz.baf~
 
 COPY ~SandrahToT\Area/TOT001.ARE~ ~override\TOT001.ARE~
 COPY ~SandrahToT\Area/TOT001.mos~ ~override\TOT001.mos~
@@ -286,9 +292,25 @@ COPY ~SandrahTOT/Cre/ToHelm.cre~ ~Override~
 SAY NAME1 Helm
 SAY NAME2 Helm
 
+COPY ~SandrahTOT/Cre/ToBane.cre~ ~Override~
+SAY NAME1 Bane
+SAY NAME2 Bane
+
+COPY ~SandrahTOT/Cre/ToMyrkul.cre~ ~Override~
+SAY NAME1 Myrkul
+SAY NAME2 Myrkul
+
 COPY ~SandrahTOT/Cre/ToPriHel.cre~ ~Override~
 SAY NAME1 ~Priest of Helm~
 SAY NAME2 ~Priest of Helm~
+
+COPY ~SandrahTOT/Cre/ToDragba.cre~ ~Override~
+SAY NAME1 ~Brown Dragon~
+SAY NAME2 ~Brown Dragon~
+
+COPY ~SandrahTOT/Cre/Toabaz.cre~ ~Override~
+SAY NAME1 ~Abazigal~
+SAY NAME2 ~Abazigal~
 
 COPY ~SandrahTOT/Cre/ToDedMon.cre~ ~Override~
 SAY NAME1 ~Monk of Oghma~

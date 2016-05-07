@@ -1,0 +1,59 @@
+IF
+Global("ToTablet1","Global",9)
+Global("CVabaz","AR6005",0)
+THEN
+RESPONSE #100
+SetGlobal("CVabaz","AR6005",1)
+CreateCreature("ToDragba",[1453.1323],8)
+CreateCreature("Toabaz",[1605.1237],9)
+END
+
+IF
+Global("CVabaz","AR6005",2)
+THEN
+RESPONSE #100
+SetGlobal("CVabaz","AR6005",3)
+CreateCreature("Tobhaal",[814.600],10)
+CreateCreature("Tobane",[932.688],12)
+CreateCreature("ToMyrkul",[772.658],7)
+END
+
+IF
+Global("CVabaz","AR6005",4)
+THEN
+RESPONSE #100
+SetGlobal("CVabaz","AR6005",5)
+CreateCreature("Bonebld",[1031.798],8)
+CreateCreature("Bonebld",[866.1034],5)
+CreateCreature("Bonebld",[1206.934],6)
+ActionOverride("ToMyrkul",EscapeAreaDestroy(45))
+END
+
+IF
+Global("CVabaz","AR6005",5)
+HPLT("Tobane",100)
+THEN
+RESPONSE #100
+SetGlobal("CVabaz","AR6005",6)
+ClearAllActions()
+StartCutSceneMode()
+ClearAllActions()
+ChangeEnemyAlly("Tobane",NEUTRAL)
+Wait(2)
+ActionOverride("Tobane",StartDialogueNoSet("Tobane"))
+END
+
+IF
+OR(5)
+Dead("Toabaz")
+Dead("Tobane")
+Dead("Tobhaal")
+Dead("Tomyrkul")
+Dead("ToDragba")
+THEN
+RESPONSE #100
+Kill(Player1)
+Kill(Player2)
+Kill(Player3)
+END
+

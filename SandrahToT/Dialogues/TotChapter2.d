@@ -10,6 +10,9 @@ BEGIN ToHelm
 BEGIN ToInnke
 BEGIN ToBhaal
 BEGIN ToAlaun
+BEGIN ToDragBa
+BEGIN ToBane
+BEGIN ToMyrkul
 
 CHAIN
 IF WEIGHT #-5~GlobalGT("TOLiriquest","Global",8) Global("TOKelemQuest","Global",0)~ THEN              Portal  warnpon1
@@ -361,10 +364,10 @@ IF~ Global("ToTablet1","Global",7)~THEN ToBhaal Alaun1
 ~YOU WILL NOT CHANGE A SINGLE SILABLE OF THIS DICTATE, OGHMA'S SLAVE!~
 DO~ SetGlobal("ToTablet1","Global",8)~
 ==ToAlaun~I...I have noted down every word as you spoke it, my-my L-Lord.~
-==ToBhaal~This - YOUR PROPHESY - will be spread through the Realms from here, this is my command. Beginning exactly one mortal year from this day, the text will be recited each noon within the walls of Candlekeep or Candlekeep will be destroyed down to its catacombs. This is my will.~
+==ToBhaal~This - YOUR PROPHESY - will be spread through the Realms from here, this is my command. Beginning exactly one mortal year from this day, the text will be recited each noon within the walls of Candlekeep - OR Candlekeep will be destroyed down to its catacombs. This is my will.~
 ==ToAlaun~The recitations and the copies will be done as you have commanded, I-i h-have seen your power, L-Lord. No more murders, w-we do as told.~
 =~May O-Oghma forgive me.~
-==ToBhaal~Spare me your babbling, your fear makes you a mad but useful instrument - as long as you play my tune, I will spare your pathetic Candlekeep.~DO~Polymorph(SLAYER) Wait(4) MoveToPoint([1108.788]) Wait(4) DestroySelf()~EXIT
+==ToBhaal~Spare me your babbling, your fear makes you a mad but useful instrument. As long as you play my tune, I will spare your pathetic Candlekeep.~DO~Polymorph(SLAYER) Wait(4) MoveToPoint([1108.788]) Wait(4) DestroySelf()~EXIT
 
 CHAIN
 IF~ Global("ToTablet1","Global",8)~THEN ToAlaun Alaun2
@@ -377,15 +380,71 @@ But in his doom he shall spawn a score of mortal progeny...~
 So sayeth the wise Alaundo.~
 ==ToAlaun~These and the other words that were revealed to me will be sung in the garden each day at noon or Candlekeep will be destroyed.~
 ==ToPellig~This is what your visitor has demanded and he promised to let you and your remaining brothers of Oghma stay alive for it.~
-==ToLini~What else did he give you to *prohesize*?~
+==ToLini~What else did he give you to *prohesy*?~
 ==ToAlaun~The spawn of the Lord of Murder are fated to come into their inheritance through bloodshed and misery. It is the hope of their father that only one shall remain alive to inherit his legacy. I foresee that the children of Bhaal shall kill each other in a bloody massacre.~
-==CVSan25J~It seems that we interupted your guest before he could finish his sermon.~
+==CVSan25J~It seems that we interrupted your guest before he could finish his sermon.~
 =~Write:
 *During the days of the Avatars, the Lord of Murder will spawn a score of mortal progeny. These offspring will be aligned good and evil, but chaos will flow through them all. When the Beast's bastard children come of age, they will bring havoc to the lands of the Sword Coast. One of these children must rise above the rest and claim their father's legacy. This inheritor will shape the history of the Sword Coast for centuries to come.~
 ==ToAlaun~Are we finished now...? I-I must rest.~DO~ApplySpellRES("BGSLEEP","ToAlaun")~
 ==CVSan25J~Yes, that is all.~
-==ToCyric~Hihi, Midnight, I must admit you're really god at that - I have the feeling you know who that scary guy was?~
+==ToCyric~Hihi, Midnight, I must admit you're really good at that - I have the feeling you know who that scary guy was?~
 ==ToKelem~This is madness, Midnight, what game do you play here?~
-==CVSan25J~This creature was Bhaal himself and he planted the seed of his contingency plan here today.~
+==CVSan25J~This creature was Bhaal himself and he planted another seed of his contingency plan here today.~
 ==ToKelem~And you help him with that?~
 ==CVSan25J~Not at all, I gave the turning wheel a little extra spin. When the roulette finally will stop, Bhaal will find himself the loser in his own game.~EXIT
+
+CHAIN
+IF~Global("CVTiamal","AR6000",3)~THEN CVTiamal  Intrud1
+~One bunch of intruders after the other today.~
+DO~SetGlobal("CVTiamal","AR6000",4)~
+==ToPellig~We are not like the previous ones, Tiamat. You are injured, let me heal you with a spell, majesty.~
+==CVTiamal~It is nothing, it is healing fast. They just took me by surprise, those have-been gods. You are indeed different - you know who I am.~
+==ToPellig~We came to prevent what has now been done already, we are persuing the three fallen gods.~
+==ToCyric~The soon-to-be "Dead Three", hihi.~
+==CVTiamal~Be careful and not too proud, mortals. Those three are still powerful and dangerous and they act precise and quick.~
+==ToCyric~That describes our own style just as well. They just scratched you a bit to draw some blood but did not stay to fight. Where did they go?~
+==CVTiamal~You're clever, mortal. They needed the blood to open my lair.~
+==ToKelem~They want to hide their theft from the scrutiny of other gods in there.~
+==CVTiamal~Their theft? I'd call it their monstrosity.~
+==CVSan25J~They brought a dragon with them?~
+==CVTiamal~Some enslaved brown dragon and its halfbred abnormity.~
+END
+++~(Mumble) Abazigal is already born...~+ Intrud2
+++~We will follow them quickly and see what can be saved still.~ + Intrud2
+++~You and your kin will be revenged, this is our promise.~ + Intrud2
+
+CHAIN
+IF~~THEN CVTiamal  Intrud2
+~I will leave them to you. My lair in this region is defiled. This is no place for the Dragon Queen anymore.~DO~EscapeAreaDestroy(55)~EXIT
+
+CHAIN
+IF~GlobalGT("CVabaz","AR6005",1)~THEN ToDragBa Breed2
+~The brown dragon stares at you with glazed eyes only.~EXIT
+
+CHAIN
+IF~Global("CVabaz","AR6005",1)~THEN ToDragBa Breed1
+~The brown dragon stares at you with glazed eyes only.~
+DO~SetGlobal("CVabaz","AR6005",2)~
+==ToLini~Look! It has a small one.~
+==ToAdon~This apathy is not from brooding. It looks like a creature under a geas.~
+==ToCyric~Hihi, someone has the power to put a mighty dragon into such a state to make him hatch an egg...that must be our guys. Wonder what's this all about.~
+==CVSan25J~A bhaalspawn. We best leave those creatures alone.~
+==ToKelem~We--best--leave--a--dragon--nursing--a--bhaalspawn--alone?~
+==ToCyric~Hihi, that's exactly what our beloved Midnight said. Look at her, she seems to be under that spell as well.~
+END
+++~I am not! Let us forget the dragon, we need to make haste to find the renegades.~EXIT
+++~The dragon is not our enemy but another victim of the beasts we chase - and they will escape if we do not move on.~EXIT
+++~The creatures are helpless, there is no honour in slaying them.~EXIT
+
+CHAIN
+IF~Global("ToTablet1","Global",9)~THEN ToBane Abalair
+~Mortals dare to intrude HERE? How is that?~
+DO~SetGlobal("ToTablet1","Global",10) SetGlobal("CVabaz","AR6005",4)~
+==ToBhaal~Persistent little maggots, didn't I see them when I taught those Oghma monks their new tune?~ DO~MoveToPoint([779.495]) EscapeAreaDestroy(45)~
+==ToMyrkul~You saw them once already? Are they persuing us, you mean?~
+==ToBane~What kind of *god of murder* are you, Bhaal, to keep them alive?~
+==ToCyric~Aren't they like little boys bickering in the playground, our soon-to-be "Dead Three", hihi.~
+==ToMyrkul~We have no time to waste it with a bunch of over confident adventurers.~
+==ToBane~We need to do what friend Bhaal forgot while sputtering his stupid godly essence around. ~DO~Enemy()~
+==TOMyrkul~Finish them up, Myrkul, we meet you at Blackstaff Tower.~DO~EscapeAreaDestroy(45)~EXIT
+

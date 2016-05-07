@@ -1,0 +1,12 @@
+IF
+Global("ToTablet1","Global",9)
+Global("CVabaz","AR6001",0)
+THEN
+RESPONSE #100
+SetGlobal("CVabaz","AR6001",2)
+CreateCreature("Bonebld",[878.664],2)
+CreateCreature("Bonebld",[866.1034],5)
+CreateCreature("Bonebld",[1206.934],6)
+CreateCreature("Bonebld",[866.1034],5)
+CreateCreature("Bonebld",[860.634],6)
+END

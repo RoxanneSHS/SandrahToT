@@ -1,0 +1,10 @@
+IF
+Global("ToTablet1","Global",9)
+Global("CVTiamal","AR6000",2)
+THEN
+RESPONSE #100
+SetGlobal("CVTiamal","AR6000",3)
+CreateCreature("CVTiamal",[1378.1395],12)
+ApplySpellRES("BGSLEEP","CVTiamal")
+Continue()
+END
