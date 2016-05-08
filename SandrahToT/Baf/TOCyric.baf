@@ -48,11 +48,12 @@ SetGlobal("ToKelemcurse","Global",6)
 END
 
 IF
-OR(4)
+OR(5)
 Global("TOHasBane","Global",1)
 Global("TOHaiass","Global",1)
 Global("TOLiriquest","Global",10)
 Global("ToKelemcurse","Global",6)
+Global("CVTiamal","AR6000",5)
 InParty(Myself)
 !See([ENEMY])
 See("CVSandr")

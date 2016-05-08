@@ -8,3 +8,21 @@ CreateCreature("CVTiamal",[1378.1395],12)
 ApplySpellRES("BGSLEEP","CVTiamal")
 Continue()
 END
+
+IF
+Global("ToTablet1","Global",10)
+Global("CVTiamal","AR6000",4)
+Delay(6)
+THEN
+RESPONSE #100
+SetGlobal("CVTiamal","AR6000",5)
+END
+
+IF
+Global("CVTiamal","AR6000",6)
+THEN
+RESPONSE #100
+SetGlobal("CVTiamal","AR6000",7)
+AddexperienceParty(9000)
+RestParty()
+END

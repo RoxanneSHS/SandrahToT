@@ -172,6 +172,10 @@ COPY ~SandrahTOT/Baf/Tablete.2DA~ ~override~
 REPLACE ~ 289371~ @030
 REPLACE ~ 289371~ @030
 
+COPY ~SandrahRTF/Baf/RTKeleE.2DA~ ~override/ToKeleE.2DA~
+REPLACE ~71020~ @034
+REPLACE ~361480~ @034
+
 COPY ~SandrahTOT/Misc~ ~Override~
 
 COPY ~SandrahTOT/Cre/Toadon.cre~ ~Override~
