@@ -34,3 +34,37 @@ CreateCreature("obshal04",[1331.1234],8)
 CreateCreature("obshal04",[1323.1261],8)
 CreateCreature("obshal03",[1228.1296],13)
 END
+
+IF
+Global("ToTablet1","Global",10)
+Global("ToMyrkFi","RTF123",0)
+THEN
+RESPONSE #100
+SetGlobal("ToMyrkFi","RTF123",1)
+CreateCreature("ohbdev04",[3493.2457],8)
+CreateCreature("ohbdev04",[3437.2387],8)
+CreateCreature("kobolda",[3355.2428],8)
+CreateCreature("ohbdev03",[2222.1817],1)
+CreateCreature("tomyrkul",[1280.1246],13)
+END
+
+IF
+Global("ToMyrkFi","RTF123",5)
+Dead("ToMyrkul")
+PartyHasItem("Totabl1")
+Delay(6)
+THEN
+RESPONSE #100
+SetGlobal("ToMyrkFi","RTF123",6)
+ClearAllActions()
+StartCutSceneMode()
+StartCutScene("ToBlaSt2")
+END
+
+IF
+Global("RTMoveGnoll","GLOBAL",1)
+InMyArea("ToPellig")
+THEN
+RESPONSE #100
+SetGlobal("RTMoveGnoll","GLOBAL",2)
+END

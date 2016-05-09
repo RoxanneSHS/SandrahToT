@@ -8,3 +8,13 @@ SetGlobal("ToTablet1","Global",1)
 CreateCreature("Tosune",[1343.1489],4)
 CreateCreature("Tomyst",[1487.1459],6)
 END
+
+IF
+Global("ToTablet1","Global",10)
+PartyHasItem("Totabl1")
+Global("MoveMyst","RTF005",0)
+THEN
+RESPONSE #100
+SetGlobal("MoveMyst","RTF005",1)
+ActionOverride("Tomyst",MoveBetweenAreas("Tot005",[2033.1900],5)
+END

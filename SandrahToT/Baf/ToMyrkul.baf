@@ -1,0 +1,16 @@
+IF
+Global("ToMyrkFi","RTF123",1)
+See([PC])
+THEN
+RESPONSE #100
+SetGlobal("ToMyrkFi","RTF123",2)
+ActionOverride("ToAdon",StartDialogueNoSet("ToAdon"))
+END
+
+IF
+GlobalGT("ToMyrkFi","RTF123",2)
+!Allegiance(Myself,ENEMY)
+THEN
+RESPONSE #100
+Enemy()
+END

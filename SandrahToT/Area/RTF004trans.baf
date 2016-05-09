@@ -1,5 +1,5 @@
 IF
-GlobalGT("ToTablet1","Global",10)
+GlobalGT("ToTablet1","Global",11)
 THEN
 RESPONSE #100
 ClearAllActions()

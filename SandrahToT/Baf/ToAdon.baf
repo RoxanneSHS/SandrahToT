@@ -15,9 +15,10 @@ SetGlobal("Tolini","BG4100",8)
 END
 
 IF
-OR(2)
+OR(3)
 Global("Tolini","BG4100",8)
 Global("TOKelemQuest","Global",4)
+Global("ToMyrkFi","RTF123",2)
 InParty(Myself)
 !See([ENEMY])
 See(Player1)
@@ -40,3 +41,15 @@ THEN
 RESPONSE #100
 SetGlobal("TOKelemQuest","Global",4) 
 END
+
+IF
+Global("ToTablet1","Global",10)
+AreaCheck("Rtf005")
+See("ToSune")
+THEN
+RESPONSE #100
+SetGlobal("ToTablet1","Global",11)
+MoveToObject("ToSune")
+StartDialogNoSet("ToAdon")
+END
+

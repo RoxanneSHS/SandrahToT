@@ -55,3 +55,29 @@ IF~~THEN ToCyric Drag2
 ==ToAdon~Yes, let us relax our strained nerves for a while.~
 ==ToKelem~We have foe to fight, not each other. Let us all calm down over night.~
 DO~ TextScreen("ToKeleE")~EXIT
+
+CHAIN
+IF~Global("ToMyrkFi","RTF123",9)~THEN ToCyric Leader1
+~(Cyric's voice is calm and decisive as he brings some order into your confused party.)~
+DO~SetGlobal("ToMyrkFi","RTF123",10)~
+=~Midnight, you take a look at Adon's face, get that bleeding wound under control.~
+==CVSan25J~(You examine Adon's slash over the right side of his face and your professional skills take control over the turmoil of your feelings immediately.]~
+==ToCyric~Pelligram, see what we can do for Kelemvor right here.~
+==ToPellig~(You notice that for the first time Cyric does not use his affected *Pelli-babe* phrasing.)~
+==ToCyric~Liriel, make sure that none of those Banites returns for an assault.~
+==CVSan25J~Adon, this wound is deep but not dangerous. There will however remain a remarkable scar from it.~
+==ToAdon~I hope we will see my goddess soon, we Sunites need to represent the concept of beauty she stands for. She will surely restore me.~
+==ToPellig~Cyric, Midnight...about Kelemvor...~
+==ToCyric~You did what you can do, dear, we will make haste to bring him to the Temple at Beregost.~
+==ToPellig~It is worse than that.~
+==ToCyric~Yes?~
+==ToPellig~ The weapon used against him must have been a soultaker.~
+==ToCyric~(Without Cyric's tender embrace you would have swooned at those words.)~
+==ToAdon~We need to find that weapon.~
+==ToLini~I found no trace of any Banite around here. It is as if they disappeared in smoke.~
+==ToPellig~Midnight has at least recovered one of the Tablets of Fate from Myrkul.~
+==ToCyric~Hm - so it seems that we need to return to Sune's temple at this time.~
+=~Sune may restore Adon's *precious beauty* there and with one the tablets in our possession we may get the goddesses to divine for the weapon which we need to resurrect Kelemvor.~
+END
+++~*You are grateful for Cyric's initiative. His decisions are clear and logical. You have no words to thank him and you press instead one of his hands that still steady you at the shoulders.*~EXIT
+++~*Cyric's clear and logical actions make you wonder what made the man change so suddenly. At the same time you are thankful to have such a companion at this very moment when your grief over Kelemvor's loss blocks your own initiative.*~EXIT

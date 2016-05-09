@@ -151,6 +151,9 @@ COMPILE
 ~SandrahTOT/Baf/Togowa.baf~
 ~SandrahTOT/Baf/Tomalar.baf~
 ~SandrahTOT/Baf/ToWaEsc.baf~
+~SandrahTOT/Baf/ToBlaSt1.baf~
+~SandrahTOT/Baf/ToBlaSt2.baf~
+~SandrahTOT/Baf/ToMyrkul.baf~
 
 EXTEND_TOP
 ~CVSan25d.bcs~ ~SandrahTOT/Baf/CVSandrDToT.baf~
@@ -351,3 +354,13 @@ COPY ~SandrahTot/ITM/ToDrabok.ITM~ ~override~
 SAY NAME1 ~Ancient Book~
 SAY NAME2 ~Ancient Book~
 SAY DESC @033
+
+COPY ~SandrahTot/ITM/Totabl1.itm~ ~override~
+SAY NAME1 @035
+SAY NAME2 @035
+SAY DESC @036
+
+COPY ~SandrahTot/ITM/Totabl2.itm~ ~override~
+SAY NAME1 @035
+SAY NAME2 @035
+SAY DESC @037

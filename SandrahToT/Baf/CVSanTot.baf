@@ -148,3 +148,11 @@ RESPONSE #100
 SetGlobal("InToTArm","GLOBAL",0)
 END
 
+IF
+Global("RTMoveGnoll","GLOBAL",2)
+!AreaCheck("RTF123")
+THEN
+RESPONSE #100
+SetGlobal("RTMoveGnoll","GLOBAL",0) 
+END
+

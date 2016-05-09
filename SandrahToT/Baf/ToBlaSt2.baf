@@ -1,0 +1,25 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId("Haiass")
+Wait(1)
+ApplySpell("ToPellig",NOHOLD_PARTY)
+ApplySpell("Tolini",NOHOLD_PARTY)
+ApplySpell("Toadon",NOHOLD_PARTY)
+ActionOverride(Player1,MakeUnselectable(1))
+ActionOverride(Player2,MakeUnselectable(1))
+ActionOverride(Player3,MakeUnselectable(1))
+ActionOverride(Player4,MakeUnselectable(1))
+ActionOverride(Player5,MakeUnselectable(1))
+ActionOverride(Player6,MakeUnselectable(1))
+Wait(1)
+SetGlobal("ToMyrkFi","RTF123",7)
+Wait(1)
+MoveViewObject("ToCyric",INSTANT)
+ActionOverride("ToCyric",FaceObject("ToKelem")
+Wait(2)
+Wait(1)
+EndCutSceneMode()
+ActionOverride("ToCyric",Dialogue("ToCyric"))
+END

@@ -448,3 +448,38 @@ DO~SetGlobal("ToTablet1","Global",10) SetGlobal("CVabaz","AR6005",4)~
 ==ToBane~We need to do what friend Bhaal forgot while sputtering his stupid godly essence around. ~DO~Enemy()~
 ==TOMyrkul~Finish them up, Myrkul, we meet you at Blackstaff Tower.~DO~EscapeAreaDestroy(45)~EXIT
 
+CHAIN
+IF~Global("ToMyrkFi","RTF123",2) ~THEN ToAdon MyrkSig
+~There he is, there is Myrkul!~
+DO~SetGlobal("ToMyrkFi","RTF123",3)~
+==ToPellig~He seems to be alone, where are the others.~
+==ToCyric~Hihi, Bhaal's probably visiting some future mothers still.~
+==ToLini~Bane may not have been as fast as we have been...wait...I can see him, look over there to the south - he's running...~
+==ToAdon~He's running away...he knows he has to fear us.~
+==ToCyric~He's running away from us, bah, Godsbane will get him.~
+==ToKelem~Not if I get him first, Cyric, I owe him something still.~
+==ToCyric~Try to outrun me if you dare, winner kills a god.~
+END
+++~No, stay together, Kelemvor...!~ DO~ClearAllActions() StartCutSceneMode() StartCutScene("ToBlaSt1")~EXIT
+++~Be careful, do not risk too much. We take on Myrkul meanwhile.~ DO~ClearAllActions() StartCutSceneMode() StartCutScene("ToBlaSt1")~EXIT
+
+CHAIN
+IF~Global("ToMyrkFi","RTF123",7)~THEN ToCyric Kelded1
+~Kelemvor?~
+=~The fool is dead.~
+=~MIDNIGHT!!~DO~SetGlobal("ToMyrkFi","RTF123",8)~EXIT
+
+CHAIN
+IF~Global("ToTablet1","Global",11)~THEN ToAdon Scar1
+~My goddess, I am ashamed to appear in your presence in this horrible condition.~
+DO~SetGlobal("ToTablet1","Global",12)~
+==ToSune~These are troubled times, Adon, without Mystra near anymore, my own abilities are not enough to restore your features. This will have to wait.~
+==ToAdon~But...how can I serve beauty this way...~
+==ToSune~Hush, you can and you do still, do not worry. We have more urgent tasks at hand now.~
+==CVSan25J~Where is Mystra? Why is she not here? We have one of the Tablets of Fate.~
+==ToSune~She went ahead with the news about the identity of the thieves you had discovered. She would not leave the Weave unattended for much longer.~
+==TOlini~What do you mean by +went ahead*?~
+==ToSune~She went to the Celestial Stairs guarded by Helm. The bottom step is just to the southeast from here. We should make haste to go there, too, now that you have the Tablet.~
+==ToCyric~She rushed ahead without the tablet...oh, these women!! Does she think she can convince a dumb tin head like Helm to let her through just because of her honest face.~
+==ToPellig~We must indeed hurry to bring her the Tablet. Helm is Duty and there is no way to argue with blind obedience, Mystra may in danger with her limited powers and her unlimited temper, I know her just to well.~
+==ToSune~I'll show you the way.~DO~ClearAllActions() StartCutSceneMode() MoveToPoint([2624.2192]) Wait(4) EndCutSceneMode() DestroySelf()~EXIT
