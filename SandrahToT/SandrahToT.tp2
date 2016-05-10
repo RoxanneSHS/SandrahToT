@@ -154,11 +154,19 @@ COMPILE
 ~SandrahTOT/Baf/ToBlaSt1.baf~
 ~SandrahTOT/Baf/ToBlaSt2.baf~
 ~SandrahTOT/Baf/ToMyrkul.baf~
+~SandrahTOT/Baf/ToMysCut.baf~
+~SandrahTOT/Baf/ToMysCu2.baf~
+~SandrahTOT/Baf/ToMoveAt.baf~
 
 EXTEND_TOP
 ~CVSan25d.bcs~ ~SandrahTOT/Baf/CVSandrDToT.baf~
 EXTEND_TOP
 ~CVSan25.bcs~ ~SandrahTOT/Baf/Santot.baf~
+
+EXTEND_TOP
+~sguard.bcs~ ~SandrahTOT/Baf/Totgone.baf~
+EXTEND_TOP
+~sguard2.bcs~ ~SandrahTOT/Baf/Totgone.baf~
 
 COMPILE
 ~SandrahTOT/Dialogues~
@@ -330,6 +338,10 @@ SAY NAME2 ~Abazigal~
 COPY ~SandrahTOT/Cre/ToDedMon.cre~ ~Override~
 SAY NAME1 ~Monk of Oghma~
 SAY NAME2 ~Monk of Oghma~
+
+COPY ~SandrahTOT/Cre/ToElmi.cre~ ~Override~
+SAY NAME1 ~Elminster~
+SAY NAME2 ~Elminster~
 
 COPY_EXISTING ~innke2.cre~ ~override/ToInnke.cre~
 SAY NAME1 Gustaf

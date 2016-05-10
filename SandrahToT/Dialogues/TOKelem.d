@@ -57,7 +57,7 @@ END
 CHAIN
 IF~Global("CVabaz","AR6005",6)~THEN ToBane Abalair2
 ~Hold, mortals, whoever you are...we seem to be weaker on your Plane than we thought.~
-DO~SetGlobal("CVabaz","AR6005",7)~
+DO~SetGlobal("CVabaz","AR6005",7) SetGlobal("Chapter","Global",33)~
 ==ToLini~Do you surrender, Bane?~
 ==ToCyric~Hihi, we have defeated a GOD, hihi.~
 ==ToBane~Not so fast...Gods do not surrender, nor do they die, nor are they ever defeated.~

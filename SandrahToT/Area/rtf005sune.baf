@@ -16,5 +16,5 @@ Global("MoveMyst","RTF005",0)
 THEN
 RESPONSE #100
 SetGlobal("MoveMyst","RTF005",1)
-ActionOverride("Tomyst",MoveBetweenAreas("Tot005",[2033.1900],5)
+ActionOverride("Tomyst",MoveBetweenAreas("Tot005",[2033.1900],12)
 END

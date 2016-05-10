@@ -352,10 +352,6 @@ IF~~THEN ToMyst Bhaalwarn1
 ==CVSan25J~So our next step is Candlekeep and then we will see what hints we get there.~EXIT
 
 CHAIN
-IF~True()~THEN ToHelm init
-~No trespassing the Celestial Stairs.~EXIT
-
-CHAIN
 IF~True()~THEN ToInnke sell
 ~We got ale, we got armor, we got... Ah hell, this is old hat. Ye know what it is we all got.~DO~StartStore("Inn2616",LastTalkedToBy(Myself))~EXIT
 
@@ -496,3 +492,39 @@ Wait(4)
 EndCutSceneMode() 
 DestroySelf()
 ~EXIT
+
+CHAIN
+IF~Global("ToTablet1","Global",13)~THEN ToHelm helmmyst1
+~No trespassing the Celestial Stairs.~
+DO~SetGlobal("ToTablet1","Global",14)~
+==ToMyst~Helm, we have no time for that now. I have urgent news for AO himself.~
+==ToHelm~No trespassing the Celestial Stairs, Mystra, there are no exceptions.~
+==ToMyst~Listen, Helm, this news must be brought to AO. I know who has stolen the Tablets of Fate.~
+==ToHelm~Is that so? Anyway, my orders are precise, no trespassing for any of you until the tablets are recovered.~
+==ToMyst~Tin head, did you not listen, I KNOW who has them. We need to tell AO and then we can retrieve them. I can no longer leave the Weave unattended.~
+==ToHelm~It is you who does not listen, Mystra. I have my orders, no tablets - no passing.~
+==ToMyst~You start to make me angry, brainless golem, this news must be brought to AO with or without your consent!~
+==CVSan25J~WAIT!! WE HAVE THE TABLET!!! ~
+==ToPellig~*Midnight's shout echoes through the vast void of the Celestial Stairs but you are not sure if it can be heard at the other end.*~
+==ToHelm~You will not pass. I have my orders. Stop it, Mystra.~
+==TOMyst~Then I need to do it without your approval, fool.~
+==ToHelm~No trespassing the Celestial Stairs. I have my orders. This is the law.~
+DO~StartCutSceneMode() Wait(2) StartCutScene("ToMysCu2")~EXIT
+
+CHAIN
+IF~Global("ToTablet1","Global",14)~THEN ToHelm helmmyst2
+~No trespassing the Celestial Stairs. Who are you?~
+DO~SetGlobal("ToTablet1","Global",15)~
+==CVSan25J~What have you done, you bloody stupid fool, murderer!~
+==ToHelm~She broke the law, she tried to violate AO's verdict.~
+==CVSan25J~SHE tried to save your whole worthless pantheon and bring back the order while you stand there in your glorious righteousness and not only do nothing - no, you even stand in the way of those who act in this crisis.~
+==ToCyric~*Once again it is Cyric's steady hand that brings you back out of your rage*.~
+=~Do not waste time and energy on this strawheaded dummy. It will help neither us nor Mystra.~
+==ToAdon~I get so fed up with the ignorance and stupidity of those so-called gods. Who do they think they are.~
+==ToHelm~These are the Celestial Stairs, blasphemous mortals, I will not allow any more of your words here nor your presence.~
+==CVSan25J~ HERE, YOU TIN HEADED EPITOME OF IGNORANCE.~
+=~*She hauls the tablet you have gained at Helm who has no other chance than to catch it, less it would have falled into the nothingness around the Stairs.*~
+==ToPellig~Let us leave while we still can. There is nothing we can do here anymore.~
+=~And you, Helm, be a good doggie and retrieve the tablet to your master, he may give you an extra treat today for killing the Guardian of the Weave.~
+==ToHelm~Mortals, I warned you...~ DO~StartCutSceneMode() Wait(1) ScreenShake([2033.1900],40) Wait(2) FadeToColor([20.0],0) Wait(4) TextScreen("Tomyste") Wait(4) SetGlobal("Chapter","Global",34) StartCutScene("ToMoveAt")~ EXIT
+

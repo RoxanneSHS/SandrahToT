@@ -81,3 +81,15 @@ DO~SetGlobal("ToMyrkFi","RTF123",10)~
 END
 ++~*You are grateful for Cyric's initiative. His decisions are clear and logical. You have no words to thank him and you press instead one of his hands that still steady you at the shoulders.*~EXIT
 ++~*Cyric's clear and logical actions make you wonder what made the man change so suddenly. At the same time you are thankful to have such a companion at this very moment when your grief over Kelemvor's loss blocks your own initiative.*~EXIT
+
+CHAIN
+IF~Global("ToBaneHunt","Global",1)~ THEN ToCyric Quest3start1
+~Good morning, Midnight. It's a good day for the little surprise we have prepared for you today.~
+DO~SetGlobal("ToBaneHunt","Global",2)~
+==CVSan25J~Cyric, my dear, the *we* trying to surprise me are you and Elminster?~
+==ToCyric~Bah, forget that boy...I don't know what he is up to at the moment...these stupid studies of a dead goddess, his strange disguises...hard to believe he's OUR son.~
+==CVSan25J~(Sigh) I noticed that you and him did not get along too good lately. Well, he is at that age...he will soon notice he is a man. And me - I support his studies of the Weave. MY goddess Mystra is alive as long as we believe in her and the Weave.~
+==ToCyric~Fine, fine, let's not spoil the day with discussions about such issues. You gave me the right starting point, darling...~
+=~Elminster is a man soon, I am getting restless of this family life - I feel it in you as well. We are not yet old enough to retire and the Time of Troubles has been calm until recently but it is not over yet.~
+==CVSan25J~Are we adventuring again? Was that good old Pelligram I heard coming to the house late last night.~
+==ToCyric~Not only her - but now let's go downstairs before the whole splendid surprise is spoiled prematurely.~EXIT

@@ -1,0 +1,16 @@
+IF
+Entered([ANYONE])
+Global("ToTablet1","Global",12)
+THEN
+RESPONSE #100
+SetGlobal("ToTablet1","Global",13)
+ClearAllActions()
+StartCutSceneMode()
+ActionOverride("ToHelm",MoveViewObject(Myself,INSTANT))
+Wait(2)
+ActionOverride("ToAdon",ClearAllActions())
+Wait(2)
+ActionOverride("ToAdon",JumpToPoint([2246.2077]))
+EndCutSceneMode()
+ActionOverride("ToHelm",Dialog("ToMyst"))
+END
