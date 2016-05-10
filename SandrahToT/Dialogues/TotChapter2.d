@@ -478,8 +478,21 @@ DO~SetGlobal("ToTablet1","Global",12)~
 ==ToSune~Hush, you can and you do still, do not worry. We have more urgent tasks at hand now.~
 ==CVSan25J~Where is Mystra? Why is she not here? We have one of the Tablets of Fate.~
 ==ToSune~She went ahead with the news about the identity of the thieves you had discovered. She would not leave the Weave unattended for much longer.~
-==TOlini~What do you mean by +went ahead*?~
+==TOlini~What do you mean by *went ahead*?~
 ==ToSune~She went to the Celestial Stairs guarded by Helm. The bottom step is just to the southeast from here. We should make haste to go there, too, now that you have the Tablet.~
 ==ToCyric~She rushed ahead without the tablet...oh, these women!! Does she think she can convince a dumb tin head like Helm to let her through just because of her honest face.~
-==ToPellig~We must indeed hurry to bring her the Tablet. Helm is Duty and there is no way to argue with blind obedience, Mystra may in danger with her limited powers and her unlimited temper, I know her just to well.~
-==ToSune~I'll show you the way.~DO~ClearAllActions() StartCutSceneMode() MoveToPoint([2624.2192]) Wait(4) EndCutSceneMode() DestroySelf()~EXIT
+==ToPellig~We must indeed hurry to bring her the Tablet. Helm is Duty and there is no way to argue with blind obedience, Mystra may be in danger with her limited powers and her unlimited temper, I know her just to well.~
+==ToSune~I'll show you the way.~DO~ClearAllActions()
+StartCutSceneMode() 
+Wait(2)
+MoveViewPoint([2522.2061],SLOW) 
+ActionOverride("ToAdon",MoveToObjectFollow("Tosune"))
+ActionOverride("ToPellig",MoveToObjectFollow("Tosune"))
+ActionOverride("CVSandr",MoveToObjectFollow("Tosune"))
+ActionOverride("ToLini",MoveToObjectFollow("Tosune"))
+ActionOverride("ToCyric",MoveToObjectFollow("Tosune"))
+MoveToPointNoInterrupt([2522.2061]) 
+Wait(4) 
+EndCutSceneMode() 
+DestroySelf()
+~EXIT
