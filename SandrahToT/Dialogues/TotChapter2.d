@@ -13,6 +13,7 @@ BEGIN ToAlaun
 BEGIN ToDragBa
 BEGIN ToBane
 BEGIN ToMyrkul
+BEGIN ToElmi
 
 CHAIN
 IF WEIGHT #-5~GlobalGT("TOLiriquest","Global",8) Global("TOKelemQuest","Global",0)~ THEN              Portal  warnpon1
@@ -481,7 +482,7 @@ DO~SetGlobal("ToTablet1","Global",12)~
 ==ToSune~I'll show you the way.~DO~ClearAllActions()
 StartCutSceneMode() 
 Wait(2)
-MoveViewPoint([2522.2061],SLOW) 
+MoveViewPoint([2522.2061],MEDIUM) 
 ActionOverride("ToAdon",MoveToObjectFollow("Tosune"))
 ActionOverride("ToPellig",MoveToObjectFollow("Tosune"))
 ActionOverride("CVSandr",MoveToObjectFollow("Tosune"))

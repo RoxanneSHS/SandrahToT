@@ -1,0 +1,8 @@
+IF
+IsOverMe([PC])
+Global("ToBaneHunt","Global",2)
+THEN
+RESPONSE #100
+ActionOverride("ToCyric",LeaveAreaLUA("AR0504","",[1011.823],0))
+ActionOverride("CVSandr",LeaveAreaLUA("AR0504","",[953.852],3))
+END

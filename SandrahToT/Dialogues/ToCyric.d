@@ -91,5 +91,32 @@ DO~SetGlobal("ToBaneHunt","Global",2)~
 ==CVSan25J~(Sigh) I noticed that you and him did not get along too good lately. Well, he is at that age...he will soon notice he is a man. And me - I support his studies of the Weave. MY goddess Mystra is alive as long as we believe in her and the Weave.~
 ==ToCyric~Fine, fine, let's not spoil the day with discussions about such issues. You gave me the right starting point, darling...~
 =~Elminster is a man soon, I am getting restless of this family life - I feel it in you as well. We are not yet old enough to retire and the Time of Troubles has been calm until recently but it is not over yet.~
-==CVSan25J~Are we adventuring again? Was that good old Pelligram I heard coming to the house late last night.~
+==CVSan25J~Are we adventuring again? Was that my good old Pelligram I heard coming to the house late last night?~
 ==ToCyric~Not only her - but now let's go downstairs before the whole splendid surprise is spoiled prematurely.~EXIT
+
+CHAIN
+IF~Global("CyrElmi","ar0505",1)~THEN ToCyric WhoFath1
+~Oh, son, what disguise is that again, you'll not attract the girls that way.~
+DO~SetGlobal("CyrElmi","ar0505",2)~
+==Toelmi~Traditionally a mage dresses like that.~
+==ToCyric~In Zenthil Keep the jesters would dress like that and they'd hang mages anyway without dead Mystra's protection over them nowadays.~
+==Toelmi~Mother, must we have such pointless disputes daily? Thou should get that grumpy old thief out to the road again, maybe that wouldst make him more bearable again.~
+==TOCyric~"Wouldst Thou" stop talking that way, you make me mad, son, aargh. Get your nose out of those dusty books and start a life, damn it. I take this quarterstaff you carry for show and teach you on your empty head how it is used.~
+==ToElmi~I can surely defent myself.~DO~StartCutSceneMode() Wait(2) Polymorph(CAT) Wait(12) Polymorph(ELMINSTER) Wait(2) EndCutSceneMode()~EXIT
+
+CHAIN
+IF~Global("CyrElmi","ar0505",2)~THEN ToCyric WhoFath2
+~Oops, what was that, oh my kitten.~
+DO~SetGlobal("CyrElmi","ar0505",3)~
+==CVSan25J~A small black panther? Where did you learn that, Elminster?~
+==Toelmi~What...I did not...Sorry, father just made me so angry and it all got blurred for a moment.~
+==ToCyric~(Thoughtful) I've seen that before, even if in a more impressive form than today.~
+==ToElmi~Excuse me, please, I need to get my thoughts back together. I am sorry, mother, I should not let myself so get carried away, after all he is the man thou loveth.~ DO~EscapeArea()~
+==CVSan25J~Yes, I do - and I love you as well, my son.~
+==ToCyric~Apologies, Midnight, I had not intended to force such reactions, like...~
+==CVSan25J~Kelemvor. You may as well speak the name in my presence, Cyric.~
+=~Yes, I was thinking of him as well - but it is not possible. Elminster was born one year after his death, he is your son for sure.~
+==ToCyric~(Tries to smile) Too bad, I though there was a slight chance it may not be so.~
+==CVSan25J~Oh, come, darling, he is a good boy and you know it.~
+==ToCyric~Yeah, yeah, he's your boy so how can he be disappointing. He's just too...eh, different...~
+=~Let's go downstairs now, I promised you something and I'm still willing to cheer you up today.~EXIT

@@ -1,7 +1,7 @@
 BACKUP ~SandrahTOT/backup~
 AUTHOR ~Roxanne - Contact Roxanne@shsforums.net~
 
-VERSION ~v1.01.b~
+VERSION ~v2.01.b~
 AUTO_TRA ~SandrahTot/TRA/%s~
 
 LANGUAGE ~English~ ~english~ ~SandrahTot/Tra/SandrahTot.tra~
@@ -65,6 +65,10 @@ EXTEND_TOP
 ~ar6001.bcs~ ~SandrahTOT/Area/ar6001tot.baf~
 EXTEND_TOP
 ~ar6005.bcs~ ~SandrahTOT/Area/ar6005abaz.baf~
+EXTEND_BOTTOM
+~Saerk1.bcs~ ~SandrahTOT/Area/Saerk1tot.baf~
+EXTEND_TOP
+~ar0505.bcs~ ~SandrahTOT/Area/ar0505Home.baf~
 
 COPY ~SandrahToT\Area/TOT001.ARE~ ~override\TOT001.ARE~
 COPY ~SandrahToT\Area/TOT001.mos~ ~override\TOT001.mos~
@@ -111,6 +115,7 @@ EXTEND_BOTTOM
 ~tot004.bcs~ ~SandrahTOT/Area/pellfoll.baf~
 EXTEND_BOTTOM
 ~tot005.bcs~ ~SandrahTOT/Area/pellfoll.baf~
+
 
 
 BEGIN

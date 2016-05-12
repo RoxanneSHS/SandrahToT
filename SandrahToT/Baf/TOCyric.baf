@@ -57,7 +57,16 @@ SetGlobal("ToMyrkFi","RTF123",9)
 END
 
 IF
-OR(7)
+Global("ToBaneHunt","Global",2)
+See("Toelmi")
+Global("CyrElmi","ar0505",0)
+THEN
+RESPONSE #100
+SetGlobal("CyrElmi","ar0505",1)
+END
+
+IF
+OR(9)
 Global("TOHasBane","Global",1)
 Global("TOHaiass","Global",1)
 Global("TOLiriquest","Global",10)
@@ -65,6 +74,8 @@ Global("ToKelemcurse","Global",6)
 Global("CVTiamal","AR6000",5)
 Global("ToMyrkFi","RTF123",9)
 Global("ToBaneHunt","Global",1)
+Global("CyrElmi","ar0505",1)
+Global("CyrElmi","ar0505",2)
 InParty(Myself)
 !See([ENEMY])
 See("CVSandr")
