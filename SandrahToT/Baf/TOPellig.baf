@@ -28,10 +28,83 @@ SetGlobal("ToTablet1","Global",5)
 END
 
 IF
-OR(2)
+Global("ToBaneHunt","Global",3)
+AreaCheck("ar0500")
+CombatCounter(0)
+!See([ENEMY])
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("ToBaneHunt","Global",4)
+END
+
+IF
+Global("ToBaneHunt","Global",7)
+AreaCheck("rtf038")
+See("rabbit")
+THEN
+RESPONSE #100
+SetGlobal("ToBaneHunt","Global",8)
+END
+
+IF
+OR(4)
 Global("ToPellJoin","RTF123",1)
 Global("ToTablet1","Global",5)
+Global("ToBaneHunt","Global",4)
+Global("ToBaneHunt","Global",8)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck("CVsandr",CD_STATE_NOTVALID)
 THEN
 RESPONSE #100
 StartDialogueNoSet("TOPellig")
+END
+
+IF
+!HasItem("Simbul",Myself)
+!AreaCheck("RTF026")
+OR(6)
+HasItem("Simbul",Player1)
+HasItem("Simbul",Player2)
+HasItem("Simbul",Player3)
+HasItem("Simbul",Player4)
+HasItem("Simbul",Player5)
+HasItem("Simbul",Player6)
+THEN
+RESPONSE #100
+ActionOverride(Player1,GiveItem("Simbul","Pellig3"))
+ActionOverride(Player2,GiveItem("Simbul","Pellig3"))
+ActionOverride(Player3,GiveItem("Simbul","Pellig3"))
+ActionOverride(Player4,GiveItem("Simbul","Pellig3"))
+ActionOverride(Player5,GiveItem("Simbul","Pellig3"))
+ActionOverride(Player6,GiveItem("Simbul","Pellig3"))
+DisplayStringHead(Myself,@042)
+END
+
+IF
+!HasItem("Simbul",Myself)
+!AreaCheck("RTF026")
+!HasItem("Simbul",Player1)
+!HasItem("Simbul",Player2)
+!HasItem("Simbul",Player3)
+!HasItem("Simbul",Player4)
+!HasItem("Simbul",Player5)
+!HasItem("Simbul",Player6)
+THEN
+RESPONSE #100
+ActionOverride(Player1,PickUpItem("Simbul"))
+ActionOverride(Player2,PickUpItem("Simbul"))
+ActionOverride(Player3,PickUpItem("Simbul"))
+ActionOverride(Player4,PickUpItem("Simbul"))
+ActionOverride(Player5,PickUpItem("Simbul"))
+ActionOverride(Player6,PickUpItem("Simbul"))
+DisplayStringHead(Myself,@043)
+END
+
+IF
+HPLT(Myself,35)
+THEN
+RESPONSE #100
+ReallyForceSpell(Myself,CLERIC_HEAL)
+Continue()
 END

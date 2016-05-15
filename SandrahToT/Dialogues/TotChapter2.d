@@ -482,7 +482,7 @@ DO~SetGlobal("ToTablet1","Global",12)~
 ==ToSune~I'll show you the way.~DO~ClearAllActions()
 StartCutSceneMode() 
 Wait(2)
-MoveViewPoint([2522.2061],MEDIUM) 
+MoveViewPoint([2522.2061],VERY_FAST) 
 ActionOverride("ToAdon",MoveToObjectFollow("Tosune"))
 ActionOverride("ToPellig",MoveToObjectFollow("Tosune"))
 ActionOverride("CVSandr",MoveToObjectFollow("Tosune"))

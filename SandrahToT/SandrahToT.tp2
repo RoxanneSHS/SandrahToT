@@ -69,6 +69,8 @@ EXTEND_BOTTOM
 ~Saerk1.bcs~ ~SandrahTOT/Area/Saerk1tot.baf~
 EXTEND_TOP
 ~ar0505.bcs~ ~SandrahTOT/Area/ar0505Home.baf~
+EXTEND_TOP
+~RTF381.bcs~ ~SandrahTOT/Area/RTF381.baf~
 
 COPY ~SandrahToT\Area/TOT001.ARE~ ~override\TOT001.ARE~
 COPY ~SandrahToT\Area/TOT001.mos~ ~override\TOT001.mos~
@@ -104,6 +106,16 @@ COPY ~SandrahToT\Area/TOT005HT.bmp~ ~override\TOT005HT.bmp~
 COPY ~SandrahToT\Area/TOT005LM.bmp~ ~override\TOT005LM.bmp~
 COPY ~SandrahToT\Area/TOT005SR.bmp~ ~override\TOT005SR.bmp~
 COMPILE ~SandrahToT\Area/TOTG05.BAF~
+
+COPY ~SandrahToT\Area/TOT006.ARE~ ~override\TOT006.ARE~
+     SAY 0x3e0c ~Mornbryn's Shield~
+     SAY 0x3dd8 ~Tantras~
+COPY ~SandrahToT\Area/TOT006.mos~ ~override\TOT006.mos~
+COPY ~SandrahToT\Area/TOT006.tis~ ~override\TOT006.tis~
+COPY ~SandrahToT\Area/TOT006.wed~ ~override\TOT006.wed~
+COPY ~SandrahToT\Area/TOT006HT.bmp~ ~override\TOT006HT.bmp~
+COPY ~SandrahToT\Area/TOT006LM.bmp~ ~override\TOT006LM.bmp~
+COPY ~SandrahToT\Area/TOT006SR.bmp~ ~override\TOT006SR.bmp~
 
 EXTEND_BOTTOM
 ~tot001.bcs~ ~SandrahTOT/Area/pellfoll.baf~
@@ -141,7 +153,11 @@ APPEND ~pdialog.2da~
 ~TOLini *** *** *** TOLiniP TOLini TOLiniD TOLini~
 UNLESS ~TOLini~
 
-ADD_JOURNAL @015 @016 @020 @024 @025 @026 @027 USING ~SandrahToT/TRA/SandrahToT.tra~
+APPEND ~pdialog.2da~
+~TODrizzt *** *** *** TODriztP TODrizzt TODriztD TODrizzt~
+UNLESS ~TODrizzt~
+
+ADD_JOURNAL @015 @016 @020 @024 @025 @026 @027 @040 @044 USING ~SandrahToT/TRA/SandrahToT.tra~
 
 COMPILE
 ~SandrahTOT/Baf/CVSantot.baf~
@@ -162,6 +178,7 @@ COMPILE
 ~SandrahTOT/Baf/ToMysCut.baf~
 ~SandrahTOT/Baf/ToMysCu2.baf~
 ~SandrahTOT/Baf/ToMoveAt.baf~
+~SandrahTOT/Baf/ToDrizzt.baf~
 
 EXTEND_TOP
 ~CVSan25d.bcs~ ~SandrahTOT/Baf/CVSandrDToT.baf~
@@ -324,6 +341,10 @@ COPY ~SandrahTOT/Cre/ToBane.cre~ ~Override~
 SAY NAME1 Bane
 SAY NAME2 Bane
 
+COPY ~SandrahTOT/Cre/ToTorm.cre~ ~Override~
+SAY NAME1 Torm
+SAY NAME2 Torm
+
 COPY ~SandrahTOT/Cre/ToMyrkul.cre~ ~Override~
 SAY NAME1 Myrkul
 SAY NAME2 Myrkul
@@ -389,3 +410,4 @@ COPY ~SandrahTot/ITM/Totabl2.itm~ ~override~
 SAY NAME1 @035
 SAY NAME2 @035
 SAY DESC @037
+

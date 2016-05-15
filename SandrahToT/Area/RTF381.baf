@@ -1,0 +1,10 @@
+IF
+Global("ToBaneHunt","Global",9)
+Global("Sailors","RTF381",0)
+THEN
+RESPONSE #100
+SetGlobal("Sailors","RTF381",1)
+CreateCreature("Acqxzah1",[580.480],6)
+CreateCreature("sailfin",[650.500],11)
+CreateCreature("sailjos",[600.600],4)
+END

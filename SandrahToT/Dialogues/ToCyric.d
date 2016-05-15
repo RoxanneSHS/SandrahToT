@@ -102,7 +102,7 @@ DO~SetGlobal("CyrElmi","ar0505",2)~
 ==ToCyric~In Zenthil Keep the jesters would dress like that and they'd hang mages anyway without dead Mystra's protection over them nowadays.~
 ==Toelmi~Mother, must we have such pointless disputes daily? Thou should get that grumpy old thief out to the road again, maybe that wouldst make him more bearable again.~
 ==TOCyric~"Wouldst Thou" stop talking that way, you make me mad, son, aargh. Get your nose out of those dusty books and start a life, damn it. I take this quarterstaff you carry for show and teach you on your empty head how it is used.~
-==ToElmi~I can surely defent myself.~DO~StartCutSceneMode() Wait(2) Polymorph(CAT) Wait(12) Polymorph(ELMINSTER) Wait(2) EndCutSceneMode()~EXIT
+==ToElmi~I can surely defent myself.~DO~StartCutSceneMode() Wait(2) Polymorph(CAT) Wait(6) DisplayStringWait("Toelmi",@041) Wait(6) Polymorph(ELMINSTER) Wait(2) EndCutSceneMode()~EXIT
 
 CHAIN
 IF~Global("CyrElmi","ar0505",2)~THEN ToCyric WhoFath2

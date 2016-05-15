@@ -15,20 +15,21 @@ SetGlobal("Tolini","BG4100",8)
 END
 
 IF
-OR(3)
+OR(4)
 Global("Tolini","BG4100",8)
 Global("TOKelemQuest","Global",4)
 Global("ToMyrkFi","RTF123",2)
+Global("ToBaneHunt","Global",2)
 InParty(Myself)
 !See([ENEMY])
-See(Player1)
-!StateCheck(Player1,CD_STATE_NOTVALID)
+See("CVSandr")
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
 CombatCounter(0)
 !StateCheck(Myself,CD_STATE_NOTVALID)
 THEN
 RESPONSE #100
-MoveToObject(Player1)
-StartDialogNoSet(Player1)
+MoveToObject("CVSandr")
+StartDialogNoSet("ToAdon")
 END
 
 IF
@@ -52,4 +53,7 @@ SetGlobal("ToTablet1","Global",11)
 MoveToObject("ToSune")
 StartDialogNoSet("ToAdon")
 END
+
+
+
 

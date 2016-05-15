@@ -1,0 +1,30 @@
+IF
+AreaCheck("CVRoa1")
+Global("ToDrizIn","LOCALS",0)
+InParty("Tolini")
+See("Tolini")
+THEN
+RESPONSE #100
+SetGlobal("ToDrizIn","LOCALS",1)
+END
+
+IF
+Global("ToDrizIn","LOCALS",2)
+!AreaType(OUTDOOR)
+See("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("ToDrizIn","LOCALS",3)
+END
+
+IF
+OR(2)
+Global("ToDrizIn","LOCALS",1)
+Global("ToDrizIn","LOCALS",3)
+!See([ENEMY])
+!StateCheck(Myself,CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+RESPONSE #100
+StartDialogNoSet("TODrizzt")
+END
