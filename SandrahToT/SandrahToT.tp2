@@ -128,6 +128,7 @@ COPY ~SandrahToT\Area/TOT010.wed~ ~override\TOT010.wed~
 COPY ~SandrahToT\Area/TOT010HT.bmp~ ~override\TOT010HT.bmp~
 COPY ~SandrahToT\Area/TOT010LM.bmp~ ~override\TOT010LM.bmp~
 COPY ~SandrahToT\Area/TOT010SR.bmp~ ~override\TOT010SR.bmp~
+COMPILE ~SandrahToT\Area/TOT010.BAF~
 
 EXTEND_BOTTOM
 ~tot001.bcs~ ~SandrahTOT/Area/pellfoll.baf~

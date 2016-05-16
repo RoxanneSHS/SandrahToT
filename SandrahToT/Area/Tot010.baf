@@ -1,0 +1,40 @@
+IF
+Global("Hostage","Tot010",0)
+!Dead("ToMoand")
+THEN
+RESPONSE #100
+SetGlobal("Hostage","Tot010",1)
+Deactivate("Sankab3")
+Deactivate("ToFind")
+END
+
+IF
+Global("Hostage","Tot010",1)
+Dead("ToMoand")
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("Hostage","Tot010",2)
+Activate("Sankab3")
+Activate("ToFind")
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END
+

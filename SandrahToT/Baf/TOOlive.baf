@@ -13,3 +13,20 @@ RESPONSE #100
 MoveToObject("CVSandr")
 StartDialogNoSet("TOOlive")
 END
+
+IF
+AreaCheck("Tot009")
+Global("Boyfind","Tot009",0)
+OR(2)
+See("ToNarth")
+See("Door02")
+!See([ENEMY])
+See("CVSandr")
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+CombatCounter(0)
+Delay(6)
+THEN
+RESPONSE #100
+SetGlobal("Boyfind","Tot009",1)
+StartDialogNoSet("TOOlive")
+END

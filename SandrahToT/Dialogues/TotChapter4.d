@@ -158,5 +158,80 @@ END
 ++~Foolish halfling, now we have one more to rescue.~EXIT
 
 CHAIN
+IF~Global("Boyfind","Tot009",1)~ THEN ToOlive Help3
+~There's the sailor boy who went with the Harper!~
+DO~SetGlobal("Boyfind","Tot009",2)~
+==ToNarth~Be careful, I think the only reason I am alive and locked in here is to be used as bait.~
+==ToCyric~Hihi, you must know, boy, probably used worms for it in the past yourself.~
+==ToAdon~Where are the others?~
+==ToLini~And where is the key to this cell?~
+==ToNarth~The lizardmen took them deeper into...whatever lies beneath this tower. From time to time some slime emerges from that passage at the rear end and makes its way through to town.~
+==ToPellig~I cannot believe those slimes and lizards operate here on their own.~
+==ToOlive~The Harper spoke of something called Moander and my friend Finder seemed to know what that meant when he followed them.~
+==ToCyric~Moander, Pelli-babe?~
+==ToPellig~The deity of rot and decay, slimes, reptiles, shambles and such. The signs we see seem to match.~
+==CVSan25J~So we are back to fighting gods again.~
+==ToCyric~Sooner or later to acquire their power, my dear, hihi.~
+==CVSan25J~The power of slime and decay, oh, Cyric, stop it.~
+==ToPellig~There is not much of the former power of Moander left anyway, friends. Ever since the fall of Netheril, Moander's influence has decreased.~
+==TOCyric~Quite adequate for the deity of decay, hihi. Let's give him, her or it the rest.~
+==ToOlive~I shall go back to my post outside to wait for your return.~ DO~MoveBetweenAreas("RTF145",[1931.1540],7) ~EXIT
+
+CHAIN
 IF WEIGHT #-6~Global("Santotstart","Global",1)~THEN RTMonk InTot1
 ~This temple is famous for the grave of Cerameon, defender of Westgate.~EXIT
+
+CHAIN
+IF~NumTimesTalkedTo(0)~THEN ToMoand KhalResc0
+~Aaaah, adventuring intruders coming to dinner, hohoho. You are on the menu, another bunch of ever hungry mouths to spread the decay.~
+==ToAdon~We are not yet willing to serve one like you. It rather seems that after all the time you had, it is now the right moment for you to end.~
+==ToMoand~You are mortals while I am not, you will serve.~
+==ToCyric~You are really out of time and out of touch, Darkbringer. Guys - or whatever you are - like you fall like flies these days. If there is any godly spark still in you, it will belong to us.~
+==CVSan25J~All our talk is useless. We will have Khalindra, she needs to be free and travel on, too much depends on her...~
+==ToDrizzt~It is now the second time, Midnight, that I have the feeling you know more about the merchant's daughter than we do.~
+==CVSan25J~Is not everyone we can rescue important, Drizzt?~
+==ToDrizzt~If you put it this way. I may not always understand surfacer's ways yet.~
+==ToMoand~Neither you nor anyone else down here will leave alive.~DO~Enemy()~EXIT
+
+CHAIN
+IF~NumTimesTalkedTo(0)~THEN ToKapapa KhalResc1
+~Help has found its way into this acid hole, Olive was successful, it seems.~
+DO~SetGlobal("Fathresc","Tot010",1)~
+==ToCyric IF~IsValidForPartyDialog("ToCyric")~THEN~A clever contigency plan, man. Leave one outside just in case, hihi. You seem to have some experience in such situations, so you must be that so-called harper.~
+==ToLini IF~!IsValidForPartyDialog("ToCyric")~THEN~ A clever contigency plan, man. Leave one outside just in case. You seem to have some experience in such situations, so you must be the harper we heard about.~
+==ToKapapa~Glarasteer Rhauligan, merchant of Innarlith, and acquainted with the trouble of the roads. I came to look into this situation for the sole reason nobody else was here to do it - until now.~
+=~Did you manage to find my daughter, we got separated by the monster's assault?~
+END
+IF~Global("Daughresc","Tot010",1)~THEN REPLY~ Yes, and also the bard Finder, we cleared the way out and sent them to the surface already.~+ KhalResc2
+IF~Global("Daughresc","Tot010",0)~THEN REPLY~ Not yet, nor the bard Finder who is supposed to be down here as well.~+ KhalResc3
+
+CHAIN
+IF~~THEN ToKapapa KhalResc2
+~In this case Moander has been defeated, good work. I will follow them quickly and we will have time enough back in town to talk about everything in a more friendly atmosphere.~DO~MoveBetweenAreas("RTF145",[1931.1540],10) ~EXIT
+
+CHAIN
+IF~~THEN ToKapapa KhalResc3
+~In this case Moander has not been yet defeated. He must be in the northern part of this swamp cave as here is a dead end. I am not much help in my current state but should be able to make it back outside following the way you cleared. I hope I see you soon with my daughter and the bard. ~DO~MoveBetweenAreas("RTF145",[1931.1540],10) ~EXIT
+
+CHAIN
+IF WEIGHT #-4~Global("ToBaneHunt","Global",10)~THEN Sankaba KhalResc11
+~There goes our capturer, it is true that in this Time of Troubles even gods can die.~
+DO~SetGlobal("ToBaneHunt","Global",11) SetGlobal("Daughresc","Tot010",1)~
+==ToFind~There, his amulet...I must have it.~
+==Sankaba~You want the power of an evil dead god, Finder? I never would have guessed such, even if I confess, our acqaintance is still a short one.~
+==ToFind~It will give me the power to make my songs, tales and messages heard, Khalindra. It is the spark of a deity and by that knows neither good nor evil. It is sheer power and the user defines its alignment.~
+==ToCyric~There you hear it, Midnight. The power of an evil god we defeat is ours to take. We do with it according to our own design.~
+==CVSan25J~If that were only true...the dark side of an evil power may be stronger than the mortal trying to handle it. Your intention may be good at the beginning - until the power itself starts to corrupt you. Is this not what has started the whole Avatar Crisis? Those three gods, former mortals, who came into possession of Jergal's power and now just hunger for more?~
+==ToCyric~We defeat them and by that we prove we're stronger than those fools.~
+==ToPellig~Leave the spark here to the bard, Cyric. Even if you were right, you do not need it - the ones awaiting us have much more to give.~
+==ToCyric~Pelli, Pelli, your cleverness always overwhelms me. My advisors are right. Take your *rotten* treasure, bard and choke on it.~
+==Sankaba~Have you found my father, adventurers? He must be around here as well.~
+END
+IF~Global("Fathresc","Tot010",1)~THEN REPLY~Yes, we sent him back the way we came and we suggest you follow him quickly.~+ KhalResc12
+IF~Global("Fathresc","Tot010",0)~THEN REPLY~Not yet, we will explore the rest of this acid cave. Meanwhile you should go back the way we already cleared and wait for us outside.~ + KhalResc12
+
+CHAIN
+IF~~THEN Sankaba KhalResc12
+~We will do that, Midnight. Thank you. Come, Finder.~DO~MoveBetweenAreas("RTF145",[1931.1540],3) ~
+==ToFind IF~PartyHasItem("ToLiAm3")~THEN~I think we agreed that I will take this with me.~DO~TakePartyItem("ToLiAm3") Wait(2) MoveBetweenAreas("RTF145",[1931.1540],1) ~
+==ToFind IF~!PartyHasItem("ToLiAm3")~THEN~I will escort you to safety, Khalindra.~DO~MoveBetweenAreas("RTF145",[1931.1540],1) ~EXIT

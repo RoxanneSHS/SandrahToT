@@ -5,3 +5,14 @@ THEN
 RESPONSE #100
 DestroyItem("ghost")
 END
+
+IF
+AreaCheck("Tot010")
+Dead("ToMoand")
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck("CVsandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("ToBaneHunt","Global",10)
+StartDialogueNoSet("ToFind")
+END
