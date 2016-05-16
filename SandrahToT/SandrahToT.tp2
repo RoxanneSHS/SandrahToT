@@ -71,6 +71,8 @@ EXTEND_TOP
 ~ar0505.bcs~ ~SandrahTOT/Area/ar0505Home.baf~
 EXTEND_TOP
 ~RTF381.bcs~ ~SandrahTOT/Area/RTF381.baf~
+EXTEND_TOP
+~RTF145.bcs~ ~SandrahTOT/Area/RTF145.baf~
 
 COPY ~SandrahToT\Area/TOT001.ARE~ ~override\TOT001.ARE~
 COPY ~SandrahToT\Area/TOT001.mos~ ~override\TOT001.mos~
@@ -117,6 +119,16 @@ COPY ~SandrahToT\Area/TOT006HT.bmp~ ~override\TOT006HT.bmp~
 COPY ~SandrahToT\Area/TOT006LM.bmp~ ~override\TOT006LM.bmp~
 COPY ~SandrahToT\Area/TOT006SR.bmp~ ~override\TOT006SR.bmp~
 
+COPY ~SandrahToT\Area/TOT009.ARE~ ~override\TOT009.ARE~
+
+COPY ~SandrahToT\Area/TOT010.ARE~ ~override\TOT010.ARE~
+COPY ~SandrahToT\Area/TOT010.mos~ ~override\TOT010.mos~
+COPY ~SandrahToT\Area/TOT010.tis~ ~override\TOT010.tis~
+COPY ~SandrahToT\Area/TOT010.wed~ ~override\TOT010.wed~
+COPY ~SandrahToT\Area/TOT010HT.bmp~ ~override\TOT010HT.bmp~
+COPY ~SandrahToT\Area/TOT010LM.bmp~ ~override\TOT010LM.bmp~
+COPY ~SandrahToT\Area/TOT010SR.bmp~ ~override\TOT010SR.bmp~
+
 EXTEND_BOTTOM
 ~tot001.bcs~ ~SandrahTOT/Area/pellfoll.baf~
 EXTEND_BOTTOM
@@ -127,7 +139,8 @@ EXTEND_BOTTOM
 ~tot004.bcs~ ~SandrahTOT/Area/pellfoll.baf~
 EXTEND_BOTTOM
 ~tot005.bcs~ ~SandrahTOT/Area/pellfoll.baf~
-
+EXTEND_BOTTOM
+~tot009.bcs~ ~SandrahTOT/Area/pellfoll.baf~
 
 
 BEGIN
@@ -179,11 +192,14 @@ COMPILE
 ~SandrahTOT/Baf/ToMysCu2.baf~
 ~SandrahTOT/Baf/ToMoveAt.baf~
 ~SandrahTOT/Baf/ToDrizzt.baf~
+~SandrahTOT/Baf/TOOlive.baf~
 
 EXTEND_TOP
 ~CVSan25d.bcs~ ~SandrahTOT/Baf/CVSandrDToT.baf~
 EXTEND_TOP
 ~CVSan25.bcs~ ~SandrahTOT/Baf/Santot.baf~
+EXTEND_BOTTOM
+~Sankaba.bcs~ ~SandrahTOT/Baf/Sankabatot.baf~
 
 EXTEND_TOP
 ~sguard.bcs~ ~SandrahTOT/Baf/Totgone.baf~
@@ -374,6 +390,26 @@ SAY NAME1 Gustaf
 SAY NAME2 Gustaf
 WRITE_ASCII 0x2cc ~Toinnke~
 
+COPY ~SandrahTOT/Cre/ToOlive.cre~ ~Override~
+SAY NAME1 ~Olive Ruskettle~
+SAY NAME2 ~Olive Ruskettle~
+
+COPY ~SandrahTOT/Cre/ToFind.cre~ ~Override~
+SAY NAME1 ~Finder Wyvernspur~
+SAY NAME2 ~Finder Wyvernspur~
+
+COPY ~SandrahTOT/Cre/ToNarth.cre~ ~Override~
+SAY NAME1 ~Narthil~
+SAY NAME2 ~Narthil~
+
+COPY ~SandrahTOT/Cre/ToMoand.cre~ ~Override~
+SAY NAME1 ~Moander~
+SAY NAME2 ~Moander~
+
+COPY ~SandrahTOT/Cre/ToKapapa.cre~ ~Override~
+SAY NAME1 ~Glarasteer~
+SAY NAME2 ~Glarasteer~
+
 COPY ~SandrahTot/ITM/ToLiAmu.itm~ ~override~
 SAY NAME1 @019
 SAY NAME2 @019
@@ -383,6 +419,11 @@ COPY ~SandrahTot/ITM/ToLiAmu.itm~ ~override/ToLiAm2.itm~
 SAY NAME1 @023
 SAY NAME2 @023
 SAY DESC @022
+
+COPY ~SandrahTot/ITM/ToLiAmu.itm~ ~override/ToLiAm3.itm~
+SAY NAME1 @045
+SAY NAME2 @045
+SAY DESC @046
 
 COPY ~SandrahTot/ITM/Toscrl1.itm~ ~override~
 SAY NAME1 Letter
@@ -410,4 +451,9 @@ COPY ~SandrahTot/ITM/Totabl2.itm~ ~override~
 SAY NAME1 @035
 SAY NAME2 @035
 SAY DESC @037
+
+COPY ~SandrahTot/ITM/Tot1key.itm~ ~override~
+SAY NAME1 ~Brass Key~
+SAY NAME2 ~Brass Key~
+SAY DESC ~Moander's cell key~
 

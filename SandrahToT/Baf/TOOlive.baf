@@ -1,0 +1,15 @@
+IF
+OR(2)
+Global("PriorTot","rtf145",4)
+Global("PriorTot","rtf145",2)
+!See([ENEMY])
+See("CVSandr")
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+CombatCounter(0)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+Delay(6)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+StartDialogNoSet("TOOlive")
+END

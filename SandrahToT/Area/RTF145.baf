@@ -1,0 +1,18 @@
+IF
+Global("ToBaneHunt","Global",9)
+Global("PriorTot","rtf145",1)
+THEN
+RESPONSE #100
+SetGlobal("PriorTot","rtf145",2)
+CreateCreature("ToOlive",[1931.1540],4)
+CreateCreature("slifis01",[2856.2601],12)
+CreateCreature("jelgre01",[1390.2585],14)
+END
+
+IF
+Global("PriorTot","rtf145",3)
+THEN
+RESPONSE #100
+SetGlobal("PriorTot","rtf145",4)
+TriggerActivation("Round1",TRUE)
+END

@@ -41,6 +41,8 @@ END
 IF
 Global("ToBaneHunt","Global",7)
 AreaCheck("rtf038")
+OR(2)
+See("Paints")
 See("rabbit")
 THEN
 RESPONSE #100

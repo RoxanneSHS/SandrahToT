@@ -1,3 +1,9 @@
+BEGIN ToOlive
+BEGIN ToFind
+BEGIN ToNarth
+BEGIN ToMoand
+BEGIN ToKapapa
+
 CHAIN
 IF~Global("ToBaneHunt","Global",2)~THEN ToAdon Reunite1
 ~There they finally are, friends, our little circle is complete.~
@@ -86,7 +92,7 @@ IF~Global("ToBaneHunt","Global",8)~THEN ToPellig InMornb1
 ~Fine, a ship is here, who is the sailor among us?~
 DO~SetGlobal("ToBaneHunt","Global",9)~
 ==ToDrizzt IF~InParty("ToDrizzt")~THEN~Do you need a drow to tell you that a surfacer sailor on land is most likely found in an inn and that a typical dwarven name for such a place is *Troll in Flames*?~
-==ToLini IF~InParty("ToDrizzt")~THEN~Do you need a drow to tell you that a surfacer sailor on land is most likely found in an inn and that a typical dwarven name for such a place is *Troll in Flames*?~
+==ToLini IF~!InParty("ToDrizzt")~THEN~Do you need a drow to tell you that a surfacer sailor on land is most likely found in an inn and that a typical dwarven name for such a place is *Troll in Flames*?~
 ==ToAdon~(Laughs) Just like on that sign over by that house, you mean?~
 ==ToCyric~An experienced band of adventuters working hand in hand, hihi.~EXIT
 
@@ -102,7 +108,7 @@ DO~SetGlobal("Sailors","RTF381",2)~
 ==Sailfin~Earlyinthemorning...~
 ==RT38Inn~Optimist...as long as the captain's boy is gone, I would not bet on this.~
 END
-++~This sounds like a story we need to know before we deal with them any furter, good innkeeper?~ + HireShip2
+++~This sounds like a story we need to know before we deal with them any further, good innkeeper?~ + HireShip2
 ++~Some buckets of cold water from the shore below may provide the wonder we need.~  + HireShip2
 
 CHAIN
@@ -127,3 +133,30 @@ CHAIN
 IF~~THEN Acqxzah1 HireShip3
 ~Bring me my son and I'll give you passages to the Nine Hells and back if you want.~
 ==RT38Inn~The road into town is just north of my inn and you cannot miss the temple at the market place.~DO~AddJournalEntry(@044,QUEST)~EXIT
+
+CHAIN
+IF~Global("PriorTot","rtf145",2)~THEN ToOlive Help1
+~Adventurers and well armed, I will sing about you everywhere I go if you stop to help us.~
+DO~SetGlobal("PriorTot","rtf145",3)~
+==ToCyric~Sure you will, obviously you're a bard, hihi.~
+==ToAdon~Your despair may have something to do with some missing people we came to look for?~
+==ToOlive~You come for the Harper and the sailor, yes, you come to the right place.~
+==ToCyric~Sing, little sparrow, sing.~
+==ToOlive~First of all, I am Olive Ruskettle, famous companion of the even more famous Finder Wyvernspur.~
+==ToLini~If you say so.~
+==ToOlive~Well, maybe we're not YET famous where you come from - where ever that may be.~
+=~Anyway, we discovered the reason for that disappearance of some citizens and the sighting of those slime creatures here in town. Just when we prepared to enter in that tower over yonder to explore it further, the Harper and his company arrived in town.~
+=~So after some discussion to and fro, the Harper and the sailor and the girl went with Finder into that tower leaving me to keep the citizens away from it by all means. Now they are gone since days and I fight the occasional slime emerging from the door every now and then - like NOW.~DO~MoveViewPoint([2326.1401],INSTANT) CreateCreature("Jellgr",[2326.1401],2)~EXIT
+
+CHAIN
+IF~Global("PriorTot","rtf145",4)~THEN ToOlive Help2
+~Come, we cannot waste any more time. Now that you are with me, we need to look into that tower.~
+DO~SetGlobal("PriorTot","rtf145",5)~
+=~Finder! We come to rescue.~DO~MoveBetweenAreas("Tot009",[270.660],12)~
+END
+++~What are we waiting for? Let us follow her.~EXIT
+++~Foolish halfling, now we have one more to rescue.~EXIT
+
+CHAIN
+IF WEIGHT #-6~Global("Santotstart","Global",1)~THEN RTMonk InTot1
+~This temple is famous for the grave of Cerameon, defender of Westgate.~EXIT
