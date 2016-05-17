@@ -143,6 +143,9 @@ EXTEND_BOTTOM
 EXTEND_BOTTOM
 ~tot009.bcs~ ~SandrahTOT/Area/pellfoll.baf~
 
+APPEND ~mastarea.2da~
+~TOT006  value~
+UNLESS ~TOT006~
 
 BEGIN
 ~Sandrah Time of Trouble Revisited Compiles~
