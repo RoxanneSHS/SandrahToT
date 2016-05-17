@@ -1,0 +1,21 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(3)
+FadeToColor([20.0],0)
+Wait(1)
+LeaveAreaLUAPanic("TOT006","",[1348.97],0)
+LeaveAreaLUA("TOT006","",[1348.97],0)
+ActionOverride(Player2,LeaveAreaLUA("TOT006","",[1348.97],0))
+ActionOverride(Player3,LeaveAreaLUA("TOT006","",[1348.97],0))
+ActionOverride(Player4,LeaveAreaLUA("TOT006","",[1348.97],0))
+ActionOverride(Player5,LeaveAreaLUA("TOT006","",[1348.97],0))
+ActionOverride(Player6,LeaveAreaLUA("TOT006","",[1348.97],0))
+Wait(1)
+SetMasterArea("Tot006")
+FadeFromColor([20.0],0)
+Wait(3)
+EndCutSceneMode()
+END

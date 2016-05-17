@@ -174,7 +174,7 @@ APPEND ~pdialog.2da~
 ~TODrizzt *** *** *** TODriztP TODrizzt TODriztD TODrizzt~
 UNLESS ~TODrizzt~
 
-ADD_JOURNAL @015 @016 @020 @024 @025 @026 @027 @040 @044 USING ~SandrahToT/TRA/SandrahToT.tra~
+ADD_JOURNAL @015 @016 @020 @024 @025 @026 @027 @040 @044 @047 USING ~SandrahToT/TRA/SandrahToT.tra~
 
 COMPILE
 ~SandrahTOT/Baf/CVSantot.baf~
@@ -197,6 +197,7 @@ COMPILE
 ~SandrahTOT/Baf/ToMoveAt.baf~
 ~SandrahTOT/Baf/ToDrizzt.baf~
 ~SandrahTOT/Baf/TOOlive.baf~
+~SandrahTOT/Baf/ToMovTan.baf~
 
 EXTEND_TOP
 ~CVSan25d.bcs~ ~SandrahTOT/Baf/CVSandrDToT.baf~

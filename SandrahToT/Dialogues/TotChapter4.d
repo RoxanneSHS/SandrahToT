@@ -135,6 +135,27 @@ IF~~THEN Acqxzah1 HireShip3
 ==RT38Inn~The road into town is just north of my inn and you cannot miss the temple at the market place.~DO~AddJournalEntry(@044,QUEST)~EXIT
 
 CHAIN
+IF WEIGHT #-2~Global("ToBaneHunt","Global",12) Global("Sailors","RTF381",2)~THEN Acqxzah1 HireShip11
+~My son has returned, you have saved him. Where ever you want to travel, I will take you.~
+DO~SetGlobal("Sailors","RTF381",3) EraseJournalEntry(@044)~
+END
+++~We need to rest and purchase some items first. We will come back to you in a while.~EXIT
+++~We want to sail to Tantras.~+ HireShip13
+
+CHAIN
+IF WEIGHT #-2~Global("Sailors","RTF381",3)~ THEN Acqxzah1 HireShip12
+~Any place in these waters I can take you, friends?~
+END
+++~We need to rest and purchase some items first. We will come back to you in a while.~EXIT
+++~We want to sail to Tantras.~+ HireShip13
+
+CHAIN
+IF~~ THEN Acqxzah1 HireShip13
+~Aye, Tantras...~
+DO~SetGlobal("Sailors","RTF381",4)~
+=~I heard there a strange and dangerous things going on there. The harbour is closed it is said. But for you - my plate keel boat can drop you on a shore just north of the town.~DO~AddJournalEntry(@047,QUEST) ClearAllActions() StartCutSceneMode() StartCutScene("ToMovTan")~EXIT
+
+CHAIN
 IF~Global("PriorTot","rtf145",2)~THEN ToOlive Help1
 ~Adventurers and well armed, I will sing about you everywhere I go if you stop to help us.~
 DO~SetGlobal("PriorTot","rtf145",3)~
@@ -235,3 +256,34 @@ IF~~THEN Sankaba KhalResc12
 ~We will do that, Midnight. Thank you. Come, Finder.~DO~MoveBetweenAreas("RTF145",[1931.1540],3) ~
 ==ToFind IF~PartyHasItem("ToLiAm3")~THEN~I think we agreed that I will take this with me.~DO~TakePartyItem("ToLiAm3") Wait(2) MoveBetweenAreas("RTF145",[1931.1540],1) ~
 ==ToFind IF~!PartyHasItem("ToLiAm3")~THEN~I will escort you to safety, Khalindra.~DO~MoveBetweenAreas("RTF145",[1931.1540],1) ~EXIT
+
+CHAIN
+IF~Global("Boyfind","Tot009",3)~THEN  ToNarth Getou1
+~Ah, you have the key. Everyone else is already in safety outside. ~
+DO~SetGlobal("Boyfind","Tot009",4) AddexperienceParty(6000) ReputationInc(1)~
+==ToOlive~I entertained poor Narthil with my songs as best as I could meanwhile.~
+==ToNarth~(Grins) I had little chance to escape, Olive. Now, honestly, I am sure you will get really famous, you have talent enough.~DO~ MoveBetweenAreas("RTF381",[580.480],6)~
+==ToOlive~Now, let's go, the others are waiting for us.~ DO ~MoveBetweenAreas("RTF145",[1931.1540],4)~EXIT
+
+CHAIN
+IF~Global("ToBaneHunt","Global",11) ~THEN  ToOlive CanSail1
+~I will write about this adventure immediately.~
+DO~SetGlobal("ToBaneHunt","Global",12) ~
+==ToFind~It would require a lot of bardic imagination, Olive. You were not even there.~
+==ToKapapa~Young friend, everybody here played his or her important part in the matter. Most of all our rescuers, thank you again.~
+==Sankaba~Yes, thank you, friends. Even I have the feeling this might have just been a quite *normal* day for adventurers like you.~
+==CVSan25J~It was the day we met you and by this a very special day.~
+==ToFind IF~PartyHasItem("ToLiAm3")~THEN~ How charming...now with everything said and done, come, Olive, we need to hit the road again. And I think we agreed that I will take this with me.~DO~TakePartyItem("ToLiAm3") Wait(2) EscapeAreaDestroy(75)~
+==ToFind IF~!PartyHasItem("ToLiAm3")~THEN~How charming...now with everything said and done, come, Olive, we need to hit the road again.~ DO~EscapeAreaDestroy(75)~
+==ToOlive~Wait, you seem to be quite in a hurry, Finder. Bye, friends, I'm coming...~ DO~EscapeAreaDestroy(75)~
+==ToKapapa~We will continue our journey to the Sword Coast after a short rest, Khalindra.~
+==CVSan25J~If you should pass Athkatla, ask for Elminster's house. Our son will provide you with a comfortable stay in town, just mention you met us here.~
+==Sankaba~You will travel farther east? Be warned, we heard some heavily armed troups are on a march around Ravens Bluff.~
+==ToAdon~Exactly why we need to be there. They are marching on Tantras.~
+==ToKapapa~I was sure you were not here because of our case. The gods you may have to face at Tantras are far more powerful than Moander.~
+==ToCyric~Bane and Bhaal, if we are lucky, both of them together.~
+==ToKapapa~Your definition of *lucky* is yours, friend, and luck is what you may need as help from the gods is not to be expected. Good journey.~ DO~EscapeAreaDestroy(75)~
+==Sankaba~Good voyage - and I will remember to pay a visit to your son Elminster to report of our meeting and your further plans.~DO ~EscapeAreaDestroy(75)~
+==ToCyric~A charming young girl.~
+END
+++~At least one thing in which father and son agree.~EXIT

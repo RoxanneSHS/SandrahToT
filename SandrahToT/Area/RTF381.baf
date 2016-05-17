@@ -8,3 +8,11 @@ CreateCreature("Acqxzah1",[580.480],6)
 CreateCreature("sailfin",[650.500],11)
 CreateCreature("sailjos",[600.600],4)
 END
+
+IF
+Global("Sailors","RTF381",4)
+THEN
+RESPONSE #100
+ActionOverride("Acqxzah1",DestroySelf())
+ActionOverride("Tonarth",DestroySelf())
+END

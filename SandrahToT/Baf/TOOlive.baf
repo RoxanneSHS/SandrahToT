@@ -30,3 +30,23 @@ RESPONSE #100
 SetGlobal("Boyfind","Tot009",1)
 StartDialogNoSet("TOOlive")
 END
+
+IF
+AreaCheck("Tot009")
+Global("Boyfind","Tot009",2)
+PartyHasItem("Tot1key")
+THEN
+RESPONSE #100
+SetGlobal("Boyfind","Tot009",3)
+MoveToObject(Player1)
+END
+
+IF
+Global("ToBaneHunt","Global",11)
+AreaCheck("RTF145")
+See(Player1)
+See("CVSandr")
+THEN
+RESPONSE #100
+StartDialogNoSet("TOOlive")
+END
