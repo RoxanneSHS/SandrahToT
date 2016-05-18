@@ -1,0 +1,29 @@
+IF
+AreaCheck("Tot007")
+See("CVSandr")
+THEN
+RESPONSE #100
+StartDialogueNoSet("ToTorm")
+END
+
+IF
+AreaCheck("Tot008")
+See("CVSandr")
+Global("Startbattle","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("Startbattle","LOCALS",1)
+RealSetGlobalTimer("Tormbattle","Tot008",170)
+MoveToObject("ToBane")
+END
+
+IF
+Global("Startbattle","LOCALS",1)
+Range("Tobane",10)
+THEN
+RESPONSE #100
+AttackReevaluate("ToBane",30)
+ActionOverride("Tobane",AttackReevaluate("ToTorm",30))
+END
+
+

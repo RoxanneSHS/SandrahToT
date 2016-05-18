@@ -1,0 +1,11 @@
+IF
+Entered([ANYONE])
+THEN
+RESPONSE #100
+CreateCreatureObjectDoor("ToMart1",LastTrigger,0,0,0)
+CreateCreatureObjectDoor("ToMart2",Player2,0,0,0)
+CreateCreatureObjectDoor("ToMart2",LastTrigger,0,0,0)
+CreateCreatureObjectDoor("ToMart1",Player5,0,0,0)
+CreateCreatureObjectDoor("ToMart2",Player1,0,0,0)
+CreateCreatureObjectDoor("ToMart1",Player4,0,0,0)
+END

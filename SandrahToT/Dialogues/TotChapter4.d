@@ -3,6 +3,7 @@ BEGIN ToFind
 BEGIN ToNarth
 BEGIN ToMoand
 BEGIN ToKapapa
+BEGIN ToTorm
 
 CHAIN
 IF~Global("ToBaneHunt","Global",2)~THEN ToAdon Reunite1
@@ -287,3 +288,30 @@ DO~SetGlobal("ToBaneHunt","Global",12) ~
 ==ToCyric~A charming young girl.~
 END
 ++~At least one thing in which father and son agree.~EXIT
+
+CHAIN
+IF~Global("ToBaneHunt","Global",12) ~THEN  ToBane Tantras1
+~Those? They are still persuing us after so many mortal years?~
+DO~SetGlobal("ToBaneHunt","Global",13) ~
+==ToBhaal~Those are the same who defeated the idiot Myrkul and delivered one of the tablets to the Overfool AO.~
+==ToBane~Not only Torm growing with each sacrifice of his stupid martyrs, no, there are also these adventurers...~
+==ToCyric~With most of your undead and whatnots destroyed, hihihi, it's time now for you. The soon-to-be-dead-three will be reunited today.~
+==ToBhaal~The remaining tablet is more important than those mortals. Come, Bane, let our cultists finish them.~ DO~EscapeAreaObject("Tantras")~
+==ToBane~We have to secure the tablet before Torm lays his hands on it.~ DO~EscapeAreaObject("Tantras")~EXIT
+
+CHAIN
+IF~Global("ToBaneHunt","Global",13) ~THEN  ToTorm Tantras2
+~It is good you came. I have seen your success on the battlefield outside. You are the odd element that may still change the outcome of this battle.~
+DO~SetGlobal("ToBaneHunt","Global",14) ~
+==CVSan25J~The two schemers at the heart of this intrigue have escaped us.~
+==ToTorm~Bhaal and Bane - you must be very confident or very foolish to persue them. They are still very powerful.~
+==TOPellig~We have seen your soldiers fight outside. They seem to sacrifice themselves for their god.~
+==ToTorm~For their god and also for their progeny. The young may survive if their god remains strong enough to fight the evil on their behalf. Everyone here older than 14 years has sworn his life to our victory. I absorbe every soul of a follower who falls in my name today and thereby gain the strength to fight our foe.~
+==ToAdon~The two former gods have fled us to secure the stolen Tablet of Fate that must be hidden here in town.~
+==ToTorm~They fled to the Halls of Demarch where Mask is worshipped, the item must be hidden there. ~
+==ToCyric~An adequate place for a stolen item, hihi.~
+==ToTorm~I must follow them now. Today either falls Torm or falls evil.~ DO~EscapeAreaObject("Temple")~
+==ToLini~One or the other, if not both...~
+END
+++~We will not stand here idle. Let us follow them.~ EXIT
+++~Torm needs our help more than he may think.~ EXIT

@@ -1,0 +1,20 @@
+IF
+Global("Marttime","LOCALS",1)
+RealGlobalTimerExpired("Martdest","LOCALS")
+THEN
+RESPONSE #100
+SetGlobal("Marttime","LOCALS",2)
+DisplayStringWait(Myself,@048)
+Wait(2)
+CreateVisualEffectObject("SPSArmor",Myself)
+Wait(2)
+DestroySelf()
+END  
+
+IF
+Global("Marttime","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("Marttime","LOCALS",1)
+RealSetGlobalTimer("Martdest","LOCALS",90)
+END

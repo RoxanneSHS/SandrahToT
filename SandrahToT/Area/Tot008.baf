@@ -1,0 +1,64 @@
+IF
+RealGlobalTimerExpired("Tormbattle","Tot008")
+Global("ToBaneHunt","Global",14)
+THEN
+RESPONSE #100
+SetGlobal("ToBaneHunt","Global",15)
+ClearAllActions()
+StartCutSceneMode()
+Wait(2)
+MoveViewObject("ToTorm",INSTANT)
+Wait(2)
+ScreenShake([1150.580],30)
+Wait(2)
+CreateVisualEffectObject("SPFDEATH","ToTorm")
+CreateVisualEffectObject("SPFDEATH","ToBane")
+Wait(6)
+CreateVisualEffectObject("SPFDEATH","ToTorm")
+CreateVisualEffectObject("SPFDEATH","ToBane")
+Wait(2)
+ScreenShake([1150.580],30)
+Wait(4)
+Kill("ToTorm")
+Wait(2)
+Kill("ToBane")
+Wait(2)
+EndCutSceneMode()
+END
+
+IF
+Global("hostile","Tot008",1)
+Delay(6)
+THEN
+RESPONSE #100
+ActionOverride("ToBhaal",DisplayStringWait(Myself,@049) 
+Wait(4)
+ActionOverride("ToBhaal",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+END
+
+IF
+Global("MissBhaal","Tot008",0)
+THEN
+RESPONSE #100
+SetGlobal("MissBhaal","Tot008",1)
+CreateCreature("TOBhaal",[1061.701],12)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END

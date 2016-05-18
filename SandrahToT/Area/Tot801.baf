@@ -1,0 +1,11 @@
+IF
+Entered([ANYONE])
+Global("hostile","Tot008",0)
+THEN
+RESPONSE #100
+SetGlobal("hostile","Tot008",1)
+ActionOverride("ToBane",Enemy())
+CreateCreatureObjectDoor("ToMart2",LastTrigger,0,0,0)
+END
+
+
