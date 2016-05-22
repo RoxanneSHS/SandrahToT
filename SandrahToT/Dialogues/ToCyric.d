@@ -120,3 +120,18 @@ DO~SetGlobal("CyrElmi","ar0505",3)~
 ==CVSan25J~Oh, come, darling, he is a good boy and you know it.~
 ==ToCyric~Yeah, yeah, he's your boy so how can he be disappointing. He's just too...eh, different...~
 =~Let's go downstairs now, I promised you something and I'm still willing to cheer you up today.~EXIT
+
+CHAIN
+IF~Global("ToBaneHunt","Global",16) ~ THEN ToCyric Banedone1
+~Another bunch of foolish celestials gone. I will soon claim Bane's portefolio from AO.~
+DO~SetGlobal("ToBaneHunt","Global",17) EraseJournalEntry(@040) EraseJournalEntry(@047) SetGlobal("Chapter","Global",35) AddJournalEntry(@050,QUEST)~
+==ToPellig~Your ambition is still there? You despise them so much and still want to be one of them?~
+==TOCyric~They were once mortals but have proven they were not worth their ascension. WE have proven we're better, hihi. There is replacement required and tell me, Pelli-babe, who will be better qualified than those who slay the fools and retrieve the tablets?~
+==ToAdon~I would wait with making demands until we really finished the quest - for myself, I would not want to join the *circle* of those useless deities, evil or good. The only thing I agree with, Cyric, is that those fools are a useless bunch.~
+==CVSan25J~Cyric, what is happening? Ever since we left our home again to adventure you seem to become the...hm, *old Cyric* once again.~
+==ToCyric~We had fun while it lasted, didn't we, hihi. Family and home and all. Times are changing, you got bored of it yourself. Be honest to yourself - you know as well as I know that we're made for bigger things. Cyric will rule, Mystra will rule.~
+==CVSan25J~Are you supposing that I may follow the slain goddess I still serve?~
+==ToCyric~Exactly, sweetheart, who else? ~
+==Tolini~The old mad man has returned, how refreshing. Anyway, Midnight, there is some truth in the babbling of the fool. Once we have Bhaal and the tablet, things need to be restored.~
+==ToCyric~Dark beauty, we will find some occupation for you as well, be sure.~
+==Tolini~Forget it, Cyric, Eillestrae is all we drow on the surface require and I am more than content to serve her...and maybe her future surface counterpart, a new Mystra.~EXIT

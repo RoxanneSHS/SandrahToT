@@ -131,6 +131,7 @@ COPY ~SandrahToT\Area/TOT007.wed~ ~override\TOT007.wed~
 COPY ~SandrahToT\Area/TOT007HT.bmp~ ~override\TOT007HT.bmp~
 COPY ~SandrahToT\Area/TOT007LM.bmp~ ~override\TOT007LM.bmp~
 COPY ~SandrahToT\Area/TOT007SR.bmp~ ~override\TOT007SR.bmp~
+COMPILE ~SandrahToT\Area/Tot007.baf~
 
 COPY ~SandrahToT\Area/TOT008.ARE~ ~override\TOT008.ARE~
 COPY ~SandrahToT\Area/TOT008.mos~ ~override\TOT008.mos~
@@ -166,8 +167,6 @@ EXTEND_BOTTOM
 EXTEND_BOTTOM
 ~tot006.bcs~ ~SandrahTOT/Area/pellfoll.baf~
 EXTEND_BOTTOM
-~tot007.bcs~ ~SandrahTOT/Area/pellfoll.baf~
-EXTEND_BOTTOM
 ~tot009.bcs~ ~SandrahTOT/Area/pellfoll.baf~
 
 APPEND ~mastarea.2da~
@@ -201,7 +200,7 @@ APPEND ~pdialog.2da~
 ~TODrizzt *** *** *** TODriztP TODrizzt TODriztD TODrizzt~
 UNLESS ~TODrizzt~
 
-ADD_JOURNAL @015 @016 @020 @024 @025 @026 @027 @040 @044 @047 USING ~SandrahToT/TRA/SandrahToT.tra~
+ADD_JOURNAL @015 @016 @020 @024 @025 @026 @027 @040 @044 @047 @050 USING ~SandrahToT/TRA/SandrahToT.tra~
 
 COMPILE
 ~SandrahTOT/Baf/CVSantot.baf~
@@ -451,6 +450,20 @@ SAY NAME2 ~Martyr of Torm~
 COPY ~SandrahTOT/Cre/Tomart2.cre~ ~Override~
 SAY NAME1 ~Martyr of Torm~
 SAY NAME2 ~Martyr of Torm~
+
+COPY ~SandrahTOT/Cre/Tomart3.cre~ ~Override~
+SAY NAME1 ~Martyr of Torm~
+SAY NAME2 ~Martyr of Torm~
+
+COPY_EXISTING ~boybax.cre~ ~override/boypro.cre~
+SAY NAME1 ~ Martyr's Progeny~
+SAY NAME2 ~ Martyr's Progeny~
+WRITE_ASCII 0x250 ~boypro~
+
+COPY_EXISTING ~girba1.cre~ ~override/girpro.cre~
+SAY NAME1 ~ Martyr's Progeny~
+SAY NAME2 ~ Martyr's Progeny~
+WRITE_ASCII 0x250 ~boypro~
 
 COPY ~SandrahTot/ITM/ToLiAmu.itm~ ~override~
 SAY NAME1 @019

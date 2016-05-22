@@ -13,7 +13,7 @@ Global("Startbattle","LOCALS",0)
 THEN
 RESPONSE #100
 SetGlobal("Startbattle","LOCALS",1)
-RealSetGlobalTimer("Tormbattle","Tot008",170)
+RealSetGlobalTimer("Tormbattle","Tot008",155)
 MoveToObject("ToBane")
 END
 

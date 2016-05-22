@@ -66,7 +66,21 @@ SetGlobal("CyrElmi","ar0505",1)
 END
 
 IF
-OR(9)
+Global("ToBaneHunt","Global",15)
+AreaCheck("Tot008")
+Dead("ToBane")
+Dead("ToTorm")
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+CombatCounter(0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("ToBaneHunt","Global",16)
+END
+
+IF
+OR(10)
 Global("TOHasBane","Global",1)
 Global("TOHaiass","Global",1)
 Global("TOLiriquest","Global",10)
@@ -76,6 +90,7 @@ Global("ToMyrkFi","RTF123",9)
 Global("ToBaneHunt","Global",1)
 Global("CyrElmi","ar0505",1)
 Global("CyrElmi","ar0505",2)
+Global("ToBaneHunt","Global",16)
 InParty(Myself)
 !See([ENEMY])
 See("CVSandr")

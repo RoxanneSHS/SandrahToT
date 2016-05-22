@@ -4,6 +4,7 @@ BEGIN ToNarth
 BEGIN ToMoand
 BEGIN ToKapapa
 BEGIN ToTorm
+BEGIN Tomart3
 
 CHAIN
 IF~Global("ToBaneHunt","Global",2)~THEN ToAdon Reunite1
@@ -315,3 +316,39 @@ DO~SetGlobal("ToBaneHunt","Global",14) ~
 END
 ++~We will not stand here idle. Let us follow them.~ EXIT
 ++~Torm needs our help more than he may think.~ EXIT
+
+CHAIN
+IF~Global("ToBaneHunt","Global",18)~THEN  Tomart3 Overbane
+~ You return alone - is all lost?~
+DO~SetGlobal("ToBaneHunt","Global",19) SetGlobal("ToBhaalhunt","Global",1)~
+==Boyba1~Mama said that we are the seed of things to come.~
+==Girba1~Papa said all will be new again after all was destroyed.~
+==ToPellig~The children are all that remains of Tantras but your town will be reborn through them. This is what their parents and your god fought for. ~
+==ToAdon~Torm died with your martyrs but let not be their sacrifice be in vain. We have won after all.~
+==Tomart3~I understand. Only if we give up now, our foe will triumph. If we rebuild in our Lord Torm's name, it will be a victory of righteousness over evil.~
+==ToCyric~Spare us your sermons, you can live on and use those kids to rebuild from these ruins because a new generation of better gods defeated the old tyrants.~
+==ToLini~Ignore our mad schemer and use your chance to make the dream your brothers and sisters died for come true.~
+==CVSan25J~Did you see the one creature who escaped the battle by any chance.~
+==Girba1~I saw him before and mama called him *The Slayer*.~
+==ToCyric~That's the one - you saw him again today?~
+==Tomart3~Yes, he escaped, but not without murdering the last of our defences upon passing through.~
+==TODrizzt IF~InParty("Todrizzt")~THEN~Do you have any clue where he fled to?~
+==TOAdon IF~!InParty("Todrizzt")~THEN~Do you have any clue where he fled to?~
+==Boyba1~He said a name to the captain who commands his bark. *Khalindra* .~
+==ToCyric~That's this harper's daughter...what does that mean...? ~
+END
+++~Elminster! He is in danger, our son! We must hurry to Athkatla.~ EXTERN ToPellig Overbane2
+++~I know what it means. Another step in his contingency plan...he is in a hurry to finish his breeding before we kill him.~  EXTERN ToPellig Overbane2
+
+CHAIN
+IF~~THEN ToPellig Overbane2
+~Midnight!!...~
+=~(Calm) Midnight is right. If he is after Khalindra - for whatever reason - then Athkatla and Elminster may be his next destination.~
+==CVSan25J~What Pelligram and me want to say is that I pointed the harper and his daughter to our home as a reference and I invited them to stay there during their stay on the Sword Coast.~
+==Tolini~It is a chance...we need to start our search for Glarasteer and Khalindra somewhere.~
+==ToCyric~Maybe or maybe not. He has the tablet - he must hide it somewhere. There are his temples on the Sword Coast for him.~
+==ToAdon~As so often, mad Cyric may once again be correct.~
+==CVSan25J~Maybe all of it is true - he will probably first hide the tablet with his acolytes and then use the shelter of his cult places to search for Khalindra.~
+END
+++~It means we must track him down in one of his temples before he can strike against the harper and his daughter.~ EXIT
+++~It means we must find the harper and Khalindra and protect them. They are our bait in the trap for Bhaal.~EXIT

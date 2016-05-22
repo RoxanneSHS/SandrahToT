@@ -1,0 +1,32 @@
+IF
+Global("ToBaneHunt","Global",17)
+THEN
+RESPONSE #100
+SetGlobal("ToBaneHunt","Global",18)
+CreateCreature("Tomart3",[761.840],4)
+CreateCreature("boypro",[858.741],3)
+CreateCreature("girpro",[854.733],5)
+CreateCreature("boypro",[864.892],6)
+CreateCreature("girpro",[854.883],7)
+CreateCreature("boypro",[1001.746],2)
+CreateCreature("girpro",[984.733],13)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END
