@@ -1,0 +1,9 @@
+IF
+Global("ToBhaalhunt","Global",1)
+Global("ToGori","BG0900",0)
+THEN
+RESPONSE #100
+SetGlobal("ToGori","BG0900",1)
+CreateCreature("ToGorion",[3869.564],8)
+Continue()
+END
