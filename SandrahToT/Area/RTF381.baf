@@ -11,8 +11,16 @@ END
 
 IF
 Global("Sailors","RTF381",4)
+InMyArea("Acqxzah1")
 THEN
 RESPONSE #100
 ActionOverride("Acqxzah1",DestroySelf())
+END   
+
+IF
+Global("Sailors","RTF381",4)
+InMyArea("Tonarth")
+THEN
+RESPONSE #100
 ActionOverride("Tonarth",DestroySelf())
 END

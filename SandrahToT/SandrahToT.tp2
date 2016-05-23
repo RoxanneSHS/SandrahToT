@@ -465,6 +465,9 @@ SAY NAME1 ~ Martyr's Progeny~
 SAY NAME2 ~ Martyr's Progeny~
 WRITE_ASCII 0x250 ~boypro~
 
+COPY_EXISTING ~Acqxzah1.cre~ ~override~
+WRITE_ASCII 0x280 ~Acqxzah1~
+
 COPY ~SandrahTot/ITM/ToLiAmu.itm~ ~override~
 SAY NAME1 @019
 SAY NAME2 @019

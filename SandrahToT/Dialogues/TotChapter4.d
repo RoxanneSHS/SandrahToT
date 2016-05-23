@@ -155,7 +155,7 @@ CHAIN
 IF~~ THEN Acqxzah1 HireShip13
 ~Aye, Tantras...~
 DO~SetGlobal("Sailors","RTF381",4)~
-=~I heard there a strange and dangerous things going on there. The harbour is closed it is said. But for you - my plate keel boat can drop you on a shore just north of the town.~DO~AddJournalEntry(@047,QUEST) ClearAllActions() StartCutSceneMode() StartCutScene("ToMovTan")~EXIT
+=~I heard there a strange and dangerous things going on there. The harbour is closed it is said. But for you - my plate keel boat can drop you on a shore just north of the town.~DO~AddJournalEntry(@047,QUEST) ClearAllActions() StartCutSceneMode() StartCutScene("ToMovTan") ~EXIT
 
 CHAIN
 IF~Global("PriorTot","rtf145",2)~THEN ToOlive Help1
@@ -344,9 +344,9 @@ CHAIN
 IF~~THEN ToPellig Overbane2
 ~Midnight!!...~
 =~(Calm) Midnight is right. If he is after Khalindra - for whatever reason - then Athkatla and Elminster may be his next destination.~
-==CVSan25J~What Pelligram and me want to say is that I pointed the harper and his daughter to our home as a reference and I invited them to stay there during their stay on the Sword Coast.~
+==CVSan25J~What Pelligram and me want to say is that I pointed the harper and his daughter to our home as a reference and I invited them to stay there during their business on the Sword Coast.~
 ==Tolini~It is a chance...we need to start our search for Glarasteer and Khalindra somewhere.~
-==ToCyric~Maybe or maybe not. He has the tablet - he must hide it somewhere. There are his temples on the Sword Coast for him.~
+==ToCyric~Maybe or maybe not. He has the tablet - he must hide it first of all. There are his temples on the Sword Coast as an option for him.~
 ==ToAdon~As so often, mad Cyric may once again be correct.~
 ==CVSan25J~Maybe all of it is true - he will probably first hide the tablet with his acolytes and then use the shelter of his cult places to search for Khalindra.~
 END
