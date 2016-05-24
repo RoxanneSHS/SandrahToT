@@ -56,7 +56,54 @@ END
 
 CHAIN
 IF~~THEN ToGorion Meetbridge6
-~The Bhaalists under the priestess Nyalee have recently overrun a temple of Mystra in the Forest of Mir south of Saradush taking advantage of Lady of Mysteries' current absence.~
+~The Bhaalists under the priestess Nyalee have recently overrun a temple of Mystra in the Forest of Mir south of Saradush taking advantage of the Lady of Mysteries' current absence.~
 END
 ++~It would not astonish me if they used fire giants to accomplish it. We should go there.~DO ~AddJournalEntry(@051,QUEST)~EXIT
 ++~A good place to raise fire giants far away from prying eyes. We should go there.~DO ~AddJournalEntry(@051,QUEST)~EXIT
+
+CHAIN
+IF WEIGHT #-5~Global("Tomonst","ar5202",1)~THEN HGNya01 MeetTot
+~Oh, yes! Nyalee has been waiting for you, and she knows why you come, she does!~
+DO~SetGlobal("Tomonst","ar5202",2) SetGlobal("TalkedToNyalee","GLOBAL",1)~
+==ToPellig~You know nothing, old hag, but you will live on in this darkness for another lifetime until your death will mercifully set you free. It will not be us to show you this mercy today.~
+==HGNya01~A great cleric of Bhaal is Nyalee! But soon great Bhaal will be dead, and Nyalee will be forced to turn to the older arts to survive until a new Lord of Murder will be. ~
+=~MY Yaga-Shura will raise to be the new Lord. Nyalee did see him for the spawn-child he was and stole him from the crib! Raise him here in this temple as her own she will! ~
+==CVSan25J~Bhaal spawned this child with a fire giant. She will raise it as her own son.~
+==ToAdon~She is mad beyond any help and still she sees with great clarity.~
+==HGNya01~Nyalee know all the old tricks. Witch of the Glade, they calls me, for many good reasons. Hee hee!~
+==ToLini~Do you want to leave Mystra's temple to the black cult, Midnight?~
+==CVSan25J~It serves its purpose, my friend. Mystra herself would not want it any other way.~
+==TOCyric~There's a lot of madness in this place today, hihi, but it's not me, not at all.~
+END
+++~Cyric, you are right. This is madness and we will stop it today. No prophesy, no contingeny, no triumph for Bhaal.~+MeetTot2
+++~Cyric, you are right. This is madness but intervening today would produce endless chaos. There must be anti-climax before there can be catharsis.~+MeetTot3
+
+CHAIN
+IF~~THEN HGNya01 MeetTot2
+~ Hee hee! See your own madness! As you attack me you kill your own future.~
+DO~Enemy() ActionOverride("CVSandr",Attack("HGNya01"))~EXIT
+
+CHAIN
+IF~~THEN HGNya01 MeetTot3
+~ Hee hee! Nyalee will bring Yaga-Shura son to safety now.~ DO~EscapeAreaObject("Exitwmp")~EXIT
+
+CHAIN
+IF~Global("Tomonst","ar5202",4)~ THEN TOCyric Sparenya1
+~Your decisions become more and more confusing, my dear. What do you know that the rest of us does not know?~
+DO~SetGlobal("Tomonst","ar5202",5)~
+==CVSan25J~We must be very careful, Cyric, not to intervene with things that have a long term effect.~
+==TOCyric~Like the not-killing of Bhaal's spawns? You spared the dragon and now the fire giant, hihi. There is a logic in it but no purpose.~
+==ToPellig~These spawns must live to set something into motion.~
+==ToLini~Is it this prophesy that Bhaal gave the wise Alaundo to spread?~
+END
+++~It may sound strange, but yes it is. The seed must grow - not to create a new God of murder but to enable Mystra to return.~ + Sparenya2
+++~We cannot prevent a certain future to evolve or we will risk that there may be no future at all.~ + Sparenya2
+
+CHAIN
+IF~~THEN TOCyric Sparenya2
+~Listen, my girl, listen very carefully.~
+=~Bhaal will die and he will stay dead. He will die because WE kill him. And he will stay dead because there will be a new god of murder and a new Mystra, yes.~
+=~And if you say that keeping those spawns alive will help us, so be it. Maybe the new god of murder will later need their essence that Bhaal gave them, hihi.~
+END
+++~(You nod silently) You understood just too well, Cyric.~ EXIT
+++~All those called mad seem to have a day of great clarity today.~EXIT

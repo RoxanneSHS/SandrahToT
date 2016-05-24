@@ -7,3 +7,24 @@ SetGlobal("ToGori","BG0900",1)
 CreateCreature("ToGorion",[3869.564],8)
 Continue()
 END
+
+IF
+Global("ToBhaalhunt","Global",2)
+Global("ToGori","BG0900",1)
+THEN
+RESPONSE #100
+SetGlobal("ToGori","BG0900",2)
+ActionOverride("Gorion",EscapeAreaObject("Exit1400"))
+END
+
+IF
+Global("ToGori","BG0900",2)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("ToGori","BG0900",3)
+CreateCreature("ohbbclt1",[3869.564],8)
+CreateCreature("ohbbclt2",[4000.700],3)
+CreateCreature("ohbbclt1",[4073.100],0)
+END
+

@@ -1,0 +1,28 @@
+IF
+Global("ToBhaalhunt","Global",2)
+Global("Tomonst","ar5202",0)
+THEN
+RESPONSE #100
+SetGlobal("Tomonst","ar5202",1)
+CreateCreature("hgnya01",[546.620],3)
+CreateCreature("hgwar01",[1180.820],13)
+CreateCreature("hgwar02",[880.880],0)
+CreateCreature("hgwar01",[830.960],10)
+CreateCreature("hgwar02",[1080.830],6)
+CreateCreature("hgmis02",[1530.700],10)
+CreateCreature("hgmis02",[1400.700],6)
+SetGlobal("SPRITE_IS_DEADHGNYA01","Global",0)
+SetGlobal("TalkedToNyalee","GLOBAL",0)
+END
+
+IF
+Global("Tomonst","ar5202",2)
+Dead("HGNya01")
+THEN
+RESPONSE #100
+SetGlobal("Tomonst","ar5202",3)
+Kill(Player1)
+Kill(Player2)
+Kill(Player3)
+END
+

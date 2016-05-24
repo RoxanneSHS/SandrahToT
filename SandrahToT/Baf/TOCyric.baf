@@ -80,7 +80,18 @@ SetGlobal("ToBaneHunt","Global",16)
 END
 
 IF
-OR(10)
+Global("Tomonst","ar5202",2) 
+Global("TalkedToNyalee","GLOBAL",1)
+!See("HGNya01")
+CombatCounter(0)
+Delay(6)
+THEN
+RESPONSE #100
+SetGlobal("Tomonst","ar5202",4)
+END
+
+IF
+OR(11)
 Global("TOHasBane","Global",1)
 Global("TOHaiass","Global",1)
 Global("TOLiriquest","Global",10)
@@ -91,6 +102,7 @@ Global("ToBaneHunt","Global",1)
 Global("CyrElmi","ar0505",1)
 Global("CyrElmi","ar0505",2)
 Global("ToBaneHunt","Global",16)
+Global("Tomonst","ar5202",4)
 InParty(Myself)
 !See([ENEMY])
 See("CVSandr")
