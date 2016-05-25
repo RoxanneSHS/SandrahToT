@@ -107,3 +107,16 @@ IF~~THEN TOCyric Sparenya2
 END
 ++~(You nod silently) You understood just too well, Cyric.~ EXIT
 ++~All those called mad seem to have a day of great clarity today.~EXIT
+
+CHAIN
+IF~Global("Tomonst","ar5202",6) ~THEN ToPellig ToBlahand
+~We now can either search another Bhaal temple for our slayer or visit Elminster's new home at Waterdeep.~
+DO~SetGlobal("Tomonst","ar5202",7) SetGlobal("ToBhaalhunt","Global",3)~
+==TODrizzt IF~InParty("Todrizzt")~THEN~ I would prefer to be active and search for Bhaal rather than to wait for him to appear in search of Khalindra. Do we know of another place he may have gone to?~
+==Tolini IF~!InParty("Todrizzt")~THEN~ I would prefer to be active and search for Bhaal rather than to wait for him to appear in search of Khalindra. Do we know of another place he may have gone to?~
+==ToAdon~We can assume he will be in the western regions of Faerun. There is a hidden temple  of the Black Hand in the Wood of Sharp Teeth.~
+==ToPellig~It makes sense. Our friend Cyric may not be the only one who lusts for the portefolio of a slain god.~
+==ToCyric~I always say it, Pelli-babe, you are a genius. That bloody Bhaal may try to grab Bane's lost herd. We need to prevent that - this is MY domain soon!~
+END
+++~We will certainly not fuel Cyric's mad ambitions. We will go to Waterdeep.~EXIT
+++~The Bane temple is a logical option. Regardless of Cyric's agenda - we go there to find Bhaal not to feed a growing madness of the man I know longer know.~EXIT
