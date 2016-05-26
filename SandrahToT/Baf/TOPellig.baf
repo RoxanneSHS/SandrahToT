@@ -58,12 +58,25 @@ SetGlobal("Tomonst","ar5202",6)
 END
 
 IF
-OR(5)
+AreaCheck("ar60pb")
+Global("Tosendai","ar60pb",1)
+OR(3)
+Range("uddrow36",10)
+See("ntashma")
+See("Sendai8")
+THEN
+RESPONSE #100
+SetGlobal("Tosendai","ar60pb",2)
+END
+
+IF
+OR(6)
 Global("ToPellJoin","RTF123",1)
 Global("ToTablet1","Global",5)
 Global("ToBaneHunt","Global",4)
 Global("ToBaneHunt","Global",8)
 Global("Tomonst","ar5202",6)
+Global("Tosendai","ar60pb",2)
 !StateCheck(Myself,CD_STATE_NOTVALID)
 !StateCheck("CVsandr",CD_STATE_NOTVALID)
 THEN

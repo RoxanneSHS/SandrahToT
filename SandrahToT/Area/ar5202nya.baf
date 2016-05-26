@@ -11,6 +11,7 @@ CreateCreature("hgwar01",[830.960],10)
 CreateCreature("hgwar02",[1080.830],6)
 CreateCreature("hgmis02",[1530.700],10)
 CreateCreature("hgmis02",[1400.700],6)
+CreateCreature("yagaspir",[578.657],2)
 SetGlobal("SPRITE_IS_DEADHGNYA01","Global",0)
 SetGlobal("TalkedToNyalee","GLOBAL",0)
 END

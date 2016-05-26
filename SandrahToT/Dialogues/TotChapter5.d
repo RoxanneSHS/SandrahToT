@@ -1,4 +1,5 @@
 BEGIN ToGorion
+BEGIN Sendai8
 
 CHAIN
 IF~Global("ToBhaalhunt","Global",1)~THEN ToGorion Meetbridge1
@@ -69,6 +70,7 @@ DO~SetGlobal("Tomonst","ar5202",2) SetGlobal("TalkedToNyalee","GLOBAL",1)~
 ==HGNya01~A great cleric of Bhaal is Nyalee! But soon great Bhaal will be dead, and Nyalee will be forced to turn to the older arts to survive until a new Lord of Murder will be. ~
 =~MY Yaga-Shura will raise to be the new Lord. Nyalee did see him for the spawn-child he was and stole him from the crib! Raise him here in this temple as her own she will! ~
 ==CVSan25J~Bhaal spawned this child with a fire giant. She will raise it as her own son.~
+==Yaga02~No hurt mama!~
 ==ToAdon~She is mad beyond any help and still she sees with great clarity.~
 ==HGNya01~Nyalee know all the old tricks. Witch of the Glade, they calls me, for many good reasons. Hee hee!~
 ==ToLini~Do you want to leave Mystra's temple to the black cult, Midnight?~
@@ -81,17 +83,17 @@ END
 CHAIN
 IF~~THEN HGNya01 MeetTot2
 ~ Hee hee! See your own madness! As you attack me you kill your own future.~
-DO~Enemy() ActionOverride("CVSandr",Attack("HGNya01"))~EXIT
+DO~Enemy()ActionOverride("Yagaspir",Enemy()) ActionOverride("CVSandr",Attack("HGNya01"))~EXIT
 
 CHAIN
 IF~~THEN HGNya01 MeetTot3
-~ Hee hee! Nyalee will bring Yaga-Shura son to safety now.~ DO~EscapeAreaObject("Exitwmp")~EXIT
+~ Hee hee! Nyalee will bring Yaga-Shura son to safety now.~ DO~ActionOverride("Yagaspir",EscapeAreaObject("Exitwmp")) EscapeAreaObject("Exitwmp")~EXIT
 
 CHAIN
 IF~Global("Tomonst","ar5202",4)~ THEN TOCyric Sparenya1
 ~Your decisions become more and more confusing, my dear. What do you know that the rest of us does not know?~
 DO~SetGlobal("Tomonst","ar5202",5)~
-==CVSan25J~We must be very careful, Cyric, not to intervene with things that have a long term effect.~
+==CVSan25J~Cyric, we must be very careful not to intervene with things that have a long term effect.~
 ==TOCyric~Like the not-killing of Bhaal's spawns? You spared the dragon and now the fire giant, hihi. There is a logic in it but no purpose.~
 ==ToPellig~These spawns must live to set something into motion.~
 ==ToLini~Is it this prophesy that Bhaal gave the wise Alaundo to spread?~
@@ -114,9 +116,22 @@ IF~Global("Tomonst","ar5202",6) ~THEN ToPellig ToBlahand
 DO~SetGlobal("Tomonst","ar5202",7) SetGlobal("ToBhaalhunt","Global",3)~
 ==TODrizzt IF~InParty("Todrizzt")~THEN~ I would prefer to be active and search for Bhaal rather than to wait for him to appear in search of Khalindra. Do we know of another place he may have gone to?~
 ==Tolini IF~!InParty("Todrizzt")~THEN~ I would prefer to be active and search for Bhaal rather than to wait for him to appear in search of Khalindra. Do we know of another place he may have gone to?~
-==ToAdon~We can assume he will be in the western regions of Faerun. There is a hidden temple  of the Black Hand in the Wood of Sharp Teeth.~
+==ToAdon~We can assume he will be in the western regions of Faerun. There is a hidden temple of the Black Hand in the Wood of Sharp Teeth.~
 ==ToPellig~It makes sense. Our friend Cyric may not be the only one who lusts for the portefolio of a slain god.~
 ==ToCyric~I always say it, Pelli-babe, you are a genius. That bloody Bhaal may try to grab Bane's lost herd. We need to prevent that - this is MY domain soon!~
 END
 ++~We will certainly not fuel Cyric's mad ambitions. We will go to Waterdeep.~EXIT
 ++~The Bane temple is a logical option. Regardless of Cyric's agenda - we go there to find Bhaal not to feed a growing madness of the man I know longer know.~EXIT
+
+CHAIN
+IF~Global("Tosendai","ar60pb",2)~ THEN ToPellig ToBlahand2
+~Followers of Bhaal and drow, what does that mean?~
+DO~SetGlobal("Tosendai","ar60pb",3)~
+==TODrizzt IF~InParty("Todrizzt")~THEN~ With Lolth ruling the Underdark, my kin have no need of an additional god of murder.~
+==Tolini IF~!InParty("Todrizzt")~THEN~ With Lolth ruling the Underdark, my kin have no need of an additional god of murder.~
+==Sendai8~Mother, we have additional visitors.~
+==UDDrow36~Is that the privacy for our meeting you promised, Aschmaan? I sense betrayal.~
+==NTAshma~They must have overrun the guards, they do not belong to our fellowship, Handmaiden.~
+==Sendai8~Mother, let me show you what I have learned!~
+==UDDrow36~I appreciate your enthusiasm, girl, but Bhaal has greater plans for you and so have I. We cannot risk your life today - hush.~
+==NTAshma~*Urgumzen narl.* ~EXIT

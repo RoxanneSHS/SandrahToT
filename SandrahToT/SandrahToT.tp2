@@ -69,6 +69,8 @@ EXTEND_TOP
 ~ar6001.bcs~ ~SandrahTOT/Area/ar6001tot.baf~
 EXTEND_TOP
 ~ar6005.bcs~ ~SandrahTOT/Area/ar6005abaz.baf~
+EXTEND_TOP
+~ar60pb.bcs~ ~SandrahTOT/Area/ar60pbsendai.baf~
 EXTEND_BOTTOM
 ~Saerk1.bcs~ ~SandrahTOT/Area/Saerk1tot.baf~
 EXTEND_TOP
@@ -476,6 +478,10 @@ COPY_EXISTING ~Gorion.cre~ ~override/Togorion.cre~
 SAY NAME1 Gorion
 SAY NAME2 Gorion
 WRITE_ASCII 0x2cc ~Togorion~
+
+COPY ~SandrahTOT/Cre/Sendai9.cre~ ~Override~
+SAY NAME1 ~Sendai~
+SAY NAME2 ~Sendai~
 
 COPY ~SandrahTot/ITM/ToLiAmu.itm~ ~override~
 SAY NAME1 @019
