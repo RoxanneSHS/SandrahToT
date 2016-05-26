@@ -127,11 +127,25 @@ CHAIN
 IF~Global("Tosendai","ar60pb",2)~ THEN ToPellig ToBlahand2
 ~Followers of Bhaal and drow, what does that mean?~
 DO~SetGlobal("Tosendai","ar60pb",3)~
-==TODrizzt IF~InParty("Todrizzt")~THEN~ With Lolth ruling the Underdark, my kin have no need of an additional god of murder.~
-==Tolini IF~!InParty("Todrizzt")~THEN~ With Lolth ruling the Underdark, my kin have no need of an additional god of murder.~
-==Sendai8~Mother, we have additional visitors.~
+==TODrizzt IF~InParty("Todrizzt")~THEN~ With Lolth ruling the Underdark, my kin have no need for an additional god of murder.~
+==Tolini IF~!InParty("Todrizzt")~THEN~ With Lolth ruling the Underdark, my kin have no need for an additional god of murder.~
+==Sendai8~Mother, we have unexpected visitors.~
 ==UDDrow36~Is that the privacy for our meeting you promised, Aschmaan? I sense betrayal.~
 ==NTAshma~They must have overrun the guards, they do not belong to our fellowship, Handmaiden.~
 ==Sendai8~Mother, let me show you what I have learned!~
 ==UDDrow36~I appreciate your enthusiasm, girl, but Bhaal has greater plans for you and so have I. We cannot risk your life today - hush.~
 ==NTAshma~*Urgumzen narl.* ~EXIT
+
+CHAIN
+IF~Global("Tosendai","ar60pb",12)~THEN Tolini ToBlahand3
+~Bhaal spawns his progeny throughout all the races of Faerun it seems. He wants to make sure enough of his essence is available for his return.~
+DO~SetGlobal("Tosendai","ar60pb",13) SetGlobal("ToBhaalhunt","Global",4)~
+==ToCyric~We find his seed everywhere but we need the guy himself, damn.~
+=~And he needs us, hihi! What is his wonderful contingency plan good for if we don't do him the favour to kill him first.~
+==ToAdon~But Midnight is very strict that we keep his spawns alive - for whatever reason.~
+==CVSan25J~Not all of them will become what their *father* wants them to be, which is fuel for his return. They have a godly spark in them that may be forged into something powerful. And once the Time of Troubles is ended, such power may be required to rebuild what was destroyed.~
+==ToCyric~Don't be afraid, the new god of murder to follow slain Bhaal will take care of his predessessor's heritage, hihi.~
+==ToPellig~We will see. First things first. Where is Bhaal?~
+END
+++~Harper intelligence may have traced him. The ones to know will be found in Waterdeep by now.~ EXIT
+++~We should follow Gorion's trail to our son's house in Waterdeep.~EXIT

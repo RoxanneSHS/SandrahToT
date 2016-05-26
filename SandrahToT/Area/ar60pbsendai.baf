@@ -26,12 +26,15 @@ SetGlobal("Tosendai","ar60pb",1)
 CreateCreature("ntaschma",[4055.856],3)
 CreateCreature("uddrow36",[3981.877],13)
 CreateCreature("sendai9",[4044.933],9)
-CreateCreature("ntblhcu1",[830.960],10)
-CreateCreature("ntblhcu1",[1080.830],6)
+CreateCreature("ntblhcul",[830.960],10)
+CreateCreature("ntblhcul",[1080.830],6)
+CreateCreature("ntblhcul",[830.960],10)
+CreateCreature("ntblhcul",[2339.2717],5)
+CreateCreature("ogrema",[1139.2900],4)
 END
 
 IF
-GlobalLT("Tosendai","ar60pb",6)
+Global("ToBhaalhunt","Global",3)
 InMyArea("sendai9")
 OR(2)
 RealGlobalTimerExpired("Sendgone","ar60pb")
@@ -45,7 +48,6 @@ END
 
 IF
 Global("ToBhaalhunt","Global",3)
-GlobalLT("Tosendai","ar60pb",6)
 InMyArea("aschmaan")
 OR(2)
 RealGlobalTimerExpired("Sendgone","ar60pb")
@@ -58,12 +60,14 @@ Continue()
 END
 
 IF
-Global("Tosendai","ar60pb",6)
+Global("ToBhaalhunt","Global",3)
+GlobalLT("Tosendai","ar60pb",12)
+GlobalGT("Tosendai","ar60pb",2)
 !InMyArea("aschmaan")
 !InMyArea("sendai9")
 CombatCounter(0)
 THEN
 RESPONSE #100
-SetGlobal("Tosendai","ar60pb",7)
+SetGlobal("Tosendai","ar60pb",12)
 END
 

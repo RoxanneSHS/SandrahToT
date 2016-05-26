@@ -61,9 +61,9 @@ IF
 AreaCheck("ar60pb")
 Global("Tosendai","ar60pb",1)
 OR(3)
-Range("uddrow36",10)
-See("ntashma")
-See("Sendai8")
+See("uddrow36")
+See("aschmaan")
+See("Sendai9")
 THEN
 RESPONSE #100
 SetGlobal("Tosendai","ar60pb",2)
