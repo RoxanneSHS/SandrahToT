@@ -1,0 +1,11 @@
+IF
+Global("ToBhaalhunt","Global",5)
+Global("TotPeople","CVDre1",0)
+THEN
+RESPONSE #100
+SetGlobal("TotPeople","CVDre1",1)
+CreateCreature("ToElmi",[511.723],14)
+CreateCreature("Sankab3",[560.757],6)
+CreateCreature("ToIsmad",[1796.1443],6)
+CreateCreature("Sanwinth",[1747.1394],14)
+END

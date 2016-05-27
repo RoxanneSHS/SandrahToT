@@ -70,7 +70,20 @@ SetGlobal("Tosendai","ar60pb",2)
 END
 
 IF
-OR(6)
+Global("TotPeople","CVDre2",1)
+AreaCheck("CVDre2")
+OR(3)
+See("narqmes")
+See("togorion")
+See("tokapapa")
+THEN
+RESPONSE #100
+SetGlobal("TotPeople","CVDre2",2)
+END
+
+IF
+OR(7)
+Global("TotPeople","CVDre2",2)
 Global("ToPellJoin","RTF123",1)
 Global("ToTablet1","Global",5)
 Global("ToBaneHunt","Global",4)

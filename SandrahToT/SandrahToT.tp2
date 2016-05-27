@@ -24,6 +24,10 @@ EXTEND_BOTTOM
 EXTEND_BOTTOM
 ~CVElm9.bcs~ ~SandrahTOT/Area/CVElm9Reset.baf~
 EXTEND_BOTTOM
+~CVdre1.bcs~ ~SandrahTOT/Area/CVDre1Tot.baf~
+EXTEND_BOTTOM
+~CVdre2.bcs~ ~SandrahTOT/Area/CVDre2Tot.baf~
+EXTEND_BOTTOM
 ~RTF020.bcs~ ~SandrahTOT/Area/RTF020ToT.baf~
 EXTEND_BOTTOM
 ~RTF021.bcs~ ~SandrahTOT/Area/RTF021Kelem.baf~
@@ -206,7 +210,7 @@ APPEND ~pdialog.2da~
 ~TODrizzt *** *** *** TODriztP TODrizzt TODriztD TODrizzt~
 UNLESS ~TODrizzt~
 
-ADD_JOURNAL @015 @016 @020 @024 @025 @026 @027 @040 @044 @047 @050 @051 USING ~SandrahToT/TRA/SandrahToT.tra~
+ADD_JOURNAL @015 @016 @020 @024 @025 @026 @027 @040 @044 @047 @050 @051 @052 USING ~SandrahToT/TRA/SandrahToT.tra~
 
 COMPILE
 ~SandrahTOT/Baf/CVSantot.baf~
@@ -271,6 +275,10 @@ REPLACE ~ 289371~ @039
 COPY ~SandrahRTF/Baf/RTKeleE.2DA~ ~override/ToKeleE.2DA~
 REPLACE ~71020~ @034
 REPLACE ~361480~ @034
+
+COPY ~SandrahRTF/Baf/Sanbior.2DA~ ~override/TotKhal.2DA~
+REPLACE ~99992~ @053
+REPLACE ~99992~ @053
 
 COPY ~SandrahTOT/Misc~ ~Override~
 
@@ -482,6 +490,10 @@ WRITE_ASCII 0x2cc ~Togorion~
 COPY ~SandrahTOT/Cre/Sendai9.cre~ ~Override~
 SAY NAME1 ~Sendai~
 SAY NAME2 ~Sendai~
+
+COPY ~SandrahTOT/Cre/ToIsmad.cre~ ~Override~
+SAY NAME1 ~Ismanelda~
+SAY NAME2 ~Ismanelda~
 
 COPY ~SandrahTot/ITM/ToLiAmu.itm~ ~override~
 SAY NAME1 @019

@@ -7,3 +7,13 @@ SetGlobal("TotDoor","CVElm1",1)
 TriggerActivation("Elmhouse",FALSE)
 TriggerActivation("Elms House",FALSE)
 END
+
+IF
+Global("ToBhaalhunt","Global",4)
+Global("TotDoor","CVElm1",1)
+THEN
+RESPONSE #100
+SetGlobal("TotDoor","CVElm1",2)
+TriggerActivation("Elmhouse",TRUE)
+TriggerActivation("Elms House",TRUE)
+END

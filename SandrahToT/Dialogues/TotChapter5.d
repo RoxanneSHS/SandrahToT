@@ -1,5 +1,6 @@
 BEGIN ToGorion
 BEGIN Sendai8
+BEGIN ToIsmad
 
 CHAIN
 IF~Global("ToBhaalhunt","Global",1)~THEN ToGorion Meetbridge1
@@ -149,3 +150,65 @@ DO~SetGlobal("Tosendai","ar60pb",13) SetGlobal("ToBhaalhunt","Global",4)~
 END
 ++~Harper intelligence may have traced him. The ones to know will be found in Waterdeep by now.~ EXIT
 ++~We should follow Gorion's trail to our son's house in Waterdeep.~EXIT
+
+CHAIN
+IF~Global("TotPeople","CVDre2",2)~THEN ToPellig ToThay2
+~Gorion, Glarasteer, greetings again...~
+DO~SetGlobal("TotPeople","CVDre2",3) SetGlobal("ToBhaalhunt","Global",5)~
+==CVSan25J~...and of course Landrel. ~
+==Narqmes~Mylady Midnight, I was warned about your knowledge of things yet untold. Yes, I am Landrel, majordomo of your son Elminster.~
+==ToKapapa~Landrel, you may as well confess to our visitors that you are more like Elminster's counselor and co-harper, no need for your usual disguise.~
+==ToGorion~Your visit here today is just in time. You have not found Bhaal yet nor has he found this refuge.~
+==TOPellig~A perfect summary of the situation.~
+==ToCyric~We found his trail of spawns he breeds with all races to keep his essence once we tracked him down and eliminated him, but we have not seen the bastard in person.~
+==ToGorion~It looks like we were mistaken. Khalindra does not appear to be his target.~
+==ToKapapa~At least not at this moment, Gorion. I would not declare her and Elminster save yet.~
+==ToAdon~Harpers have a wide net to catch information. What do you know?~
+==NarQMes~Bhaal is looking for some artifact that opens a portal to Tantras.~
+==ToPellig~He thinks he can escape to the Nine Hells?~
+==TOLini~Where would such a portal exist?~
+==ToGorion~It is well known that a sealed portal exists at Dragonspear Castle in the north. The problem is to unseal it, even for one like Bhaal in his mortal form, hence the need for the artifact.~ DO~EscapeAreaObject("WDTown")~
+==ToKapapa~He has gone to the east, far east. The Thaymounts, to be exact.~ DO~EscapeAreaObject("WDTown")~
+==CVSan25J~Probably the old Citadel that is rumoured to be there since the time of Netheril's fall.~
+==NarQMes~Mylady, before you start such a journey, you should talk to Elminster. He is in the garden with his friends.~EXIT
+
+CHAIN
+IF~Global("TotPeople","CVDre1",1)~THEN Sanwinth Wintr1
+~(You recognize the harper and future innkeeper of Candlekeep.)~
+DO~SetGlobal("TotPeople","CVDre1",2)~
+==ToIsmad~...can be really charming, Winthrop.~
+==Sanwinth~Few people ever said that about me, it must be your presence, Ismanelda.~
+==ToIsmad~Your face...(grins)...the colour...(grins brighter)...you try to match my clothes, dontcha?~
+==Sanwinth~You mean I'm as pink as all the things you wear?~
+==ToIsmad~Don't disappoint me now and say that pink isn't the bestest colour of them all.~
+==Sanwinth~You would look magnificent in just any colour, Ismanelda...~
+==ToIsmad~Gosh, of course NOT, it's gotta be pink...heya, you there.~
+=~Eh, of course excuse me, mylady, you must be - eh - the lady of the house so to say, right? Master Elminster's mother.~
+==CVSan25J~Ismanelda...Imoen's mother...~
+==Sanwinth~You...you are mother already, my dear...??~
+==ToIsmad~Pfff, no, of course not, Winnie! That's Elminster's mother, she - eh - she knows such things, like things that happen in the future, ya know...they say she reads people's minds and stuff.~
+==Sanwinth~You mean, if you would have a daughter one day, you would call her Imoen?~
+==ToIsmad~Yeah and I never did ever tell anybody about it before - still she knows. And now you know it, too.~
+==Sanwinth~It gives me some responsibility, doesn't it?~
+==ToIsmad~Come, Winnie - excuse us, lady, we've got some...household stuff to do...~ DO~EscapeAreaObject("toTemple")~
+==Sanwinth~Yes, nice to have met you...~DO~EscapeAreaObject("toTemple")~EXIT
+
+CHAIN
+IF~Global("TotPeople","CVDre1",2) ~THEN Sankaba Pregn1
+~There come your parents, Elminster.~
+DO~SetGlobal("TotPeople","CVDre1",3)~
+==ToElmi~Khalindra, of course thou already met them in Mornbryn's Shield. Still...mother, father, I want to introduce thee again to Khalindra of Innarlith, the future mistress of my little household I will establish here in Waterdeep.~
+==ToCyric~You want to marry that girl, hihi? Son, I'm about to forgive you all your weirdness, looks like you finally come to your senses.~
+==CVSan25J~Our blessings, Elminster, Khalindra, to you and your daughter.~
+==Sankaba~You know about that already, Midnight? Yes, it is true - Elminster, I brought you out here to tell you about it today. Your mother...how do you know it will be a daughter?~
+END
+++~It was just wishful thinking, probably...anyway a grandson will be just as welcome.~EXTERN ToElmi Pregn2
+++~Since Mystra's death I seem to know such things, I cannot explain it.~ EXTERN ToElmi Pregn2
+
+CHAIN
+IF~~THEN ToElmi Pregn2
+~We hath agreed that the father wouldst name the son while the mother giveth the girl the name.~
+==CVSan25J~(Whispers, so only Khalindra can hear) Sandrah.~
+==Sankaba~(Nods) I will not tell until a girl is really born and I will not ask Elminster about his choice before not a son is here.~
+==ToElmi~So be it.~
+==ToCyric~I'm not feeling old enough yet to be grandfather...hihi, guess nobody will ask me for approval anyway...~DO~StartCutSceneMode() Wait(2) FadeToColor([20.0],0) Wait(2) TextScreen("TotKhal") Wait(2) StartCutScene("CVcut403") ~EXIT

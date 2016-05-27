@@ -1,5 +1,5 @@
 IF
-AreaCheck("Tot010")
+Global("SanTotStart","Global",1)
 HasItem("Ghost",Myself)
 THEN
 RESPONSE #100
@@ -15,4 +15,13 @@ THEN
 RESPONSE #100
 SetGlobal("ToBaneHunt","Global",10)
 StartDialogueNoSet("ToFind")
+END
+
+IF
+AreaCheck("CVDre1")
+See("CVSandr")
+Global("TotPeople","CVDre1",2)
+THEN
+RESPONSE #100
+StartDialogueNoSet("ToElmi")
 END

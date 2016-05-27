@@ -1,0 +1,17 @@
+IF
+Global("ToBhaalhunt","Global",4)
+Global("TotPeople","CVDre2",0)
+THEN
+RESPONSE #100
+SetGlobal("TotPeople","CVDre2",1)
+CreateCreature("ToKapapa",[759.901],14)
+CreateCreature("ToGorion",[903.833],4)
+END   
+
+IF
+Global("ToBhaalhunt","Global",4)
+!InMyArea("Narqmes")
+THEN
+RESPONSE #100
+CreateCreature("Narqmes",[812.793],0)
+END
