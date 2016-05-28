@@ -1,0 +1,7 @@
+IF
+Global("TotThay","Global",2)
+THEN
+RESPONSE #100
+SetGlobal("TotThay","Global",3)
+CreateCreature("RTMask",[1024.836],5)
+END

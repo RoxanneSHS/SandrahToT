@@ -160,11 +160,11 @@ DO~SetGlobal("TotPeople","CVDre2",3) SetGlobal("ToBhaalhunt","Global",5)~
 ==ToKapapa~Landrel, you may as well confess to our visitors that you are more like Elminster's counselor and co-harper, no need for your usual disguise.~
 ==ToGorion~Your visit here today is just in time. You have not found Bhaal yet nor has he found this refuge.~
 ==TOPellig~A perfect summary of the situation.~
-==ToCyric~We found his trail of spawns he breeds with all races to keep his essence once we tracked him down and eliminated him, but we have not seen the bastard in person.~
+==ToCyric~We found his trail of the spawns he breeds with all races to preserve his essence once we tracked him down and eliminated him, but we have not seen the bastard in person.~
 ==ToGorion~It looks like we were mistaken. Khalindra does not appear to be his target.~
 ==ToKapapa~At least not at this moment, Gorion. I would not declare her and Elminster save yet.~
 ==ToAdon~Harpers have a wide net to catch information. What do you know?~
-==NarQMes~Bhaal is looking for some artifact that opens a portal to Tantras.~
+==NarQMes~Bhaal is looking for some artifact that opens a portal to Avernus.~
 ==ToPellig~He thinks he can escape to the Nine Hells?~
 ==TOLini~Where would such a portal exist?~
 ==ToGorion~It is well known that a sealed portal exists at Dragonspear Castle in the north. The problem is to unseal it, even for one like Bhaal in his mortal form, hence the need for the artifact.~ DO~EscapeAreaObject("WDTown")~
@@ -212,3 +212,34 @@ IF~~THEN ToElmi Pregn2
 ==Sankaba~(Nods) I will not tell until a girl is really born and I will not ask Elminster about his choice before not a son is here.~
 ==ToElmi~So be it.~
 ==ToCyric~I'm not feeling old enough yet to be grandfather...hihi, guess nobody will ask me for approval anyway...~DO~StartCutSceneMode() Wait(2) FadeToColor([20.0],0) Wait(2) TextScreen("TotKhal") Wait(2) StartCutScene("CVcut403") ~EXIT
+
+CHAIN
+IF ~Global("TotThay","Global",1)~ THEN TOCyric TotThay1
+~I like Thay, honestly, hihi, so depressing and ugly and dangerous...~
+DO~SetGlobal("TotThay","Global",2)~
+==ToPellig~A society built on slavery and expansion wars, trading drugs and oppressing others. Cyric, if it would not exist already, either you or the drow would invent it.~
+==ToLini~You err, Pelligram, the Underdark is at least beautiful by itself despite some of its inhabitants while Thay is not.~
+==ToAdon~We are not here to enjoy the sightseeing.~
+==CVSan25J~Last time, in Tantras, Bhaal was in league with Mask's followers. There is a Mask temple around here, or at least a thieves' league.~
+==ToCyric~We should seek out either that or the nearest inn. Standing in the street makes me nervous.~
+END
+++~Let us head to Sharkey's inn over there.~EXIT
+++~Let us go to the Mask temple.~EXIT
+++~Let us visit the library for some insight.~EXIT
+
+CHAIN
+IF~Global("TotThay","Global",3)~ THEN RTMask TotThay2
+~Whom do we have here, intruders, friends, fools, or a combination of such?~
+DO~SetGlobal("TotThay","Global",4)~
+==ToCyric~Pale lady, hihi, living in the shadow too long.~
+==RTMask~YOU, you carry that weapon...the power of my master radiates strong from it, who are you?~
+==ToCyric~Godsbane? It's mine, mine alone! It belomgs to the future god of murder, it belongs to me, pale shadow thief.~
+==RTMask~Future god of murder? Yes, this sword is said to be the key to his throne. But Bhaal is pretty much alive.~
+==ToCyric~Still - but not for long, be assured. That is why we are here. Are you trying to stand in our way?~
+==RTMask~Ha, not one moment. And there is no need to rage on like that, bearer of Godsbane. Mask and all who follow him want Bhaal dead. Do it and we will be forever thankful.~
+==ToCyric~Really? Is this a trap? Last time I saw him, he seemed to be good friends with Mask.~
+==RTMask~That must have been before Bhaal betrayed first Myrkul and finally even Bane to save his own hide while at the same time trying to seize all of Jergal's former dominion.~
+==ToCyric~I see, the slayer bit off more than he can chew. So, pale darling, where is he?~
+==RTMask~Mh...mh, do you expect me to give that information for free?~
+==ToCyric~Not at all, my dear. I give you a very high price and a nearly invaluable advice in addition: I grant you your life and I warn you to EVER anger the new god of murder again.~
+==RTMask~Were it not for this sword, you would not be able to speak like that. But I feel it is my Lord Mask's will that you find Bhaal. Seek him in the slave quarters in the eastern harbour of town, nobody counts his victims there.~DO~ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT

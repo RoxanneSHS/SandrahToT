@@ -83,6 +83,10 @@ EXTEND_TOP
 ~RTF381.bcs~ ~SandrahTOT/Area/RTF381.baf~
 EXTEND_TOP
 ~RTF145.bcs~ ~SandrahTOT/Area/RTF145.baf~
+EXTEND_TOP
+~RTF050.bcs~ ~SandrahTOT/Area/RTF050Tot.baf~
+EXTEND_TOP
+~RTF510.bcs~ ~SandrahTOT/Area/RTF510Shaba.baf~
 
 COPY ~SandrahToT\Area/TOT001.ARE~ ~override\TOT001.ARE~
 COPY ~SandrahToT\Area/TOT001.mos~ ~override\TOT001.mos~

@@ -91,7 +91,7 @@ SetGlobal("Tomonst","ar5202",4)
 END
 
 IF
-OR(11)
+OR(12)
 Global("TOHasBane","Global",1)
 Global("TOHaiass","Global",1)
 Global("TOLiriquest","Global",10)
@@ -103,6 +103,7 @@ Global("CyrElmi","ar0505",1)
 Global("CyrElmi","ar0505",2)
 Global("ToBaneHunt","Global",16)
 Global("Tomonst","ar5202",4)
+Global("TotThay","Global",1)
 InParty(Myself)
 !See([ENEMY])
 See("CVSandr")
