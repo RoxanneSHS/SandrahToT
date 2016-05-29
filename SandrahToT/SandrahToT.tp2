@@ -86,6 +86,8 @@ EXTEND_TOP
 EXTEND_TOP
 ~RTF050.bcs~ ~SandrahTOT/Area/RTF050Tot.baf~
 EXTEND_TOP
+~RTF056.bcs~ ~SandrahTOT/Area/RTF056tot.baf~
+EXTEND_TOP
 ~RTF510.bcs~ ~SandrahTOT/Area/RTF510Shaba.baf~
 
 COPY ~SandrahToT\Area/TOT001.ARE~ ~override\TOT001.ARE~
@@ -252,6 +254,8 @@ EXTEND_TOP
 ~sguard.bcs~ ~SandrahTOT/Baf/Totgone.baf~
 EXTEND_TOP
 ~sguard2.bcs~ ~SandrahTOT/Baf/Totgone.baf~
+EXTEND_TOP
+~RTauct.bcs~ ~SandrahTOT/Baf/TRAuctTot.baf~
 
 COMPILE
 ~SandrahTOT/Dialogues~

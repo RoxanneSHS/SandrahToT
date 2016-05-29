@@ -228,9 +228,9 @@ END
 ++~Let us visit the library for some insight.~EXIT
 
 CHAIN
-IF~Global("TotThay","Global",3)~ THEN RTMask TotThay2
+IF~Global("TotPeople","RTF510",1) GlobalLT("TotThay","Global",4)~ THEN RTMask TotThay2
 ~Whom do we have here, intruders, friends, fools, or a combination of such?~
-DO~SetGlobal("TotThay","Global",4)~
+DO~SetGlobal("TotPeople","RTF510",2) IncrementGlobal("TotThay","Global",1)~
 ==ToCyric~Pale lady, hihi, living in the shadow too long.~
 ==RTMask~YOU, you carry that weapon...the power of my master radiates strong from it, who are you?~
 ==ToCyric~Godsbane? It's mine, mine alone! It belomgs to the future god of murder, it belongs to me, pale shadow thief.~
@@ -242,4 +242,32 @@ DO~SetGlobal("TotThay","Global",4)~
 ==ToCyric~I see, the slayer bit off more than he can chew. So, pale darling, where is he?~
 ==RTMask~Mh...mh, do you expect me to give that information for free?~
 ==ToCyric~Not at all, my dear. I give you a very high price and a nearly invaluable advice in addition: I grant you your life and I warn you to EVER anger the new god of murder again.~
-==RTMask~Were it not for this sword, you would not be able to speak like that. But I feel it is my Lord Mask's will that you find Bhaal. Seek him in the slave quarters in the eastern harbour of town, nobody counts his victims there.~DO~ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT
+==RTMask~Were it not for this sword, you would not be able to speak like that. But I feel it is my Lord Mask's will that you find Bhaal. Seek him in the slave quarters in the eastern harbour of town, nobody counts his victims there. Or visit his temple if you dare, fools.~DO~ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT
+
+CHAIN
+IF~Global("Totshark","RTF056",1)GlobalLT("TotThay","Global",4) ~THEN RTAuct Totthay3
+~...end of our business here in Bezanthur.~
+DO~SetGlobal("Totshark","RTF056",2)IncrementGlobal("TotThay","Global",1)~
+==RTShark~How can a slave auctioneer get bankrupt in this town? Is hell freezing over?~
+==RTAuct~Nobody bids against the Bhaalists, I can assure you. And their master's hunger for slaves is insatable.~
+==ToAdon~Why should Bhaal have need for slaves, does he plan to run a plantation?~
+==RTAuct~He needs their soul essence for his own power, he consumes them as fuel.~
+==Tolini~A holocaust to feed the god of murder?~
+==RTAuct~That's what I heard. It will be our ruin. The city must get rid of this uninvited guest.~
+==TOCyric~Uninvited? There is a large amount of worshippers of the Slayer here in Thay, hihi.~
+==RTShark~A number of them changed their minds since the guy is here, he was hailed while not on this plane but having him next door is something else.~
+==RTAuct IF~GlobalLT("TotThay","Global",4)~ THEN~You can ask those at Mask's temple, if you need further details.~ DO~EscapeArea()~
+==Tolini IF~GlobalGT("TotThay","Global",3)~ THEN~Mask's guild was telling a similar tale. He has a talent to gain friends.~ EXIT
+
+CHAIN
+IF~ Global("TotThay","Global",5)~ THEN ToAdon Totthay4
+~Any idea of how to stop Bhaal here, Midnight?~
+DO~SetGlobal("TotThay","Global",6)~
+==CVSan25J~We need to get access to Bhaal's temple in Bezanthur. This is where they would sacrifice those slaves to the Lord of Murder in their bloody rituals.~
+==ToCyric~I haven't seen any sign of his temple yet, hihi.~
+==ToPellig~Most of those ritual places are below the surface, Cyric.~
+==CVSan25J~Right, the one we search is below the Oddesseiron estate. I have been there before...~
+==ToCyric~You have...? I didn't know you ever were in Thay before.~
+==ToPellig~Looks like you do not know as much as you think you know about her, Cyric.~
+==ToCyric~Does one ever know women, Pelli-babe? So where is that Oddododdo estate?~
+==CVSan25J~A little out of town, to the north. The temple has as well access to an ancient transportation system from the founders of the Thaymount Citadel. I hope that Bhaal does not have means to activate it.~EXIT

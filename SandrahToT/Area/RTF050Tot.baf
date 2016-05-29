@@ -1,8 +1,9 @@
 IF
-Global("SanTotStart","Global",1)
+Global("ToBhaalhunt","Global",5)
 Global("TotThay","Global",0)
 Delay(24)
 THEN
 RESPONSE #100
 SetGlobal("TotThay","Global",1)
 END
+

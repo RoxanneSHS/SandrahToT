@@ -15,11 +15,21 @@ SetGlobal("Tolini","BG4100",8)
 END
 
 IF
-OR(4)
+Global("TotThay","Global",4)
+AreaCheck("RTF050")
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("TotThay","Global",5)
+END
+
+IF
+OR(5)
 Global("Tolini","BG4100",8)
 Global("TOKelemQuest","Global",4)
 Global("ToMyrkFi","RTF123",2)
 Global("ToBaneHunt","Global",2)
+Global("TotThay","Global",5)
 InParty(Myself)
 !See([ENEMY])
 See("CVSandr")
