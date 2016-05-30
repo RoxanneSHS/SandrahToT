@@ -91,6 +91,8 @@ EXTEND_TOP
 ~RTF510.bcs~ ~SandrahTOT/Area/RTF510Shaba.baf~
 EXTEND_TOP
 ~RTF060.bcs~ ~SandrahTOT/Area/RTF060Tot.baf~ USING ~SandrahRTF/TRA/RTF-setup.tra~
+EXTEND_TOP
+~RTF070.bcs~ ~SandrahTOT/Area/RTF070Tot.baf~
 
 COPY ~SandrahToT\Area/TOT001.ARE~ ~override\TOT001.ARE~
 COPY ~SandrahToT\Area/TOT001.mos~ ~override\TOT001.mos~
@@ -256,6 +258,12 @@ EXTEND_TOP
 ~sguard.bcs~ ~SandrahTOT/Baf/Totgone.baf~
 EXTEND_TOP
 ~sguard2.bcs~ ~SandrahTOT/Baf/Totgone.baf~
+EXTEND_TOP
+~RTKnired.bcs~ ~SandrahTOT/Baf/Totgone.baf~
+EXTEND_TOP
+~RTBalow.bcs~ ~SandrahTOT/Baf/Totgone.baf~
+EXTEND_TOP
+~RTColan.bcs~ ~SandrahTOT/Baf/Totgone.baf~
 EXTEND_TOP
 ~RTauct.bcs~ ~SandrahTOT/Baf/TRAuctTot.baf~
 

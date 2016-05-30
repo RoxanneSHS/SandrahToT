@@ -1,0 +1,20 @@
+IF
+Global("TotThay","Global",6)
+Global("ToBhalpe","RTF070",0)
+THEN
+RESPONSE #100
+SetGlobal("ToBhalpe","RTF070",1)
+CreateCreature("Ashiru",[2126.777],8)
+CreateCreature("RTKnihos",[2222.746],6)
+CreateCreature("Slaysh01",[4050.2509],4)
+CreateCreature("Stalke",[4030.2500],4)
+CreateCreature("RTKnihos",[4060.2750],1)
+CreateCreature("OHBBCLT1",[2393.1107],7)
+CreateCreature("OHBBCLT2",[4507.2393],6)
+CreateCreature("rtedwin",[2040.1787],5)
+CreateCreature("tohomer",[2553.1811],6)
+CreateCreature("skelded",[1660.1260],6)
+CreateCreature("skelded",[1670.1250],2)
+CreateCreature("skelded",[1680.1240],0)
+CreateCreature("bdbugb04",[2200.1677],12)
+END

@@ -1,6 +1,7 @@
 BEGIN ToGorion
 BEGIN Sendai8
 BEGIN ToIsmad
+BEGIN ToHomer
 
 CHAIN
 IF~Global("ToBhaalhunt","Global",1)~THEN ToGorion Meetbridge1
@@ -271,3 +272,17 @@ DO~SetGlobal("TotThay","Global",6)~
 ==ToPellig~Looks like you do not know as much as you think you know about her, Cyric.~
 ==ToCyric~Does one ever know women, Pelli-babe? So where is that Oddododdo estate?~
 ==CVSan25J~A little out of town, to the north. The temple has as well access to an ancient transportation system from the founders of the Thaymount Citadel. I hope that Bhaal does not have means to activate it.~EXIT
+
+CHAIN
+IF~Global("TotThay","Global",6)~THEN ToHomer Totthay4
+~More intruders? Edwin, boy, come here behind me.~
+DO~SetGlobal("TotThay","Global",7)~
+==CVSan25J~Homer Odesseiron and his nephew Edwin, I pressume.~
+==RTEdwin~Those unwashed Sword Coasters are just as uncivilized as you described them to me, uncle. (However, the girls outshine anything in Thay, hm.)~
+==ToHomer~What do you want here?~
+==ToCyric~Step aside, red robe, we have no issue with you - unless you are in league with the Bhaalists that are around here.~
+==RTEdwin~The scum may be of use to us other than to trample the grass (Let the chimpanzees do the dirty work for us.)~
+==ToHomer~The Bhaal fanatics are as unwelcome here as you are. Still, if you are here to fight them, I will not object you. You will find them in the southeast of the estate. Make sure to eliminate them all.~
+==ToCyric~Too bad, I had hoped for more resistance from you, Odesseiron, yes, yes, run for your life, hihi.~
+==ToHomer~Come, Edwin, let the mercenairies do their job, we have better things to do.~DO~EscapeAreaObject("Estate")~
+==RTEdwin~(That black beauty sure looked like a treat, hm.)~DO~EscapeAreaObject("Estate")~EXIT
