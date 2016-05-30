@@ -1,0 +1,60 @@
+IF
+Global("TotThay","Global",11)
+Dead("ToBhaal")
+THEN
+RESPONSE #100
+SetGlobal("TotThay","Global",12)
+StartCutSceneMode()
+Wait(2)
+FadeToColor([20.0],0)
+Wait(1)
+TextScreen("ToBaal2")
+Wait(4)
+EndCredits()
+END
+
+IF
+Global("Totmonst","RTF049",0)
+OR(2)
+Global("TotThay","Global",13)
+Global("TotThay","Global",11)
+THEN
+RESPONSE #100
+SetGlobal("Totmonst","RTF049",1)
+CreateCreature("OHBBCLT1",[3862.1340],7)
+CreateCreature("OHBBCLT2",[600.1093],6)
+CreateCreature("jondem01",[991.3176],6)
+CreateCreature("jondem02",[1380.580],2)
+CreateCreature("jondem05",[1966.2340],0)
+CreateCreature("OHBBCLT1",[1600.2289],7)
+CreateCreature("OHBBCLT2",[1155.2240],6)
+END
+
+IF
+Global("TotThay","Global",11)
+Global("Totmonst","RTF049",1)
+THEN
+RESPONSE #100
+SetGlobal("Totmonst","RTF049",2)
+CreateCreature("ToBhaal",[2780.1622],8)
+END
+
+IF
+GlobalGT("Totmonst","RTF049",0)
+InMyArea("RTAdmi")
+THEN
+RESPONSE #100
+ActionOverride("RTadmi",DestroySelf())
+Continue()
+END
+
+IF
+GlobalGT("Totmonst","RTF049",0)
+InMyArea("RTbaloc")
+THEN
+RESPONSE #100
+ActionOverride("RTbaloc",DestroySelf())
+Continue()
+END
+
+

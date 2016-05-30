@@ -93,6 +93,10 @@ EXTEND_TOP
 ~RTF060.bcs~ ~SandrahTOT/Area/RTF060Tot.baf~ USING ~SandrahRTF/TRA/RTF-setup.tra~
 EXTEND_TOP
 ~RTF070.bcs~ ~SandrahTOT/Area/RTF070Tot.baf~
+EXTEND_TOP
+~RTF077.bcs~ ~SandrahTOT/Area/RTF077Tot.baf~
+EXTEND_TOP
+~RTF049.bcs~ ~SandrahTOT/Area/RTF049Tot.baf~
 
 COPY ~SandrahToT\Area/TOT001.ARE~ ~override\TOT001.ARE~
 COPY ~SandrahToT\Area/TOT001.mos~ ~override\TOT001.mos~
@@ -246,6 +250,7 @@ COMPILE
 ~SandrahTOT/Baf/ToMovTan.baf~
 ~SandrahTOT/Baf/ToMartyr.baf~
 ~SandrahTOT/Baf/ToTorm.baf~
+~SandrahTOT/Baf/ToBhaal.baf~
 
 EXTEND_TOP
 ~CVSan25d.bcs~ ~SandrahTOT/Baf/CVSandrDToT.baf~
@@ -285,6 +290,14 @@ REPLACE ~ 289371~ @030
 COPY ~SandrahTOT/Baf/Tomyste.2DA~ ~override~
 REPLACE ~ 289371~ @038
 REPLACE ~ 289371~ @038
+
+COPY ~SandrahTOT/Baf/ToBaal1.2da~ ~override~
+REPLACE ~ 289371~ @054
+REPLACE ~ 289371~ @054
+
+COPY ~SandrahTOT/Baf/ToBaal1.2da~ ~override/ToBaal2.2da~
+REPLACE ~ 289371~ @055
+REPLACE ~ 289371~ @055
 
 COPY ~SandrahTOT/Baf/Tocyrice.2DA~ ~override~
 REPLACE ~ 289371~ @039

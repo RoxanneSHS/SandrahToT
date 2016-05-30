@@ -286,3 +286,22 @@ DO~SetGlobal("TotThay","Global",7)~
 ==ToCyric~Too bad, I had hoped for more resistance from you, Odesseiron, yes, yes, run for your life, hihi.~
 ==ToHomer~Come, Edwin, let the mercenairies do their job, we have better things to do.~DO~EscapeAreaObject("Estate")~
 ==RTEdwin~(That black beauty sure looked like a treat, hm.)~DO~EscapeAreaObject("Estate")~EXIT
+
+CHAIN
+IF~Global("TotThay","Global",8)~THEN ToCyric GotRelithay1
+~Looks like we found our *man*. Has he got the relict already?~
+DO~SetGlobal("TotThay","Global",9) SetGlobal("ToBhaalhunt","Global",6) ~
+==ToBhaal~Worry not, little thiefling, I finished my mission in Thay without your intervention and I'm ready for the next step on my agenda.~
+==ToAdon~And what may that be? Creating more spawns?~
+==ToBhaal~Only one more is needed, the one to prevent Mystra to spoil my plan.~
+==ToCyric~What??~
+==CVSan25J~Cyric!! He wants to rape Khalindra to place a spawn right next to Sandrah.~
+==ToBhaal~Sandrah?~
+==ToCyric~Sandrah?~
+==CVSan25J~Elminster's and Khalindra's firstborn - she may just have arrived by now. The heiress of the long line...~
+==ToPellig~Midnight! You may give the Lord of Murder an idea he did not yet have.~
+==ToBhaal~Worry not, Simbul - oh, yes, I know who you are...~
+=~Worry not, the dice has been cast, what will be will be, neither you nor your protege can prevent it anymore.~ DO~EscapeAreaObject("Downa")~
+END
+++~Let him go - we do not even want to prevent it. Yes, the dice has been cast but when it ends its roll, it will not show the number he expects.~ EXIT
+++~Let us follow him downstairs- we need to prevent his return to Waterdeep. Bhaal must find his end here and now!~DO~SetGlobal("TotThay","Global",10)~EXIT

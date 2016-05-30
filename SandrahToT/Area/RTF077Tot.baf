@@ -1,0 +1,53 @@
+IF
+Global("TotThay","Global",7)
+Global("ToBhalpe","RTF077",0)
+THEN
+RESPONSE #100
+SetGlobal("ToBhalpe","RTF077",1)
+TriggerActivation("Trigger Point 7",FALSE)
+TriggerActivation("Trigger Point 8",FALSE)
+Continue()
+END
+
+IF
+Global("ToBhalpe","RTF077",1)
+THEN
+RESPONSE #100
+SetGlobal("ToBhalpe","RTF077",2)
+CreateCreature("ToBhaal",[720.1890],8)
+CreateCreature("Slaysh01",[300.1290],4)
+CreateCreature("Stalke",[860.1946],4)
+CreateCreature("Slaysh01",[1000.1820],1)
+CreateCreature("OHBBCLT1",[3862.1340],7)
+CreateCreature("OHBBCLT2",[600.1093],6)
+CreateCreature("Stalke",[250.1260],6)
+CreateCreature("Stalke",[3050.1050],2)
+CreateCreature("Slaysh01",[1680.1240],0)
+CreateCreature("OHBBCLT1",[1600.2289],7)
+CreateCreature("OHBBCLT2",[1155.2240],6)
+END
+
+IF
+Global("TotThay","Global",10)
+THEN
+RESPONSE #100
+SetGlobal("TotThay","Global",11)
+TriggerActivation("Out77",FALSE)
+END
+
+IF
+Global("TotThay","Global",9)
+!InMyArea("ToBhaal")
+THEN
+RESPONSE #100
+SetGlobal("TotThay","Global",13)
+StartCutSceneMode()
+Wait(2)
+FadeToColor([20.0],0)
+Wait(1)
+TextScreen("ToBaal1")
+FadeFromColor([20.0],0)
+Wait(1)
+EndCutSceneMode()
+END
+

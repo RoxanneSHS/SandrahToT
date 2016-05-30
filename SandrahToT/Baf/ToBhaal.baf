@@ -1,0 +1,15 @@
+IF
+AreaCheck("rtf049")
+HasItem("Monhp1",Myself)
+THEN
+RESPONSE #100
+DestroyItem("Monhp1")
+END
+
+IF
+Global("TotThay","Global",11)
+Allegiance(Myself,NEUTRAL)
+THEN
+RESPONSE #100
+Enemy()
+END
