@@ -266,7 +266,7 @@ DO~SetGlobal("TotThay","Global",6)~
 ==CVSan25J~We need to get access to Bhaal's temple in Bezanthur. This is where they would sacrifice those slaves to the Lord of Murder in their bloody rituals.~
 ==ToCyric~I haven't seen any sign of his temple yet, hihi.~
 ==ToPellig~Most of those ritual places are below the surface, Cyric.~
-==CVSan25J~Right, the one we search is below the Oddesseiron estate. I have been there before...~
+==CVSan25J~Right, the one we search is below the Odesseiron estate. I have been there before...~
 ==ToCyric~You have...? I didn't know you ever were in Thay before.~
 ==ToPellig~Looks like you do not know as much as you think you know about her, Cyric.~
 ==ToCyric~Does one ever know women, Pelli-babe? So where is that Oddododdo estate?~

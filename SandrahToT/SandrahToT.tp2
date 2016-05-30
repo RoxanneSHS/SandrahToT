@@ -89,6 +89,8 @@ EXTEND_TOP
 ~RTF056.bcs~ ~SandrahTOT/Area/RTF056tot.baf~
 EXTEND_TOP
 ~RTF510.bcs~ ~SandrahTOT/Area/RTF510Shaba.baf~
+EXTEND_TOP
+~RTF060.bcs~ ~SandrahTOT/Area/RTF060Tot.baf~ USING ~SandrahRTF/TRA/RTF-setup.tra~
 
 COPY ~SandrahToT\Area/TOT001.ARE~ ~override\TOT001.ARE~
 COPY ~SandrahToT\Area/TOT001.mos~ ~override\TOT001.mos~
@@ -502,6 +504,10 @@ SAY NAME2 ~Sendai~
 COPY ~SandrahTOT/Cre/ToIsmad.cre~ ~Override~
 SAY NAME1 ~Ismanelda~
 SAY NAME2 ~Ismanelda~
+
+COPY ~SandrahTOT/Cre/ToHomer.cre~ ~Override~
+SAY NAME1 ~Homer Odesseiron~
+SAY NAME2 ~Homer Odesseiron~
 
 COPY ~SandrahTot/ITM/ToLiAmu.itm~ ~override~
 SAY NAME1 @019

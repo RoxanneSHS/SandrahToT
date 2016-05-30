@@ -1,0 +1,30 @@
+IF
+Global("ToBhaalhunt","Global",5)
+Global("ToBhalpe","RTF060",0)
+THEN
+RESPONSE #100
+SetGlobal("ToBhalpe","RTF060",1)
+TriggerActivation("In066",FALSE)
+RemoveMapNote([3404.1409],@1854)
+END
+
+IF
+Global("TotThay","Global",6)
+Global("ToBhalpe","RTF060",1)
+THEN
+RESPONSE #100
+SetGlobal("ToBhalpe","RTF060",2)
+CreateCreature("Ashiru",[730.1190],5)
+CreateCreature("RTKnihos",[1865.2630],4)
+CreateCreature("Slaysh01",[1430.1790],3)
+CreateCreature("Stalke",[1440.1744],4)
+CreateCreature("RTKnihos",[2400.750],1)
+CreateCreature("OHBBCLT1",[750.1177],2)
+CreateCreature("OHBBCLT2",[2219.700],6)
+CreateCreature("skelded",[1660.1260],6)
+CreateCreature("skelded",[1670.1250],2)
+CreateCreature("skelded",[1680.1240],0)
+CreateCreature("skelded",[1690.1230],12)
+CreateCreature("skelded",[1620.1260],7)
+CreateCreature("bdbugb04",[2200.1677],12)
+END
