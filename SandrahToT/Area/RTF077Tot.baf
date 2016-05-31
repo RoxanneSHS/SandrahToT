@@ -14,7 +14,7 @@ Global("ToBhalpe","RTF077",1)
 THEN
 RESPONSE #100
 SetGlobal("ToBhalpe","RTF077",2)
-CreateCreature("ToBhaal",[720.1890],8)
+CreateCreature("ToBhaal",[881.522],12)
 CreateCreature("Slaysh01",[300.1290],4)
 CreateCreature("Stalke",[860.1946],4)
 CreateCreature("Slaysh01",[1000.1820],1)

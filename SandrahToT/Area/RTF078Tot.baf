@@ -1,0 +1,7 @@
+IF
+Contains("RTSZHand","ScalesR")
+Global("SanTotStart","Global",1)
+THEN
+RESPONSE #100
+ActionOverride("ScalesR",DestroyItem("RTSZHand"))
+END

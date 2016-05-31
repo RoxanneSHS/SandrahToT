@@ -301,7 +301,7 @@ DO~SetGlobal("TotThay","Global",9) SetGlobal("ToBhaalhunt","Global",6) ~
 ==CVSan25J~Elminster's and Khalindra's firstborn - she may just have arrived by now. The heiress of the long line...~
 ==ToPellig~Midnight! You may give the Lord of Murder an idea he did not yet have.~
 ==ToBhaal~Worry not, Simbul - oh, yes, I know who you are...~
-=~Worry not, the dice has been cast, what will be will be, neither you nor your protege can prevent it anymore.~ DO~EscapeAreaObject("Downa")~
+=~Worry not, the dice has been cast, what will be will be, neither you nor your protege Midnight can prevent it anymore.~ DO~EscapeAreaObject("Downa")~
 END
 ++~Let him go - we do not even want to prevent it. Yes, the dice has been cast but when it ends its roll, it will not show the number he expects.~ EXIT
 ++~Let us follow him downstairs- we need to prevent his return to Waterdeep. Bhaal must find his end here and now!~DO~SetGlobal("TotThay","Global",10)~EXIT

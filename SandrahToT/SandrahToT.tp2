@@ -96,6 +96,8 @@ EXTEND_TOP
 EXTEND_TOP
 ~RTF077.bcs~ ~SandrahTOT/Area/RTF077Tot.baf~
 EXTEND_TOP
+~RTF078.bcs~ ~SandrahTOT/Area/RTF078Tot.baf~
+EXTEND_TOP
 ~RTF049.bcs~ ~SandrahTOT/Area/RTF049Tot.baf~
 
 COPY ~SandrahToT\Area/TOT001.ARE~ ~override\TOT001.ARE~
