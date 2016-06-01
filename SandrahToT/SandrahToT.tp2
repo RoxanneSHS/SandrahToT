@@ -272,6 +272,10 @@ EXTEND_TOP
 EXTEND_TOP
 ~RTColan.bcs~ ~SandrahTOT/Baf/Totgone.baf~
 EXTEND_TOP
+~RTCandre.bcs~ ~SandrahTOT/Baf/Totgone.baf~
+EXTEND_TOP
+~RTodluc.bcs~ ~SandrahTOT/Baf/Totgone.baf~
+EXTEND_TOP
 ~RTauct.bcs~ ~SandrahTOT/Baf/TRAuctTot.baf~
 
 COMPILE

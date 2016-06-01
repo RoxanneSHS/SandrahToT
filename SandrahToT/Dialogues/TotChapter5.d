@@ -234,7 +234,7 @@ IF~Global("TotPeople","RTF510",1) GlobalLT("TotThay","Global",4)~ THEN RTMask To
 DO~SetGlobal("TotPeople","RTF510",2) IncrementGlobal("TotThay","Global",1)~
 ==ToCyric~Pale lady, hihi, living in the shadow too long.~
 ==RTMask~YOU, you carry that weapon...the power of my master radiates strong from it, who are you?~
-==ToCyric~Godsbane? It's mine, mine alone! It belomgs to the future god of murder, it belongs to me, pale shadow thief.~
+==ToCyric~Godsbane? It's mine, mine alone! It belongs to the future god of murder, it belongs to me, pale shadow thief.~
 ==RTMask~Future god of murder? Yes, this sword is said to be the key to his throne. But Bhaal is pretty much alive.~
 ==ToCyric~Still - but not for long, be assured. That is why we are here. Are you trying to stand in our way?~
 ==RTMask~Ha, not one moment. And there is no need to rage on like that, bearer of Godsbane. Mask and all who follow him want Bhaal dead. Do it and we will be forever thankful.~
@@ -304,4 +304,4 @@ DO~SetGlobal("TotThay","Global",9) SetGlobal("ToBhaalhunt","Global",6) ~
 =~Worry not, the dice has been cast, what will be will be, neither you nor your protege Midnight can prevent it anymore.~ DO~EscapeAreaObject("Downa")~
 END
 ++~Let him go - we do not even want to prevent it. Yes, the dice has been cast but when it ends its roll, it will not show the number he expects.~ EXIT
-++~Let us follow him downstairs- we need to prevent his return to Waterdeep. Bhaal must find his end here and now!~DO~SetGlobal("TotThay","Global",10)~EXIT
+++~Let us follow him downstairs - we need to prevent his return to Waterdeep. Bhaal must find his end here and now!~DO~SetGlobal("TotThay","Global",10)~EXIT

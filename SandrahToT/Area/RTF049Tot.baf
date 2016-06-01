@@ -28,6 +28,7 @@ CreateCreature("jondem02",[1380.580],2)
 CreateCreature("jondem05",[1966.2340],0)
 CreateCreature("OHBBCLT1",[1600.2289],7)
 CreateCreature("OHBBCLT2",[1155.2240],6)
+CreateCreature("jondem04",[3119.901],1)
 END
 
 IF

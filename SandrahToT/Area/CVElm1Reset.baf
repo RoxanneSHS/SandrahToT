@@ -17,3 +17,12 @@ SetGlobal("TotDoor","CVElm1",2)
 TriggerActivation("Elmhouse",TRUE)
 TriggerActivation("Elms House",TRUE)
 END
+
+IF
+Global("ToBhaalFin","Global",1)
+THEN
+RESPONSE #100
+SetGlobal("ToBhaalFin","Global",2)
+TriggerActivation("Elms House",FALSE)
+CreateCreature("Toelmi",[1245.462],5)
+END

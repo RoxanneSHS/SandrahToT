@@ -22,3 +22,12 @@ CreateCreature("OHBBCLT1",[2204.477],2)
 CreateCreature("OHBBCLT2",[2219.1700],6)
 CreateCreature("bdbugb04",[2200.1677],12)
 END
+
+IF
+Global("TotThay","Global",13)
+Global("ToBhaalFin","Global",0)
+THEN
+RESPONSE #100
+SetGlobal("ToBhaalFin","Global",1)
+SetGlobal("Chapter","Global",36)
+END

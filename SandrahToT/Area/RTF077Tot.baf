@@ -49,5 +49,6 @@ TextScreen("ToBaal1")
 FadeFromColor([20.0],0)
 Wait(1)
 EndCutSceneMode()
+AddexperienceParty(48000)
 END
 
