@@ -31,3 +31,21 @@ Kill(Player1)
 Kill(Player2)
 Kill(Player3)
 END
+
+IF
+Global("ToBhaalActive","bd7230",1)
+InMyArea("BDMadele")
+THEN
+RESPONSE #100
+ActionOverride(""BDMadele",DestroySelf())
+Continue()
+END
+
+IF
+Global("ToBhaalActive","bd7230",1)
+InMyArea("BDakanna")
+THEN
+RESPONSE #100
+ActionOverride(""BDakanna",DestroySelf())
+Continue()
+END
