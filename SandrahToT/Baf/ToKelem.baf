@@ -19,10 +19,20 @@ SetGlobal("KelSpeak","RTF123",1)
 END
 
 IF
-OR(3)
+Global("TotJail","bd7230",2)
+AreaCheck("BD7230")
+See("Door08")
+THEN
+RESPONSE #100
+SetGlobal("TotJail","bd7230",3)
+END
+
+IF
+OR(4)
 Global("ToKelemcurse","Global",4)
 Global("KelSpeak","RTF123",1)
 Global("TOKelemQuest","Global",2)
+Global("TotJail","bd7230",3)
 InParty(Myself)
 !See([ENEMY])
 See("CVSandr")

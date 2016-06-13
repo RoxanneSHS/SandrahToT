@@ -9,6 +9,9 @@ CreateCreature("TotMel",[457.1295],14)
 CreateCreature("Tosarevm",[557.1235],8)
 CreateCreature("BDCult21",[2457.1245],14)
 CreateCreature("BDCult20",[2257.1045],11)
+CreateCreature("stalke",[2300.1605],6)
+CreateCreature("stalke",[1632.2248],14)
+CreateCreature("stalke",[1548.1689],10)
 END
 
 IF
@@ -37,7 +40,7 @@ Global("ToBhaalActive","bd7230",1)
 InMyArea("BDMadele")
 THEN
 RESPONSE #100
-ActionOverride(""BDMadele",DestroySelf())
+ActionOverride("BDMadele",DestroySelf())
 Continue()
 END
 
@@ -46,6 +49,31 @@ Global("ToBhaalActive","bd7230",1)
 InMyArea("BDakanna")
 THEN
 RESPONSE #100
-ActionOverride(""BDakanna",DestroySelf())
+ActionOverride("BDakanna",DestroySelf())
 Continue()
+END
+
+IF
+Global("ToBhaalActive","bd7230",1)
+Global("TotJail","bd7230",0)
+THEN
+RESPONSE #100
+SetGlobal("TotJail","bd7230",1)
+CloseDoor("Door08")
+CloseDoor("Door09")
+CloseDoor("Door10")
+Wait(1)
+Lock("Door08")
+Lock("Door09")
+Lock("Door10")
+Continue()
+END
+
+IF
+Global("TotJail","bd7230",1)
+THEN
+RESPONSE #100
+SetGlobal("TotJail","bd7230",2)
+ActionOverride("Chest_06",CreateItem("bdkey11",0,0,0))
+CreateCreature("Priilm",[2237.512],6)
 END

@@ -56,6 +56,8 @@ EXTEND_BOTTOM
 EXTEND_BOTTOM
 ~ar01pb.bcs~ ~SandrahTOT/Area/ar011pbmyrk.baf~
 EXTEND_TOP
+~bd2000.bcs~ ~SandrahTOT/Area/bd2000fin.baf~
+EXTEND_TOP
 ~bd7230.bcs~ ~SandrahTOT/Area/bd7230bhaal.baf~
 EXTEND_TOP
 ~rtf004.bcs~ ~SandrahTOT/Area/RTF004trans.baf~
@@ -253,6 +255,7 @@ COMPILE
 ~SandrahTOT/Baf/ToMartyr.baf~
 ~SandrahTOT/Baf/ToTorm.baf~
 ~SandrahTOT/Baf/ToBhaal.baf~
+~SandrahTOT/Baf/TotEndBh.baf~
 
 EXTEND_TOP
 ~CVSan25d.bcs~ ~SandrahTOT/Baf/CVSandrDToT.baf~

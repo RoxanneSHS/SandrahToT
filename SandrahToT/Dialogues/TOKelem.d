@@ -78,3 +78,21 @@ IF~~THEN ToBane Abalair3
 ==ToKelem~I would never take a personal benefit from an evil being like you, Bane. But it is not me alone, I have to think of the one I love and my children and children's children...~
 =~I accept your offer - you are free to go.~
 ==ToBane~A wise decision.~DO~ StartCutSceneMode() Wait(2) CreateVisualEffectObject("SPUNHOLY","Tokelem") Wait(6) CreateVisualEffectObject("SPUNHOLY","Tokelem") Wait(6) MoveToPoint([779.495]) Wait(4) EndCutSceneMode() DestroySelf()~EXIT
+
+CHAIN
+IF~Global("TotJail","bd7230",3)~THEN ToKelem Bhaalpris1
+~A prisoner?~
+DO~SetGlobal("TotJail","bd7230",4)~
+==Priilm~In Lord Ilmater's name, I beg you to set me free. These murderers are sacrificing us to Bhaal one after another.~
+==TOCyric~Hihi, you MUST be delighted, all this wonderful suffering!~
+==ToAdon~Oh, Cyric, can you never shut up.~
+==ToPellig~We will probably find a key to this cell. We will explore this temple anyway.~
+==TOCyric~Enjoy your martyrdom while you still can. My oh so goodhearted friends may soon end this happy vacation by setting you free.~
+==Priilm~Even suffering and enduring requires the perspective of relief.~EXIT
+
+CHAIN
+IF WEIGHT #-3~Global("TotJail","bd7230",4) PartyHasItem("BDKey11") OpenState("Door09",TRUE)~THEN Priilm Bhaalpris2
+~In Lord Ilmater's name, thanks to you, friends.~
+DO~SetGlobal("TotJail","bd7230",5) AddexperienceParty(4000)~ 
+==ToCyric~Happy sufferings out there.~
+==Priilm~May you find what you seek,friends.~DO~EscapeAreaObject("TranBD7220")~EXIT

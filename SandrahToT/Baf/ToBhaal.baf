@@ -13,3 +13,14 @@ THEN
 RESPONSE #100
 Enemy()
 END
+
+IF
+AreaCheck("bd2000")
+OR(2)
+See("CVSandr")
+See("ToCyric")
+Allegiance(Myself,NEUTRAL)
+THEN
+RESPONSE #100
+Enemy()
+END
