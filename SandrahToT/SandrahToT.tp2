@@ -135,6 +135,7 @@ COPY ~SandrahToT\Area/TOT005.wed~ ~override\TOT005.wed~
 COPY ~SandrahToT\Area/TOT005HT.bmp~ ~override\TOT005HT.bmp~
 COPY ~SandrahToT\Area/TOT005LM.bmp~ ~override\TOT005LM.bmp~
 COPY ~SandrahToT\Area/TOT005SR.bmp~ ~override\TOT005SR.bmp~
+COMPILE ~SandrahToT\Area/TOT005.BAF~
 COMPILE ~SandrahToT\Area/TOTG05.BAF~
 
 COPY ~SandrahToT\Area/TOT006.ARE~ ~override\TOT006.ARE~
@@ -319,6 +320,10 @@ REPLACE ~361480~ @034
 COPY ~SandrahRTF/Baf/Sanbior.2DA~ ~override/TotKhal.2DA~
 REPLACE ~99992~ @053
 REPLACE ~99992~ @053
+
+COPY ~SandrahNPC/Misc2/SanUmo.2DA~ ~override/SanTotF.2DA~
+REPLACE ~ 99992~ @056
+REPLACE ~ 99993~ @056
 
 COPY ~SandrahTOT/Misc~ ~Override~
 

@@ -1,0 +1,24 @@
+IF
+Global("ToBhaalFin","Global",7)
+PartyHasItem("ToTabl2")
+THEN
+RESPONSE #100
+SetGlobal("ToBhaalFin","Global",8)
+CreateCreature("RTLordAo",[2111.1839],2)
+END
+
+IF
+Global("ToBhaalFin","Global",10)
+THEN
+RESPONSE #100
+SetGlobal("ToBhaalFin","Global",11)
+ClearAllActions()
+StartCutSceneMode()
+Wait(1)
+TextScreen("SanTotF")
+Wait(3)
+StartMovie("RTFinit")
+Wait(1)
+EndCutSceneMode()
+EndCredits()
+END

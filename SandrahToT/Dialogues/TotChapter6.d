@@ -35,8 +35,14 @@ IF~Global("ToBhaalFin","Global",6)~ THEN ToCyric Boarshow2
 DO~SetGlobal("ToBhaalFin","Global",7)~
 ==Sarmel01~He was weak in his mortal avatar, too weak for the Prime.~
 ==CVSan25J~Unlike the mortals themselve, those who call the Prime their home.~
-==Sarmel01~Some of them are strong enough to play their role on ANY plane they chose to rule.~
+==Sarmel01~Some of them are strong enough to play their role on ANY plane they would chose to rule.~
 ==ToCyric~Hihi, well spoken! Come, Midnight, let us claim at the Celestial Stairs what is truly ours to claim.~
 ==Sarmel01~Go claim the vacant portfolios...both of you.~DO~EscapeAreaObject("Tranbd2010")~
 ==CVSan25J~...and Bhaal's essence remains on the Prime meanwhile...nothing can be done about that at the moment.~
-=~(Midnight takes a long look at Bhaal's high priestess.) *A traitor in their midst.*~
+=~(Midnight takes a long look at Bhaal's high priestess.) *A traitor in their midst.*~EXIT
+
+CHAIN
+IF~Global("ToBhaalFin","Global",8)~ THEN RTLordAo MakeGods1
+~The missing tablet returns. It is time to end this avatar crisis.~
+DO~SetGlobal("ToBhaalFin","Global",9)~
+==ToCyric~Time for some new gods to rise, hihi.~EXIT
