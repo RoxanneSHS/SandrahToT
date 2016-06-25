@@ -45,4 +45,37 @@ CHAIN
 IF~Global("ToBhaalFin","Global",8)~ THEN RTLordAo MakeGods1
 ~The missing tablet returns. It is time to end this avatar crisis.~
 DO~SetGlobal("ToBhaalFin","Global",9)~
-==ToCyric~Time for some new gods to rise, hihi.~EXIT
+==ToCyric~Time for some new gods to rise, hihi.~
+==ToPellig~You really cannot await it, Cyric?~
+==ToCyric~And what about you, Pelli-babe, which portfolio will you claim?~
+==ToPellig~You will never understand, new Lord of Murder. The Simbul will remain what she always has been.~
+==RTLordAo~The Simbul will prepare each new incarnation of Mystra for the task awaiting her. She has always done this and will continue to do so by her own choice.~
+=~So, Pelligram?~
+==ToPellig~Midnight is ready to accept her duty - and I know a baby girl in Waterdeep waiting to become my ward in a little time...~
+==CVSan25J~Lord AO, my friend Pelligram has expressed it well - I accept to be the Weave's keeper for the time being. Until that girl the Simbul is referring to will be ready to accept her duty.~
+==RTLordAO~This has never been...Well, a situation like the current has never existed before. The Weave needs you, Midnight, and you will do your duty well. I will allow you to leave when the new Mystra is ready to accept her task. Neither you nor the Simbul will be allowed to influence the girl's decision directly. Pelligram will ward her but in a form that will not allow her to act directly.~
+=~Now, Adon, cleric of Sune...~
+==ToAdon~No, Lord AO - Sune is alive and may return, but I cannot serve her anymore. She has forsaken me when I needed her most.~
+==CVSan25J~You may want to consider how we have worked together through all of this, my friend.~
+==ToAdon~I will consider it, Midnight...I mean, Mystra. Give me time to contemplate it, I may decide to be your servant in a while.~
+==RTLordAO~Now that we have settled this...~
+=~Cyric, I command you to give me your sword, Godsbane. It is supposed to hold the essence of your predecessor, Bhaal.~
+==ToPellig~A soultaker can only hold one creature's essence, AO. Godsbane may have held a soul already before Bhaal was eliminated.~
+==RTLordAO~What?~
+==ToCyric~What?~
+==CVSan25J~What?~DO~StartCutSceneMode() Wait(1) CreateCreatureObjectDoor("RTKele2","ToCyric",0,0,0) Wait(8) EndCutSceneMode()~EXIT
+
+CHAIN
+IF~Global("ToBhaalFin","Global",9)~ THEN ToPellig MakeGods2
+~Kelemvor Lyonsbane.~
+DO~SetGlobal("ToBhaalFin","Global",10)~
+==ToCyric~Kelemvor??!!.~
+==CVSan25J~The soultaker that took Kelemvor was...Godsbane...Cyric!!~
+==RTKelem~Cyric, my murderer.~
+==ToCyric~How could I ever have won your heart while the fool was alive? You killed him, your stupid love for this man killed him, not me.~
+==RTLordAO~You have truly earned the elevation to be God of Murder, Cyric. You and Mystra will have eternity to sort that out. And I will add Kelemvor to the cast of new gods as well. ~
+==RTKelem~What can a murdered man who never became a paladin do to serve in eternity?~
+==RTLordAO~You will be judge of the damned in the Fugue Plane, Kelemvor, Lord of the Dead.~
+==RTKelem~Await the day in fear when I will judge you, Cyric.~
+==CVSan25J~Await the day in fear when I will deliver you to Kelemvor's judgement, Cyric.~ 
+==ToPellig~You may think the Time of Troubles ends today, Lord AO. Too many loose ends surround us still - Bhaal's essence is distributed in his spawns all over the Prime and two former lovers are now godly enemies. This is nothing more than a cease fire before the next storm rises.~EXIT

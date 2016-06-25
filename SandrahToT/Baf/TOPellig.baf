@@ -82,7 +82,7 @@ SetGlobal("TotPeople","CVDre2",2)
 END
 
 IF
-OR(7)
+OR(8)
 Global("TotPeople","CVDre2",2)
 Global("ToPellJoin","RTF123",1)
 Global("ToTablet1","Global",5)
@@ -90,6 +90,7 @@ Global("ToBaneHunt","Global",4)
 Global("ToBaneHunt","Global",8)
 Global("Tomonst","ar5202",6)
 Global("Tosendai","ar60pb",2)
+Global("ToBhaalFin","Global",9)
 !StateCheck(Myself,CD_STATE_NOTVALID)
 !StateCheck("CVsandr",CD_STATE_NOTVALID)
 THEN
