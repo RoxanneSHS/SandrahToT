@@ -27,7 +27,7 @@ DO~SetGlobal("ToBhaalFin","Global",5)~
 ==ToBhaal~I laugh at your attempts to prevent the inevitable, mortals. Gods do not die.~
 ==CVSan25J~Prophesies should not be left unattended, Bhaal. The story is never written until the ink of the last word and final full stop has dried.~
 =~See me holding the quill - it is your last vision ever.~
-=~Strike, Godsbane.~DO~ClearAllActions() StartCutSceneMode() StartCutScene("TotEndBh")~EXIT
+=~Strike, Godsbane.~DO~ClearAllActions() StartCutSceneMode() Wait(1) ActionOverride("ToBhaal",DestroyItem("Monhp1")) Wait(2) StartCutScene("TotEndBh")~EXIT
 
 CHAIN
 IF~Global("ToBhaalFin","Global",6)~ THEN ToCyric Boarshow2
