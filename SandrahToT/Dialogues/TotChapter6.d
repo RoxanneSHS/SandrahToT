@@ -39,7 +39,10 @@ DO~SetGlobal("ToBhaalFin","Global",7)~
 ==ToCyric~Hihi, well spoken! Come, Midnight, let us claim at the Celestial Stairs what is truly ours to claim.~
 ==Sarmel01~Go claim the vacant portfolios...both of you.~DO~EscapeAreaObject("Tranbd2010")~
 ==CVSan25J~...and Bhaal's essence remains on the Prime meanwhile...nothing can be done about that at the moment.~
-=~(Midnight takes a long look at Bhaal's high priestess.) *A traitor in their midst.*~EXIT
+=~(Midnight takes a long look at Bhaal's high priestess.) *A traitor in their midst.*~
+END
+++~You decide to let Melissan escape and commence her deception of Bhaal. You will claim your godhood at the Celestial Stairs now.~EXIT
+++~You decide to kill Melissan before she can start to set up her plan that will end in the Bhaalspawn war later on.~ DO~SetGlobal("ToBhaalFin","Global",77) StartCutSceneMode() Kill("Totmel01") Wait(2) FadeToColor([20.0],0) Wait(1) TextScreen("ToBaal2") Wait(4) EndCredits()~ EXIT
 
 CHAIN
 IF~Global("ToBhaalFin","Global",8)~ THEN RTLordAo MakeGods1
