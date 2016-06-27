@@ -2,7 +2,7 @@ BEGIN ToCyric
 IF~InParty(Myself) IsGabber("CVsandr")~THEN BEGIN Pid
 SAY~Midnight, your interest graces me, my beauty.~
 IF~~THEN REPLY~Tell me about Zenthil Keep.~GOTO Cyrzent
-IF~~THEN REPLY~I just needed to check your sanity, that's all~EXIT
+IF~~THEN REPLY~I just needed to check your sanity, that's all.~EXIT
 IF~Global("TOHasBane","Global",2) Global("Cyrwarn","LOCALS",0)~THEN REPLY~I must warn you, Cyric, now that you have Godsbane, leave Kelemvor alone.~DO~SetGlobal("Cyrwarn","LOCALS",1)~GOTO Cyrwarn1
 END
 

@@ -74,7 +74,7 @@ Global("TotPeople","CVDre2",1)
 AreaCheck("CVDre2")
 OR(3)
 See("narqmes")
-See("togorion")
+See("gorion")
 See("tokapapa")
 THEN
 RESPONSE #100
@@ -120,6 +120,7 @@ DisplayStringHead(Myself,@042)
 END
 
 IF
+GlobalGT("ToTablet1","Global",1)
 !HasItem("Simbul",Myself)
 !AreaCheck("RTF026")
 !HasItem("Simbul",Player1)

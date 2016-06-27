@@ -92,7 +92,7 @@ IF~Global("TOHasBane","Global",1)~THEN TOCyric hasBane1
 =~*As Cyric moves away and out of hearing distance, she continues.*~
 =~You saw a piece of your future - or shall I say of OUR future, is that so?~
 ==CVSan25J~It is different. I had the feeling I remembered my past...~
-==TOPellig~*She remains silent for a moment contemplating your words.~
+==TOPellig~*She remains silent for a moment contemplating your words.*~
 =~If it was your past you saw, be careful with your decisions. You cannot alter your own past without changing your future. Do nothing that makes your future impossible, you will destroy yourself - and maybe much more.~
 END
 ++~(You shout after him) Cyric, keep that damned sword and guard it with your life, guard it with your life!~DO~SetGlobal("TOHasBane","Global",2)~EXIT

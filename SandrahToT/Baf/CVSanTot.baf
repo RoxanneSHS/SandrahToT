@@ -63,6 +63,12 @@ THEN
 RESPONSE #100
 SetGlobal("TotParty","RTF123",2)
 SetGlobal("Sanpoints","GLOBAL",20)
+END
+
+IF
+Global("TotParty","RTF123",2)
+THEN
+RESPONSE #100
 ActionOverride("CVSandr",Dialogue("TOCyric"))
 END
 
