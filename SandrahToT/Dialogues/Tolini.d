@@ -23,7 +23,7 @@ END
 
 CHAIN
 IF~Global("ToLini","BG4100",4) ~THEN Tolini Pris2
-~Before you beat me as well, just for my race and just because you can - let me thank you in Eillestrae's name. Even if I am the sole survivor or our little caravan of hope.~
+~Before you beat me as well, just for my race and just because you can - let me thank you in Eilistraee's name. Even if I am the sole survivor or our little caravan of hope.~
 ==TOpellig~You are followers of the Dark Maiden and we have followers of Mystra here. This should be enough to consider us friends.~
 ==TOCyric~She's a treat, hihi, so much is sure. Much too valuable for simple bloodshed. (These drow girls know how to...)~
 ==TOKelem~We leave nobody out in the wilderness, alone and helpless.~

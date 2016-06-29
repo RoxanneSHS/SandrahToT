@@ -54,7 +54,7 @@ END
 
 CHAIN
 IF~~THEN Tolini TOLiniQuest2
-~I know nothing of those, Midnight. The organisation that troubles me calls themself the Dragon's Hoard.~
+~I know nothing of those, Midnight. The organisation that troubles me calls itself the Dragon's Hoard.~
 ==TOCyric~A quite boastful name, hihi, they must be either dwarves or...drow.~
 ==TOKelem~They are indeed drow, silly thief, you should know that. At least it's drow that lead them, even if other scum is in their ranks as well.~
 ==TOAdon~Like those red wizards we defeated to free you, Liriel.~
