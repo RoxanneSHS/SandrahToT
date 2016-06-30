@@ -59,7 +59,7 @@ END
 
 CHAIN
 IF~~THEN ToKelem Whatwrong12
-~You mean that we may not all survive this *Time of Trouble*?~
+~You mean that we may not all survive this *Time of Troubles*?~
 ==CVSan25J~(Try to smile.) We are adventurers, we live a dangerous life from day to day.~
 ==ToKelem~You were never bothered about that in the way you are now.~
 ==CVSan25J~Gods in their avatars are still powerful beings, even when mortal. Chances are that people like us will cross their path.~
@@ -117,7 +117,7 @@ DO~SetGlobal("ToGodwalk","Global",2)~
 ==ToGoWa02~It looks like it makes no sense to ask people like you for a little help.~
 ==TOCyric~Hihi, Godsbane is always willing to help bastards like you out of the mysery of their wretched existance.~
 ==ToPellig~Cyric, please, keep your energy for worthier foe.~
-==TOCyric~For you, Pelli-baby, always willing to please you.~
+==TOCyric~For you, Pelli-darling, always willing to please you.~
 END
 ++~Enough, let us not waste time with those, they received the punishment they deserved.~EXIT
 ++~We can do a little but I am not wasting resources on scum.~DO~ReallyForceSpellRES("CVHealh","ToGoWa02")~EXIT
@@ -132,7 +132,7 @@ DO~SetGlobal("ToGodwalk","Global",4)~
 =~AO has indeed cast ALL gods out of Celestia and banned to the Prime to dwell here as mortals. Not only that, they are not just avatars while their immortal essence stayed at home, no, they are now vulnerable though still devastatingly powerful.~
 ==ToAdon~Does anyone know why such a thing happened?~
 ==Prihel~There was a theft, the Tablets of Fate are gone and the gods are relegated by angry AO until the thieves are found and the clay tablets returned.~
-==ToPellig~The only reason for such a deed can be one or more deities trying to gain power outside their portefolio which are chiseled onto those steles.~
+==ToPellig~The only reason for such a deed can be one or more deities trying to gain power outside their portfolio which are chiseled onto those steles.~
 ==Prihel~Only the Unsleeping Eye, my master Helm, remains in full power to prevent any of the others to return.~
 ==CVSan25J~Absurd to assume that Mystra would do such a deed.~
 ==TOAdon~Or fair Sune. This is the deed of some evil gods for sure.~ 
@@ -172,7 +172,7 @@ IF~Global("ToGodwalk","Global",7)~THEN Tomalar Malar3
 ~Unbelievers are approaching. (Sniff) Hateful Mystra...(Sniff) Stinking Sune...~
 DO~SetGlobal("ToGodwalk","Global",8)~
 ==ToPellig~A nice gathering, Beastlord.~
-==ToCyric~Hihi, this pelt looks like it makes a nice cloak for you, Pelli-babe.~
+==ToCyric~Hihi, this pelt looks like it makes a nice cloak for you, Pelli-darling.~
 ==ToPellig~You will never get the smell of its evil former owner out of it, Cyric. It is something to be left in their beloved nature to rot and feed the worms.~
 ==ToCyric~I understand you perfectly, the endless cycle of nature and so on and blah and blah.~
 ==CVSan25J~You still have a chance to leave these woods peacefully, Malar.~
@@ -226,13 +226,13 @@ CHAIN
 IF~~THEN Tokelem Waukgo3
 ~I object to this statement, Midnight. We cannot ignore the presence of the gods even if they are mortal now. They are - at least some of them are - the most powerful and dangerous beings on the Prime.~
 ==TOAdon~Right, Kelemvor, and we see that any of them may be just around the corner.~
-==ToCyric~Ha, you sissies, don't you see the opportunities? Just tell me - who will gain their portefolio should we meet one and defeat him or her?~
+==ToCyric~Ha, you sissies, don't you see the opportunities? Just tell me - who will gain their portfolio should we meet one and defeat him or her?~
 ==ToLini~That will be decided by AO, or not?~
 ==ToCyric~Oh, my dark beauty, how you err...I tell you, the winner takes all, the strongest will survive - kill one and take what you need.~
 ==TOKelem~Madman, are you proposing to hunt down gods and grab their domains or what?~
 ==ToPellig~Friends, I am afraid that Cyric's vision is not so totally absurd as it may sound. There will be casualties sooner or later, and - just as Cyric already stated, there will be vacancies. ~
 =~At one point this situation will end. There will be a vacuum of power in some domains and it must be filled to prevent further chaos.~
-==ToCyric~Pellig-babe, I knew you'd understand...I have to make up my mind about which portefolio I should go for.~
+==ToCyric~Pellig-babe, I knew you'd understand...I have to make up my mind about which portfolio I should go for.~
 ==CVSan25J~How about murder, your specialty - or take strife...Cyric, Cyric...~
 ==ToCyric~Splendid ideas, girls, you are great inspirations, really. But why chose - why not take both and maybe even...~
 ==TOKelem~Stop it. madman!! And you, Pelligram, Midnight, what do you think you do? You put fuel to that idiot's fire! Just imagine he really starts to believe in such stuff. He's dangerous enough already.~
@@ -260,7 +260,7 @@ DO~ SetGlobal("ToTablet1","Global",2)~
 ==CVSan25J~Eh...I mean...they are not dead - yet. Probably soon, when we find them. Actually I meant those three gods that put Jergal to death and divided his portilolio among each other.~
 ==ToCyric~Clever deduction, that makes sense, the soon-to-be-dead three, Jergal's heirs...~
 ==ToSune~Myrkul, Bane and Bhaal.~
-==ToPellig~They worked together in the past to gain immortality. They do it again to enrich their portefolios.~
+==ToPellig~They worked together in the past to gain immortality. They do it again to enrich their portfolios.~
 ==ToCyric~And we eliminate them and acquire their power, wonderful, hihi.~
 ==Tomyst~We will see about that last part. With the first half, to hunt and eliminate them, we can agree.~
 ==ToSune~We are sure from our divinations that at least one of them and one of the tablets are in these parts of the Realms.~
@@ -287,7 +287,7 @@ DO~SetGlobal("ToBhaalActive","bd7230",2)~
 ==Toaliann~Our beloved Lord has seen you coming but he will not die.~
 ==ToCyric~He will have a hard time withstanding Godsbane.~
 ==ToPellig~Cyric, I sometimes think you have the gift to see the future...~
-==ToCyric~You need no prophet for that, hihi, that guy's portefolio just would suit me too well, Pelli-babe.~
+==ToCyric~You need no prophet for that, hihi, that guy's portfolio just would suit me too well, Pelli-darling.~
 ==Tosarevm~Blasphemer...no one will take Lord Bhaal's place.~
 ==CVSan25J~(Whispers almost like in a trance) Bhaal will not die, some bhaalspawns are already seeded...~
 ==SarMel01~WHAT? Who are you, woman? How come you to know anything about our Lord's plans?~
@@ -309,7 +309,7 @@ CHAIN
 IF~Global("ToTablet1","Global",5)~THEN ToPellig Tab1Start2
 ~So we have learned a bit about what is going on by now.~
 DO~ SetGlobal("ToTablet1","Global",6)~
-==ToCyric~Oh, Pelli-babe, I so adore your intelligence, hihi. Just - what is it that we have learned?~
+==ToCyric~Oh, Pelli-darling, I so adore your intelligence, hihi. Just - what is it that we have learned?~
 ==CVSan25J~Some B and B and M are working on a plan to find a better place to hide the tablets we search.~
 ==ToAdon~B,B and M proofs our initial suspicion about the not-yet-dead-three.~
 ==TOlini~I wonder what Tiamat has to do with those three, she is the Dragon Queen.~

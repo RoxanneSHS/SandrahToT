@@ -82,7 +82,7 @@ SetGlobal("TotBioChange","LOCALS",1)
 END
 
 IF
-Global("TOKelemQuest","Global",3)
+GlobalGT("TOKelemQuest","Global",2)
 Global("ToGodwalk","Global",0)
 AreaType(OUTDOOR)
 !AreaType(CITY)
@@ -102,7 +102,7 @@ END
 
 IF
 Global("ToGodwalk","Global",2)
-OR(14)
+OR(15)
 AreaCheck("BG0002")
 AreaCheck("BG4802")
 AreaCheck("ar6804")
@@ -117,6 +117,7 @@ AreaCheck("BG4003")
 AreaCheck("bh0302")
 AreaCheck("CVroan")
 AreaCheck("CVroa9")
+AreaCheck("BG3402")
 THEN
 RESPONSE #100
 SetGlobal("ToGodwalk","Global",3)
