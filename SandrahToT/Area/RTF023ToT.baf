@@ -24,6 +24,7 @@ CreateCreature("cvslao",[1689.1135],5)
 END
 
 IF
+Global("SanTotStart","Global",1)
 Global("PapInChest","RTF023",0)
 THEN
 RESPONSE #100

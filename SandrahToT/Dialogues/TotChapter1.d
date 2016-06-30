@@ -292,7 +292,7 @@ DO~SetGlobal("TOLiriquest","Global",14)~
 ==ToPellig~Queen Ellesime, would it not be possible that your most potent mage, the man you trust most of all, can help us with this?~
 ==Toiren~That would be me? What do you propose, strange woman?~
 ==ToPellig~Your powerful magic should be able to conjure a restrictive ban on the use of Windwalker's power to limit it to good aligned drow. The item will be right here under your direct control - you could easily destroy it when you find it misused.~
-==TOCyric~Pelli-baby, how I admire your wisdom...(if it would only extend to your choice of men...)~
+==TOCyric~Pelli-darling, how I admire your wisdom...(if it would only extend to your choice of men...)~
 ==RTElles~What do you say, Joneleth?~
 ==Toiren~Hm.~
 =~Yes, my power is such that I can do it. Try to betray me and you will suffer the consequences. ~
