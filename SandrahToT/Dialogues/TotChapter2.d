@@ -257,7 +257,7 @@ DO~ SetGlobal("ToTablet1","Global",2)~
 ==CVSan25J~The dead three...~
 ==ToKelem~I never heard this expression.~
 ==Tolini~Who would that be?~
-==CVSan25J~Eh...I mean...they are not dead - yet. Probably soon, when we find them. Actually I meant those three gods that put Jergal to death and divided his portilolio among each other.~
+==CVSan25J~Eh...I mean...they are not dead - yet. Probably soon, when we find them. Actually I meant those three gods that put Jergal to death and divided his portfolio among each other.~
 ==ToCyric~Clever deduction, that makes sense, the soon-to-be-dead three, Jergal's heirs...~
 ==ToSune~Myrkul, Bane and Bhaal.~
 ==ToPellig~They worked together in the past to gain immortality. They do it again to enrich their portfolios.~
@@ -276,7 +276,7 @@ IF~Global("ToOrcActive","ar01pb",2) ~THEN CVShPri InTot1
 ~So says the Lord of Bones: *Know me and fear me. My embrace is for all and is patient but sure. The dead can always find you. My hand is everywhere - there is no door I cannot pass, nor guardian who can withstand me.* ~
 DO~SetGlobal("ToOrcActive","ar01pb",3)~
 ==Orc04~Hail Lord Myrkul!~
-==CVShPri~Hail The Reaper. And...death to the intruders I sense near. Get them.~ DO~ ActionOverride("ToAdon",JumpToPoint([5000.3700])) ActionOverride(Player1,MoveViewObject(Myself,INSTANT)) Wait(2) EndCutSceneMode()~EXIT
+==CVShPri~Hail The Reaper. And...death to the intruders I sense near. Get them.~ DO~ ClearAllActions() StartCutSceneMode() Wait(1) ActionOverride("ToAdon",JumpToPoint([5000.3700])) ActionOverride(Player1,MoveViewObject(Myself,INSTANT)) Wait(2) EndCutSceneMode()~EXIT
 
 CHAIN
 IF~Global("ToBhaalActive","bd7230",1)~THEN Tosarevm Mothers1

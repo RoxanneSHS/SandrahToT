@@ -95,4 +95,4 @@ IF WEIGHT #-3~Global("TotJail","bd7230",4) PartyHasItem("BDKey11") OpenState("Do
 ~In Lord Ilmater's name, thanks to you, friends.~
 DO~SetGlobal("TotJail","bd7230",5) AddexperienceParty(4000)~ 
 ==ToCyric~Happy sufferings out there.~
-==Priilm~May you find what you seek,friends.~DO~EscapeAreaObject("TranBD7220")~EXIT
+==Priilm~May you find what you seek, friends.~DO~EscapeAreaObject("TranBD7220")~EXIT
