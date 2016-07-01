@@ -1,0 +1,9 @@
+IF
+Global("SanTotStart","Global",1)
+Global("NoGrave","BG2700",2)
+THEN
+RESPONSE #100
+SetGlobal("NoGrave","BG2700",3)
+AmbientActivate("Gorgrave",FALSE)
+RemoveMapNote([3144.1374],@2026)
+END

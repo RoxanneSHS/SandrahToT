@@ -218,7 +218,7 @@ DO~SetGlobal("ToWaukGo","Global",7)~
 ==ToKelem~She figured that the Prime was not a save place for her during these troubled times.~
 ==CVWDWauk~Are you trying to suggest that Waukeen has sought shelter with those demons? ~
 ==ToCyric~Business is business, isn't it. Looks like she made a deal. You may pray that she did not buy a one-way ticket.~
-==Tolini~Pray, Cyric? It looks like in this *Time of Trouble* as we now may very well call them, there is nobody left to send prayers, too.~
+==Tolini~Pray, Cyric? It looks like in this *Time of Troubles* as we now may very well call them, there is nobody left to send prayers, too.~
 END
 ++~What Liriel just said expresses well the situation we are in now. We are on our own in this trouble. Or we could say, the Prime is now fully ours, the plane of the mortals.~EXTERN Tokelem Waukgo3
 
@@ -232,7 +232,7 @@ IF~~THEN Tokelem Waukgo3
 ==TOKelem~Madman, are you proposing to hunt down gods and grab their domains or what?~
 ==ToPellig~Friends, I am afraid that Cyric's vision is not so totally absurd as it may sound. There will be casualties sooner or later, and - just as Cyric already stated, there will be vacancies. ~
 =~At one point this situation will end. There will be a vacuum of power in some domains and it must be filled to prevent further chaos.~
-==ToCyric~Pellig-babe, I knew you'd understand...I have to make up my mind about which portfolio I should go for.~
+==ToCyric~Pelli-darling, I knew you'd understand...I have to make up my mind about which portfolio I should go for.~
 ==CVSan25J~How about murder, your specialty - or take strife...Cyric, Cyric...~
 ==ToCyric~Splendid ideas, girls, you are great inspirations, really. But why chose - why not take both and maybe even...~
 ==TOKelem~Stop it. madman!! And you, Pelligram, Midnight, what do you think you do? You put fuel to that idiot's fire! Just imagine he really starts to believe in such stuff. He's dangerous enough already.~

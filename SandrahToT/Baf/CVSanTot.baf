@@ -138,7 +138,9 @@ END
 IF
 GlobalGT("ToGodwalk","Global",5)
 AreaCheck("CVRoa2")
+OR(2)
 See("Barrel3")
+See("Chest1")
 Global("ToWaukGo","Global",0)
 THEN
 RESPONSE #100
