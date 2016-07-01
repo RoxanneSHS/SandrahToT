@@ -3,7 +3,17 @@ IF~InParty(Myself) IsGabber("CVsandr")~THEN BEGIN Pid
 SAY~Midnight, your interest graces me, my beauty.~
 IF~~THEN REPLY~Tell me about Zenthil Keep.~GOTO Cyrzent
 IF~~THEN REPLY~I just needed to check your sanity, that's all.~EXIT
-IF~Global("TOHasBane","Global",2) Global("Cyrwarn","LOCALS",0)~THEN REPLY~I must warn you, Cyric, now that you have Godsbane, leave Kelemvor alone.~DO~SetGlobal("Cyrwarn","LOCALS",1)~GOTO Cyrwarn1
+IF~Global("TOHasBane","Global",2) Global("Cyrwarn","LOCALS",0) !Dead("Tokelem")~THEN REPLY~I must warn you, Cyric, now that you have Godsbane, leave Kelemvor alone.~DO~SetGlobal("Cyrwarn","LOCALS",1)~GOTO Cyrwarn1
+IF~Dead("Tokelem") GlobalLT("Chapter","Global",35)~THEN REPLY~I am really grateful for everything you did after I lost Kelemvor. I always wanted to tell you this.~GOTO Kelemhelp
+END
+
+IF~~THEN BEGIN Kelemhelp
+SAY~You needed a man to keep you from breaking apart...What else could I do?...I always adored and loved you for your strength and confidence but at that time you were in need of a caring heart yourself.~
+IF~~THEN REPLY~And you were there for me, yes.~EXIT
+IF~~THEN REPLY~I could not have gone on without your help - and your love...~EXIT
+IF~~THEN REPLY~Without that loss, I would probably never have discovered the real Cyric I begun to love.~EXIT
+IF~~THEN REPLY~And you seized your chance and stole my heart...forever the thief (sigh).~EXIT
+IF~~THEN REPLY~And you seized your chance and stole my heart...forever the thief (smile).~EXIT
 END
 
 IF~~THEN BEGIN Cyrzent
@@ -33,6 +43,27 @@ END
 ++~A good question, Cyric. However one I contemplate alone and surely nothing I would discuss with you.~EXIT
 
 CHAIN
+IF~Global("SanPelcyr1","bg2608",1)~THEN ToPellig Madcyr1Pel
+~(While Cyric is busy inspecting the bookshelves for something valuable to steal, Pelligram takes you aside.)~
+DO~SetGlobal("SanPelcyr1","bg2608",2)~
+=~Did you observe the negative changes in Cyric's behaviour ever since he carries Godsbane?~
+==CVSan25J~Cyric is...Cyric. He can be charming or ambitious, a bit mad now and then. What do you think the sword has to do with it, *Pelli-darling*?~
+==ToPellig~(Smiles) I agree with those observations, Midnight, and they do not concern me. It is more his increasing lust for bloodshed and killing. ~
+END
+++~Our situation as a whole has changed since we found Godsbane. It coincided with the current crisis that started at that time. We all shed more blood in this *Time of Troubles*.~+ Madcyr2Pel
+++~You are right, Pelligram, but I have not considered yet the sword as a source for that change, rather our current situation as a whole.~+ Madcyr2Pel
+++~Does he go on your nerves or why do you try to discredit our thief?~+ Madcyr2Pel
+
+CHAIN
+IF~~THEN ToPellig Madcyr2Pel
+~It is far from me to discredit a companion. In case my observation is true, he is not to blame but maybe can be considered a victim rather. There are weapons that have some effects on the bearer and may change his or her personality - and I know you know that, my friend.~
+=~There are weapons and armours that rather possess the bearer than the bearer possesses them.~
+END
+++~Trust me, Pelligram. I KNOW we need Godsbane for our success - and only Cyric can handle the sword for us.~EXIT
+++~There is a risk here but we need to accept it. Trust my leadership, my kind advisor.~EXIT
+++~Even if you were right, we will have no chance to separate Cyric from his new weapon. At least not a peaceful way.~EXIT 
+
+CHAIN
 IF~Global("CVTiamal","AR6000",5)~THEN ToCyric Drag1
 ~This was sheer madness, wasn't it, and none of you ever call ME mad again.~
 DO~SetGlobal("CVTiamal","AR6000",6)~
@@ -41,8 +72,8 @@ DO~SetGlobal("CVTiamal","AR6000",6)~
 ==Tokelem~Already I regret my selfishness. I should have lived with that curse and freed Faerun from that desease which calls himself a *god*.~
 ==ToCyric~Blah, blah, old hypocrite, you should've been man enough inside that cave and don't give us this could-have-should-have nonsense now.~
 ==ToPellig~Cyric, take it as an additional challenge - and digest what we have learned, those gods are quite vulnerable right now.~
-==ToCyric~Pelli-babe, if you were only a bit more responsive, you and me could go along so splendidly together, hihi. Guess you have a point, they are weak and we can get them once more and maybe all three of them together. Grab their life and their power, ha.~
-=~Once Cyric rules he needs a queen by his side, Pelli,Pelli...~
+==ToCyric~Pelli-darling, if you were only a bit more responsive, you and me could go along so splendidly together, hihi. Guess you have a point, they are weak and we can get them once more and maybe all three of them together. Grab their life and their power, ha.~
+=~Once Cyric rules he needs a queen by his side, Pelli, Pelli...~
 ==ToPellig~Part one is for certain, yes. Part two is just as certain, no.~
 END
 ++~What has been done has been done, we have the chance to suit all sides here. Kelemvor is cured and we know where we find the three. Are we adventurers or cry babies? Blackstaff awaits us once more.~ + Drag2
@@ -63,7 +94,7 @@ DO~SetGlobal("ToMyrkFi","RTF123",10)~
 =~Midnight, you take a look at Adon's face, get that bleeding wound under control.~
 ==CVSan25J~(You examine Adon's slash over the right side of his face and your professional skills take control over the turmoil of your feelings immediately.]~
 ==ToCyric~Pelligram, see what we can do for Kelemvor right here.~
-==ToPellig~(You notice that for the first time Cyric does not use his affected *Pelli-babe* phrasing.)~
+==ToPellig~(You notice that for the first time Cyric does not use his affected *Pelli-darling* phrasing.)~
 ==ToCyric~Liriel, make sure that none of those Banites returns for an assault.~
 ==CVSan25J~Adon, this wound is deep but not dangerous. There will however remain a remarkable scar from it.~
 ==ToAdon~I hope we will see my goddess soon, we Sunites need to represent the concept of beauty she stands for. She will surely restore me.~
@@ -77,7 +108,7 @@ DO~SetGlobal("ToMyrkFi","RTF123",10)~
 ==ToLini~I found no trace of any Banite around here. It is as if they disappeared in smoke.~
 ==ToPellig~Midnight has at least recovered one of the Tablets of Fate from Myrkul.~
 ==ToCyric~Hm - so it seems that we need to return to Sune's temple at this time.~
-=~Sune may restore Adon's *precious beauty* there and with one the tablets in our possession we may get the goddesses to divine for the weapon which we need to resurrect Kelemvor.~
+=~Sune may restore Adon's *precious beauty* there and with one of the tablets in our possession we may get the goddesses to divine for the weapon which we need to resurrect Kelemvor.~
 END
 ++~*You are grateful for Cyric's initiative. His decisions are clear and logical. You have no words to thank him and you press instead one of his hands that still steady you at the shoulders.*~EXIT
 ++~*Cyric's clear and logical actions make you wonder what made the man change so suddenly. At the same time you are thankful to have such a companion at this very moment when your grief over Kelemvor's loss blocks your own initiative.*~EXIT
@@ -126,7 +157,7 @@ IF~Global("ToBaneHunt","Global",16) ~ THEN ToCyric Banedone1
 ~Another bunch of foolish celestials gone. I will soon claim Bane's portefolio from AO.~
 DO~SetGlobal("ToBaneHunt","Global",17) EraseJournalEntry(@040) EraseJournalEntry(@047) SetGlobal("Chapter","Global",35) AddJournalEntry(@050,QUEST)~
 ==ToPellig~Your ambition is still there? You despise them so much and still want to be one of them?~
-==TOCyric~They were once mortals but have proven they were not worth their ascension. WE have proven we're better, hihi. There is replacement required and tell me, Pelli-babe, who will be better qualified than those who slay the fools and retrieve the tablets?~
+==TOCyric~They were once mortals but have proven they were not worth their ascension. WE have proven we're better, hihi. There is replacement required and tell me, Pelli-darling, who will be better qualified than those who slay the fools and retrieve the tablets?~
 ==ToAdon~I would wait with making demands until we really finished the quest - for myself, I would not want to join the *circle* of those useless deities, evil or good. The only thing I agree with, Cyric, is that those fools are a useless bunch.~
 ==CVSan25J~Cyric, what is happening? Ever since we left our home again to adventure you seem to become the...hm, *old Cyric* once again.~
 ==ToCyric~We had fun while it lasted, didn't we, hihi. Family and home and all. Times are changing, you got bored of it yourself. Be honest to yourself - you know as well as I know that we're made for bigger things. Cyric will rule, Mystra will rule.~

@@ -28,6 +28,16 @@ SetGlobal("ToTablet1","Global",5)
 END
 
 IF
+AreaCheck("bg2608")
+Global("Chapter","Global",32)
+Global("SanPelcyr1","bg2608",0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanPelcyr1","bg2608",1)
+END
+
+IF
 Global("ToBaneHunt","Global",3)
 AreaCheck("ar0500")
 CombatCounter(0)
@@ -82,7 +92,7 @@ SetGlobal("TotPeople","CVDre2",2)
 END
 
 IF
-OR(8)
+OR(9)
 Global("TotPeople","CVDre2",2)
 Global("ToPellJoin","RTF123",1)
 Global("ToTablet1","Global",5)
@@ -91,6 +101,7 @@ Global("ToBaneHunt","Global",8)
 Global("Tomonst","ar5202",6)
 Global("Tosendai","ar60pb",2)
 Global("ToBhaalFin","Global",9)
+Global("SanPelcyr1","bg2608",1)
 !StateCheck(Myself,CD_STATE_NOTVALID)
 !StateCheck("CVsandr",CD_STATE_NOTVALID)
 THEN

@@ -160,6 +160,7 @@ END
 IF
 Global("RTMoveGnoll","GLOBAL",2)
 !AreaCheck("RTF123")
+Delay(12)
 THEN
 RESPONSE #100
 SetGlobal("RTMoveGnoll","GLOBAL",0) 
