@@ -60,9 +60,17 @@ See("ToSune")
 THEN
 RESPONSE #100
 SetGlobal("ToTablet1","Global",11)
-MoveToObject("ToSune")
-StartDialogNoSet("ToAdon")
 END
+
+IF
+Global("ToTablet1","Global",11)
+AreaCheck("Rtf005")
+THEN
+RESPONSE #100
+MoveToObject("ToSune")
+StartDialogueNoSet("ToAdon")
+END
+
 
 
 
