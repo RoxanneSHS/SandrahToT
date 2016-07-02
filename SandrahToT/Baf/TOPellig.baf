@@ -38,6 +38,17 @@ SetGlobal("SanPelcyr1","bg2608",1)
 END
 
 IF
+Global("ToPelGodsb2","LOCALS",0)
+GlobalGT("Totablet1","Global",8)
+Dead("ToKelem")
+AreaType(CITY)
+See("Tolini")
+THEN
+RESPONSE #100
+SetGlobal("ToPelGodsb2","LOCALS",1)
+END
+
+IF
 Global("ToBaneHunt","Global",3)
 AreaCheck("ar0500")
 CombatCounter(0)
@@ -92,7 +103,7 @@ SetGlobal("TotPeople","CVDre2",2)
 END
 
 IF
-OR(9)
+OR(10)
 Global("TotPeople","CVDre2",2)
 Global("ToPellJoin","RTF123",1)
 Global("ToTablet1","Global",5)
@@ -102,6 +113,7 @@ Global("Tomonst","ar5202",6)
 Global("Tosendai","ar60pb",2)
 Global("ToBhaalFin","Global",9)
 Global("SanPelcyr1","bg2608",1)
+Global("ToPelGodsb2","LOCALS",1)
 !StateCheck(Myself,CD_STATE_NOTVALID)
 !StateCheck("CVsandr",CD_STATE_NOTVALID)
 THEN

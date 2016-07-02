@@ -31,3 +31,17 @@ IF~Global("ToLini","BG4100",4) ~THEN Tolini Pris2
 END
 ++~Kelemvor spoke for all of us, come with us, Liriel.~DO~SetGlobal("ToLini","BG4100",5)  ActionOverride("Tolini",JoinParty())~EXIT
 ++~Seems I have nothing to say in this case other than *yes*. So, welcome, Liriel.~ DO~SetGlobal("ToLini","BG4100",5)  ActionOverride("Tolini",JoinParty())~EXIT
+
+CHAIN
+IF~Global("ToPelGodsb2","LOCALS",1)~THEN ToPellig Godsb1
+~*Pelligram has chosen a moment to approach Liriel while Cyric has sneaked into some shop, probably to steal something there.*~ 
+DO~SetGlobal("ToPelGodsb2","LOCALS",2)~
+=~Do you still remember the scenes around Kelemvor's death, your search for the Banites who killed him?~
+==Tolini~We ran into several Banites and finally into Myrkul, who was alone. It was me who saw Bhaal and Bane at some distance in the south.~
+==ToPellig~Cyric and Kelemvor raced after them while Midnight managed to make the rest of us fight Myrkul.~
+==Tolini~Some spell incapacitated us while Midnight fought and vanquished Myrkul. We did not see what happened to Kelemvor, Cyric and the Banites and other gods meanwhile.~
+==ToPellig~You never found a trace of any of them afterwards, right?~
+==Tolini~Honestly, I just had that one glance of Bhaal and Bane for a short moment, neither of us saw anyone else before or after. Cyric ordered me to secure the party against Banites when you inspected Kelemvor and Midnight healed the party. Why do you ask these questions, Pelligram? Are you trying to find out about the soultaker which killed Kelemvor?~
+==ToPellig~In a way...there is and never was a trace of such a weapon or a man to wield it, except for Cyric's words.~
+==Tolini~There is at least the trace that our friend's soul was taken, isn't that so? The soultaker was there and consequently someone who held it.~
+==ToPellig~This is true - I wish I could one day inspect Godsbane more closely...~EXIT
