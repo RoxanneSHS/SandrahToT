@@ -155,7 +155,7 @@ CHAIN
 IF~~ THEN Acqxzah1 HireShip13
 ~Aye, Tantras...~
 DO~SetGlobal("Sailors","RTF381",4)~
-=~I heard there a strange and dangerous things going on there. The harbour is closed it is said. But for you - my plate keel boat can drop you on a shore just north of the town.~DO~AddJournalEntry(@047,QUEST) ClearAllActions() StartCutSceneMode() StartCutScene("ToMovTan") ~EXIT
+=~I heard there are strange and dangerous things going on there. The harbour is closed it is said. But for you - my plate keel boat can drop you on a shore just north of the town.~DO~AddJournalEntry(@047,QUEST) ClearAllActions() StartCutSceneMode() StartCutScene("ToMovTan") ~EXIT
 
 CHAIN
 IF~Global("PriorTot","rtf145",2)~THEN ToOlive Help1
@@ -191,14 +191,13 @@ DO~SetGlobal("Boyfind","Tot009",2)~
 ==ToNarth~The lizardmen took them deeper into...whatever lies beneath this tower. From time to time some slime emerges from that passage at the rear end and makes its way through to town.~
 ==ToPellig~I cannot believe those slimes and lizards operate here on their own.~
 ==ToOlive~The Harper spoke of something called Moander and my friend Finder seemed to know what that meant when he followed them.~
-==ToCyric~Moander, Pelli-babe?~
+==ToCyric~Moander, Pelli-darling?~
 ==ToPellig~The deity of rot and decay, slimes, reptiles, shambles and such. The signs we see seem to match.~
 ==CVSan25J~So we are back to fighting gods again.~
 ==ToCyric~Sooner or later to acquire their power, my dear, hihi.~
 ==CVSan25J~The power of slime and decay, oh, Cyric, stop it.~
 ==ToPellig~There is not much of the former power of Moander left anyway, friends. Ever since the fall of Netheril, Moander's influence has decreased.~
-==TOCyric~Quite adequate for the deity of decay, hihi. Let's give him, her or it the rest.~
-==ToOlive~I shall go back to my post outside to wait for your return.~ DO~MoveBetweenAreas("RTF145",[1931.1540],7) ~EXIT
+==TOCyric~Quite adequate for the deity of decay, hihi. Let's give him, her or it the rest.~EXIT
 
 CHAIN
 IF WEIGHT #-6~Global("Santotstart","Global",1)~THEN RTMonk InTot1

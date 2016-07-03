@@ -18,9 +18,20 @@ SetGlobal("ToDrizIn","LOCALS",3)
 END
 
 IF
-OR(2)
+GlobalGT("ToBaneHunt","Global",18)
+AreaCheck("RTF038")
+Global("ToMidDriz","LOCALS",0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("ToMidDriz","LOCALS",1)
+END
+
+IF
+OR(3)
 Global("ToDrizIn","LOCALS",1)
 Global("ToDrizIn","LOCALS",3)
+Global("ToMidDriz","LOCALS",1)
 !See([ENEMY])
 !StateCheck(Myself,CD_STATE_NOTVALID)
 CombatCounter(0)

@@ -17,6 +17,20 @@ END
 IF
 AreaCheck("Tot009")
 Global("Boyfind","Tot009",0)
+OpenState("Door01",TRUE)
+CombatCounter(0)
+!See("ToNarth")
+!See("Door02")
+!See([ENEMY])
+THEN
+RESPONSE #100
+MoveToPoint([628.546])
+Continue()
+END
+
+IF
+AreaCheck("Tot009")
+Global("Boyfind","Tot009",0)
 OR(2)
 See("ToNarth")
 See("Door02")
@@ -38,7 +52,7 @@ PartyHasItem("Tot1key")
 THEN
 RESPONSE #100
 SetGlobal("Boyfind","Tot009",3)
-MoveToObject(Player1)
+ActionOverride("ToNarth",StartDialogueNoSet(LastSeenBy(Myself)))
 END
 
 IF

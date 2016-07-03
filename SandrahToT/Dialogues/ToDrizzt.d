@@ -51,3 +51,26 @@ DO~SetGlobal("ToDrizIn","LOCALS",4)~
 END
 ++~Maybe it is a good thing that you no longer adventure alone. Learning is easier in company like ours.~EXIT
 ++~Since your wit is sharp and your eyes are keen, travelling with friends will make it easy for you to acquaint yourself with the surface.~EXIT
+
+CHAIN
+IF~Global("ToMidDriz","LOCALS",1)~THEN ToDrizzt Midni2
+~(Drizzt hesitates for a moment before he decides to speak.)~
+DO~SetGlobal("ToMidDriz","LOCALS",2)~
+=~Maybe I know too little yet of human ways, Midnight, but...is Cyric still the man you decided to share yourself with?~
+==CVSan25J~The keen eye of the drow ranger once again - actually, Drizzt, I do not know it anymore...~
+=~The heart is a stubborn thing, at least mine. Cyric is the father of my son, and he is the man who reshaped my life when it was falling apart.~
+==ToDrizzt~The Cyric I see is a man fuelled by ambition and a slave of his sword.~
+==CVSan25J~A slave of his sword?~
+==ToDrizzt~Look at Twinkle and Icingdeath, my swords. They serve me and I possess them.~
+=~Cyric calls his sword Godsbane and it seems to possess him. It seems to be the source of his ambitions to become a god. And he wants you to become a goddess due to Mystra's death. Is this what you want?~
+END
+++~It may not be what I want - it may be what I need to become. Mystra is dead and the Weave needs a keeper pretty soon. I may not have a choice, even if I wanted.~+ Midni3
+++~My choice has nothing to do with Cyric. I have the duty to serve my goddess and the Weave. I hope you can understand this, Drizzt.~+ Midni3
+++~Is there jealousy in your words, Drizzt. I am aware that you may have developped some feeling for me. But it cannot be - I can neither be yours nor Cyric's in a short while. I will need to serve the Weave.~+ Midni3
+
+CHAIN
+IF~~THEN ToDrizzt Midni3
+~(Sigh) I was afraid you would say that. This is something that I can understand regardless of my origin. It is something I can accept.~
+=~If ever anything may change, I know that you know there will be a man waiting for you.~
+END
+++~I know it. It is a good thing to know, just like it is good to know that a dark elf's lifespan can be quite long.~EXIT
