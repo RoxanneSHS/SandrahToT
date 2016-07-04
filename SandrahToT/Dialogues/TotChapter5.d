@@ -119,11 +119,11 @@ DO~SetGlobal("Tomonst","ar5202",7) SetGlobal("ToBhaalhunt","Global",3)~
 ==TODrizzt IF~InParty("Todrizzt")~THEN~ I would prefer to be active and search for Bhaal rather than to wait for him to appear in search of Khalindra. Do we know of another place he may have gone to?~
 ==Tolini IF~!InParty("Todrizzt")~THEN~ I would prefer to be active and search for Bhaal rather than to wait for him to appear in search of Khalindra. Do we know of another place he may have gone to?~
 ==ToAdon~We can assume he will be in the western regions of Faerun. There is a hidden temple of the Black Hand in the Wood of Sharp Teeth.~
-==ToPellig~It makes sense. Our friend Cyric may not be the only one who lusts for the portefolio of a slain god.~
-==ToCyric~I always say it, Pelli-babe, you are a genius. That bloody Bhaal may try to grab Bane's lost herd. We need to prevent that - this is MY domain soon!~
+==ToPellig~It makes sense. Our friend Cyric may not be the only one who lusts for the portfolio of a slain god.~
+==ToCyric~I always say it, Pelli-darling, you are a genius. That bloody Bhaal may try to grab Bane's lost herd. We need to prevent that - this is MY domain soon!~
 END
 ++~We will certainly not fuel Cyric's mad ambitions. We will go to Waterdeep.~EXIT
-++~The Bane temple is a logical option. Regardless of Cyric's agenda - we go there to find Bhaal not to feed a growing madness of the man I know longer know.~EXIT
+++~The Bane temple is a logical option. Regardless of Cyric's agenda - we go there to find Bhaal not to feed a growing madness of the man I no longer know.~EXIT
 
 CHAIN
 IF~Global("Tosendai","ar60pb",2)~ THEN ToPellig ToBlahand2
@@ -270,7 +270,7 @@ DO~SetGlobal("TotThay","Global",6)~
 ==CVSan25J~Right, the one we search is below the Odesseiron estate. I have been there before...~
 ==ToCyric~You have...? I didn't know you ever were in Thay before.~
 ==ToPellig~Looks like you do not know as much as you think you know about her, Cyric.~
-==ToCyric~Does one ever know women, Pelli-babe? So where is that Oddododdo estate?~
+==ToCyric~Does one ever know women, Pelli-darling? So where is that Oddododdo estate?~
 ==CVSan25J~A little out of town, to the north. The temple has as well access to an ancient transportation system from the founders of the Thaymount Citadel. I hope that Bhaal does not have means to activate it.~EXIT
 
 CHAIN
