@@ -9,3 +9,12 @@ CreateCreature("Sankab3",[560.757],6)
 CreateCreature("ToIsmad",[1796.1443],6)
 CreateCreature("Sanwinth",[1747.1394],14)
 END
+
+IF
+Global("SanTotStart","Global",1)
+Global("NoPaint","CVDre1",0)
+THEN
+RESPONSE #100
+SetGlobal("NoPaint","CVDre1",1)	
+AmbientActivate("Painting",FALSE)
+END

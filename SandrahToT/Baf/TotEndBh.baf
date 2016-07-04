@@ -22,7 +22,7 @@ StartMovie("sodcin02")
 Wait(1)
 CloseDoor("Bhaal_Skull")
 GiveItemCreate("Totabl2","ToCyric",1,0,0)
-CreateCreature("Totmel",[621.1434],NEE) // Melissan
+CreateCreature("Totmel",[855.1627],8) 
 SetGlobal("ToBhaalFin","Global",6)
 Wait(2)
 EndCutSceneMode()

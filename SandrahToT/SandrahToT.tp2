@@ -287,6 +287,8 @@ EXTEND_TOP
 ~chalcy02.bcs~ ~SandrahTOT/Baf/Totgone.baf~
 EXTEND_BOTTOM
 ~Pellig.bcs~ ~SandrahTOT/Baf/Totgone.baf~
+EXTEND_TOP
+~DPlayer2.bcs~ ~SandrahTOT/Baf/DPlayer2Tot.baf~
 
 EXTEND_TOP
 ~RTauct.bcs~ ~SandrahTOT/Baf/TRAuctTot.baf~

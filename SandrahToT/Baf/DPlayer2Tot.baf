@@ -1,0 +1,12 @@
+IF
+GlobalGT("Chapter","Global",29)
+!InParty(Myself)
+HPGT(Myself,0)
+THEN
+RESPONSE #100
+StartCutSceneMode()
+Wait(2)
+DisplayStringWait(Myself,@057)
+Wait(6)
+EndCredits()
+END

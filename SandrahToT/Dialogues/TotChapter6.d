@@ -50,7 +50,7 @@ IF~Global("ToBhaalFin","Global",8)~ THEN RTLordAo MakeGods1
 DO~SetGlobal("ToBhaalFin","Global",9)~
 ==ToCyric~Time for some new gods to rise, hihi.~
 ==ToPellig~You really cannot await it, Cyric?~
-==ToCyric~And what about you, Pelli-babe, which portfolio will you claim?~
+==ToCyric~And what about you, Pelli-darling, which portfolio will you claim?~
 ==ToPellig~You will never understand, new Lord of Murder. The Simbul will remain what she always has been.~
 ==RTLordAo~The Simbul will prepare each new incarnation of Mystra for the task awaiting her. She has always done this and will continue to do so by her own choice.~
 =~So, Pelligram?~
