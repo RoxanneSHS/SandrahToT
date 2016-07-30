@@ -210,27 +210,27 @@ BEGIN
 ~Sandrah Time of Trouble Revisited Compiles~
 
 APPEND ~pdialog.2da~
-~TOPellig *** *** *** TOPelliP TOPellig TOPelliD TOPellig~
+~TOPellig TOPelliP TOPellig TOPelliD TOPelliP TOPellig TOPelliD TOPellig~
 UNLESS ~TOPellig~
 
 APPEND ~pdialog.2da~
-~TOCyric *** *** *** TOCyricP TOCyric TOCyricD TOCyric~
+~TOCyric TOCyricP TOCyric TOCyricD TOCyricP TOCyric TOCyricD TOCyric~
 UNLESS ~TOCyric~
 
 APPEND ~pdialog.2da~
-~TOAdon *** *** *** TOAdonP TOAdon TOAdonD TOAdon~
+~TOAdon TOAdonP TOAdon TOAdonD TOAdonP TOAdon TOAdonD TOAdon~
 UNLESS ~TOAdon~
 
 APPEND ~pdialog.2da~
-~TOKelem *** *** *** TOKelemP TOKelem TOKelemD TOKelem~
+~TOKelem TOKelemP TOKelem TOKelemD TOKelemP TOKelem TOKelemD TOKelem~
 UNLESS ~TOKelem~
 
 APPEND ~pdialog.2da~
-~TOLini *** *** *** TOLiniP TOLini TOLiniD TOLini~
+~TOLini TOLiniP TOLini TOLiniD TOLiniP TOLini TOLiniD TOLini~
 UNLESS ~TOLini~
 
 APPEND ~pdialog.2da~
-~TODrizzt *** *** *** TODriztP TODrizzt TODriztD TODrizzt~
+~TODrizzt TODriztP TODrizzt TODriztD TODriztP TODrizzt TODriztD TODrizzt~
 UNLESS ~TODrizzt~
 
 ADD_JOURNAL @015 @016 @020 @024 @025 @026 @027 @040 @044 @047 @050 @051 @052 USING ~SandrahToT/TRA/SandrahToT.tra~
