@@ -207,7 +207,7 @@ APPEND ~mastarea.2da~
 UNLESS ~TOT006~
 
 BEGIN
-~Sandrah Time of Trouble Revisited Compiles~
+~Sandrah Time of Troubles Revisited Compiles~
 
 APPEND ~pdialog.2da~
 ~TOPellig TOPelliP TOPellig TOPelliD TOPelliP TOPellig TOPelliD TOPellig~
