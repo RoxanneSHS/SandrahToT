@@ -209,7 +209,7 @@ UNLESS ~TOT006~
 COPY ~SandrahTot/PVRZ~ ~Override~
 
 BEGIN
-~Sandrah Time of Trouble Revisited Compiles~
+~Sandrah Time of Troubles Revisited Compiles~
 
 APPEND ~pdialog.2da~
 ~TOPellig TOPelliP TOPellig TOPelliD TOPelliP TOPellig TOPelliD TOPellig~
