@@ -206,8 +206,10 @@ APPEND ~mastarea.2da~
 ~TOT006  value~
 UNLESS ~TOT006~
 
+COPY ~SandrahTot/PVRZ~ ~Override~
+
 BEGIN
-~Sandrah Time of Troubles Revisited Compiles~
+~Sandrah Time of Trouble Revisited Compiles~
 
 APPEND ~pdialog.2da~
 ~TOPellig TOPelliP TOPellig TOPelliD TOPelliP TOPellig TOPelliD TOPellig~
