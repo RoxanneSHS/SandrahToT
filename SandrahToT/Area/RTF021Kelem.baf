@@ -1,4 +1,5 @@
 IF
+Global("SanTotStart","Global",1)
 Global("ToKelemcurse","Global",0)
 THEN
 RESPONSE #100
