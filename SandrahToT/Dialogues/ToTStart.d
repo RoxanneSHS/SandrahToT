@@ -15,7 +15,7 @@ END
 IF~~THEN BEGIN WantTOTRe3
 SAY~The Mistress of Mysteries is alive and in full power. We can do whatever we had always wished to do but never could before.~
 IF~~THEN REPLY~If this is so, I'd like to spend a long vacation from all this hassle - just you and me.~GOTO WantTOTRe2
-IF~~THEN REPLY~With the knowledge of all those Mystra's that were before you - I'd really want to know what really happened in those *Times of Trouble* when you and me were born.~GOTO WantTOTRe4
+IF~~THEN REPLY~With the knowledge of all those Mystra's that were before you - I'd really want to know what really happened in this *Time of Troubles* when you and me were born.~GOTO WantTOTRe4
 END
 
 IF~~THEN BEGIN WantTOTRe4
