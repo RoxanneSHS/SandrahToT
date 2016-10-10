@@ -8,7 +8,7 @@ IF~Global("TOHasBane","Global",2) Global("Cyrwarn","LOCALS",0)~THEN REPLY~My lov
 END
 
 IF~~THEN BEGIN Cyrwarn1
-SAY~I am aware that he tries to steal your heart from me, thief that he is, but I trust in my love for me.~
+SAY~I am aware that he tries to steal your heart from me, thief that he is, but I trust in your love for me.~
 IF~~THEN REPLY~As long as you are by me there will be no other.~EXIT
 IF~~THEN REPLY~He's an assasin, he will not only steal but murder for what he wants.~GOTO Cyrwarn2
 END

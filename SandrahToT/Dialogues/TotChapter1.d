@@ -47,7 +47,7 @@ DO~SetGlobal("Chapter","Global",31)~
 ==TOCyric~It's sometimes not too desireable to be too famous, my dark beauty, hihi. (oh, these drow women...they are really up to their reputation, at least this specimen.)~
 ==Tolini~You mean as a thief? Well, you may be right. Unless you are so famous that your possible employers deem you capable to steal just about everything.~
 ==TOAdon~Liriel, I have the feeling this is not a hypothetical discussion at all.~
-==TOKelem~There are those organised thiefs that make their fortune because they are well known and people hire them for a lot of gold to get them the artifacts they desire.~
+==TOKelem~There are those organised thieves that make their fortune because they are well known and people hire them for a lot of gold to get them the artifacts they desire.~
 END
 ++~Like the Bregan D'aerthe of your kin, Liriel?~DO~SetGlobal("ToSleep","Global",4) SetGlobal("TOLiriquest","Global",1)~ + TOLiniQuest2
 ++~Like the shadow thieves of Athkatla?~DO~SetGlobal("ToSleep","Global",4) SetGlobal("TOLiriquest","Global",1)~ + TOLiniQuest2
@@ -68,17 +68,17 @@ IF~~THEN Tolini TOLiniQuest3
 =~(Sigh) Not everything drowish is despiteful and hateful for me. My kin has valuable smiths and inventors as well as capable mages.~
 ==TOCyric~You being one of them, if I may say, hihi.~
 ==Tolini~I could do much better if the drow on the surface could use their waponry and magical items up here in the sunlight.~
-==TOAdon~I heard rumours of some artifact that could provide this. Is that where your tale will lead us to?~
+==TOAdon~I heard rumours of some artifact that could provide this. Is this where your tale will lead us to?~
 ==Tolini~You're right, Adon, there is such a thing and I was to acquire it for Eilistraee's followers. It is named Windwalker but it was stolen before I could get it, stolen by the Dragon's Hoard.~
 ==TOCyric~Let me guess, hihi, our mind blowing beautiful young companion will now ask us to face this organisation for her - and we will say yes and get rich, famous, even if the price is to help such goody good doers like followers of Eilistraee.~
 ==Tolini~I am one of them, Cyric.~
 ==TOCyric~None of us is perfect, hihi, my otherwise nearly perfect beauty. (Ouch, that might have backfired...)~
 ==Tolini~If Cyric would let me continue, please...~
-=~...the Dragon's Hoard are an organisation specialised in assassination, slave trade and the retrieval of otherwise unachievable artifacts. They are led by a drow wizard named Nisstyre. They are rumored to have strongholds at Skullport and High Forest. And that, my friends, is about all I know about them. ~
+=~...the Dragon's Hoard are an organisation specialised in assassination, slave trade and the retrieval of *unachievable* artifacts. They are led by a drow wizard named Nisstyre. They are rumored to have strongholds at Skullport and High Forest. And that, my friends, is about all I know about them. ~
 =~Ah, and yes, they have Windwalker and they knew I was after it, that is why they captured me and tried to force me into slavery in their new mine.~
 END
 ++~Provided we take up that quest, the place to start investigating would be Waterdeep. Skullport would be somewhere within Undermountain.~DO~AddJournalEntry(@015,QUEST) AddexperienceParty(6000) RestParty()~EXIT
-++~The High Forest is out of question without any further hints. That would be searching a needle in a haystack. Skullport is unaccessible they say...Or shall I say *it was* because WE never tried until now.~DO~AddJournalEntry(@015,QUEST) AddexperienceParty(7000) RestParty()~EXIT
+++~The High Forest is out of question without any further hints. That would be searching a needle in a haystack. Skullport is unaccessible they say...Or shall I say *it was* - because WE never tried until now.~DO~AddJournalEntry(@015,QUEST) AddexperienceParty(7000) RestParty()~EXIT
 ++~I am not sure we should embark on this quest.~DO~IncrementGlobal("Sanpoints","Global",-1) ScreenShake([1600.1604],5)Wait(2) ReallyForceSpellRES("TOSpint","CVSandr") ~ EXTERN Tocyric TOLiniQuest4
 
 CHAIN
