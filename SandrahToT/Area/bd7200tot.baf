@@ -1,0 +1,15 @@
+IF
+GlobalGT("ToTablet1","Global",1)
+Global("ToBhaalActive","bd7200",0)
+THEN
+RESPONSE #100
+SetGlobal("ToBhaalActive","bd7200",1)
+CreateCreature("dw#wrmo1",[763.1242],6)
+CreateCreature("stalke",[457.1295],14)
+CreateCreature("dw#wrmo1",[557.1235],8)
+CreateCreature("dw#wrmo1",[2457.1245],14)
+CreateCreature("stalke",[2257.1045],11)
+CreateCreature("ohbbclt1",[1899.1499],6)
+CreateCreature("ohbbclt1",[1948.1471],14)
+CreateCreature("ohbbclt2",[1919.1392],10)
+END

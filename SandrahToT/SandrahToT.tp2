@@ -105,6 +105,8 @@ EXTEND_TOP
 ~RTF078.bcs~ ~SandrahTOT/Area/RTF078Tot.baf~
 EXTEND_TOP
 ~RTF049.bcs~ ~SandrahTOT/Area/RTF049Tot.baf~
+EXTEND_TOP
+~bd7200.bcs~ ~SandrahTOT/Area/bd7200tot.baf~
 
 COPY ~SandrahToT\Area/TOT001.ARE~ ~override\TOT001.ARE~
 COPY ~SandrahToT\Area/TOT001.mos~ ~override\TOT001.mos~
@@ -235,7 +237,7 @@ APPEND ~pdialog.2da~
 ~TODrizzt TODriztP TODrizzt TODriztD TODriztP TODrizzt TODriztD TODrizzt~
 UNLESS ~TODrizzt~
 
-ADD_JOURNAL @015 @016 @020 @024 @025 @026 @027 @040 @044 @047 @050 @051 @052 USING ~SandrahToT/TRA/SandrahToT.tra~
+ADD_JOURNAL @015 @016 @020 @024 @025 @026 @027 @030 @040 @044 @047 @050 @051 @052 USING ~SandrahToT/TRA/SandrahToT.tra~
 
 COMPILE
 ~SandrahTOT/Baf/CVSantot.baf~

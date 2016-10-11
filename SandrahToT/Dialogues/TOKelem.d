@@ -63,7 +63,7 @@ DO~SetGlobal("CVabaz","AR6005",7) SetGlobal("Chapter","Global",33)~
 ==ToBane~Not so fast...Gods do not surrender, nor do they die, nor are they ever defeated.~
 ==ToPellig~(Mumbles) I heard this erroneous statement before...~
 ==ToBane~Gods make offers. Call it a bargain.~
-==ToKelem~You think you can buy your miserable forfeit existance from us with a petty gift, you has-been deity?~
+==ToKelem~You think you can buy your miserable forfeit existence from us with a petty gift, you has-been deity?~
 ==ToBane~Kelemvor Lyonsbane - I may have something to offer to you that may change your attitude.~
 END
 ++~Kelemvor, my love, listen to him. You told me that the sorceress who cursed your family was drawing her powers from The Black Hand. He can remove your curse.~ + Abalair3

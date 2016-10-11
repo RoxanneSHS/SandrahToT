@@ -443,7 +443,7 @@ DO~SetGlobal("ToTablet1","Global",10) SetGlobal("CVabaz","AR6005",4)~
 ==ToCyric~Aren't they like little boys bickering in the playground, our soon-to-be "Dead Three", hihi.~
 ==ToMyrkul~We have no time to waste it with a bunch of over confident adventurers.~
 ==ToBane~We need to do what friend Bhaal forgot while sputtering his stupid godly essence around. ~DO~Enemy()~
-==TOMyrkul~Finish them up, Myrkul, we meet you at Blackstaff Tower.~DO~EscapeAreaDestroy(45)~EXIT
+==TOMyrkul~Finish them up, Bane, we meet you at Blackstaff Tower.~DO~EscapeAreaDestroy(45)~EXIT
 
 CHAIN
 IF~Global("ToMyrkFi","RTF123",2) ~THEN ToAdon MyrkSig

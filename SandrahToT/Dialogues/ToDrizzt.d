@@ -12,7 +12,7 @@ IF~AreaCheck("cvelm3") GlobalGT("ToBaneHunt","Global",1) !InParty(Myself) Global
 ==ToPellig~Your secret is safe with us. Fellow adventurers have a way to recognise and find each other.~
 ==TODrizzt~Is this going to be some kind of invitation. I can see that one of your former comrads no longer travels with you.~
 ==ToAdon~The keen eye of the ranger. Yes, Drizzt, we lost Kelemvor fighting the renegade gods who stole the tablets of fate.~
-==ToDrizzt~I heard rumours about those heroic adventurers that pursue those deities. So it is you. A dangerous but necessary undertaking. Your intention is to invite me to join and my answer is *yes*.~
+==ToDrizzt~I heard rumours about those heroic adventurers who pursue those deities. So it is you. A dangerous but necessary undertaking. Your intention is to invite me to join and my answer is *yes*.~
 END
 ++~The keen eye of the ranger, indeed. Welcome to the party, Drizzt.~DO~ JoinParty()~EXIT
 ++~You are a bit too willing to join us, drow. I do not make choices so easily.~+ MaycomeH
