@@ -331,7 +331,7 @@ IF WEIGHT #-9~Global("TOLiriquest","Global",16)~THEN Sudemin Killjon1
 DO~SetGlobal("TOLiriquest","Global",17)~
 ==ToCyric~How would you know we are friends when we are strangers to you, hihi?~
 ==Sudemin~I have overheard both your conversation with Elhan and Ellesime, so I know about your suspicion concerning Irenicus.~
-=~I am Demin, high priestess of Rillifane Rallathil who founded Suldanessalar. I am also protector of the Tree of Life, the source of our existance.~
+=~I am Demin, high priestess of Rillifane Rallathil who founded Suldanessalar. I am also protector of the Tree of Life, the source of our existence.~
 ==ToPellig~Even if Midnight's and your suspicions are correct when it comes to your Queen's protege, we are nothing but outsiders passing through.~
 ==Sudemin~This makes you valuable as you can act where my friends and I cannot. Irenicus is the most powerful mage we have ever had, but he and his sister Bodhi are fuelled by hunger and greed for ever more power. Ellesime is blind to all warnings and lets Irenicus do *experiments* on the Tree of Life itself.~
 ==CVSan25J~History books are full of that story - the mage getting more and more power until he thinks he can even challenge the gods.~

@@ -293,6 +293,8 @@ EXTEND_BOTTOM
 ~Pellig.bcs~ ~SandrahTOT/Baf/Totgone.baf~
 EXTEND_TOP
 ~DPlayer2.bcs~ ~SandrahTOT/Baf/DPlayer2Tot.baf~
+EXTEND_TOP
+~c6elhan.bcs~ ~SandrahTOT/Baf/ElhanTot.baf~
 
 EXTEND_TOP
 ~RTauct.bcs~ ~SandrahTOT/Baf/TRAuctTot.baf~

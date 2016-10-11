@@ -1,0 +1,9 @@
+IF
+Global("TOLiriquest","Global",12)
+See([PC])
+NumberOfTimesTalkedTo(0)
+CombatCounter(0)
+THEN
+RESPONSE #100
+Dialogue([PC])
+END
