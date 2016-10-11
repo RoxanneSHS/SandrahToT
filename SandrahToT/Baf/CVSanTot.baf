@@ -102,7 +102,7 @@ END
 
 IF
 Global("ToGodwalk","Global",2)
-OR(15)
+OR(16)
 AreaCheck("BG0002")
 AreaCheck("BG4802")
 AreaCheck("ar6804")
@@ -118,6 +118,7 @@ AreaCheck("bh0302")
 AreaCheck("CVroan")
 AreaCheck("CVroa9")
 AreaCheck("BG3402")
+AreaCheck("ar0901")
 THEN
 RESPONSE #100
 SetGlobal("ToGodwalk","Global",3)

@@ -115,7 +115,7 @@ DO~SetGlobal("ToGodwalk","Global",2)~
 ==ToGoWa02~Celestial presence, never heard one use such an expression, but then...never saw one do such a thing before. And, by the way, she claimed to be Umberlee.~
 ==ToKelem~It would make sense for the Bitch Queen of the Depths to punish pirates this way. The first good deed I ever saw from that evil goddess.~
 ==ToGoWa02~It looks like it makes no sense to ask people like you for a little help.~
-==TOCyric~Hihi, Godsbane is always willing to help bastards like you out of the mysery of their wretched existance.~
+==TOCyric~Hihi, Godsbane is always willing to help bastards like you out of the mysery of their wretched existence.~
 ==ToPellig~Cyric, please, keep your energy for worthier foe.~
 ==TOCyric~For you, Pelli-darling, always willing to please you.~
 END
@@ -156,7 +156,7 @@ DO~SetGlobal("ToGodwalk","Global",6)~
 ==ToCyric~Hihi, helping gnomish herb collectors, is there anything we NOT do to prove ourselves fools? ~
 ==ToAdon~You proof yourself a fool each time you open your mouth, thief.~
 ==CVSan25J~Let the girl speak and then we decide if it is foolish or not, boys.~
-==CVPotngi~I was collecting Aescalus herb leaves in the Larswood. They grow particularly rich near the old druid circles there. But I just escaped with life hanging on a thread this time.~
+==CVPotngi~I was collecting Aescalus herb leaves in the Larswood. They grow particularly rich near the old druid circles there. But I just escaped with my life hanging on a thread this time.~
 ==ToCyric~Fine, some bandits for Godsbane to slaughter, let's go, hihi.~
 ==CVPotngi~Oh, no, I can take care of bandits, they don't get to see a small one like me in the woods. There is greater danger out there these days. Druids and beasts, I think they were werewolves - and a new leader, I heard the name *Maller*.~
 END
