@@ -129,8 +129,8 @@ CHAIN
 IF~Global("Tosendai","ar60pb",2)~ THEN ToPellig ToBlahand2
 ~Followers of Bhaal and drow, what does that mean?~
 DO~SetGlobal("Tosendai","ar60pb",3)~
-==TODrizzt IF~InParty("Todrizzt")~THEN~ With Lolth ruling the Underdark, my kin have no need for an additional god of murder.~
-==Tolini IF~!InParty("Todrizzt")~THEN~ With Lolth ruling the Underdark, my kin have no need for an additional god of murder.~
+==TODrizzt IF~InParty("Todrizzt")~THEN~ With Lolth ruling the Underdark, my kin should have no need for an additional god of murder.~
+==Tolini IF~!InParty("Todrizzt")~THEN~ With Lolth ruling the Underdark, my kin should have no need for an additional god of murder.~
 ==Sendai8~Mother, we have unexpected visitors.~
 ==UDDrow36~Is that the privacy for our meeting you promised, Aschmaan? I sense betrayal.~
 ==NTAshma~They must have overrun the guards, they do not belong to our fellowship, Handmaiden.~
