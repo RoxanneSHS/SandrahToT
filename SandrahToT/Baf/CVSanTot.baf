@@ -151,6 +151,14 @@ ActionOverride("CVwdwauk",Dialog(Player1))
 END
 
 IF
+Global("NewHp","Locals",0)
+THEN
+RESPONSE #100
+SetGlobal("NewHp","Locals",1)
+ReallyForceSpellRES("Tothpmi",Myself)
+END
+
+IF
 Global("InToTArm","GLOBAL",2)
 !AreaCheck("ToT003")
 THEN

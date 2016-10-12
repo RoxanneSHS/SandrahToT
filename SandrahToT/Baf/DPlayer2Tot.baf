@@ -10,3 +10,15 @@ DisplayStringWait(Myself,@057)
 Wait(6)
 EndCredits()
 END
+
+IF
+Global("SanTotStart","Global",1)
+OR(4)
+Dead("CVSandr")
+Dead("ToAdon")
+Dead("ToPellig")
+Dead("ToCyric")
+THEN
+RESPONSE #100
+Kill(Player1)
+END
