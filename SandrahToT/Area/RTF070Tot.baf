@@ -18,3 +18,12 @@ CreateCreature("skelded",[1670.1250],2)
 CreateCreature("skelded",[1680.1240],0)
 CreateCreature("bdbugb04",[2200.1677],12)
 END
+
+IF
+Global("ToBhalpe","RTF070",1)
+THEN
+RESPONSE #100
+SetGlobal("ToBhalpe","RTF070",2)
+TriggerActivation("Estate",FALSE)
+TriggerActivation("Mausoleum",FALSE)
+END
