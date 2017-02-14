@@ -79,6 +79,7 @@ THEN
 RESPONSE #100
 SetPlayerSound(Myself,@014,EXISTANCE5)
 SetGlobal("TotBioChange","LOCALS",1)
+SetGlobal("SanPidPack","Global",18)
 END
 
 IF

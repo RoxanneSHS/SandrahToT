@@ -1,10 +1,25 @@
 IF
-Global("ToBhaalFin","Global",3)
+GlobalGT("Chapter","Global",29)
 Global("Tosetting","bd2000",0)
 THEN
 RESPONSE #100
 SetGlobal("Tosetting","bd2000",1)
 OpenDoor("Bhaal_Skull")
+TriggerActivation("Bhaal_info",FALSE)
+TriggerActivation("Cyric_info",FALSE)
+TriggerActivation("Infopoint31",FALSE)
+TriggerActivation("Infopoint32",FALSE)
+TriggerActivation("Infopoint33",FALSE)
+TriggerActivation("Infopoint34",FALSE)
+Continue()
+END
+
+IF
+Global("ToBhaalFin","Global",3)
+Global("Tosetting","bd2000",1)
+THEN
+RESPONSE #100
+SetGlobal("Tosetting","bd2000",2)
 CreateCreature("tobhaal",[900.1505],13)
 CreateCreature("ohbbclt2",[1435.1910],13)
 CreateCreature("ohbbclt1",[1514.1867],0)
@@ -12,20 +27,6 @@ CreateCreature("ohbbclt2",[1453.1906],10)
 CreateCreature("ohbbclt1",[1419.1968],6)
 CreateCreature("ohbbclt2",[1443.2053],10)
 CreateCreature("ohbbclt1",[1587.1897],6)
-Continue()
-END
-
-IF
-Global("Tosetting","bd2000",1)
-THEN
-RESPONSE #100
-SetGlobal("Tosetting","bd2000",2)
-TriggerActivation("Bhaal_info",FALSE)
-TriggerActivation("Cyric_info",FALSE)
-TriggerActivation("Infopoint31",FALSE)
-TriggerActivation("Infopoint32",FALSE)
-TriggerActivation("Infopoint33",FALSE)
-TriggerActivation("Infopoint34",FALSE)
 Continue()
 END
 

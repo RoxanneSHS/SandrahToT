@@ -36,6 +36,11 @@ SAY~The price will be giving up yourself, <CHARNAME>. It is only through Midnigh
 IF~~THEN REPLY~I will never do that! I am who I am and I earned it! Forget about the whole thing.~GOTO WantTOTRe2
 IF~~THEN REPLY~A high price but I trust you it will be worth it. I am ready for it.~DO~SetGlobal("SanRTFPlot5","GLOBAL",11) ~EXIT
 END
+
+IF~IsGabber(Player1) Global("SanPidPack","Global",18)~THEN BEGIN NoPidTot
+SAY~Pelligram, it is good you keep watch over all I do and all I should not do.~
+IF~~THEN EXIT
+END
 END
 
 BEGIN TOPELLIG
