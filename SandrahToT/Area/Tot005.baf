@@ -22,3 +22,14 @@ Wait(1)
 EndCutSceneMode()
 EndCredits()
 END
+
+IF
+GlobalGT("ToTablet1","Global",12)
+GlobalLT("ToBhaalFin","Global",8)
+!InParty("TODrizzt")
+THEN
+RESPONSE #100
+ActionOverride(Player6,LeaveParty())
+ActionOverride(Player6,DestroySelf())
+Continue()
+END
