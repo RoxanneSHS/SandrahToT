@@ -445,8 +445,8 @@ SAY NAME1 Bhaal
 SAY NAME2 Bhaal
 
 COPY ~SandrahTOT/Cre/Toalaun.cre~ ~Override~
-SAY NAME1 Alaundo
-SAY NAME2 Alaundo
+SAY NAME1 Ulraunt
+SAY NAME2 Ulraunt
 
 COPY ~SandrahTOT/Cre/Toaliann.cre~ ~Override~
 SAY NAME1 Alianna
