@@ -361,9 +361,9 @@ IF~ Global("ToTablet1","Global",7)~THEN ToBhaal Alaun1
 ~YOU WILL NOT CHANGE A SINGLE SILABLE OF THIS DICTATE, OGHMA'S SLAVE!~
 DO~ SetGlobal("ToTablet1","Global",8)~
 ==ToAlaun~I...I have noted down every word as you spoke it, my-my L-Lord.~
-==ToBhaal~This - YOUR PROPHESY - will be spread through the Realms from here, this is my command. Beginning exactly one mortal year from this day, the text will be recited each noon within the walls of Candlekeep - OR Candlekeep will be destroyed down to its catacombs. This is my will.~
+==ToBhaal~This - ALAUNDO'S PROPHESY! - will be spread through the Realms from here, this is my command. Beginning exactly one mortal year from this day, the text will be recited each noon within the walls of Candlekeep - OR Candlekeep will be destroyed down to its catacombs. This is my will.~
 ==ToAlaun~The recitations and the copies will be done as you have commanded, I-i h-have seen your power, L-Lord. No more murders, w-we do as told.~
-=~May O-Oghma forgive me.~
+=~May O-Oghma forgive me for the betrayal.~
 ==ToBhaal~Spare me your babbling, your fear makes you a mad but useful instrument. As long as you play my tune, I will spare your pathetic Candlekeep.~DO~Polymorph(SLAYER) Wait(4) MoveToPoint([1108.788]) Wait(4) DestroySelf()~EXIT
 
 CHAIN
