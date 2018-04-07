@@ -17,7 +17,7 @@ DO~SetGlobal("ToBaneHunt","Global",3)~
 ==ToLini~Only today I recognised that I may have missed you all.~
 ==ToPellig~We may spend a little time to exchange pleasantries - Midnight, you will not be fooled long, you may already guess that this gathering has a more serious background than meeting old friends.~
 ==ToCyric~Pelligram sadly is correct, just as always. The period we once have labelled *Time of Troubles* is about to come to another climax.~
-=~It is probably best for Pelligram to provide us with an overview, she has followed it all in service of her everpresent *Weave*.~
+=~It is probably best for Pelligram to provide us with an overview, she has followed it all in service of her ever-present *Weave*.~
 ==CVSan25J~Make yourself comfortable while we listen to her report.~
 ==ToPellig~Our return of the one Tablet of Fate to Helm and by this back to AO has not ended the Avatar Crisis as some people begin to call it now. AO has not lifted his ban and is not willing to do so until the second tablet is found as well and the renegades have been punished.~
 ==CVSan25J~At least Myrkul has found his end.~
@@ -29,7 +29,7 @@ DO~SetGlobal("ToBaneHunt","Global",3)~
 ==ToAdon~No. But that is not the topic for today. Bane has been sighted lately.~
 ==ToPellig~We do not know whether he or Bhaal is in possession of the second Tablet. Bane, however is the only trace we have at the moment.~
 ==TOLini~And where is he exactly?~
-==ToCyric~Ehem, it is reported that he left my hometown Zenthil Keep some time ago with an army of followers and undead to march against the town of Tantras, where Torm has taken up residence.~
+==ToCyric~Ehem, it is reported that he left my home town Zhentil Keep some time ago with an army of followers and undead to march against the town of Tantras, where Torm has taken up residence.~
 END
 ++~Why would Bane do such a thing?~ EXTERN ToCyric Reunite2
 ++~It is strange for Bane to start such a war instead of hiding safely.~ EXTERN ToCyric Reunite2
@@ -41,7 +41,7 @@ IF~~THEN ToCyric Reunite2
 ==ToCyric~Really?~
 ==ToPellig~Anyway, Tantras would be the place we should go, either to capture Bane or even better to capture Bane AND the tablet.~
 END
-++~The way to reach Tantras from here would be to sail the Sea of Fallen Stars passing Westgate and the Pirate Isles and then turning north towards Ravens Bluff. And, the nearest place to embarque on a ship would be Mornbryn's Shield east of Eversult.~DO~RevealAreaOnMap("Tot006") AddJournalEntry(@040,QUEST)~EXIT
+++~The way to reach Tantras from here would be to sail the Sea of Fallen Stars passing Westgate and the Pirate Isles and then turning north towards Ravens Bluff. And, the nearest place to embark on a ship would be Mornbryn's Shield east of Eversult.~DO~RevealAreaOnMap("Tot006") AddJournalEntry(@040,QUEST)~EXIT
 
 CHAIN
 IF~Global("ToBaneHunt","Global",4)~THEN ToPellig WhoFath1
@@ -49,7 +49,7 @@ IF~Global("ToBaneHunt","Global",4)~THEN ToPellig WhoFath1
 DO~SetGlobal("ToBaneHunt","Global",5)~
 =~Anything you like to talk about with an old friend, Midnight?~
 END
-++~Oh, it was nothing, just Cyric and Elminster quarreling as usual.~ + WhoFath2
+++~Oh, it was nothing, just Cyric and Elminster quarrelling as usual.~ + WhoFath2
 ++~Family business, Pelligram, even though...you may be considered part of the family, Aunt Pelligram, haha.~+ WhoFath2
 
 CHAIN
@@ -96,7 +96,7 @@ DO~SetGlobal("ToBaneHunt","Global",9)~
 ==ToDrizzt IF~InParty("ToDrizzt")~THEN~Do you need a drow to tell you that a surfacer sailor on land is most likely found in an inn and that a typical dwarven name for such a place is *Troll in Flames*?~
 ==ToLini IF~!InParty("ToDrizzt")~THEN~Do you need a drow to tell you that a surfacer sailor on land is most likely found in an inn and that a typical dwarven name for such a place is *Troll in Flames*?~
 ==ToAdon~(Laughs) Just like on that sign over by that house, you mean?~
-==ToCyric~An experienced band of adventuters working hand in hand, hihi.~EXIT
+==ToCyric~An experienced band of adventurers working hand in hand, hihi.~EXIT
 
 CHAIN
 IF WEIGHT #-2~Global("Sailors","RTF381",1)~ THEN Acqxzah1 HireShip1
@@ -129,7 +129,7 @@ IF~~THEN Acqxzah1 HireShip2
 END
 ++~Khalindra...if for no other reason...we need to find them!~ + HireShip3
 ++~Unless we persuade the captain to sell us his ship and we learn to sail it, the only option is to find the missing persons.~ + HireShip3
-++~Find those three missing people, win the captains's confidence and get him sober again and continue our own mission - understood.~ + HireShip3
+++~Find those three missing people, win the captain's confidence and get him sober again and continue our own mission - understood.~ + HireShip3
 
 CHAIN
 IF~~THEN Acqxzah1 HireShip3
@@ -219,8 +219,8 @@ CHAIN
 IF~NumTimesTalkedTo(0)~THEN ToKapapa KhalResc1
 ~Help has found its way into this acid hole, Olive was successful, it seems.~
 DO~SetGlobal("Fathresc","Tot010",1)~
-==ToCyric IF~IsValidForPartyDialog("ToCyric")~THEN~A clever contigency plan, man. Leave one outside just in case, hihi. You seem to have some experience in such situations, so you must be that so-called harper.~
-==ToLini IF~!IsValidForPartyDialog("ToCyric")~THEN~ A clever contigency plan, man. Leave one outside just in case. You seem to have some experience in such situations, so you must be the harper we heard about.~
+==ToCyric IF~IsValidForPartyDialog("ToCyric")~THEN~A clever contingency plan, man. Leave one outside just in case, hihi. You seem to have some experience in such situations, so you must be that so-called harper.~
+==ToLini IF~!IsValidForPartyDialog("ToCyric")~THEN~ A clever contingency plan, man. Leave one outside just in case. You seem to have some experience in such situations, so you must be the harper we heard about.~
 ==ToKapapa~Glarasteer Rhauligan, merchant of Innarlith, and acquainted with the trouble of the roads. I came to look into this situation for the sole reason nobody else was here to do it - until now.~
 =~Did you manage to find my daughter, we got separated by the monster's assault?~
 END
@@ -246,7 +246,7 @@ DO~SetGlobal("ToBaneHunt","Global",11) SetGlobal("Daughresc","Tot010",1)~
 ==CVSan25J~If that were only true...the dark side of an evil power may be stronger than the mortal trying to handle it. Your intention may be good at the beginning - until the power itself starts to corrupt you. Is this not what has started the whole Avatar Crisis? Those three gods, former mortals, who came into possession of Jergal's power and now just hunger for more?~
 ==ToCyric~We defeat them and by that we prove we're stronger than those fools.~
 ==ToPellig~Leave the spark here to the bard, Cyric. Even if you were right, you do not need it - the ones awaiting us have much more to give.~
-==ToCyric~Pelli, Pelli, your cleverness always overwhelms me. My advisors are right. Take your *rotten* treasure, bard and choke on it.~
+==ToCyric~Pelli, Pelli, your cleverness always overwhelms me. My advisers are right. Take your *rotten* treasure, bard and choke on it.~
 ==Sankaba~Have you found my father, adventurers? He must be around here as well.~
 END
 IF~Global("Fathresc","Tot010",1)~THEN REPLY~Yes, we sent him back the way we came and we suggest you follow him quickly.~+ KhalResc12
@@ -279,7 +279,7 @@ DO~SetGlobal("ToBaneHunt","Global",12) ~
 ==ToOlive~Wait, you seem to be quite in a hurry, Finder. Bye, friends, I'm coming...~ DO~EscapeAreaDestroy(75)~
 ==ToKapapa~We will continue our journey to the Sword Coast after a short rest, Khalindra.~
 ==CVSan25J~If you should pass Athkatla, ask for Elminster's house. Our son will provide you with a comfortable stay in town, just mention you met us here.~
-==Sankaba~You will travel farther east? Be warned, we heard some heavily armed troups are on a march around Ravens Bluff.~
+==Sankaba~You will travel farther east? Be warned, we heard some heavily armed troupes are on a march around Ravens Bluff.~
 ==ToAdon~Exactly why we need to be there. They are marching on Tantras.~
 ==ToKapapa~I was sure you were not here because of our case. The gods you may have to face at Tantras are far more powerful than Moander.~
 ==ToCyric~Bane and Bhaal, if we are lucky, both of them together.~
@@ -304,9 +304,9 @@ IF~Global("ToBaneHunt","Global",13) ~THEN  ToTorm Tantras2
 ~It is good you came. I have seen your success on the battlefield outside. You are the odd element that may still change the outcome of this battle.~
 DO~SetGlobal("ToBaneHunt","Global",14) ~
 ==CVSan25J~The two schemers at the heart of this intrigue have escaped us.~
-==ToTorm~Bhaal and Bane - you must be very confident or very foolish to persue them. They are still very powerful.~
+==ToTorm~Bhaal and Bane - you must be very confident or very foolish to pursue them. They are still very powerful.~
 ==TOPellig~We have seen your soldiers fight outside. They seem to sacrifice themselves for their god.~
-==ToTorm~For their god and also for their progeny. The young may survive if their god remains strong enough to fight the evil on their behalf. Everyone here older than 14 years has sworn his life to our victory. I absorbe every soul of a follower who falls in my name today and thereby gain the strength to fight our foe.~
+==ToTorm~For their god and also for their progeny. The young may survive if their god remains strong enough to fight the evil on their behalf. Everyone here older than 14 years has sworn his life to our victory. I absorb every soul of a follower who falls in my name today and thereby gain the strength to fight our foe.~
 ==ToAdon~The two former gods have fled us to secure the stolen Tablet of Fate that must be hidden here in town.~
 ==ToTorm~They fled to the Halls of Demarch where Mask is worshipped, the item must be hidden there. ~
 ==ToCyric~An adequate place for a stolen item, hihi.~

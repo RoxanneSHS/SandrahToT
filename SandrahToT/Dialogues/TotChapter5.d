@@ -79,7 +79,7 @@ DO~SetGlobal("Tomonst","ar5202",2) SetGlobal("TalkedToNyalee","GLOBAL",1)~
 ==CVSan25J~It serves its purpose, my friend. Mystra herself would not want it any other way.~
 ==TOCyric~There's a lot of madness in this place today, hihi, but it's not me, not at all.~
 END
-++~Cyric, you are right. This is madness and we will stop it today. No prophesy, no contingeny, no triumph for Bhaal.~+MeetTot2
+++~Cyric, you are right. This is madness and we will stop it today. No prophesy, no contingency, no triumph for Bhaal.~+MeetTot2
 ++~Cyric, you are right. This is madness but intervening today would produce endless chaos. There must be anti-climax before there can be catharsis.~+MeetTot3
 
 CHAIN
@@ -146,7 +146,7 @@ DO~SetGlobal("Tosendai","ar60pb",13) SetGlobal("ToBhaalhunt","Global",4)~
 =~And he needs us, hihi! What is his wonderful contingency plan good for if we don't do him the favour to kill him first.~
 ==ToAdon~But Midnight is very strict that we keep his spawns alive - for whatever reason.~
 ==CVSan25J~Not all of them will become what their *father* wants them to be, which is fuel for his return. They have a godly spark in them that may be forged into something powerful. And once the Time of Troubles is ended, such power may be required to rebuild what was destroyed.~
-==ToCyric~Don't be afraid, the new god of murder to follow slain Bhaal will take care of his predessessor's heritage, hihi.~
+==ToCyric~Don't be afraid, the new god of murder to follow slain Bhaal will take care of his predecessor's heritage, hihi.~
 ==ToPellig~We will see. First things first. Where is Bhaal?~
 END
 ++~Harper intelligence may have traced him. The ones to know will be found in Waterdeep by now.~ EXIT
@@ -158,20 +158,20 @@ IF~Global("TotPeople","CVDre2",2)~THEN ToPellig ToThay2
 DO~SetGlobal("TotPeople","CVDre2",3) SetGlobal("ToBhaalhunt","Global",5)~
 ==CVSan25J~...and of course Landrel. ~
 ==Narqmes~Mylady Midnight, I was warned about your knowledge of things yet untold. Yes, I am Landrel, majordomo of your son Elminster.~
-==ToKapapa~Landrel, you may as well confess to our visitors that you are more like Elminster's counselor and co-harper, no need for your usual disguise.~
+==ToKapapa~Landrel, you may as well confess to our visitors that you are more like Elminster's counsellor and co-harper, no need for your usual disguise.~
 ==ToGorion~Your visit here today is just in time. You have not found Bhaal yet nor has he found this refuge.~
 ==TOPellig~A perfect summary of the situation.~
 ==ToCyric~We found his trail of the spawns he breeds with all races to preserve his essence once we tracked him down and eliminated him, but we have not seen the bastard in person.~
 ==ToGorion~It looks like we were mistaken. Khalindra does not appear to be his target.~
 ==ToKapapa~At least not at this moment, Gorion. I would not declare her and Elminster save yet.~
 ==ToAdon~Harpers have a wide net to catch information. What do you know?~
-==NarQMes~Bhaal is looking for some artifact that opens a portal to Avernus.~
+==NarQMes~Bhaal is looking for some artefact that opens a portal to Avernus.~
 ==ToPellig~He thinks he can escape to the Nine Hells?~
 ==TOLini~Where would such a portal exist?~
-==ToGorion~It is well known that a sealed portal exists at Dragonspear Castle in the north. The problem is to unseal it, even for one like Bhaal in his mortal form, hence the need for the artifact.~ DO~EscapeAreaObject("WDTown")~
-==ToKapapa~He has gone to the east, far east. The Thaymounts, to be exact.~ DO~EscapeAreaObject("WDTown")~
+==ToGorion~It is well known that a sealed portal exists at Dragonspear Castle in the north. The problem is to unseal it, even for one like Bhaal in his mortal form, hence the need for the artefact.~ DO~EscapeAreaObject("WDTown")~
+==ToKapapa~He has gone to the east, far east. The Thaymount, to be exact.~ DO~EscapeAreaObject("WDTown")~
 ==CVSan25J~Probably the old Citadel that is rumoured to be there since the time of Netheril's fall.~
-==NarQMes~Mylady, before you start such a journey, you should talk to Elminster. He is in the garden with his friends.~EXIT
+==NarQMes~My lady, before you start such a journey, you should talk to Elminster. He is in the garden with his friends.~EXIT
 
 CHAIN
 IF~Global("TotPeople","CVDre1",1)~THEN Sanwinth Wintr1
@@ -184,7 +184,7 @@ DO~SetGlobal("TotPeople","CVDre1",2)~
 ==ToIsmad~Don't disappoint me now and say that pink isn't the bestest colour of them all.~
 ==Sanwinth~You would look magnificent in just any colour, Ismanelda...~
 ==ToIsmad~Gosh, of course NOT, it's gotta be pink...heya, you there.~
-=~Eh, of course excuse me, mylady, you must be - eh - the lady of the house so to say, right? Master Elminster's mother.~
+=~Eh, of course excuse me, my lady, you must be - eh - the lady of the house so to say, right? Master Elminster's mother.~
 ==CVSan25J~Ismanelda...Imoen's mother...~
 ==Sanwinth~You...you are mother already, my dear...??~
 ==ToIsmad~Pfff, no, of course not, Winnie! That's Elminster's mother, she - eh - she knows such things, like things that happen in the future, ya know...they say she reads people's minds and stuff.~
@@ -264,7 +264,7 @@ CHAIN
 IF~ Global("TotThay","Global",5)~ THEN ToAdon Totthay4
 ~Any idea of how to stop Bhaal here, Midnight?~
 DO~SetGlobal("TotThay","Global",6)~
-==CVSan25J~We need to get access to Bhaal's temple in Bezanthur. This is where they would sacrifice those slaves to the Lord of Murder in their bloody rituals.~
+==CVSan25J~We need to get access to Bhaal's temple in Bezantur. This is where they would sacrifice those slaves to the Lord of Murder in their bloody rituals.~
 ==ToCyric~I haven't seen any sign of his temple yet, hihi.~
 ==ToPellig~Most of those ritual places are below the surface, Cyric.~
 ==CVSan25J~Right, the one we search is below the Odesseiron estate. I have been there before...~
@@ -277,14 +277,14 @@ CHAIN
 IF~Global("TotThay","Global",6)~THEN ToHomer Totthay4
 ~More intruders? Edwin, boy, come here behind me.~
 DO~SetGlobal("TotThay","Global",7)~
-==CVSan25J~Homer Odesseiron and his nephew Edwin, I pressume.~
+==CVSan25J~Homer Odesseiron and his nephew Edwin, I presume.~
 ==RTEdwin~Those unwashed Sword Coasters are just as uncivilized as you described them to me, uncle. (However, the girls outshine anything in Thay, hm.)~
 ==ToHomer~What do you want here?~
 ==ToCyric~Step aside, red robe, we have no issue with you - unless you are in league with the Bhaalists that are around here.~
 ==RTEdwin~The scum may be of use to us other than to trample the grass (Let the chimpanzees do the dirty work for us.)~
-==ToHomer~The Bhaal fanatics are as unwelcome here as you are. Still, if you are here to fight them, I will not object you. You will find them in the southeast of the estate. Make sure to eliminate them all.~
+==ToHomer~The Bhaal fanatics are as unwelcome here as you are. Still, if you are here to fight them, I will not object you. You will find them in the south-east of the estate. Make sure to eliminate them all.~
 ==ToCyric~Too bad, I had hoped for more resistance from you, Odesseiron, yes, yes, run for your life, hihi.~
-==ToHomer~Come, Edwin, let the mercenairies do their job, we have better things to do.~DO~EscapeAreaObject("Estate")~
+==ToHomer~Come, Edwin, let the mercenaries do their job, we have better things to do.~DO~EscapeAreaObject("Estate")~
 ==RTEdwin~(That black beauty sure looked like a treat, hm.)~DO~EscapeAreaObject("Estate")~EXIT
 
 CHAIN
@@ -298,10 +298,10 @@ DO~SetGlobal("TotThay","Global",9) SetGlobal("ToBhaalhunt","Global",6) ~
 ==CVSan25J~Cyric!! He wants to rape Khalindra to place a spawn right next to Sandrah.~
 ==ToBhaal~Sandrah?~
 ==ToCyric~Sandrah?~
-==CVSan25J~Elminster's and Khalindra's firstborn - she may just have arrived by now. The heiress of the long line...~
+==CVSan25J~Elminster's and Khalindra's first-born - she may just have arrived by now. The heiress of the long line...~
 ==ToPellig~Midnight! You may give the Lord of Murder an idea he did not yet have.~
 ==ToBhaal~Worry not, Simbul - oh, yes, I know who you are...~
-=~Worry not, the dice has been cast, what will be will be, neither you nor your protege Midnight can prevent it anymore.~ DO~EscapeAreaObject("Downa")~
+=~Worry not, the dice has been cast, what will be will be, neither you nor your protege Midnight can prevent it any more.~ DO~EscapeAreaObject("Downa")~
 END
 ++~Let him go - we do not even want to prevent it. Yes, the dice has been cast but when it ends its roll, it will not show the number he expects.~ EXIT
 ++~Let us follow him downstairs - we need to prevent his return to Waterdeep. Bhaal must find his end here and now!~DO~SetGlobal("TotThay","Global",10)~EXIT

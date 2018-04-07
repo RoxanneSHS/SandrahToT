@@ -20,7 +20,7 @@ END
 
 IF~~THEN BEGIN WantTOTRe4
 SAY~(She looks at you for a moment, contemplating your request.)~
-=~Mystra was killed by Helm during the events and later my grandmother Midnight took her cloak and portefolio. I have the knowledge of both but for your purpose the full story is in Midnight's part of the lore.~
+=~Mystra was killed by Helm during the events and later my grandmother Midnight took her cloak and portfolio. I have the knowledge of both but for your purpose the full story is in Midnight's part of the lore.~
 IF~~THEN REPLY~The source is not important for me, as long as the story is the truth - for the first time.~ GOTO WantTOTRe5
 END
 
@@ -63,10 +63,10 @@ IF~Global("TotParty","RTF123",2)~ THEN CVSan25J Whatnow
 DO~SetGlobal("TotParty","RTF123",3)~
 ==TOCyric~We came here in search of the legendary sword that this halfling named Sneakabout has stolen from the dead corpse I was about to loot...~
 ==ToKelem~We know this...we also know that your informant stating the halflings gang would be here has erred.~
-==ToAdon~He was probably just telling us any place that was far enough away to stop Cyric's *interogation*.~
+==ToAdon~He was probably just telling us any place that was far enough away to stop Cyric's *interrogation*.~
 ==TOCyric~You mean that he lied to save his life...hihi, his life he didn't save - and believe me, I know he told the truth, I can see lies and truth in a dying man's eye like nobody else can.~
 ==ToKelem~Especially if you are the murderer of that man!~
-==TOCyric~It was the interogation of a man who attacked us first, paladin, don't go to judging me - not you.~
+==TOCyric~It was the interrogation of a man who attacked us first, paladin, don't go to judging me - not you.~
 ==ToPellig~Let us come to the point, friends. Cyric is sure that the halflings are still here or they will return to this place soon. The cave we found is not deserted permanently.~
 END
 ++~This mission has failed, Cyric, admit it or not. We will leave now to go to Nashkel nearby and re-stock our equipment.~EXIT
@@ -106,15 +106,15 @@ END
 
 CHAIN
 IF~Global("KelSpeak","RTF123",1)~THEN TOKelem Prop1
-~It is time to leave this wilderness, there is nothing for us to do here anymore.~
+~It is time to leave this wilderness, there is nothing for us to do here any more.~
 ==ToAdon~There was some talk about slavers having overtaken a mine nearby. We should look into that on our way to Nashkel.~
 ==ToCyric~And free slaves?? A paladin's suggestion, hihi, but not very profitable.~
 ==TOPellig~A chance to try out your new sword in a battle, Cyric. And nobody will miss those slavers you can slay.~
 ==ToCyric~That's the spirit I like in you, Pelli-darling, always the practical advisor, hihi.~
 ==CVSan25J~The Nashkel mines in slaver's hands, you say?~
-==ToAdon~I am not sure it were the Nashkel mines they were referring to. There is another minesite right to the north of here, if we follow the bear river for a while.~
+==ToAdon~I am not sure it were the Nashkel mines they were referring to. There is another mine site right to the north of here, if we follow the bear river for a while.~
 END
 ++~Let us go north, it is probably the mine that may have opened a bit too close to the old Kozah temple north of here.~DO~SetGlobal("KelSpeak","RTF123",2)~ EXIT
 ++~The Nashkel mine lies on our way back to civilization and shops anyway, let's go there first.~ DO~SetGlobal("KelSpeak","RTF123",2)~ EXIT
 ++~The nearest way to a bathtub and a mug is on my agenda, friends. All else can wait until later.~ DO~SetGlobal("KelSpeak","RTF123",2)~ EXIT
-++~Let us explore this area thoroughly first, before I decide on one of those minesites to visit.~ DO~SetGlobal("KelSpeak","RTF123",2)~ EXIT
+++~Let us explore this area thoroughly first, before I decide on one of those mine sites to visit.~ DO~SetGlobal("KelSpeak","RTF123",2)~ EXIT

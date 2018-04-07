@@ -10,8 +10,8 @@ DO~SetGlobal("ToBhaalFin","Global",3)~
 ==ToElmi~For the love of thee and for the love of the women who have to suffer for them, I will do what must be done.~
 ==CVSan25J~Khalindra and Sandrah are well, please tell me, my son?~
 ==ToElmi~Yes, they still are, the lights of my life. I am aware of the loss I have to face once the spawn is born...Khalindra...the children will be my reason to carry on...~
-==CVSan25J~You will be blessed by a goddess for that, Elminster. You and the harpers will be their guardians. Those two and another one you will find in Bhaal's temple near Boareskyre Bridge.~
-==ToElmi~Thou need to take a similar route to find and eliminate the Slayer. He is on his way to Dragonspear Castle to reach a portal to Tantras. He needs to pass Boareskyre Bridge to get there.~ DO~EscapeAreaObject("WDTown")~
+==CVSan25J~You will be blessed by a goddess for that, Elminster. You and the harpers will be their guardians. Those two and another one you will find in Bhaal's temple near Boareskyr Bridge.~
+==ToElmi~Thou need to take a similar route to find and eliminate the Slayer. He is on his way to Dragonspear Castle to reach a portal to Tantras. He needs to pass Boareskyr Bridge to get there.~ DO~EscapeAreaObject("WDTown")~
 ==CVSan25J~We will overtake him and await him at the bridge. Bhaal ends there and will never return.~DO~AddJournalEntry(@052,QUEST)EraseJournalEntry(@51)~EXIT
 
 CHAIN
@@ -34,7 +34,7 @@ IF~Global("ToBhaalFin","Global",6)~ THEN ToCyric Boarshow2
 ~So your old God of Murder is gone, hihi.~
 DO~SetGlobal("ToBhaalFin","Global",7)~
 ==Sarmel01~He was weak in his mortal avatar, too weak for the Prime.~
-==CVSan25J~Unlike the mortals themselve, those who call the Prime their home.~
+==CVSan25J~Unlike the mortals themselves, those who call the Prime their home.~
 ==Sarmel01~Some of them are strong enough to play their role on ANY plane they would chose to rule.~
 ==ToCyric~Hihi, well spoken! Come, Midnight, let us claim at the Celestial Stairs what is truly ours to claim.~
 ==Sarmel01~Go claim the vacant portfolios...both of you.~DO~EscapeAreaObject("Tranbd2010")~
