@@ -51,7 +51,7 @@ CHAIN
 IF~~THEN ToKelem Whatwrong2
 ~Yes, the curse of my family. Were you scared?~
 ==CVSan25J~Not by you, I felt I was not in danger.~
-=~I was concerned for you, you are a fighter with a lot of overview who restrains himself in battle, you keep a cool head and do not act foolishly. That beast was not acting like you do, more like you went beserk. You could have been badly wounded or worse.~
+=~I was concerned for you, you are a fighter with a lot of overview who restrains himself in battle, you keep a cool head and do not act foolishly. That beast was not acting like you do, more like you went berserk. You could have been badly wounded or worse.~
 ==ToKelem~You are right, I had little control in that state. On the other hand, it never happened in any battle unless some family member of mine was involved.~
 END
 ++~Maybe we find out about some cure by visiting a temple.~ + Whatwrong3
@@ -84,7 +84,7 @@ END
 
 CHAIN
 IF~~THEN ToKelem Whatwrong5
-~What he found was not encouraging. The source of the curse was the greed of my anchestor who left his mistress to die from her wounds. The sorceress who cursed Kyle was drawing her powers from The Black Hand.~
+~What he found was not encouraging. The source of the curse was the greed of my ancestor who left his mistress to die from her wounds. The sorceress who cursed Kyle was drawing her powers from The Black Hand.~
 ==CVSan25J~Bane, the malicious god, Lord of Darkness whom his worshippers call the Black Hand.~
 ==ToKelem~I may bear this curse but I will not deal with the Black Lord to get rid of it, never!~
 ==CVSan25J~Do you want to give it to your children rather?~
@@ -115,7 +115,7 @@ DO~SetGlobal("ToGodwalk","Global",2)~
 ==ToGoWa02~Celestial presence, never heard one use such an expression, but then...never saw one do such a thing before. And, by the way, she claimed to be Umberlee.~
 ==ToKelem~It would make sense for the Bitch Queen of the Depths to punish pirates this way. The first good deed I ever saw from that evil goddess.~
 ==ToGoWa02~It looks like it makes no sense to ask people like you for a little help.~
-==TOCyric~Hihi, Godsbane is always willing to help bastards like you out of the mysery of their wretched existence.~
+==TOCyric~Hihi, Godsbane is always willing to help bastards like you out of the misery of their wretched existence.~
 ==ToPellig~Cyric, please, keep your energy for worthier foe.~
 ==TOCyric~For you, Pelli-darling, always willing to please you.~
 END
@@ -177,11 +177,11 @@ DO~SetGlobal("ToGodwalk","Global",8)~
 ==ToCyric~I understand you perfectly, the endless cycle of nature and so on and blah and blah.~
 ==CVSan25J~You still have a chance to leave these woods peacefully, Malar.~
 ==ToMalar~And who are you to demand such? (Sniff) This is MY domain now, the forests of Faerun return to the regime of the beasts.~ DO~Enemy()~
-==TOAdon~There is nothing natural in lycanthropy, it is a desease to be stopped from spreading further.~EXIT
+==TOAdon~There is nothing natural in lycanthropy, it is a disease to be stopped from spreading further.~EXIT
 
 CHAIN
 IF WEIGHT #-3~Global("ToWaukGo","Global",1)~THEN CVWDWauk WauGo1
-~Assault...help!! Help!! There are demons in the Temple of Splendor.~
+~Assault...help!! Help!! There are demons in the Temple of Splendour.~
 DO~SetGlobal("ToWaukGo","Global",2)~
 ==ToCyric~What could they seek there, they want to go shopping, hihi?~
 ==CVWDWauk~We need help...our goddess...~
@@ -198,17 +198,17 @@ IF~Global("ToWaukGo","Global",3) ~THEN ToWaukee WauEscape
 DO~SetGlobal("ToWaukGo","Global",4)~
 ==Grazzt02~Toril has become a dangerous place, I have witnessed it myself during my short stay here.~
 ==TOWaukee~You know about my identity, so how about introducing yourself to me.~
-==Grazzt02~I am Graz'zt, a great demon prince of Hell. The name may strike a chord as will other enemies of mine like Orcus and Demogorgon. Your ambassadors assured me that you are open minded and you patronise the merchant as well as the smuggler. My reputation should not be a hinderance for our deal.~
+==Grazzt02~I am Graz'zt, a great demon prince of Hell. The name may strike a chord as will other enemies of mine like Orcus and Demogorgon. Your ambassadors assured me that you are open minded and you patronise the merchant as well as the smuggler. My reputation should not be a hindrance for our deal.~
 ==ToWaukee~Celestia is closed and Toril not safe. Logic tells me that your domain is safe - provided our agreement is solid.~
 ==Grazzt02~I have nothing to gain by betraying you, Waukeen. We both will be winners once this struggle with AO is over and we can restore you as the figurehead of our alliance whom the mortals can see and worship.~
 =~The portal is ready for your use.~
 ==ToCyric~Hihi, not an ambush like those priests were made to believe but a clever escape plan. My respect, Waukeen.~
-==ToAdon~This kidnapping obviously is a business case of a quite perculiar nature...~
+==ToAdon~This kidnapping obviously is a business case of a quite peculiar nature...~
 ==Grazzt02~Step through the portal, fair Golden Lady, I will take care of these unexpected intruders.~DO~AddJournalEntry(@027,QUEST) ClearAllActions() StartCutsceneMode() StartCutScene("ToWaEsc")~EXIT
 
 CHAIN
 IF WEIGHT #-4~Global("ToWaukGo","Global",6)~THEN CVWDWauk WauGo2
-~What has happened. I was unconsciuos, it seems.~
+~What has happened. I was unconscious, it seems.~
 DO~SetGlobal("ToWaukGo","Global",7)~
 ==ToCyric~You missed the best part of the play, hihi.~
 ==Tolini~Your goddess is obviously one who knows no scruples when it comes to business associates.~
@@ -233,7 +233,7 @@ IF~~THEN Tokelem Waukgo3
 ==ToPellig~Friends, I am afraid that Cyric's vision is not so totally absurd as it may sound. There will be casualties sooner or later, and - just as Cyric already stated, there will be vacancies. ~
 =~At one point this situation will end. There will be a vacuum of power in some domains and it must be filled to prevent further chaos.~
 ==ToCyric~Pelli-darling, I knew you'd understand...I have to make up my mind about which portfolio I should go for.~
-==CVSan25J~How about murder, your specialty - or take strife...Cyric, Cyric...~
+==CVSan25J~How about murder, your speciality - or take strife...Cyric, Cyric...~
 ==ToCyric~Splendid ideas, girls, you are great inspirations, really. But why chose - why not take both and maybe even...~
 ==TOKelem~Stop it. madman!! And you, Pelligram, Midnight, what do you think you do? You put fuel to that idiot's fire! Just imagine he really starts to believe in such stuff. He's dangerous enough already.~
 ==TOAdon~Come. let us move before this gets out of hand.~EXIT
@@ -245,7 +245,7 @@ DO~ SetGlobal("ToTablet1","Global",2)~
 ==Tosune~We knew you would come. I greet you, adventurers - Adon of Arabel, it is good you are now here.~
 ==TOAdon~My lady Sune, you are as beautiful as I ever dreamt you were.~
 ==ToPellig~Mystra, we have seen already a number of events giving us an initial impression about the current situation. With both of you being present here, our worst fears are confirmed.~
-==CVSan25J~Lady Mystra, my goddess, it is true that it was really you who gave me your attention in my student days. Each time I saw you in my dreams, I found that spells, which I had labored over for weeks, would suddenly work without any problem. ~
+==CVSan25J~Lady Mystra, my goddess, it is true that it was really you who gave me your attention in my student days. Each time I saw you in my dreams, I found that spells, which I had laboured over for weeks, would suddenly work without any problem. ~
 ==Tosune~Our power is limited on the Prime and we have joined our forces to call you to this place. Mystra protects me as good as she can, as she is partly one with the Weave and not even AO can fully separate the two.~
 ==ToPellig~I have recognised that our spells are still intact even though followers of other gods seem to be limited in their use of magic.~
 ==ToMyst~If you see spellcasters using their magic you can easily tell that the avatar of their god must be within some distance. Only in this case they can participate from the power of their celestial guardian.~
@@ -289,12 +289,12 @@ DO~SetGlobal("ToBhaalActive","bd7230",2)~
 ==ToPellig~Cyric, I sometimes think you have the gift to see the future...~
 ==ToCyric~You need no prophet for that, hihi, that guy's portfolio just would suit me too well, Pelli-darling.~
 ==Tosarevm~Blasphemer...no one will take Lord Bhaal's place.~
-==CVSan25J~(Whispers almost like in a trance) Bhaal will not die, some bhaalspawns are already seeded...~
+==CVSan25J~(Whispers almost like in a trance) Bhaal will not die, some Bhaalspawns are already seeded...~
 ==SarMel01~WHAT? Who are you, woman? How come you to know anything about our Lord's plans?~
 ==ToCyric~Seems someone else sees the future as well, hihi.~
 ==TOLini~Some of these women indeed seem to be pregnant.~
 ==ToAdon~If they carry Bhaal's seed they must die!~
-==Tosarevm~No, you murderer! Mellisan, do something. Nobody shall hurt my little Sarevok.~
+==Tosarevm~No, you murderer! Melissan, do something. Nobody shall hurt my little Sarevok.~
 ==CVSan25J~We cannot do that, Adon. We are not like them. We cannot kill mothers with their innocent children.~
 ==ToKelem~Innocent children? They are Bhaal's spawns!~
 ==ToPellig~Midnight is right - they are innocent. Their blood does not define who they will be in later life.~
@@ -314,7 +314,7 @@ DO~ SetGlobal("ToTablet1","Global",6)~
 ==ToAdon~B,B and M proofs our initial suspicion about the not-yet-dead-three.~
 ==TOlini~I wonder what Tiamat has to do with those three, she is the Dragon Queen.~
 ==ToPellig~The dragon is not part of AO's pantheon of Celestia - thus she is not subject to the overall crisis, hm.~
-==ToCyric~They lack your genius, admireable Pelli, maybe they don't know that. And maybe a little dragon breath can solve our problem with those goons.~
+==ToCyric~They lack your genius, admirable Pelli, maybe they don't know that. And maybe a little dragon breath can solve our problem with those goons.~
 ==ToKelem~Hardly imaginable, madman. How would they not know about Tiamat?~
 ==CVSan25J~What if the riddle is much easier - *With her blood spilled the access to the hideout for the tablets will be ours.* They need a bit of her blood to open the gate to where they want to secure the tablets.~
 ==ToAdon~Not a bad analysis, I dare say. So what kind of gate is it that can be opened with dragon's blood only?~
@@ -377,7 +377,7 @@ But in his doom he shall spawn a score of mortal progeny...~
 So sayeth the wise Alaundo.~
 ==ToAlaun~These and the other words that were revealed to me will be sung in the garden each day at noon or Candlekeep will be destroyed.~
 ==ToPellig~This is what your visitor has demanded and he promised to let you and your remaining brothers of Oghma stay alive for it.~
-==ToLini~What else did he give you to *prohesy*?~
+==ToLini~What else did he give you to *prophesy*?~
 ==ToAlaun~The spawn of the Lord of Murder are fated to come into their inheritance through bloodshed and misery. It is the hope of their father that only one shall remain alive to inherit his legacy. I foresee that the children of Bhaal shall kill each other in a bloody massacre.~
 ==CVSan25J~It seems that we interrupted your guest before he could finish his sermon.~
 =~Write:
@@ -396,7 +396,7 @@ IF~Global("CVTiamal","AR6000",3)~THEN CVTiamal  Intrud1
 DO~SetGlobal("CVTiamal","AR6000",4)~
 ==ToPellig~We are not like the previous ones, Tiamat. You are injured, let me heal you with a spell, majesty.~
 ==CVTiamal~It is nothing, it is healing fast. They just took me by surprise, those have-been gods. You are indeed different - you know who I am.~
-==ToPellig~We came to prevent what has now been done already, we are persuing the three fallen gods.~
+==ToPellig~We came to prevent what has now been done already, we are pursuing the three fallen gods.~
 ==ToCyric~The soon-to-be "Dead Three", hihi.~
 ==CVTiamal~Be careful and not too proud, mortals. Those three are still powerful and dangerous and they act precise and quick.~
 ==ToCyric~That describes our own style just as well. They just scratched you a bit to draw some blood but did not stay to fight. Where did they go?~
@@ -404,7 +404,7 @@ DO~SetGlobal("CVTiamal","AR6000",4)~
 ==ToKelem~They want to hide their theft from the scrutiny of other gods in there.~
 ==CVTiamal~Their theft? I'd call it their monstrosity.~
 ==CVSan25J~They brought a dragon with them?~
-==CVTiamal~Some enslaved brown dragon and its halfbred abnormity.~
+==CVTiamal~Some enslaved brown dragon and its halfbreed abnormality.~
 END
 ++~(Mumble) Abazigal is already born...~+ Intrud2
 ++~We will follow them quickly and see what can be saved still.~ + Intrud2
@@ -412,7 +412,7 @@ END
 
 CHAIN
 IF~~THEN CVTiamal  Intrud2
-~I will leave them to you. My lair in this region is defiled. This is no place for the Dragon Queen anymore.~DO~EscapeAreaDestroy(55)~EXIT
+~I will leave them to you. My lair in this region is defiled. This is no place for the Dragon Queen any more.~DO~EscapeAreaDestroy(55)~EXIT
 
 CHAIN
 IF~GlobalGT("CVabaz","AR6005",1)~THEN ToDragBa Breed2
@@ -438,7 +438,7 @@ IF~Global("ToTablet1","Global",9)~THEN ToBane Abalair
 ~Mortals dare to intrude HERE? How is that?~
 DO~SetGlobal("ToTablet1","Global",10) SetGlobal("CVabaz","AR6005",4)~
 ==ToBhaal~Persistent little maggots, didn't I see them when I taught those Oghma monks their new tune?~ DO~MoveToPoint([779.495]) EscapeAreaDestroy(45)~
-==ToMyrkul~You saw them once already? Are they persuing us, you mean?~
+==ToMyrkul~You saw them once already? Are they pursuing us, you mean?~
 ==ToBane~What kind of *god of murder* are you, Bhaal, to keep them alive?~
 ==ToCyric~Aren't they like little boys bickering in the playground, our soon-to-be "Dead Three", hihi.~
 ==ToMyrkul~We have no time to waste it with a bunch of over confident adventurers.~
@@ -470,13 +470,13 @@ CHAIN
 IF~Global("ToTablet1","Global",11)~THEN ToAdon Scar1
 ~My goddess, I am ashamed to appear in your presence in this horrible condition.~
 DO~SetGlobal("ToTablet1","Global",12)~
-==ToSune~These are troubled times, Adon, without Mystra near anymore, my own abilities are not enough to restore your features. This will have to wait.~
+==ToSune~These are troubled times, Adon, without Mystra near any more, my own abilities are not enough to restore your features. This will have to wait.~
 ==ToAdon~But...how can I serve beauty this way...~
 ==ToSune~Hush, you can and you do still, do not worry. We have more urgent tasks at hand now.~
 ==CVSan25J~Where is Mystra? Why is she not here? We have one of the Tablets of Fate.~
 ==ToSune~She went ahead with the news about the identity of the thieves you had discovered. She would not leave the Weave unattended for much longer.~
 ==TOlini~What do you mean by *went ahead*?~
-==ToSune~She went to the Celestial Stairs guarded by Helm. The bottom step is just to the southeast from here. We should make haste to go there, too, now that you have the Tablet.~
+==ToSune~She went to the Celestial Stairs guarded by Helm. The bottom step is just to the south-east from here. We should make haste to go there, too, now that you have the Tablet.~
 ==ToCyric~She rushed ahead without the tablet...oh, these women!! Does she think she can convince a dumb tin head like Helm to let her through just because of her honest face.~
 ==ToPellig~We must indeed hurry to bring her the Tablet. Helm is Duty and there is no way to argue with blind obedience, Mystra may be in danger with her limited powers and her unlimited temper, I know her just to well.~
 ==ToSune~I'll show you the way.~DO~ClearAllActions()
@@ -520,12 +520,12 @@ DO~SetGlobal("ToTablet1","Global",15)~
 ==ToHelm~She broke the law, she tried to violate AO's verdict.~
 ==CVSan25J~SHE tried to save your whole worthless pantheon and bring back the order while you stand there in your glorious righteousness and not only do nothing - no, you even stand in the way of those who act in this crisis.~
 ==ToCyric~*Once again it is Cyric's steady hand that brings you back out of your rage*.~
-=~Do not waste time and energy on this strawheaded dummy. It will help neither us nor Mystra.~
+=~Do not waste time and energy on this straw-headed dummy. It will help neither us nor Mystra.~
 ==ToAdon~I get so fed up with the ignorance and stupidity of those so-called gods. Who do they think they are.~
 ==ToHelm~These are the Celestial Stairs, blasphemous mortals, I will not allow any more of your words here nor your presence.~
 ==CVSan25J~ HERE, YOU TIN HEADED EPITOME OF IGNORANCE.~
 =~*She hauls the tablet you have gained at Helm who has no other chance than to catch it, less it would have falled into the nothingness around the Stairs.*~
-==ToPellig~Let us leave while we still can. There is nothing we can do here anymore.~
+==ToPellig~Let us leave while we still can. There is nothing we can do here any more.~
 =~And you, Helm, be a good doggie and retrieve the tablet to your master, he may give you an extra treat today for killing the Guardian of the Weave.~
 ==ToHelm~Mortals, I warned you...~ DO~StartCutSceneMode() Wait(1) ScreenShake([2033.1900],40) Wait(2) FadeToColor([20.0],0) Wait(4) TextScreen("Tomyste") Wait(4) SetGlobal("Chapter","Global",34) StartCutScene("ToMoveAt")~ EXIT
 

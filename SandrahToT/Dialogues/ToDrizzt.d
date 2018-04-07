@@ -10,7 +10,7 @@ IF~AreaCheck("cvelm3") GlobalGT("ToBaneHunt","Global",1) !InParty(Myself) Global
 ==ToLini~Greetings, Drizzt. I have mentioned your recent adventures to my friends and we have come to talk to you.~
 ==TODrizzt~Am I famous already on the surface? I rather stay incognito if I could.~
 ==ToPellig~Your secret is safe with us. Fellow adventurers have a way to recognise and find each other.~
-==TODrizzt~Is this going to be some kind of invitation. I can see that one of your former comrads no longer travels with you.~
+==TODrizzt~Is this going to be some kind of invitation. I can see that one of your former comrades no longer travels with you.~
 ==ToAdon~The keen eye of the ranger. Yes, Drizzt, we lost Kelemvor fighting the renegade gods who stole the tablets of fate.~
 ==ToDrizzt~I heard rumours about those heroic adventurers who pursue those deities. So it is you. A dangerous but necessary undertaking. Your intention is to invite me to join and my answer is *yes*.~
 END
@@ -33,8 +33,8 @@ IF~Global("ToDrizIn","LOCALS",1)~THEN ToDrizzt Lini1
 ~So it was you, Liriel Baenre, who recommended me to the party?~
 DO~SetGlobal("ToDrizIn","LOCALS",2)~
 ==ToLini~It was not so much a recommendation but a reminder. Your name speaks for itself already and I passed through Waterdeep on the way to meet our friends. I knew Kelemvor would not be there, and when I saw you entering the temple I thought you would fit in well with us.~
-==ToDrizzt~You stayed in Undermountain with Eilestraee's followers?~
-==ToLini~I am as far away from drow customs as you are, Drizzt. Somehow I had expected to meet you at Eilestraee's enclave sooner or later.~
+==ToDrizzt~You stayed in Undermountain with Eilistraee's followers?~
+==ToLini~I am as far away from drow customs as you are, Drizzt. Somehow I had expected to meet you at Eilistraee's enclave sooner or later.~
 ==ToDrizzt~I avoid the presence of my kin when I can. This is not meant as an offence against you however. I never before had a conversation with a drow female resembling our present talk.~
 ==ToLini~I understand your life in the Underdark was even more stressful than mine. I suggest that while we travel together with Midnight we try to forget our race as it is of no importance in this company.~
 ==ToDrizzt~You know we cannot forget who we are - but I understand what you mean. We need to look at each other unprejudiced and forget about the relationship a drow male and a drow female would establish under similar conditions.~
@@ -57,7 +57,7 @@ IF~Global("ToMidDriz","LOCALS",1)~THEN ToDrizzt Midni2
 ~(Drizzt hesitates for a moment before he decides to speak.)~
 DO~SetGlobal("ToMidDriz","LOCALS",2)~
 =~Maybe I know too little yet of human ways, Midnight, but...is Cyric still the man you decided to share yourself with?~
-==CVSan25J~The keen eye of the drow ranger once again - actually, Drizzt, I do not know it anymore...~
+==CVSan25J~The keen eye of the drow ranger once again - actually, Drizzt, I do not know it any more...~
 =~The heart is a stubborn thing, at least mine. Cyric is the father of my son, and he is the man who reshaped my life when it was falling apart.~
 ==ToDrizzt~The Cyric I see is a man fuelled by ambition and a slave of his sword.~
 ==CVSan25J~A slave of his sword?~
@@ -66,7 +66,7 @@ DO~SetGlobal("ToMidDriz","LOCALS",2)~
 END
 ++~It may not be what I want - it may be what I need to become. Mystra is dead and the Weave needs a keeper pretty soon. I may not have a choice, even if I wanted.~+ Midni3
 ++~My choice has nothing to do with Cyric. I have the duty to serve my goddess and the Weave. I hope you can understand this, Drizzt.~+ Midni3
-++~Is there jealousy in your words, Drizzt. I am aware that you may have developped some feeling for me. But it cannot be - I can neither be yours nor Cyric's in a short while. I will need to serve the Weave.~+ Midni3
+++~Is there jealousy in your words, Drizzt. I am aware that you may have developed some feeling for me. But it cannot be - I can neither be yours nor Cyric's in a short while. I will need to serve the Weave.~+ Midni3
 
 CHAIN
 IF~~THEN ToDrizzt Midni3

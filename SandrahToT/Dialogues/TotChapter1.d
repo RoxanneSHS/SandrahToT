@@ -24,14 +24,14 @@ CHAIN
 IF~~THEN ToKelem Sleepkel3
 ~We have a good company assembled, my dear. Even if at times there seem to be some tension between us, over all we work good and effective and one guards the other one's back if we are under common pressure.~
 END
-++~Or stab it if you are not careful...I hope you get not careless, I'd hate to loose you. Enough of my doomsaying, let us sleep now.~DO~RestParty()~EXIT
+++~Or stab it if you are not careful...I hope you get not careless, I'd hate to loose you. Enough of my doom saying, let us sleep now.~DO~RestParty()~EXIT
 ++~Forget my moods, Kelemvor, we know how you can improve them, oh, yes, I know you can!~DO~RestParty()~EXIT
 
 CHAIN
 IF~Global("Tolini","BG4100",8)~THEN ToAdon Mine1
 ~The mine site those slaves were bound for is quite near, we should see if more of those bastards are around waiting for our swords to pierce them.~
 DO~SetGlobal("Tolini","BG4100",9)~
-==ToCyric~Hihi, my new sword is ready to strike, a marvelous weapon.~
+==ToCyric~Hihi, my new sword is ready to strike, a marvellous weapon.~
 ==ToLini~Be careful friends, from what I have seen these slavers are no easy prey.~
 ==ToKelem~Let's finish what we begun.~
 ==TOPellig~We do not want them on our back, so let us rather face them before they find their dead companions.~
@@ -44,10 +44,10 @@ CHAIN
 IF~Global("ToSleep","Global",3)~THEN Tolini TOLiniQuest1
 ~So, Midnight, you are more or less famous adventurers from what I heard from our comrades so far?~
 DO~SetGlobal("Chapter","Global",31)~
-==TOCyric~It's sometimes not too desireable to be too famous, my dark beauty, hihi. (oh, these drow women...they are really up to their reputation, at least this specimen.)~
+==TOCyric~It's sometimes not too desirable to be too famous, my dark beauty, hihi. (oh, these drow women...they are really up to their reputation, at least this specimen.)~
 ==Tolini~You mean as a thief? Well, you may be right. Unless you are so famous that your possible employers deem you capable to steal just about everything.~
 ==TOAdon~Liriel, I have the feeling this is not a hypothetical discussion at all.~
-==TOKelem~There are those organised thieves that make their fortune because they are well known and people hire them for a lot of gold to get them the artifacts they desire.~
+==TOKelem~There are those organised thieves that make their fortune because they are well known and people hire them for a lot of gold to get them the artefacts they desire.~
 END
 ++~Like the Bregan D'aerthe of your kin, Liriel?~DO~SetGlobal("ToSleep","Global",4) SetGlobal("TOLiriquest","Global",1)~ + TOLiniQuest2
 ++~Like the shadow thieves of Athkatla?~DO~SetGlobal("ToSleep","Global",4) SetGlobal("TOLiriquest","Global",1)~ + TOLiniQuest2
@@ -64,17 +64,17 @@ END
 
 CHAIN
 IF~~THEN Tolini TOLiniQuest3
-~I am drow but I follow Eilistraee, not Llolth, that much you know already. Thus I was forced to leave Underdark and to live on the surface.~
-=~(Sigh) Not everything drowish is despiteful and hateful for me. My kin has valuable smiths and inventors as well as capable mages.~
+~I am drow but I follow Eilistraee, not Lolth, that much you know already. Thus I was forced to leave Underdark and to live on the surface.~
+=~(Sigh) Not everything drowish is spiteful and hateful for me. My kin has valuable smiths and inventors as well as capable mages.~
 ==TOCyric~You being one of them, if I may say, hihi.~
-==Tolini~I could do much better if the drow on the surface could use their waponry and magical items up here in the sunlight.~
-==TOAdon~I heard rumours of some artifact that could provide this. Is this where your tale will lead us to?~
+==Tolini~I could do much better if the drow on the surface could use their weaponry and magical items up here in the sunlight.~
+==TOAdon~I heard rumours of some artefact that could provide this. Is this where your tale will lead us to?~
 ==Tolini~You're right, Adon, there is such a thing and I was to acquire it for Eilistraee's followers. It is named Windwalker but it was stolen before I could get it, stolen by the Dragon's Hoard.~
 ==TOCyric~Let me guess, hihi, our mind blowing beautiful young companion will now ask us to face this organisation for her - and we will say yes and get rich, famous, even if the price is to help such goody good doers like followers of Eilistraee.~
 ==Tolini~I am one of them, Cyric.~
 ==TOCyric~None of us is perfect, hihi, my otherwise nearly perfect beauty. (Ouch, that might have backfired...)~
 ==Tolini~If Cyric would let me continue, please...~
-=~...the Dragon's Hoard are an organisation specialised in assassination, slave trade and the retrieval of *unachievable* artifacts. They are led by a drow wizard named Nisstyre. They are rumored to have strongholds at Skullport and High Forest. And that, my friends, is about all I know about them. ~
+=~...the Dragon's Hoard are an organisation specialised in assassination, slave trade and the retrieval of *unachievable* artefacts. They are led by a drow wizard named Nisstyre. They are rumoured to have strongholds at Skullport and High Forest. And that, my friends, is about all I know about them. ~
 =~Ah, and yes, they have Windwalker and they knew I was after it, that is why they captured me and tried to force me into slavery in their new mine.~
 END
 ++~Provided we take up that quest, the place to start investigating would be Waterdeep. Skullport would be somewhere within Undermountain.~DO~AddJournalEntry(@015,QUEST) AddexperienceParty(6000) RestParty()~EXIT
@@ -129,7 +129,7 @@ DO~SetGlobal("TOLiriquest","Global",3) ~
 
 CHAIN
 IF WEIGHT #-2~Global("TOLiriquest","Global",5)~THEN Ammerc07 Linisee2
-~The drow and her bunch are stupid enough to persue the Dragon's Hoard, it seems.~
+~The drow and her bunch are stupid enough to pursue the Dragon's Hoard, it seems.~
 DO~SetGlobal("TOLiriquest","Global",6) ~
 ==CVSan25J~Has anyone doubted that we came to the right place?~
 ==ToPellig~No doubt, Midnight. Only too bad they await us.~
@@ -156,7 +156,7 @@ DO~SetGlobal("TOLiriquest","Global",7)~
 CHAIN
 IF WEIGHT #-41~Global("SanTotStart","Global",1) ~THEN SaMystp1 InTot
 ~We swear allegiance to the Lady, Mistress of the Mysteries, Mystra.~
-=~ Greetings, Mylady Midnight. It is a pleasure to greet the most talented disciple of the Deepingdale temple as our guest today.~
+=~ Greetings, my lady Midnight. It is a pleasure to greet the most talented disciple of the Deepingdale temple as our guest today.~
 END
 ++ ~ Chosen Priestess Rhathona, we greet you but we have no need for the Temple's services today.~EXIT
 ++~ Thank you for the warm welcome, Chosen Priestess Rhathona, what does your house offer to us?~ DO ~ StartStore("CVMystem",LastTalkedToBy(Myself))~ EXIT
@@ -168,9 +168,9 @@ IF WEIGHT #-4~Global("SanTotStart","Global",1) ~THEN SAMYSTP2  InTot2
 
 CHAIN
 IF~ Global("TOLiriquest","Global",7)~THEN TONyssty Found2
-~Visitors or voluntary additions to my petrified pet collectiion?~
+~Visitors or voluntary additions to my petrified pet collection?~
 DO~SetGlobal("TOLiriquest","Global",8)~
-==TOCyric~Ha, have you ever heard that - a humourous drow, hihi. Liriel-baby, that's worth the price of admission alone!~
+==TOCyric~Ha, have you ever heard that - a humorous drow, hihi. Liriel-baby, that's worth the price of admission alone!~
 ==TONyssty~Liriel-baby?~
 =~Liriel?~
 =~Baenre?~
@@ -205,7 +205,7 @@ CHAIN
 IF~ Global("TOLiriquest","Global",10)~THEN TOCyric Found4
 ~And, my drow beauty, what is it we do with that thingy that made us come here? (Ah, it would grace your beautiful neck just so splendid...)~
 DO~SetGlobal("TOLiriquest","Global",11)~
-==Tolini~It has to be brought to the right location to expell its power from there all over Faerun.~
+==Tolini~It has to be brought to the right location to expel its power from there all over Faerun.~
 ==ToAdon~Huh, and this place may by any chance not be just around the corner.~
 ==ToPellig~One quest starts where another just finished - the life of an adventurer.~
 ==ToKelem~When I look into Liriel's face, I see despair. There may be some difficulty expected with that place we seek.~
@@ -225,19 +225,19 @@ DO~SetGlobal("TOLiriquest","Global",13)~
 ==C6Elhan2~You come on some purpose I assume. I give you one minute to justify the presence of the DROW before I give my archers the command to fire.~
 ==CVSan25J~The drow - her name is Liriel Baenre - is the reason we came.~
 ==Warsage~True, their feelings for the drow female are friendly.~
-==Tolini~Judge not by colour alone, elf. The friendship with my comrads is possible because I do not follow the ways of my kin and the ways of Lloth. I swear my allegiance to Eilistraee.~
+==Tolini~Judge not by colour alone, elf. The friendship with my comrades is possible because I do not follow the ways of my kin and the ways of Lolth. I swear my allegiance to Eilistraee.~
 ==Warsage~True, completely true.~
 ==C6Elhan2~Fine - the minute is over and my archers will not fire. The Dark Maiden is better than the Spider Queen and we have not seen harm done by her followers. You will live but I see no reason yet to let you transgress further into our city.~
-==Tolini~We have not come to visit the city and you may only have to endure our unwanted presence for a short while. Our destination is a small clearing to the northeast of the city.~
+==Tolini~We have not come to visit the city and you may only have to endure our unwanted presence for a short while. Our destination is a small clearing to the north-east of the city.~
 ==Warsage~True, true they only want access to the clearing.~
 ==ToCyric~Oh, shut up already!! You know we tell the truth and your elven pomp is of no interest to us.~
 ==Warsage~True...~
 ==TOCyric~I warned you, this blade is quick and deadly, you nag!~
 ==Warsage~Tr...ah, your words are of no importance.~
 ==C6Elhan2~Why should the clearing be of interest to you. It is an old mystical place even if nobody knows of the origin of the powers that reside there.~
-==Tolini~Maybe nobody remembers them anymore - they may be very ancient, probably from the time before your and mine kin separated.~
+==Tolini~Maybe nobody remembers them any more - they may be very ancient, probably from the time before your and mine kin separated.~
 ==C6Elhan2~You are no imminent danger to us, so much is clear. The issues you come for are beyond a soldier's competence. For this you need to see our Queen and her advisor. I will send a messenger ahead as you will not enter the palace or the Tree of Life.~
-=~Ellesime and Jon Irenicus will meet you outside of the palace gate's in the nortwest of the city.~
+=~Ellesime and Jon Irenicus will meet you outside of the palace gate's in the Northwest of the city.~
 ==CVSan25J~Jon Irenicus! Beware of that man!~
 ==C6Elhan2~What is your reason the discredit the Queen's mage, advisor...and lover, stranger?~
 END
@@ -250,13 +250,13 @@ IF~~THEN C6Elhan2 Found6
 
 CHAIN
 IF~~THEN C6Elhan2 Found7
-~I hope Ellesime will forgive you such outburtst, stranger. Make haste to see her. I will tolerate the *good* drow's presence and your own in this city only as long as it is absolutely necessary.~EXIT
+~I hope Ellesime will forgive you such outbursts, stranger. Make haste to see her. I will tolerate the *good* drow's presence and your own in this city only as long as it is absolutely necessary.~EXIT
 
 CHAIN
 IF ~Global("ToMeetBo","ar2800",1)~THEN Tobodhi novamp
 ~Ssssh, the visitors I heard talking about.~
 DO~SetGlobal("ToMeetBo","ar2800",2)~
-==CVSan25J~Irenicus's sister Bodhi?~
+==CVSan25J~Irenicus' sister Bodhi?~
 ==Tobodhi~How come you to know? Yes, I am.~
 =~(She sneaks up to Liriel and touches the astonished drow's face with her fingertips.)~
 =~Sssssh, this is how our dark sisters feel to the touch, interesting, not much different from us, I dare to say...~
@@ -282,7 +282,7 @@ DO~SetGlobal("TOLiriquest","Global",14)~
 ==ToPellig~There is no need for threats or hostility, Irenicus. All we ask for is a one time access to the clearing in the northeast of the city.~
 ==Toiren~A drow and her bunch of miserable companions want to visit a clearing. Are you joking? Are we fools to listen to such ramblings, my queen?~
 ==RTElles~Joneleth, dear, they will have a reason. They are fearless enough to come into an elven city knowing they would not be welcome to ask for a passage to a clearing. Liriel, that was the name the messenger mentioned, right?~
-==Tolini~Liriel Baenre, mylady. The clearing we seek is a magical location, my companion Midnight, a priestess of Mystra, assumes that it may be as old as the times when our races were still one.~
+==Tolini~Liriel Baenre, my lady. The clearing we seek is a magical location, my companion Midnight, a priestess of Mystra, assumes that it may be as old as the times when our races were still one.~
 ==RTElles~Your Midnight is correct in this, the place was sacred even before Rillifane blessed this settlement. In a way that gives even a drow that is not hostile towards us a right to go there.~
 ==Toiren~To do what, my queen? Surely not to contemplate on the landscape. What treachery is in your dark mind?~
 ==TOCyric~Hihi, I like the guy, how he plays the bad bad protector of his goody-good queen...~
@@ -323,7 +323,7 @@ CHAIN
 IF~AreaCheck("ar2800")Global("SanTotStart","Global",1)~THEN RTElles InToT1
 ~Here they are, as announced.~
 END
-++~Greetins, Ellesime.~ EXTERN TOIren FoundJ
+++~Greetings, Ellesime.~ EXTERN TOIren FoundJ
 
 CHAIN
 IF WEIGHT #-9~Global("TOLiriquest","Global",16)~THEN Sudemin Killjon1

@@ -10,7 +10,7 @@ END
 IF~~THEN BEGIN Cyrwarn1
 SAY~I am aware that he tries to steal your heart from me, thief that he is, but I trust in your love for me.~
 IF~~THEN REPLY~As long as you are by me there will be no other.~EXIT
-IF~~THEN REPLY~He's an assasin, he will not only steal but murder for what he wants.~GOTO Cyrwarn2
+IF~~THEN REPLY~He's an assassin, he will not only steal but murder for what he wants.~GOTO Cyrwarn2
 END
 
 IF~~THEN BEGIN Cyrwarn2
@@ -36,14 +36,14 @@ IF~Global("ToKelemcurse","Global",4)~THEN ToKelem Kelkur2
 DO~SetGlobal("ToKelemcurse","Global",5) ~
 ==CVSan25J~It was, my dear - but are we both talking about the same thing.~
 ==ToKelem~I owe you some explanation, my love.~
-=~To find one of my brothers here was both unexpected and again not. Our father drilled us to be mercenairies and fighters for any good profit.~
+=~To find one of my brothers here was both unexpected and again not. Our father drilled us to be mercenaries and fighters for any good profit.~
 ==TOPellig~He at least tried to, obviously with different results among his sons.~
 ==ToKelem~It was fate and the hands of some women which prevented me from being here instead of my brother.~
 ==ToCyric~Has this *unexpected* shapeshifting-thingy anything to do with your story, my *pussycat*, hihihi?~
 ==Tolini~Can't you see that it surprised Kelemvor as much as us, Cyric?~
-==ToKelem~It did and it did not. It is all connected with each other, this curse of the Lyonbanes.~
+==ToKelem~It did and it did not. It is all connected with each other, this curse of the Lyonsbanes.~
 ==TOAdon~Nothing helps you better than telling your friends about it, Kelemvor.~
-==ToKelem~The curse of the Lyonsbanes had been passed down for generations within my family and has its roots in the actions of my greedy mercenary anchestor Kyle Lyonsbane, who during a battle abandoned his wounded companion, a sorceress, on the battlefield to die so that he could plunder an enemy's stronghold. As vengeance the sorceress cursed Kyle and our family. ~
+==ToKelem~The curse of the Lyonsbanes had been passed down for generations within my family and has its roots in the actions of my greedy mercenary ancestor Kyle Lyonsbane, who during a battle abandoned his wounded companion, a sorceress, on the battlefield to die so that he could plunder an enemy's stronghold. As vengeance the sorceress cursed Kyle and our family. ~
 =~We transform into a werepanther under stressful circumstances, just like you witnessed.~
 ==CVSan25J~It has happened to you before (You take his hand), am I right?~
 ==ToKelem~It happened when my father assaulted Lilianna, just like he did with Tannith years before that. They were the lights of my youth and he destroyed them. I was too weak against him to prevent it.~
@@ -52,7 +52,7 @@ DO~SetGlobal("ToKelemcurse","Global",5) ~
 END
 ++~(You take him in your arms and soothe him wordlessly.)~EXIT
 ++~You are strong now, strong enough not to let it happen again - not to me.~EXIT
-++~You are not alone anymore, you and me, we are strong together.~EXIT
+++~You are not alone any more, you and me, we are strong together.~EXIT
 
 CHAIN
 IF~Global("CVabaz","AR6005",6)~THEN ToBane Abalair2

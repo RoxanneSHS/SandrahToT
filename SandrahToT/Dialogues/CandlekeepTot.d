@@ -24,7 +24,7 @@ END
 
 APPEND  Poghm7
 IF~~THEN BEGIN RTBook
-SAY~It is a very ancient toom that would be kept at the top level of the library, my friend.~
+SAY~It is a very ancient tome that would be kept at the top level of the library, my friend.~
 IF~~THEN EXIT
 END
 END

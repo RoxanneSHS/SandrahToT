@@ -1,7 +1,7 @@
 BEGIN ToCyric
 IF~InParty(Myself) IsGabber("CVsandr")~THEN BEGIN Pid
 SAY~Midnight, your interest graces me, my beauty.~
-IF~~THEN REPLY~Tell me about Zenthil Keep.~GOTO Cyrzent
+IF~~THEN REPLY~Tell me about Zhentil Keep.~GOTO Cyrzent
 IF~~THEN REPLY~I just needed to check your sanity, that's all.~EXIT
 IF~Global("TOHasBane","Global",2) Global("Cyrwarn","LOCALS",0) !Dead("Tokelem")~THEN REPLY~I must warn you, Cyric, now that you have Godsbane, leave Kelemvor alone.~DO~SetGlobal("Cyrwarn","LOCALS",1)~GOTO Cyrwarn1
 IF~Dead("Tokelem") GlobalLT("Chapter","Global",35)~THEN REPLY~I am really grateful for everything you did after I lost Kelemvor. I always wanted to tell you this.~GOTO Kelemhelp
@@ -68,8 +68,8 @@ IF~Global("CVTiamal","AR6000",5)~THEN ToCyric Drag1
 ~This was sheer madness, wasn't it, and none of you ever call ME mad again.~
 DO~SetGlobal("CVTiamal","AR6000",6)~
 ==ToAdon~We had Bane cornered and begging on his knees. The Sword Coast would already be a better place at this very moment.~
-==Tolini~The wellbeing of the majority must have priority over the fate of a single one.~
-==Tokelem~Already I regret my selfishness. I should have lived with that curse and freed Faerun from that desease which calls himself a *god*.~
+==Tolini~The well-being of the majority must have priority over the fate of a single one.~
+==Tokelem~Already I regret my selfishness. I should have lived with that curse and freed Faerun from that disease which calls himself a *god*.~
 ==ToCyric~Blah, blah, old hypocrite, you should've been man enough inside that cave and don't give us this could-have-should-have nonsense now.~
 ==ToPellig~Cyric, take it as an additional challenge - and digest what we have learned, those gods are quite vulnerable right now.~
 ==ToCyric~Pelli-darling, if you were only a bit more responsive, you and me could go along so splendidly together, hihi. Guess you have a point, they are weak and we can get them once more and maybe all three of them together. Grab their life and their power, ha.~
@@ -133,7 +133,7 @@ DO~SetGlobal("CyrElmi","ar0505",2)~
 ==ToCyric~In Zenthil Keep the jesters would dress like that and they'd hang mages anyway without dead Mystra's protection over them nowadays.~
 ==Toelmi~Mother, must we have such pointless disputes daily? Thou should get that grumpy old thief out to the road again, maybe that wouldst make him more bearable again.~
 ==TOCyric~"Wouldst Thou" stop talking that way, you make me mad, son, aargh. Get your nose out of those dusty books and start a life, damn it. I take this quarterstaff you carry for show and teach you on your empty head how it is used.~
-==ToElmi~I can surely defent myself.~DO~StartCutSceneMode() Wait(2) Polymorph(CAT) Wait(6) DisplayStringWait("Toelmi",@041) Wait(6) Polymorph(ELMINSTER) Wait(2) EndCutSceneMode()~EXIT
+==ToElmi~I can surely defend myself.~DO~StartCutSceneMode() Wait(2) Polymorph(CAT) Wait(6) DisplayStringWait("Toelmi",@041) Wait(6) Polymorph(ELMINSTER) Wait(2) EndCutSceneMode()~EXIT
 
 CHAIN
 IF~Global("CyrElmi","ar0505",2)~THEN ToCyric WhoFath2
@@ -165,4 +165,4 @@ DO~SetGlobal("ToBaneHunt","Global",17) EraseJournalEntry(@040) EraseJournalEntry
 ==ToCyric~Exactly, sweetheart, who else? ~
 ==Tolini~The old mad man has returned, how refreshing. Anyway, Midnight, there is some truth in the babbling of the fool. Once we have Bhaal and the tablet, things need to be restored.~
 ==ToCyric~Dark beauty, we will find some occupation for you as well, be sure.~
-==Tolini~Forget it, Cyric, Eillestrae is all we drow on the surface require and I am more than content to serve her...and maybe her future surface counterpart, a new Mystra.~EXIT
+==Tolini~Forget it, Cyric, Eilistraee is all we drow on the surface require and I am more than content to serve her...and maybe her future surface counterpart, a new Mystra.~EXIT
