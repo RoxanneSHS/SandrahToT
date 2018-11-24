@@ -49,8 +49,8 @@ DO~SetGlobal("Chapter","Global",31)~
 ==TOAdon~Liriel, I have the feeling this is not a hypothetical discussion at all.~
 ==TOKelem~There are those organised thieves that make their fortune because they are well known and people hire them for a lot of gold to get them the artefacts they desire.~
 END
-++~Like the Bregan D'aerthe of your kin, Liriel?~DO~SetGlobal("ToSleep","Global",4) SetGlobal("TOLiriquest","Global",1)~ + TOLiniQuest2
-++~Like the shadow thieves of Athkatla?~DO~SetGlobal("ToSleep","Global",4) SetGlobal("TOLiriquest","Global",1)~ + TOLiniQuest2
+++~Like the Bregan D'aerthe of your kin, Liriel?~DO~SetGlobal("ToSleep","Global",4) SetGlobal("TOLiriquest","Global",1)~+ TOLiniQuest2
+++~Like the shadow thieves of Athkatla?~DO~SetGlobal("ToSleep","Global",4) SetGlobal("TOLiriquest","Global",1)~+ TOLiniQuest2
 
 CHAIN
 IF~~THEN Tolini TOLiniQuest2
@@ -60,7 +60,7 @@ IF~~THEN Tolini TOLiniQuest2
 ==TOAdon~Like those red wizards we defeated to free you, Liriel.~
 END
 ++~Is there some connection to your captivity?~+ TOLiniQuest3
-++~You best start to tell us the truth - starting at the beginning.~ + TOLiniQuest3
+++~You best start to tell us the truth - starting at the beginning.~+ TOLiniQuest3
 
 CHAIN
 IF~~THEN Tolini TOLiniQuest3
@@ -79,7 +79,7 @@ IF~~THEN Tolini TOLiniQuest3
 END
 ++~Provided we take up that quest, the place to start investigating would be Waterdeep. Skullport would be somewhere within Undermountain.~DO~AddJournalEntry(@015,QUEST) AddexperienceParty(6000) RestParty()~EXIT
 ++~The High Forest is out of question without any further hints. That would be searching a needle in a haystack. Skullport is unaccessible they say...Or shall I say *it was* - because WE never tried until now.~DO~AddJournalEntry(@015,QUEST) AddexperienceParty(7000) RestParty()~EXIT
-++~I am not sure we should embark on this quest.~DO~IncrementGlobal("Sanpoints","Global",-1) ScreenShake([1600.1604],5)Wait(2) ReallyForceSpellRES("TOSpint","CVSandr") ~ EXTERN Tocyric TOLiniQuest4
+++~I am not sure we should embark on this quest.~DO~IncrementGlobal("Sanpoints","Global",-1) ScreenShake([1600.1604],5)Wait(2) ReallyForceSpellRES("TOSpint","CVSandr") ~EXTERN Tocyric TOLiniQuest4
 
 CHAIN
 IF~~THEN Tocyric TOLiniQuest4
@@ -125,7 +125,7 @@ DO~SetGlobal("TOLiriquest","Global",3) ~
 ==Tolini~My capturer again. Thank you for coming, it spares us the trouble to seek for you.~
 ==Tocyric~Fool, can't you see our drow beauty is not alone this time, hihi. Pleeease, do us a favour and try to touch her, so we have reason to kill you, pleeease.~
 ==TOAdon~The gallantry of a madman, Cyric. Whatever your motif, the outcome is the same. Try to touch her, so we have reason to kill you.~
-==Ammerc07~I've orders to discuss nothing. You will be laid in chains - and while we're at it, those others will bring a nice extra price, I guess.~ DO~Enemy()~EXIT
+==Ammerc07~I've orders to discuss nothing. You will be laid in chains - and while we're at it, those others will bring a nice extra price, I guess.~DO~Enemy()~EXIT
 
 CHAIN
 IF WEIGHT #-2~Global("TOLiriquest","Global",5)~THEN Ammerc07 Linisee2
@@ -142,7 +142,7 @@ END
 ++~This just gets more interesting with every new step.~EXIT
 
 CHAIN
-IF~ Global("TOLiriquest","Global",6)~THEN TODrowL Found1
+IF~Global("TOLiriquest","Global",6)~THEN TODrowL Found1
 ~Why have you come to this place? Any other reason then to search your doom?~
 DO~SetGlobal("TOLiriquest","Global",7)~
 ==Tolini~All signs we followed have indicated that we may find the Dragon's Hoard right here.~
@@ -156,10 +156,10 @@ DO~SetGlobal("TOLiriquest","Global",7)~
 CHAIN
 IF WEIGHT #-41~Global("SanTotStart","Global",1) ~THEN SaMystp1 InTot
 ~We swear allegiance to the Lady, Mistress of the Mysteries, Mystra.~
-=~ Greetings, my lady Midnight. It is a pleasure to greet the most talented disciple of the Deepingdale temple as our guest today.~
+=~Greetings, my lady Midnight. It is a pleasure to greet the most talented disciple of the Deepingdale temple as our guest today.~
 END
-++ ~ Chosen Priestess Rhathona, we greet you but we have no need for the Temple's services today.~EXIT
-++~ Thank you for the warm welcome, Chosen Priestess Rhathona, what does your house offer to us?~ DO ~ StartStore("CVMystem",LastTalkedToBy(Myself))~ EXIT
+++ ~Chosen Priestess Rhathona, we greet you but we have no need for the Temple's services today.~EXIT
+++~Thank you for the warm welcome, Chosen Priestess Rhathona, what does your house offer to us?~DO ~StartStore("CVMystem",LastTalkedToBy(Myself))~EXIT
 
 CHAIN
 IF WEIGHT #-4~Global("SanTotStart","Global",1) ~THEN SAMYSTP2  InTot2
@@ -167,7 +167,7 @@ IF WEIGHT #-4~Global("SanTotStart","Global",1) ~THEN SAMYSTP2  InTot2
 =~Welcome, be our guests.~EXIT
 
 CHAIN
-IF~ Global("TOLiriquest","Global",7)~THEN TONyssty Found2
+IF~Global("TOLiriquest","Global",7)~THEN TONyssty Found2
 ~Visitors or voluntary additions to my petrified pet collection?~
 DO~SetGlobal("TOLiriquest","Global",8)~
 ==TOCyric~Ha, have you ever heard that - a humorous drow, hihi. Liriel-baby, that's worth the price of admission alone!~
@@ -186,7 +186,7 @@ DO~SetGlobal("TOLiriquest","Global",8)~
 ==TONyssty~NOW!~DO~ForceSpell(Player1,HELL_BUFFET) Wait(4) ForceSpell(Myself,DO_SOME_EFFECTS) CreateVisualEffectObject("SPFIREPI",Myself) Enemy()~EXIT
 
 CHAIN
-IF~ Global("TOLiriquest","Global",8)~THEN TODrizzt Found3
+IF~Global("TOLiriquest","Global",8)~THEN TODrizzt Found3
 ~And so a drow comes to release me from the stone prison a drow confined me to?~
 DO~SetGlobal("TOLiriquest","Global",9)~
 ==Tolini~I am...YOU are Drizzt! Drizzt Do'Urden!!~
@@ -202,7 +202,7 @@ DO~SetGlobal("TOLiriquest","Global",9)~
 ==TODrizzt~I will do that, Ariel, who calls herself Midnight. ~DO~MoveBetweenAreas("CVelm3",[352.380],12) ~EXIT
 
 CHAIN
-IF~ Global("TOLiriquest","Global",10)~THEN TOCyric Found4
+IF~Global("TOLiriquest","Global",10)~THEN TOCyric Found4
 ~And, my drow beauty, what is it we do with that thingy that made us come here? (Ah, it would grace your beautiful neck just so splendid...)~
 DO~SetGlobal("TOLiriquest","Global",11)~
 ==Tolini~It has to be brought to the right location to expel its power from there all over Faerun.~
@@ -214,7 +214,7 @@ DO~SetGlobal("TOLiriquest","Global",11)~
 ==Tolini~You hit the spot, Midnight. We need to go to a clearing just outside of Suldanessalar. It is not to be expected that we can go there unnoticed by my surface brothers. I can just hope, they give a dark elf the chance to declare her alignment before they perforate me with arrows.~DO~AddexperienceParty(12200) AddJournalEntry(@020,QUEST)~EXIT
 
 CHAIN
-IF WEIGHT #-7~ Global("TOLiriquest","Global",12)~THEN C6Elhan2 Found5
+IF WEIGHT #-7~Global("TOLiriquest","Global",12)~THEN C6Elhan2 Found5
 ~STAND, intruders, do not move a hand and state your purpose!~
 DO~SetGlobal("TOLiriquest","Global",13)~
 ==ToAdon~Greetings, elf, we come in peace.~
@@ -241,8 +241,8 @@ DO~SetGlobal("TOLiriquest","Global",13)~
 ==CVSan25J~Jon Irenicus! Beware of that man!~
 ==C6Elhan2~What is your reason the discredit the Queen's mage, advisor...and lover, stranger?~
 END
-++~Nothing, general, it was an error...I...I misunderstood the name. It is nothing.~ + Found6
-++~The man will betray Ellesime and your town and will bring harm and destruction over the Realms.~ DO~IncrementGlobal("Sanpoints","Global",-1) ScreenShake([4408.3222],5)Wait(2) ReallyForceSpellRES("TOSpint","CVSandr") ~ + Found7
+++~Nothing, general, it was an error...I...I misunderstood the name. It is nothing.~+ Found6
+++~The man will betray Ellesime and your town and will bring harm and destruction over the Realms.~DO~IncrementGlobal("Sanpoints","Global",-1) ScreenShake([4408.3222],5)Wait(2) ReallyForceSpellRES("TOSpint","CVSandr") ~+ Found7
 
 CHAIN
 IF~~THEN C6Elhan2 Found6
@@ -272,7 +272,7 @@ DO~SetGlobal("ToMeetBo","ar2800",2)~
 ==Tobodhi~He deserves you. (sigh) Come, Centeol.~DO~MoveToPoint([2068.3188]) EscapeAreaDestroy(55)~EXIT
 
 CHAIN
-IF ~ Global("TOLiriquest","Global",13)~THEN Toiren FoundJ
+IF ~Global("TOLiriquest","Global",13)~THEN Toiren FoundJ
 ~Ha, the outsider scum approaches, my queen.~
 DO~SetGlobal("TOLiriquest","Global",14)~
 ==RTElles~Let us greet them, Joneleth. I heard the drow is a follower of Eilistraee.~
@@ -296,7 +296,7 @@ DO~SetGlobal("TOLiriquest","Global",14)~
 ==RTElles~What do you say, Joneleth?~
 ==Toiren~Hm.~
 =~Yes, my power is such that I can do it. Try to betray me and you will suffer the consequences. ~
-=~Give me the item, drow, I will do the modification.~ DO~ClearAllActions() StartCutSceneMode() Wait(2) TakePartyItem("ToLiAmu") SmallWait(5) ForceSpell(Myself,CLERIC_DRAW_UPON_HOLY_MIGHT) SmallWait(5) ForceSpell(Myself,CLERIC_DRAW_UPON_HOLY_MIGHT) SmallWait(5) GiveItemCreate("ToLiAm2","Tolini",1,1,0) Wait(2) EndCutSceneMode()ActionOverride("RTElles",MoveToPoint([500.500])) ActionOverride("RTElles",EscapeAreaDestroy(70)~EXIT
+=~Give me the item, drow, I will do the modification.~DO~ClearAllActions() StartCutSceneMode() Wait(2) TakePartyItem("ToLiAmu") SmallWait(5) ForceSpell(Myself,CLERIC_DRAW_UPON_HOLY_MIGHT) SmallWait(5) ForceSpell(Myself,CLERIC_DRAW_UPON_HOLY_MIGHT) SmallWait(5) GiveItemCreate("ToLiAm2","Tolini",1,1,0) Wait(2) EndCutSceneMode()ActionOverride("RTElles",MoveToPoint([500.500])) ActionOverride("RTElles",EscapeAreaDestroy(70)~EXIT
 
 CHAIN
 IF WEIGHT #-11~AreaCheck("ar2807") Global("adalon","ar2807",1) !PartyHasItem("ToLiAm2")~THEN Udsilver  WrongIt
@@ -317,13 +317,13 @@ DO~SetGlobal("TOLiriquest","Global",15) SetGlobal("adalon","ar2807",4)~
 ==Udsilver~Yes, it will do that. You are a follower of a good goddess unlike the majority of your kin.~
 =~Ever since the dark elves descended down to the First City, my task has been to prevent an invasion of one elven race against the other. ~
 ==Tolini~The mage Irenicus has modified the item to prevent its use by all that are of evil nature. It will give me and my friends a chance to survive on the surface but grant no advantage to the slaves of Lolth.~
-==Udsilver~What you say is the truth. Give me the item, I will be its guardian to preserve the balance between the dark and the surface elves. All that forsake the Spider Queen will walk the surface with the support of Windwalker from now on.~DO~TakePartyItem("ToLiAm2") Wait(2) DestroySelf()~ EXIT
+==Udsilver~What you say is the truth. Give me the item, I will be its guardian to preserve the balance between the dark and the surface elves. All that forsake the Spider Queen will walk the surface with the support of Windwalker from now on.~DO~TakePartyItem("ToLiAm2") Wait(2) DestroySelf()~EXIT
 
 CHAIN
 IF~AreaCheck("ar2800")Global("SanTotStart","Global",1)~THEN RTElles InToT1
 ~Here they are, as announced.~
 END
-++~Greetings, Ellesime.~ EXTERN TOIren FoundJ
+++~Greetings, Ellesime.~EXTERN TOIren FoundJ
 
 CHAIN
 IF WEIGHT #-9~Global("TOLiriquest","Global",16)~THEN Sudemin Killjon1
@@ -343,6 +343,6 @@ DO~SetGlobal("TOLiriquest","Global",17)~
 ==Sudemin~I understand your reservations, and it was a mistake to ask you. My arguments are thin and I am afraid that more harm needs to befall our city before the truth is revealed...~DO~EscapeAreaDestroy(65)~
 ==TOPellig~Sometimes a thunderstorm must come to clear the air. Often it requires destruction in order to re-build. Even if many must suffer for it.~
 END
-++~Yes, many must suffer for it, I know it - I am - I will be - one ot them...we must act here and now. Irenicus must die.~ EXIT
-++~Yes, many must suffer for it, I know it - I am - I will be - one ot them...but it is unavoidable in the great scheme of things. Acting now will end in an even greater catastrophe.~ EXIT
+++~Yes, many must suffer for it, I know it - I am - I will be - one ot them...we must act here and now. Irenicus must die.~EXIT
+++~Yes, many must suffer for it, I know it - I am - I will be - one ot them...but it is unavoidable in the great scheme of things. Acting now will end in an even greater catastrophe.~EXIT
 ++~I am sorry, but your suspicion, even my own, is too weak to make a case. ~EXIT

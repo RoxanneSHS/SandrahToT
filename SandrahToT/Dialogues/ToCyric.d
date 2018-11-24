@@ -38,7 +38,7 @@ DO~SetGlobal("ToKelemcurse","Global",7)~
 ==CVSan25J~Cyric, I have no children, I can quite well defend myself...and, by the way, Kelemvor's curse may rather been seen as a weakness than an advantage.~
 ==TOCyric~Hihi, and this, my beloved heroine, is exactly my point - why should a woman like you need him?~
 END
-++~Cyric, your knowledge of women is as thin as your jokes. Good night.~ EXIT
+++~Cyric, your knowledge of women is as thin as your jokes. Good night.~EXIT
 ++~The last person in the multiverse to discuss my heart's affairs with is a mad and jealous thief, bugger off.~EXIT
 ++~A good question, Cyric. However one I contemplate alone and surely nothing I would discuss with you.~EXIT
 
@@ -76,7 +76,7 @@ DO~SetGlobal("CVTiamal","AR6000",6)~
 =~Once Cyric rules he needs a queen by his side, Pelli, Pelli...~
 ==ToPellig~Part one is for certain, yes. Part two is just as certain, no.~
 END
-++~What has been done has been done, we have the chance to suit all sides here. Kelemvor is cured and we know where we find the three. Are we adventurers or cry babies? Blackstaff awaits us once more.~ + Drag2
+++~What has been done has been done, we have the chance to suit all sides here. Kelemvor is cured and we know where we find the three. Are we adventurers or cry babies? Blackstaff awaits us once more.~+ Drag2
 ++~The dice have been cast and a new challenge awaits us. We are friends after all, do not forget that. We helped a friend today and we have not lost our quest by that. Blackstaff awaits us once more.~+ Drag2
 
 CHAIN
@@ -85,7 +85,7 @@ IF~~THEN ToCyric Drag2
 ==ToLini~That's the spirit we need. This and a bit of rest before we move on.~
 ==ToAdon~Yes, let us relax our strained nerves for a while.~
 ==ToKelem~We have foe to fight, not each other. Let us all calm down over night.~
-DO~ TextScreen("ToKeleE")~EXIT
+DO~TextScreen("ToKeleE")~EXIT
 
 CHAIN
 IF~Global("ToMyrkFi","RTF123",9)~THEN ToCyric Leader1
@@ -102,7 +102,7 @@ DO~SetGlobal("ToMyrkFi","RTF123",10)~
 ==ToCyric~You did what you can do, dear, we will make haste to bring him to the Temple at Beregost.~
 ==ToPellig~It is worse than that.~
 ==ToCyric~Yes?~
-==ToPellig~ The weapon used against him must have been a soultaker.~
+==ToPellig~The weapon used against him must have been a soultaker.~
 ==ToCyric~(Without Cyric's tender embrace you would have swooned at those words.)~
 ==ToAdon~We need to find that weapon.~
 ==ToLini~I found no trace of any Banite around here. It is as if they disappeared in smoke.~
@@ -114,7 +114,7 @@ END
 ++~*Cyric's clear and logical actions make you wonder what made the man change so suddenly. At the same time you are thankful to have such a companion at this very moment when your grief over Kelemvor's loss blocks your own initiative.*~EXIT
 
 CHAIN
-IF~Global("ToBaneHunt","Global",1)~ THEN ToCyric Quest3start1
+IF~Global("ToBaneHunt","Global",1)~THEN ToCyric Quest3start1
 ~Good morning, Midnight. It's a good day for the little surprise we have prepared for you today.~
 DO~SetGlobal("ToBaneHunt","Global",2)~
 ==CVSan25J~Cyric, my dear, the *we* trying to surprise me are you and Elminster?~
@@ -142,7 +142,7 @@ DO~SetGlobal("CyrElmi","ar0505",3)~
 ==CVSan25J~A small black panther? Where did you learn that, Elminster?~
 ==Toelmi~What...I did not...Sorry, father just made me so angry and it all got blurred for a moment.~
 ==ToCyric~(Thoughtful) I've seen that before, even if in a more impressive form than today.~
-==ToElmi~Excuse me, please, I need to get my thoughts back together. I am sorry, mother, I should not let myself so get carried away, after all he is the man thou loveth.~ DO~EscapeArea()~
+==ToElmi~Excuse me, please, I need to get my thoughts back together. I am sorry, mother, I should not let myself so get carried away, after all he is the man thou loveth.~DO~EscapeArea()~
 ==CVSan25J~Yes, I do - and I love you as well, my son.~
 ==ToCyric~Apologies, Midnight, I had not intended to force such reactions, like...~
 ==CVSan25J~Kelemvor. You may as well speak the name in my presence, Cyric.~
@@ -153,7 +153,7 @@ DO~SetGlobal("CyrElmi","ar0505",3)~
 =~Let's go downstairs now, I promised you something and I'm still willing to cheer you up today.~EXIT
 
 CHAIN
-IF~Global("ToBaneHunt","Global",16) ~ THEN ToCyric Banedone1
+IF~Global("ToBaneHunt","Global",16) ~THEN ToCyric Banedone1
 ~Another bunch of foolish celestials gone. I will soon claim Bane's portfolio from AO.~
 DO~SetGlobal("ToBaneHunt","Global",17) EraseJournalEntry(@040) EraseJournalEntry(@047) SetGlobal("Chapter","Global",35) AddJournalEntry(@050,QUEST)~
 ==ToPellig~Your ambition is still there? You despise them so much and still want to be one of them?~

@@ -31,8 +31,8 @@ DO~SetGlobal("ToBaneHunt","Global",3)~
 ==TOLini~And where is he exactly?~
 ==ToCyric~Ehem, it is reported that he left my home town Zhentil Keep some time ago with an army of followers and undead to march against the town of Tantras, where Torm has taken up residence.~
 END
-++~Why would Bane do such a thing?~ EXTERN ToCyric Reunite2
-++~It is strange for Bane to start such a war instead of hiding safely.~ EXTERN ToCyric Reunite2
+++~Why would Bane do such a thing?~EXTERN ToCyric Reunite2
+++~It is strange for Bane to start such a war instead of hiding safely.~EXTERN ToCyric Reunite2
 
 CHAIN
 IF~~THEN ToCyric Reunite2
@@ -49,7 +49,7 @@ IF~Global("ToBaneHunt","Global",4)~THEN ToPellig WhoFath1
 DO~SetGlobal("ToBaneHunt","Global",5)~
 =~Anything you like to talk about with an old friend, Midnight?~
 END
-++~Oh, it was nothing, just Cyric and Elminster quarrelling as usual.~ + WhoFath2
+++~Oh, it was nothing, just Cyric and Elminster quarrelling as usual.~+ WhoFath2
 ++~Family business, Pelligram, even though...you may be considered part of the family, Aunt Pelligram, haha.~+ WhoFath2
 
 CHAIN
@@ -83,7 +83,7 @@ DO~SetGlobal("ToBaneHunt","Global",7)~
 ==CVSan25J~The man turned to stone, yes, I remember. Dizzt? Was that his name?~
 ==Tolini~Drizzt Do'Urden, he is called. He regularly visits the temple in between his adventures. He has become a respected man on the surface meanwhile.~
 ==CVSan25J~Yes?~
-==Tolini~No. Not what you think.~ 
+==Tolini~No. Not what you think.~
 =~Just because we both are drow and male and female...It's not that. I was just thinking that - without Kelemvor - and another big challenge ahead of us... Well, we may need a bit of support from a man who might fit quite well with us.~
 END
 ++~Thank you for the good intention, Liriel, but nobody can ever replace Kelemvor. He is our sixth party member forever.~EXIT
@@ -99,7 +99,7 @@ DO~SetGlobal("ToBaneHunt","Global",9)~
 ==ToCyric~An experienced band of adventurers working hand in hand, hihi.~EXIT
 
 CHAIN
-IF WEIGHT #-2~Global("Sailors","RTF381",1)~ THEN Acqxzah1 HireShip1
+IF WEIGHT #-2~Global("Sailors","RTF381",1)~THEN Acqxzah1 HireShip1
 ~Landlubbers alert, boys!~
 DO~SetGlobal("Sailors","RTF381",2)~
 ==ToCyric~Gosh, what shall we do with drunken sailors, heh?~
@@ -110,8 +110,8 @@ DO~SetGlobal("Sailors","RTF381",2)~
 ==Sailfin~Earlyinthemorning...~
 ==RT38Inn~Optimist...as long as the captain's boy is gone, I would not bet on this.~
 END
-++~This sounds like a story we need to know before we deal with them any further, good innkeeper?~ + HireShip2
-++~Some buckets of cold water from the shore below may provide the wonder we need.~  + HireShip2
+++~This sounds like a story we need to know before we deal with them any further, good innkeeper?~+ HireShip2
+++~Some buckets of cold water from the shore below may provide the wonder we need.~ + HireShip2
 
 CHAIN
 IF~~THEN Acqxzah1 HireShip2
@@ -127,9 +127,9 @@ IF~~THEN Acqxzah1 HireShip2
 ==CVSan25J~No further hint at all?~
 ==RT38Inn~From the drunken swearing of the captain it appears that he suspects the merchant to be a disguised Harper and that the man got into some trouble because of this. Khalindra, his daughter and Narthil, the captain's son, were just in the wrong place at the wrong time.~
 END
-++~Khalindra...if for no other reason...we need to find them!~ + HireShip3
-++~Unless we persuade the captain to sell us his ship and we learn to sail it, the only option is to find the missing persons.~ + HireShip3
-++~Find those three missing people, win the captain's confidence and get him sober again and continue our own mission - understood.~ + HireShip3
+++~Khalindra...if for no other reason...we need to find them!~+ HireShip3
+++~Unless we persuade the captain to sell us his ship and we learn to sail it, the only option is to find the missing persons.~+ HireShip3
+++~Find those three missing people, win the captain's confidence and get him sober again and continue our own mission - understood.~+ HireShip3
 
 CHAIN
 IF~~THEN Acqxzah1 HireShip3
@@ -145,14 +145,14 @@ END
 ++~We want to sail to Tantras.~+ HireShip13
 
 CHAIN
-IF WEIGHT #-2~Global("Sailors","RTF381",3)~ THEN Acqxzah1 HireShip12
+IF WEIGHT #-2~Global("Sailors","RTF381",3)~THEN Acqxzah1 HireShip12
 ~Any place in these waters I can take you, friends?~
 END
 ++~We need to rest and purchase some items first. We will come back to you in a while.~EXIT
 ++~We want to sail to Tantras.~+ HireShip13
 
 CHAIN
-IF~~ THEN Acqxzah1 HireShip13
+IF~~THEN Acqxzah1 HireShip13
 ~Aye, Tantras...~
 DO~SetGlobal("Sailors","RTF381",4)~
 =~I heard there are strange and dangerous things going on there. The harbour is closed it is said. But for you - my plate keel boat can drop you on a shore just north of the town.~DO~AddJournalEntry(@047,QUEST) ClearAllActions() StartCutSceneMode() StartCutScene("ToMovTan") ~EXIT
@@ -181,7 +181,7 @@ END
 ++~Foolish halfling, now we have one more to rescue.~EXIT
 
 CHAIN
-IF~Global("Boyfind","Tot009",1)~ THEN ToOlive Help3
+IF~Global("Boyfind","Tot009",1)~THEN ToOlive Help3
 ~There's the sailor boy who went with the Harper!~
 DO~SetGlobal("Boyfind","Tot009",2)~
 ==ToNarth~Be careful, I think the only reason I am alive and locked in here is to be used as bait.~
@@ -220,12 +220,12 @@ IF~NumTimesTalkedTo(0)~THEN ToKapapa KhalResc1
 ~Help has found its way into this acid hole, Olive was successful, it seems.~
 DO~SetGlobal("Fathresc","Tot010",1)~
 ==ToCyric IF~IsValidForPartyDialog("ToCyric")~THEN~A clever contingency plan, man. Leave one outside just in case, hihi. You seem to have some experience in such situations, so you must be that so-called harper.~
-==ToLini IF~!IsValidForPartyDialog("ToCyric")~THEN~ A clever contingency plan, man. Leave one outside just in case. You seem to have some experience in such situations, so you must be the harper we heard about.~
+==ToLini IF~!IsValidForPartyDialog("ToCyric")~THEN~A clever contingency plan, man. Leave one outside just in case. You seem to have some experience in such situations, so you must be the harper we heard about.~
 ==ToKapapa~Glarasteer Rhauligan, merchant of Innarlith, and acquainted with the trouble of the roads. I came to look into this situation for the sole reason nobody else was here to do it - until now.~
 =~Did you manage to find my daughter, we got separated by the monster's assault?~
 END
-IF~Global("Daughresc","Tot010",1)~THEN REPLY~ Yes, and also the bard Finder, we cleared the way out and sent them to the surface already.~+ KhalResc2
-IF~Global("Daughresc","Tot010",0)~THEN REPLY~ Not yet, nor the bard Finder who is supposed to be down here as well.~+ KhalResc3
+IF~Global("Daughresc","Tot010",1)~THEN REPLY~Yes, and also the bard Finder, we cleared the way out and sent them to the surface already.~+ KhalResc2
+IF~Global("Daughresc","Tot010",0)~THEN REPLY~Not yet, nor the bard Finder who is supposed to be down here as well.~+ KhalResc3
 
 CHAIN
 IF~~THEN ToKapapa KhalResc2
@@ -250,7 +250,7 @@ DO~SetGlobal("ToBaneHunt","Global",11) SetGlobal("Daughresc","Tot010",1)~
 ==Sankaba~Have you found my father, adventurers? He must be around here as well.~
 END
 IF~Global("Fathresc","Tot010",1)~THEN REPLY~Yes, we sent him back the way we came and we suggest you follow him quickly.~+ KhalResc12
-IF~Global("Fathresc","Tot010",0)~THEN REPLY~Not yet, we will explore the rest of this acid cave. Meanwhile you should go back the way we already cleared and wait for us outside.~ + KhalResc12
+IF~Global("Fathresc","Tot010",0)~THEN REPLY~Not yet, we will explore the rest of this acid cave. Meanwhile you should go back the way we already cleared and wait for us outside.~+ KhalResc12
 
 CHAIN
 IF~~THEN Sankaba KhalResc12
@@ -263,8 +263,8 @@ IF~Global("Boyfind","Tot009",3)~THEN  ToNarth Getou1
 ~Ah, you have the key. Everyone else is already in safety outside. ~
 DO~SetGlobal("Boyfind","Tot009",4) AddexperienceParty(6000) ReputationInc(1)~
 ==ToOlive~I entertained poor Narthil with my songs as best as I could meanwhile.~
-==ToNarth~(Grins) I had little chance to escape, Olive. Now, honestly, I am sure you will get really famous, you have talent enough.~DO~ MoveBetweenAreas("RTF381",[580.480],6)~
-==ToOlive~Now, let's go, the others are waiting for us.~ DO ~MoveBetweenAreas("RTF145",[1931.1540],4)~EXIT
+==ToNarth~(Grins) I had little chance to escape, Olive. Now, honestly, I am sure you will get really famous, you have talent enough.~DO~MoveBetweenAreas("RTF381",[580.480],6)~
+==ToOlive~Now, let's go, the others are waiting for us.~DO ~MoveBetweenAreas("RTF145",[1931.1540],4)~EXIT
 
 CHAIN
 IF~Global("ToBaneHunt","Global",11) ~THEN  ToOlive CanSail1
@@ -274,16 +274,16 @@ DO~SetGlobal("ToBaneHunt","Global",12) ~
 ==ToKapapa~Young friend, everybody here played his or her important part in the matter. Most of all our rescuers, thank you again.~
 ==Sankaba~Yes, thank you, friends. Even I have the feeling this might have just been a quite *normal* day for adventurers like you.~
 ==CVSan25J~It was the day we met you and by this a very special day.~
-==ToFind IF~PartyHasItem("ToLiAm3")~THEN~ How charming...now with everything said and done, come, Olive, we need to hit the road again. And I think we agreed that I will take this with me.~DO~TakePartyItem("ToLiAm3") Wait(2) EscapeAreaDestroy(75)~
-==ToFind IF~!PartyHasItem("ToLiAm3")~THEN~How charming...now with everything said and done, come, Olive, we need to hit the road again.~ DO~EscapeAreaDestroy(75)~
-==ToOlive~Wait, you seem to be quite in a hurry, Finder. Bye, friends, I'm coming...~ DO~EscapeAreaDestroy(75)~
+==ToFind IF~PartyHasItem("ToLiAm3")~THEN~How charming...now with everything said and done, come, Olive, we need to hit the road again. And I think we agreed that I will take this with me.~DO~TakePartyItem("ToLiAm3") Wait(2) EscapeAreaDestroy(75)~
+==ToFind IF~!PartyHasItem("ToLiAm3")~THEN~How charming...now with everything said and done, come, Olive, we need to hit the road again.~DO~EscapeAreaDestroy(75)~
+==ToOlive~Wait, you seem to be quite in a hurry, Finder. Bye, friends, I'm coming...~DO~EscapeAreaDestroy(75)~
 ==ToKapapa~We will continue our journey to the Sword Coast after a short rest, Khalindra.~
 ==CVSan25J~If you should pass Athkatla, ask for Elminster's house. Our son will provide you with a comfortable stay in town, just mention you met us here.~
 ==Sankaba~You will travel farther east? Be warned, we heard some heavily armed troupes are on a march around Ravens Bluff.~
 ==ToAdon~Exactly why we need to be there. They are marching on Tantras.~
 ==ToKapapa~I was sure you were not here because of our case. The gods you may have to face at Tantras are far more powerful than Moander.~
 ==ToCyric~Bane and Bhaal, if we are lucky, both of them together.~
-==ToKapapa~Your definition of *lucky* is yours, friend, and luck is what you may need as help from the gods is not to be expected. Good journey.~ DO~EscapeAreaDestroy(75)~
+==ToKapapa~Your definition of *lucky* is yours, friend, and luck is what you may need as help from the gods is not to be expected. Good journey.~DO~EscapeAreaDestroy(75)~
 ==Sankaba~Good voyage - and I will remember to pay a visit to your son Elminster to report of our meeting and your further plans.~DO ~EscapeAreaDestroy(75)~
 ==ToCyric~A charming young girl.~
 END
@@ -296,8 +296,8 @@ DO~SetGlobal("ToBaneHunt","Global",13) ~
 ==ToBhaal~Those are the same who defeated the idiot Myrkul and delivered one of the tablets to the Overfool AO.~
 ==ToBane~Not only Torm growing with each sacrifice of his stupid martyrs, no, there are also these adventurers...~
 ==ToCyric~With most of your undead and whatnots destroyed, hihihi, it's time now for you. The soon-to-be-dead-three will be reunited today.~
-==ToBhaal~The remaining tablet is more important than those mortals. Come, Bane, let our cultists finish them.~ DO~EscapeAreaObject("Tantras")~
-==ToBane~We have to secure the tablet before Torm lays his hands on it.~ DO~EscapeAreaObject("Tantras")~EXIT
+==ToBhaal~The remaining tablet is more important than those mortals. Come, Bane, let our cultists finish them.~DO~EscapeAreaObject("Tantras")~
+==ToBane~We have to secure the tablet before Torm lays his hands on it.~DO~EscapeAreaObject("Tantras")~EXIT
 
 CHAIN
 IF~Global("ToBaneHunt","Global",13) ~THEN  ToTorm Tantras2
@@ -310,15 +310,15 @@ DO~SetGlobal("ToBaneHunt","Global",14) ~
 ==ToAdon~The two former gods have fled us to secure the stolen Tablet of Fate that must be hidden here in town.~
 ==ToTorm~They fled to the Halls of Demarch where Mask is worshipped, the item must be hidden there. ~
 ==ToCyric~An adequate place for a stolen item, hihi.~
-==ToTorm~I must follow them now. Today either falls Torm or falls evil.~ DO~EscapeAreaObject("Temple")~
+==ToTorm~I must follow them now. Today either falls Torm or falls evil.~DO~EscapeAreaObject("Temple")~
 ==ToLini~One or the other, if not both...~
 END
-++~We will not stand here idle. Let us follow them.~ EXIT
-++~Torm needs our help more than he may think.~ EXIT
+++~We will not stand here idle. Let us follow them.~EXIT
+++~Torm needs our help more than he may think.~EXIT
 
 CHAIN
 IF~Global("ToBaneHunt","Global",18)~THEN  Tomart3 Overbane
-~ You return alone - is all lost?~
+~You return alone - is all lost?~
 DO~SetGlobal("ToBaneHunt","Global",19) SetGlobal("ToBhaalhunt","Global",1)~
 ==Boyba1~Mama said that we are the seed of things to come.~
 ==Girba1~Papa said all will be new again after all was destroyed.~
@@ -336,8 +336,8 @@ DO~SetGlobal("ToBaneHunt","Global",19) SetGlobal("ToBhaalhunt","Global",1)~
 ==Boyba1~He said a name to the captain who commands his bark. *Khalindra* .~
 ==ToCyric~That's this harper's daughter...what does that mean...? ~
 END
-++~Elminster! He is in danger, our son! We must hurry to Athkatla.~ EXTERN ToPellig Overbane2
-++~I know what it means. Another step in his contingency plan...he is in a hurry to finish his breeding before we kill him.~  EXTERN ToPellig Overbane2
+++~Elminster! He is in danger, our son! We must hurry to Athkatla.~EXTERN ToPellig Overbane2
+++~I know what it means. Another step in his contingency plan...he is in a hurry to finish his breeding before we kill him.~ EXTERN ToPellig Overbane2
 
 CHAIN
 IF~~THEN ToPellig Overbane2
@@ -349,5 +349,5 @@ IF~~THEN ToPellig Overbane2
 ==ToAdon~As so often, mad Cyric may once again be correct.~
 ==CVSan25J~Maybe all of it is true - he will probably first hide the tablet with his acolytes and then use the shelter of his cult places to search for Khalindra.~
 END
-++~It means we must track him down in one of his temples before he can strike against the harper and his daughter.~ EXIT
+++~It means we must track him down in one of his temples before he can strike against the harper and his daughter.~EXIT
 ++~It means we must find the harper and Khalindra and protect them. They are our bait in the trap for Bhaal.~EXIT

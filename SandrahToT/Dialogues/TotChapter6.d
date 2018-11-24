@@ -1,5 +1,5 @@
 CHAIN
-IF~Global("ToBhaalFin","Global",2)~ THEN ToElmi GoBoar
+IF~Global("ToBhaalFin","Global",2)~THEN ToElmi GoBoar
 ~Thou hath come one day too late, mother.~
 DO~SetGlobal("ToBhaalFin","Global",3)~
 ==CVSan25J~The one we hunt has been here last night, is that what happened, Elminster?~
@@ -11,11 +11,11 @@ DO~SetGlobal("ToBhaalFin","Global",3)~
 ==CVSan25J~Khalindra and Sandrah are well, please tell me, my son?~
 ==ToElmi~Yes, they still are, the lights of my life. I am aware of the loss I have to face once the spawn is born...Khalindra...the children will be my reason to carry on...~
 ==CVSan25J~You will be blessed by a goddess for that, Elminster. You and the harpers will be their guardians. Those two and another one you will find in Bhaal's temple near Boareskyr Bridge.~
-==ToElmi~Thou need to take a similar route to find and eliminate the Slayer. He is on his way to Dragonspear Castle to reach a portal to Tantras. He needs to pass Boareskyr Bridge to get there.~ DO~EscapeAreaObject("WDTown")~
+==ToElmi~Thou need to take a similar route to find and eliminate the Slayer. He is on his way to Dragonspear Castle to reach a portal to Tantras. He needs to pass Boareskyr Bridge to get there.~DO~EscapeAreaObject("WDTown")~
 ==CVSan25J~We will overtake him and await him at the bridge. Bhaal ends there and will never return.~DO~AddJournalEntry(@052,QUEST)EraseJournalEntry(@51)~EXIT
 
 CHAIN
-IF~Global("ToBhaalFin","Global",4)~ THEN ToCyric Boarshow1
+IF~Global("ToBhaalFin","Global",4)~THEN ToCyric Boarshow1
 ~The final day has come, the Time of Troubles will end today.~
 DO~SetGlobal("ToBhaalFin","Global",5)~
 ==ToBhaal~You are persistent like meat flies, mortal fools. And you know nothing about endings.~
@@ -30,7 +30,7 @@ DO~SetGlobal("ToBhaalFin","Global",5)~
 =~Strike, Godsbane.~DO~ClearAllActions() StartCutSceneMode() Wait(1) ActionOverride("ToBhaal",DestroyItem("Monhp1")) Wait(2) StartCutScene("TotEndBh")~EXIT
 
 CHAIN
-IF~Global("ToBhaalFin","Global",6)~ THEN ToCyric Boarshow2
+IF~Global("ToBhaalFin","Global",6)~THEN ToCyric Boarshow2
 ~So your old God of Murder is gone, hihi.~
 DO~SetGlobal("ToBhaalFin","Global",7)~
 ==Sarmel01~He was weak in his mortal avatar, too weak for the Prime.~
@@ -42,10 +42,10 @@ DO~SetGlobal("ToBhaalFin","Global",7)~
 =~(Midnight takes a long look at Bhaal's high priestess.) *A traitor in their midst.*~
 END
 ++~You decide to let Melissan escape and commence her deception of Bhaal. You will claim your godhood at the Celestial Stairs now.~EXIT
-++~You decide to kill Melissan before she can start to set up her plan that will end in the Bhaalspawn war later on.~ DO~SetGlobal("ToBhaalFin","Global",77) StartCutSceneMode() Kill("Totmel01") Wait(2) FadeToColor([20.0],0) Wait(1) TextScreen("ToBaal2") Wait(4) EndCredits()~ EXIT
+++~You decide to kill Melissan before she can start to set up her plan that will end in the Bhaalspawn war later on.~DO~SetGlobal("ToBhaalFin","Global",77) StartCutSceneMode() Kill("Totmel01") Wait(2) FadeToColor([20.0],0) Wait(1) TextScreen("ToBaal2") Wait(4) EndCredits()~EXIT
 
 CHAIN
-IF~Global("ToBhaalFin","Global",8)~ THEN RTLordAo MakeGods1
+IF~Global("ToBhaalFin","Global",8)~THEN RTLordAo MakeGods1
 ~The missing tablet returns. It is time to end this avatar crisis.~
 DO~SetGlobal("ToBhaalFin","Global",9)~
 ==ToCyric~Time for some new gods to rise, hihi.~
@@ -69,7 +69,7 @@ DO~SetGlobal("ToBhaalFin","Global",9)~
 ==CVSan25J~What?~DO~StartCutSceneMode() Wait(1) CreateCreatureObjectDoor("RTKele2","ToCyric",0,0,0) Wait(8) EndCutSceneMode()~EXIT
 
 CHAIN
-IF~Global("ToBhaalFin","Global",9)~ THEN ToPellig MakeGods2
+IF~Global("ToBhaalFin","Global",9)~THEN ToPellig MakeGods2
 ~Kelemvor Lyonsbane.~
 DO~SetGlobal("ToBhaalFin","Global",10)~
 ==ToCyric~Kelemvor??!!.~
@@ -80,5 +80,5 @@ DO~SetGlobal("ToBhaalFin","Global",10)~
 ==RTKelem~What can a murdered man who never became a paladin do to serve in eternity?~
 ==RTLordAO~You will be judge of the damned in the Fugue Plane, Kelemvor, Lord of the Dead.~
 ==RTKelem~Await the day in fear when I will judge you, Cyric.~
-==CVSan25J~Await the day in fear when I will deliver you to Kelemvor's judgement, Cyric.~ 
+==CVSan25J~Await the day in fear when I will deliver you to Kelemvor's judgement, Cyric.~
 ==ToPellig~You may think the Time of Troubles ends today, Lord AO. Too many loose ends surround us still - Bhaal's essence is distributed in his spawns all over the Prime and two former lovers are now godly enemies. This is nothing more than a cease fire before the next storm rises.~EXIT

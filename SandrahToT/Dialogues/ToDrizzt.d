@@ -1,11 +1,11 @@
 CHAIN
-IF~AreaCheck("cvelm3") GlobalLT("ToBaneHunt","Global",2) !InParty(Myself)~ THEN ToDrizzt Notcome
+IF~AreaCheck("cvelm3") GlobalLT("ToBaneHunt","Global",2) !InParty(Myself)~THEN ToDrizzt Notcome
 ~The people who rescued me, I greet you once more.~
 =~I am preparing for a little adventure at the moment but you may find me here at a later time and we may have a longer conversation by then.~
 =~Excuse me for now, my friends.~EXIT
 
 CHAIN
-IF~AreaCheck("cvelm3") GlobalGT("ToBaneHunt","Global",1) !InParty(Myself) Global("Tryonce","cvelm3",0)~ THEN ToDrizzt Maycome
+IF~AreaCheck("cvelm3") GlobalGT("ToBaneHunt","Global",1) !InParty(Myself) Global("Tryonce","cvelm3",0)~THEN ToDrizzt Maycome
 ~The people who rescued me, I greet you once more.~
 ==ToLini~Greetings, Drizzt. I have mentioned your recent adventures to my friends and we have come to talk to you.~
 ==TODrizzt~Am I famous already on the surface? I rather stay incognito if I could.~
@@ -14,7 +14,7 @@ IF~AreaCheck("cvelm3") GlobalGT("ToBaneHunt","Global",1) !InParty(Myself) Global
 ==ToAdon~The keen eye of the ranger. Yes, Drizzt, we lost Kelemvor fighting the renegade gods who stole the tablets of fate.~
 ==ToDrizzt~I heard rumours about those heroic adventurers who pursue those deities. So it is you. A dangerous but necessary undertaking. Your intention is to invite me to join and my answer is *yes*.~
 END
-++~The keen eye of the ranger, indeed. Welcome to the party, Drizzt.~DO~ JoinParty()~EXIT
+++~The keen eye of the ranger, indeed. Welcome to the party, Drizzt.~DO~JoinParty()~EXIT
 ++~You are a bit too willing to join us, drow. I do not make choices so easily.~+ MaycomeH
 
 CHAIN
@@ -22,11 +22,11 @@ IF~~THEN ToDrizzt MaycomeH
 ~You best make up your minds among yourself before you disturb others. Good day.~DO~SetGlobal("Tryonce","cvelm3",1)~EXIT
 
 CHAIN
-IF~AreaCheck("cvelm3") GlobalGT("ToBaneHunt","Global",1) !InParty(Myself) Global("Tryonce","cvelm3",1)~ THEN ToDrizzt Maycome
+IF~AreaCheck("cvelm3") GlobalGT("ToBaneHunt","Global",1) !InParty(Myself) Global("Tryonce","cvelm3",1)~THEN ToDrizzt Maycome
 ~You again?~
 END
 ++~Sorry, we will not molest you further.~EXIT
-++~I apologize for my earlier indecisiveness. I have come back to accept your offer to join us.~DO~ JoinParty()~EXIT
+++~I apologize for my earlier indecisiveness. I have come back to accept your offer to join us.~DO~JoinParty()~EXIT
 
 CHAIN
 IF~Global("ToDrizIn","LOCALS",1)~THEN ToDrizzt Lini1

@@ -8,8 +8,8 @@ IF~Global("ToBhaalhunt","Global",1)~THEN ToGorion Meetbridge1
 ~Ho there, wanderers. Stay thy course a moment to indulge a follow traveller...~
 DO~SetGlobal("ToBhaalhunt","Global",2)~
 END
-++~Gorion!!??~ + Meetbridge2
-++~G...a harper...~ + Meetbridge2
+++~Gorion!!??~+ Meetbridge2
+++~G...a harper...~+ Meetbridge2
 
 CHAIN
 IF~~THEN ToGorion Meetbridge2
@@ -42,8 +42,8 @@ IF~~THEN ToGorion Meetbridge4
 ==ToGorion~I heard rumours of that Alaundo prophesy...~
 ==CVSan25J~(Mumbles) It is true...he still needs to inseminate Khalindra. (But...Sandrah is not even born yet...?)~
 END
-++~Where are Khalindra and her father?~ + Meetbridge5
-++~Elminster seems to be save under your harper's protection, how about the others?~ + Meetbridge5
+++~Where are Khalindra and her father?~+ Meetbridge5
+++~Elminster seems to be save under your harper's protection, how about the others?~+ Meetbridge5
 
 CHAIN
 IF~~THEN ToGorion Meetbridge5
@@ -54,7 +54,7 @@ IF~~THEN ToGorion Meetbridge5
 ==ToGorion~(Sighs) I am afraid that is true.~
 ==ToPellig~Poor Gorion.~
 END
-++~It appears to me there is nothing we can do for them at this moment. We should concentrate on Bhaal and the missing tablet.~ + Meetbridge6
+++~It appears to me there is nothing we can do for them at this moment. We should concentrate on Bhaal and the missing tablet.~+ Meetbridge6
 ++~Does harper intelligence have information about Bhaal and possible hideouts?~+ Meetbridge6
 
 CHAIN
@@ -84,15 +84,15 @@ END
 
 CHAIN
 IF~~THEN HGNya01 MeetTot2
-~ Hee hee! See your own madness! As you attack me you kill your own future.~
+~Hee hee! See your own madness! As you attack me you kill your own future.~
 DO~Enemy()ActionOverride("Yagaspir",Enemy()) ActionOverride("CVSandr",Attack("HGNya01"))~EXIT
 
 CHAIN
 IF~~THEN HGNya01 MeetTot3
-~ Hee hee! Nyalee will bring Yaga-Shura son to safety now.~ DO~ActionOverride("Yagaspir",EscapeAreaObject("Exitwmp")) EscapeAreaObject("Exitwmp")~EXIT
+~Hee hee! Nyalee will bring Yaga-Shura son to safety now.~DO~ActionOverride("Yagaspir",EscapeAreaObject("Exitwmp")) EscapeAreaObject("Exitwmp")~EXIT
 
 CHAIN
-IF~Global("Tomonst","ar5202",4)~ THEN TOCyric Sparenya1
+IF~Global("Tomonst","ar5202",4)~THEN TOCyric Sparenya1
 ~Your decisions become more and more confusing, my dear. What do you know that the rest of us does not know?~
 DO~SetGlobal("Tomonst","ar5202",5)~
 ==CVSan25J~Cyric, we must be very careful not to intervene with things that have a long term effect.~
@@ -100,8 +100,8 @@ DO~SetGlobal("Tomonst","ar5202",5)~
 ==ToPellig~These spawns must live to set something into motion.~
 ==ToLini~Is it this prophesy that Bhaal gave the wise Alaundo to spread?~
 END
-++~It may sound strange, but yes it is. The seed must grow - not to create a new God of murder but to enable Mystra to return.~ + Sparenya2
-++~We cannot prevent a certain future to evolve or we will risk that there may be no future at all.~ + Sparenya2
+++~It may sound strange, but yes it is. The seed must grow - not to create a new God of murder but to enable Mystra to return.~+ Sparenya2
+++~We cannot prevent a certain future to evolve or we will risk that there may be no future at all.~+ Sparenya2
 
 CHAIN
 IF~~THEN TOCyric Sparenya2
@@ -109,15 +109,15 @@ IF~~THEN TOCyric Sparenya2
 =~Bhaal will die and he will stay dead. He will die because WE kill him. And he will stay dead because there will be a new god of murder and a new Mystra, yes.~
 =~And if you say that keeping those spawns alive will help us, so be it. Maybe the new god of murder will later need their essence that Bhaal gave them, hihi.~
 END
-++~(You nod silently) You understood just too well, Cyric.~ EXIT
+++~(You nod silently) You understood just too well, Cyric.~EXIT
 ++~All those called mad seem to have a day of great clarity today.~EXIT
 
 CHAIN
 IF~Global("Tomonst","ar5202",6) ~THEN ToPellig ToBlahand
 ~We now can either search another Bhaal temple for our slayer or visit Elminster's new home at Waterdeep.~
 DO~SetGlobal("Tomonst","ar5202",7) SetGlobal("ToBhaalhunt","Global",3)~
-==TODrizzt IF~InParty("Todrizzt")~THEN~ I would prefer to be active and search for Bhaal rather than to wait for him to appear in search of Khalindra. Do we know of another place he may have gone to?~
-==Tolini IF~!InParty("Todrizzt")~THEN~ I would prefer to be active and search for Bhaal rather than to wait for him to appear in search of Khalindra. Do we know of another place he may have gone to?~
+==TODrizzt IF~InParty("Todrizzt")~THEN~I would prefer to be active and search for Bhaal rather than to wait for him to appear in search of Khalindra. Do we know of another place he may have gone to?~
+==Tolini IF~!InParty("Todrizzt")~THEN~I would prefer to be active and search for Bhaal rather than to wait for him to appear in search of Khalindra. Do we know of another place he may have gone to?~
 ==ToAdon~We can assume he will be in the western regions of Faerun. There is a hidden temple of the Black Hand in the Wood of Sharp Teeth.~
 ==ToPellig~It makes sense. Our friend Cyric may not be the only one who lusts for the portfolio of a slain god.~
 ==ToCyric~I always say it, Pelli-darling, you are a genius. That bloody Bhaal may try to grab Bane's lost herd. We need to prevent that - this is MY domain soon!~
@@ -126,11 +126,11 @@ END
 ++~The Bane temple is a logical option. Regardless of Cyric's agenda - we go there to find Bhaal not to feed a growing madness of the man I no longer know.~EXIT
 
 CHAIN
-IF~Global("Tosendai","ar60pb",2)~ THEN ToPellig ToBlahand2
+IF~Global("Tosendai","ar60pb",2)~THEN ToPellig ToBlahand2
 ~Followers of Bhaal and drow, what does that mean?~
 DO~SetGlobal("Tosendai","ar60pb",3)~
-==TODrizzt IF~InParty("Todrizzt")~THEN~ With Lolth ruling the Underdark, my kin should have no need for an additional god of murder.~
-==Tolini IF~!InParty("Todrizzt")~THEN~ With Lolth ruling the Underdark, my kin should have no need for an additional god of murder.~
+==TODrizzt IF~InParty("Todrizzt")~THEN~With Lolth ruling the Underdark, my kin should have no need for an additional god of murder.~
+==Tolini IF~!InParty("Todrizzt")~THEN~With Lolth ruling the Underdark, my kin should have no need for an additional god of murder.~
 ==Sendai8~Mother, we have unexpected visitors.~
 ==UDDrow36~Is that the privacy for our meeting you promised, Aschmaan? I sense betrayal.~
 ==NTAshma~They must have overrun the guards, they do not belong to our fellowship, Handmaiden.~
@@ -149,7 +149,7 @@ DO~SetGlobal("Tosendai","ar60pb",13) SetGlobal("ToBhaalhunt","Global",4)~
 ==ToCyric~Don't be afraid, the new god of murder to follow slain Bhaal will take care of his predecessor's heritage, hihi.~
 ==ToPellig~We will see. First things first. Where is Bhaal?~
 END
-++~Harper intelligence may have traced him. The ones to know will be found in Waterdeep by now.~ EXIT
+++~Harper intelligence may have traced him. The ones to know will be found in Waterdeep by now.~EXIT
 ++~We should follow Gorion's trail to our son's house in Waterdeep.~EXIT
 
 CHAIN
@@ -168,8 +168,8 @@ DO~SetGlobal("TotPeople","CVDre2",3) SetGlobal("ToBhaalhunt","Global",5)~
 ==NarQMes~Bhaal is looking for some artefact that opens a portal to Avernus.~
 ==ToPellig~He thinks he can escape to the Nine Hells?~
 ==TOLini~Where would such a portal exist?~
-==ToGorion~It is well known that a sealed portal exists at Dragonspear Castle in the north. The problem is to unseal it, even for one like Bhaal in his mortal form, hence the need for the artefact.~ DO~EscapeAreaObject("WDTown")~
-==ToKapapa~He has gone to the east, far east. The Thaymount, to be exact.~ DO~EscapeAreaObject("WDTown")~
+==ToGorion~It is well known that a sealed portal exists at Dragonspear Castle in the north. The problem is to unseal it, even for one like Bhaal in his mortal form, hence the need for the artefact.~DO~EscapeAreaObject("WDTown")~
+==ToKapapa~He has gone to the east, far east. The Thaymount, to be exact.~DO~EscapeAreaObject("WDTown")~
 ==CVSan25J~Probably the old Citadel that is rumoured to be there since the time of Netheril's fall.~
 ==NarQMes~My lady, before you start such a journey, you should talk to Elminster. He is in the garden with his friends.~EXIT
 
@@ -191,7 +191,7 @@ DO~SetGlobal("TotPeople","CVDre1",2)~
 ==Sanwinth~You mean, if you would have a daughter one day, you would call her Imoen?~
 ==ToIsmad~Yeah and I never did ever tell anybody about it before - still she knows. And now you know it, too.~
 ==Sanwinth~It gives me some responsibility, doesn't it?~
-==ToIsmad~Come, Winnie - excuse us, lady, we've got some...household stuff to do...~ DO~EscapeAreaObject("toTemple")~
+==ToIsmad~Come, Winnie - excuse us, lady, we've got some...household stuff to do...~DO~EscapeAreaObject("toTemple")~
 ==Sanwinth~Yes, nice to have met you...~DO~EscapeAreaObject("toTemple")~EXIT
 
 CHAIN
@@ -204,7 +204,7 @@ DO~SetGlobal("TotPeople","CVDre1",3)~
 ==Sankaba~You know about that already, Midnight? Yes, it is true - Elminster, I brought you out here to tell you about it today. Your mother...how do you know it will be a daughter?~
 END
 ++~It was just wishful thinking, probably...anyway a grandson will be just as welcome.~EXTERN ToElmi Pregn2
-++~Since Mystra's death I seem to know such things, I cannot explain it.~ EXTERN ToElmi Pregn2
+++~Since Mystra's death I seem to know such things, I cannot explain it.~EXTERN ToElmi Pregn2
 
 CHAIN
 IF~~THEN ToElmi Pregn2
@@ -215,7 +215,7 @@ IF~~THEN ToElmi Pregn2
 ==ToCyric~I'm not feeling old enough yet to be grandfather...hihi, guess nobody will ask me for approval anyway...~DO~StartCutSceneMode() Wait(2) FadeToColor([20.0],0) Wait(2) TextScreen("TotKhal") Wait(2) StartCutScene("CVcut403") ~EXIT
 
 CHAIN
-IF ~Global("TotThay","Global",1)~ THEN TOCyric TotThay1
+IF ~Global("TotThay","Global",1)~THEN TOCyric TotThay1
 ~I like Thay, honestly, hihi, so depressing and ugly and dangerous...~
 DO~SetGlobal("TotThay","Global",2)~
 ==ToPellig~A society built on slavery and expansion wars, trading drugs and oppressing others. Cyric, if it would not exist already, either you or the drow would invent it.~
@@ -229,7 +229,7 @@ END
 ++~Let us visit the library for some insight.~EXIT
 
 CHAIN
-IF~Global("TotPeople","RTF510",1) GlobalLT("TotThay","Global",4)~ THEN RTMask TotThay2
+IF~Global("TotPeople","RTF510",1) GlobalLT("TotThay","Global",4)~THEN RTMask TotThay2
 ~Whom do we have here, intruders, friends, fools, or a combination of such?~
 DO~SetGlobal("TotPeople","RTF510",2) IncrementGlobal("TotThay","Global",1)~
 ==ToCyric~Pale lady, hihi, living in the shadow too long.~
@@ -257,11 +257,11 @@ DO~SetGlobal("Totshark","RTF056",2)IncrementGlobal("TotThay","Global",1)~
 ==RTAuct~That's what I heard. It will be our ruin. The city must get rid of this uninvited guest.~
 ==TOCyric~Uninvited? There is a large amount of worshippers of the Slayer here in Thay, hihi.~
 ==RTShark~A number of them changed their minds since the guy is here, he was hailed while not on this plane but having him next door is something else.~
-==RTAuct IF~GlobalLT("TotThay","Global",4)~ THEN~You can ask those at Mask's temple, if you need further details.~ DO~EscapeArea()~
-==Tolini IF~GlobalGT("TotThay","Global",3)~ THEN~Mask's guild was telling a similar tale. He has a talent to gain friends.~ EXIT
+==RTAuct IF~GlobalLT("TotThay","Global",4)~THEN~You can ask those at Mask's temple, if you need further details.~DO~EscapeArea()~
+==Tolini IF~GlobalGT("TotThay","Global",3)~THEN~Mask's guild was telling a similar tale. He has a talent to gain friends.~EXIT
 
 CHAIN
-IF~ Global("TotThay","Global",5)~ THEN ToAdon Totthay4
+IF~Global("TotThay","Global",5)~THEN ToAdon Totthay4
 ~Any idea of how to stop Bhaal here, Midnight?~
 DO~SetGlobal("TotThay","Global",6)~
 ==CVSan25J~We need to get access to Bhaal's temple in Bezantur. This is where they would sacrifice those slaves to the Lord of Murder in their bloody rituals.~
@@ -301,7 +301,7 @@ DO~SetGlobal("TotThay","Global",9) SetGlobal("ToBhaalhunt","Global",6) ~
 ==CVSan25J~Elminster's and Khalindra's first-born - she may just have arrived by now. The heiress of the long line...~
 ==ToPellig~Midnight! You may give the Lord of Murder an idea he did not yet have.~
 ==ToBhaal~Worry not, Simbul - oh, yes, I know who you are...~
-=~Worry not, the dice has been cast, what will be will be, neither you nor your protege Midnight can prevent it any more.~ DO~EscapeAreaObject("Downa")~
+=~Worry not, the dice has been cast, what will be will be, neither you nor your protege Midnight can prevent it any more.~DO~EscapeAreaObject("Downa")~
 END
-++~Let him go - we do not even want to prevent it. Yes, the dice has been cast but when it ends its roll, it will not show the number he expects.~ EXIT
+++~Let him go - we do not even want to prevent it. Yes, the dice has been cast but when it ends its roll, it will not show the number he expects.~EXIT
 ++~Let us follow him downstairs - we need to prevent his return to Waterdeep. Bhaal must find his end here and now!~DO~SetGlobal("TotThay","Global",10)~EXIT

@@ -9,9 +9,9 @@ IF~Global("ToLini","BG4100",2)~THEN Tolini Pris1
 ==CVSlaw~That's what your companions said as well, those corpses you now see all around you. Better give up while you still can.~
 ==Tolini~I am no longer alone! There is help.~
 END
-++~(Sigh) A drow to rescue from slavery, not me.~ DO~IncrementGlobal("Sanpoints","Global",-3) ScreenShake([1600.1604],5)Wait(2) ReallyForceSpellRES("TOSpint","CVSandr") ~EXTERN TOPellig Linihelp
-++~ A drow to rescue from slavery, nothing we have not done before - with pleasure.~DO~SetGlobal("ToLini","BG4100",3)~EXIT
-++~ Drow or not drow, slavery is for nobody to endure, let us end this, friends.~ DO~ SetGlobal("ToLini","BG4100",3)~EXIT
+++~(Sigh) A drow to rescue from slavery, not me.~DO~IncrementGlobal("Sanpoints","Global",-3) ScreenShake([1600.1604],5)Wait(2) ReallyForceSpellRES("TOSpint","CVSandr") ~EXTERN TOPellig Linihelp
+++~A drow to rescue from slavery, nothing we have not done before - with pleasure.~DO~SetGlobal("ToLini","BG4100",3)~EXIT
+++~Drow or not drow, slavery is for nobody to endure, let us end this, friends.~DO~SetGlobal("ToLini","BG4100",3)~EXIT
 
 CHAIN
 IF~~THEN TOPellig Linihelp
@@ -30,11 +30,11 @@ IF~Global("ToLini","BG4100",4) ~THEN Tolini Pris2
 ==Tolini~My name is Liriel Baenre. These bastards took my possessions, allow me to search them for what is mine.~
 END
 ++~Kelemvor spoke for all of us, come with us, Liriel.~DO~SetGlobal("ToLini","BG4100",5)  ActionOverride("Tolini",JoinParty())~EXIT
-++~Seems I have nothing to say in this case other than *yes*. So, welcome, Liriel.~ DO~SetGlobal("ToLini","BG4100",5)  ActionOverride("Tolini",JoinParty())~EXIT
+++~Seems I have nothing to say in this case other than *yes*. So, welcome, Liriel.~DO~SetGlobal("ToLini","BG4100",5)  ActionOverride("Tolini",JoinParty())~EXIT
 
 CHAIN
 IF~Global("ToPelGodsb2","LOCALS",1)~THEN ToPellig Godsb1
-~*Pelligram has chosen a moment to approach Liriel while Cyric has sneaked into some shop, probably to steal something there.*~ 
+~*Pelligram has chosen a moment to approach Liriel while Cyric has sneaked into some shop, probably to steal something there.*~
 DO~SetGlobal("ToPelGodsb2","LOCALS",2)~
 =~Do you still remember the scenes around Kelemvor's death, your search for the Banites who killed him?~
 ==Tolini~We ran into several Banites and finally into Myrkul, who was alone. It was me who saw Bhaal and Bane at some distance in the south.~

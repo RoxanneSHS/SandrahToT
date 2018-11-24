@@ -66,7 +66,7 @@ DO~SetGlobal("CVabaz","AR6005",7) SetGlobal("Chapter","Global",33)~
 ==ToKelem~You think you can buy your miserable forfeit existence from us with a petty gift, you has-been deity?~
 ==ToBane~Kelemvor Lyonsbane - I may have something to offer to you that may change your attitude.~
 END
-++~Kelemvor, my love, listen to him. You told me that the sorceress who cursed your family was drawing her powers from The Black Hand. He can remove your curse.~ + Abalair3
+++~Kelemvor, my love, listen to him. You told me that the sorceress who cursed your family was drawing her powers from The Black Hand. He can remove your curse.~+ Abalair3
 ++~Kelemvor, my love, do not listen to him, he will trick you with the promise to remove the Lyonsbane curse from you. We follow a higher goal.~+ Abalair3
 
 CHAIN
@@ -77,7 +77,7 @@ IF~~THEN ToBane Abalair3
 ==ToAdon~Pelligram is right, we will trap the three of them together pretty soon but your chance may be gone by that time.~
 ==ToKelem~I would never take a personal benefit from an evil being like you, Bane. But it is not me alone, I have to think of the one I love and my children and children's children...~
 =~I accept your offer - you are free to go.~
-==ToBane~A wise decision.~DO~ StartCutSceneMode() Wait(2) CreateVisualEffectObject("SPUNHOLY","Tokelem") Wait(6) CreateVisualEffectObject("SPUNHOLY","Tokelem") Wait(6) MoveToPoint([779.495]) Wait(4) EndCutSceneMode() DestroySelf()~EXIT
+==ToBane~A wise decision.~DO~StartCutSceneMode() Wait(2) CreateVisualEffectObject("SPUNHOLY","Tokelem") Wait(6) CreateVisualEffectObject("SPUNHOLY","Tokelem") Wait(6) MoveToPoint([779.495]) Wait(4) EndCutSceneMode() DestroySelf()~EXIT
 
 CHAIN
 IF~Global("TotJail","bd7230",3)~THEN ToKelem Bhaalpris1
@@ -93,6 +93,6 @@ DO~SetGlobal("TotJail","bd7230",4)~
 CHAIN
 IF WEIGHT #-3~Global("TotJail","bd7230",4) PartyHasItem("BDKey11") OpenState("Door09",TRUE)~THEN Priilm Bhaalpris2
 ~In Lord Ilmater's name, thanks to you, friends.~
-DO~SetGlobal("TotJail","bd7230",5) AddexperienceParty(4000)~ 
+DO~SetGlobal("TotJail","bd7230",5) AddexperienceParty(4000)~
 ==ToCyric~Happy sufferings out there.~
 ==Priilm~May you find what you seek, friends.~DO~EscapeAreaObject("TranBD7220")~EXIT

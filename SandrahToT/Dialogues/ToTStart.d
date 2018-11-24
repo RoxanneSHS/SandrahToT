@@ -2,9 +2,9 @@ APPEND CVSan25J
 
 IF~Global("MystBio","RTF025",1)~THEN BEGIN WantTOTRe1
 SAY~Do you feel like returning to Celestia already, <CHARNAME>?~
-IF~~THEN REPLY~It's AO's verdict, or are you still in your rebellious mood?~ GOTO WantTOTRe3
+IF~~THEN REPLY~It's AO's verdict, or are you still in your rebellious mood?~GOTO WantTOTRe3
 IF~~THEN REPLY~Yes, let us return. I need a rest from all of this.~GOTO WantTOTRe2
-IF~~THEN REPLY~That's a loaded question, isn't it. You have some proposal?~ GOTO WantTOTRe3
+IF~~THEN REPLY~That's a loaded question, isn't it. You have some proposal?~GOTO WantTOTRe3
 END
 
 IF~~THEN BEGIN WantTOTRe2
@@ -21,14 +21,14 @@ END
 IF~~THEN BEGIN WantTOTRe4
 SAY~(She looks at you for a moment, contemplating your request.)~
 =~Mystra was killed by Helm during the events and later my grandmother Midnight took her cloak and portfolio. I have the knowledge of both but for your purpose the full story is in Midnight's part of the lore.~
-IF~~THEN REPLY~The source is not important for me, as long as the story is the truth - for the first time.~ GOTO WantTOTRe5
+IF~~THEN REPLY~The source is not important for me, as long as the story is the truth - for the first time.~GOTO WantTOTRe5
 END
 
 IF~~THEN BEGIN WantTOTRe5
 SAY~It will be the truth. And the source is of utmost importance as it is through her that you will learn about the events.~
 =~Provided you are willing to pay for the fare.~
-IF~~THEN REPLY~You sound as mysterious as always, Sandrah.~ GOTO WantTOTRe6
-IF~~THEN REPLY~A price to pay. Is my goddess so greedy?~ GOTO WantTOTRe6
+IF~~THEN REPLY~You sound as mysterious as always, Sandrah.~GOTO WantTOTRe6
+IF~~THEN REPLY~A price to pay. Is my goddess so greedy?~GOTO WantTOTRe6
 END
 
 IF~~THEN BEGIN WantTOTRe6
@@ -54,11 +54,11 @@ IF~Global("ToPellJoin","RTF123",1)~THEN ToPellig BuildParty
 ==TOCyric~(Chuckles) The ever caring Kelemvor, hihi. Don't you think our lady can very well care for herself. (Once she frees herself from your protective clutches - or I free her...)~
 ==ToAdon~While you take your meal, Cyric may as well tell you about the plan he has for us to move from here, now that we found Blackstaff Tower was a failure and we found not what we came here for.~
 END
-++~But I have the feeling I found something important here...Anyway, let's first eat.~DO~ SetGlobal("ToPellJoin","RTF123",2)ActionOverride("ToKelem",JoinParty()) ActionOverride("ToCyric",JoinParty()) ActionOverride("ToAdon",JoinParty()) ~EXIT
-++~(You nod silently and move to your lover Kelemvor who holds your plate ready for you.)~DO~ SetGlobal("ToPellJoin","RTF123",2) ActionOverride("ToKelem",JoinParty()) ActionOverride("ToCyric",JoinParty()) ActionOverride("ToAdon",JoinParty()) ~EXIT
+++~But I have the feeling I found something important here...Anyway, let's first eat.~DO~SetGlobal("ToPellJoin","RTF123",2)ActionOverride("ToKelem",JoinParty()) ActionOverride("ToCyric",JoinParty()) ActionOverride("ToAdon",JoinParty()) ~EXIT
+++~(You nod silently and move to your lover Kelemvor who holds your plate ready for you.)~DO~SetGlobal("ToPellJoin","RTF123",2) ActionOverride("ToKelem",JoinParty()) ActionOverride("ToCyric",JoinParty()) ActionOverride("ToAdon",JoinParty()) ~EXIT
 
 CHAIN
-IF~Global("TotParty","RTF123",2)~ THEN CVSan25J Whatnow
+IF~Global("TotParty","RTF123",2)~THEN CVSan25J Whatnow
 ~So, Cyric, what is it that you have proposed to the group as our next target.~
 DO~SetGlobal("TotParty","RTF123",3)~
 ==TOCyric~We came here in search of the legendary sword that this halfling named Sneakabout has stolen from the dead corpse I was about to loot...~
@@ -114,7 +114,7 @@ IF~Global("KelSpeak","RTF123",1)~THEN TOKelem Prop1
 ==CVSan25J~The Nashkel mines in slaver's hands, you say?~
 ==ToAdon~I am not sure it were the Nashkel mines they were referring to. There is another mine site right to the north of here, if we follow the bear river for a while.~
 END
-++~Let us go north, it is probably the mine that may have opened a bit too close to the old Kozah temple north of here.~DO~SetGlobal("KelSpeak","RTF123",2)~ EXIT
-++~The Nashkel mine lies on our way back to civilization and shops anyway, let's go there first.~ DO~SetGlobal("KelSpeak","RTF123",2)~ EXIT
-++~The nearest way to a bathtub and a mug is on my agenda, friends. All else can wait until later.~ DO~SetGlobal("KelSpeak","RTF123",2)~ EXIT
-++~Let us explore this area thoroughly first, before I decide on one of those mine sites to visit.~ DO~SetGlobal("KelSpeak","RTF123",2)~ EXIT
+++~Let us go north, it is probably the mine that may have opened a bit too close to the old Kozah temple north of here.~DO~SetGlobal("KelSpeak","RTF123",2)~EXIT
+++~The Nashkel mine lies on our way back to civilization and shops anyway, let's go there first.~DO~SetGlobal("KelSpeak","RTF123",2)~EXIT
+++~The nearest way to a bathtub and a mug is on my agenda, friends. All else can wait until later.~DO~SetGlobal("KelSpeak","RTF123",2)~EXIT
+++~Let us explore this area thoroughly first, before I decide on one of those mine sites to visit.~DO~SetGlobal("KelSpeak","RTF123",2)~EXIT

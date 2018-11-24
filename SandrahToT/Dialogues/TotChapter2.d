@@ -16,16 +16,16 @@ BEGIN ToMyrkul
 BEGIN ToElmi
 
 CHAIN
-IF WEIGHT #-5~GlobalGT("TOLiriquest","Global",8) Global("TOKelemQuest","Global",0)~ THEN              Portal  warnpon1
+IF WEIGHT #-5~GlobalGT("TOLiriquest","Global",8) Global("TOKelemQuest","Global",0)~THEN              Portal  warnpon1
 ~Dark times are coming...they say that gods have been seen to walk the Prime in their mortal avatars.~
 DO~SetGlobal("TOKelemQuest","Global",1)~
 END
-++~That has happened from time to time, no need to worry.~ + warnpon2
+++~That has happened from time to time, no need to worry.~+ warnpon2
 ++~And how do *they* know such a thing - how do you know you see a GOD if he is in his MORTAL avatar?~+ warnpon2
 
 CHAIN
 IF~~THEN Portal warnpon2
-~You will soon see the truth of my words, unbelievers.~DO~ EscapeAreaDestroy(40)~EXIT
+~You will soon see the truth of my words, unbelievers.~DO~EscapeAreaDestroy(40)~EXIT
 
 CHAIN
 IF WEIGHT #-5~GlobalGT("TOLiriquest","Global",8) Global("warnjop","tot003",0)~THEN Bently2 warnjop1
@@ -44,8 +44,8 @@ DO~SetGlobal("TOKelemQuest","Global",3) AddJournalEntry(@024,QUEST) RealSetGloba
 ==CVSan25J~They play a role in my life, and they are dangerous, more I cannot say.~
 ==ToKelem~I am concerned - not just about you and your confusion but about those confusing things we hear these days. Gods walking in their avatars among us, they say. Was there one atop of Blackstaff tower, is it this what has changed you?~
 END
-++~There was nobody but me, really, Kelemvor. You worry too much about me when we should really be worried about you.~ + Whatwrong2
-++~There are times of trouble ahead for Faerun and we will be playing a role in it. Dangerous times, my dear, and we will have to fight for our lives.~ + Whatwrong12
+++~There was nobody but me, really, Kelemvor. You worry too much about me when we should really be worried about you.~+ Whatwrong2
+++~There are times of trouble ahead for Faerun and we will be playing a role in it. Dangerous times, my dear, and we will have to fight for our lives.~+ Whatwrong12
 
 CHAIN
 IF~~THEN ToKelem Whatwrong2
@@ -54,7 +54,7 @@ IF~~THEN ToKelem Whatwrong2
 =~I was concerned for you, you are a fighter with a lot of overview who restrains himself in battle, you keep a cool head and do not act foolishly. That beast was not acting like you do, more like you went berserk. You could have been badly wounded or worse.~
 ==ToKelem~You are right, I had little control in that state. On the other hand, it never happened in any battle unless some family member of mine was involved.~
 END
-++~Maybe we find out about some cure by visiting a temple.~ + Whatwrong3
+++~Maybe we find out about some cure by visiting a temple.~+ Whatwrong3
 ++~Those gods walking among us, could one of them provide a cure?~+ Whatwrong3
 
 CHAIN
@@ -65,8 +65,8 @@ IF~~THEN ToKelem Whatwrong12
 ==CVSan25J~Gods in their avatars are still powerful beings, even when mortal. Chances are that people like us will cross their path.~
 ==ToKelem~There are evil ones among them, so much is sure. I wonder why they should have come, not one on an occasional visit but obviously some of them.~
 END
-++~Maybe we find out more by visiting a temple.~ + Whatwrong4
-++~Maybe we find out more by visiting Mystra's temple in Waterdeep.~ + Whatwrong4
+++~Maybe we find out more by visiting a temple.~+ Whatwrong4
+++~Maybe we find out more by visiting Mystra's temple in Waterdeep.~+ Whatwrong4
 ++~Maybe they will find us before we need to worry about finding them.~+  Whatwrong4
 
 CHAIN
@@ -74,13 +74,13 @@ IF~~THEN  ToKelem Whatwrong4
 ~Which brings me to the topic of the Lyonsbane's curse and what is known about it.~
 =~My great-grandfather was a sorcerer of quite some skills. He spent a lot of time with research about curses and cases like ours.~
 END
-++~Did he find a clue - obviously he did not find the cure itself?~ +  Whatwrong5
+++~Did he find a clue - obviously he did not find the cure itself?~+  Whatwrong5
 
 CHAIN
 IF~~THEN ToKelem Whatwrong3
 ~My great-grandfather was a sorcerer of quite some skills. He spent a lot of time with research about curses and cases like ours.~
 END
-++~Did he find a clue - obviously he did not find the cure itself.~ +  Whatwrong5
+++~Did he find a clue - obviously he did not find the cure itself.~+  Whatwrong5
 
 CHAIN
 IF~~THEN ToKelem Whatwrong5
@@ -121,7 +121,7 @@ DO~SetGlobal("ToGodwalk","Global",2)~
 END
 ++~Enough, let us not waste time with those, they received the punishment they deserved.~EXIT
 ++~We can do a little but I am not wasting resources on scum.~DO~ReallyForceSpellRES("CVHealh","ToGoWa02")~EXIT
-++~So it is all kinds of gods roaming Faerun now. Maybe we have some scrolls and spells to help you and your companions. Nobody deserves to be turned into stone.~ DO~ReallyForceSpellRES("CVHealh","ToGoWa02")~EXIT
+++~So it is all kinds of gods roaming Faerun now. Maybe we have some scrolls and spells to help you and your companions. Nobody deserves to be turned into stone.~DO~ReallyForceSpellRES("CVHealh","ToGoWa02")~EXIT
 
 CHAIN
 IF WEIGHT #-8~Global("ToGodwalk","Global",3)~THEN Prihel NotHel1
@@ -135,16 +135,16 @@ DO~SetGlobal("ToGodwalk","Global",4)~
 ==ToPellig~The only reason for such a deed can be one or more deities trying to gain power outside their portfolio which are chiseled onto those steles.~
 ==Prihel~Only the Unsleeping Eye, my master Helm, remains in full power to prevent any of the others to return.~
 ==CVSan25J~Absurd to assume that Mystra would do such a deed.~
-==TOAdon~Or fair Sune. This is the deed of some evil gods for sure.~ 
+==TOAdon~Or fair Sune. This is the deed of some evil gods for sure.~
 ==TOCyric~Hihi, there may pretty soon be some casualties and some vacant posts in Celestia.~
 ==ToPellig~Cyric, however you did it, I have to admit this is a valid analysis.~
 =~The competition among the gods for more power will now be played out here in Faerun. I am afraid the casualties will not be limited to their ranks or those of their followers but all the mortals are in danger of becoming victims when those titans clash.~
 ==TOCyric~Will you hold my hand, my dear, while we watch that spectacle?~
 ==ToPellig~No, but I may continue to endure your company if you - like the rest of our group - embark on the quest to find the culprits and retrieve the tablets.~
 END
-++~Pelligram is right, it is the only way to get those overpowered nursery childs back to where they belong and where they can do only limited harm to the mortals.~DO~AddJournalEntry(@025,QUEST)~ EXIT
-++~Not only would we do the Prime a favour, we may gain ourselves significantly in the process.~ DO~AddJournalEntry(@025,QUEST)~ EXIT
-++~Apart from AO's gratitude we may even get the chance to eliminate some evil bastards while they are vulnerable.~DO~AddJournalEntry(@025,QUEST)~ EXIT
+++~Pelligram is right, it is the only way to get those overpowered nursery childs back to where they belong and where they can do only limited harm to the mortals.~DO~AddJournalEntry(@025,QUEST)~EXIT
+++~Not only would we do the Prime a favour, we may gain ourselves significantly in the process.~DO~AddJournalEntry(@025,QUEST)~EXIT
+++~Apart from AO's gratitude we may even get the chance to eliminate some evil bastards while they are vulnerable.~DO~AddJournalEntry(@025,QUEST)~EXIT
 
 CHAIN
 IF WEIGHT #-2~Global("ToGodwalk","Global",5)~THEN CVPotngi Malar
@@ -160,7 +160,7 @@ DO~SetGlobal("ToGodwalk","Global",6)~
 ==ToCyric~Fine, some bandits for Godsbane to slaughter, let's go, hihi.~
 ==CVPotngi~Oh, no, I can take care of bandits, they don't get to see a small one like me in the woods. There is greater danger out there these days. Druids and beasts, I think they were werewolves - and a new leader, I heard the name *Maller*.~
 END
-++~Gods walk Faerun now, you heard correctly, it must be Malar, the Beastlord.~ + Malar2
+++~Gods walk Faerun now, you heard correctly, it must be Malar, the Beastlord.~+ Malar2
 ++~We may look into this, from your description the new leader may be Malar himself.~+ Malar2
 
 CHAIN
@@ -176,7 +176,7 @@ DO~SetGlobal("ToGodwalk","Global",8)~
 ==ToPellig~You will never get the smell of its evil former owner out of it, Cyric. It is something to be left in their beloved nature to rot and feed the worms.~
 ==ToCyric~I understand you perfectly, the endless cycle of nature and so on and blah and blah.~
 ==CVSan25J~You still have a chance to leave these woods peacefully, Malar.~
-==ToMalar~And who are you to demand such? (Sniff) This is MY domain now, the forests of Faerun return to the regime of the beasts.~ DO~Enemy()~
+==ToMalar~And who are you to demand such? (Sniff) This is MY domain now, the forests of Faerun return to the regime of the beasts.~DO~Enemy()~
 ==TOAdon~There is nothing natural in lycanthropy, it is a disease to be stopped from spreading further.~EXIT
 
 CHAIN
@@ -186,7 +186,7 @@ DO~SetGlobal("ToWaukGo","Global",2)~
 ==ToCyric~What could they seek there, they want to go shopping, hihi?~
 ==CVWDWauk~We need help...our goddess...~
 ==CVSan25J~Your goddess is in there too, is it so? The demons are after her?~
-==CVWDWauk~...yes...We need help... ~ DO~EscapeAreaDestroy(50)~
+==CVWDWauk~...yes...We need help... ~DO~EscapeAreaDestroy(50)~
 END
 ++~With Waukeen, everything has a price. We will help you. Do not forget to pay afterwards.~EXIT
 ++~Demons do not scare us and the Golden Lady will surely reward us.~EXIT
@@ -241,7 +241,7 @@ IF~~THEN Tokelem Waukgo3
 CHAIN
 IF~Global("ToTablet1","Global",1)~THEN ToMyst Tab1Start1
 ~Greetings, it is good that you finally found your way to us.~
-DO~ SetGlobal("ToTablet1","Global",2)~
+DO~SetGlobal("ToTablet1","Global",2)~
 ==Tosune~We knew you would come. I greet you, adventurers - Adon of Arabel, it is good you are now here.~
 ==TOAdon~My lady Sune, you are as beautiful as I ever dreamt you were.~
 ==ToPellig~Mystra, we have seen already a number of events giving us an initial impression about the current situation. With both of you being present here, our worst fears are confirmed.~
@@ -276,7 +276,7 @@ IF~Global("ToOrcActive","ar01pb",2) ~THEN CVShPri InTot1
 ~So says the Lord of Bones: *Know me and fear me. My embrace is for all and is patient but sure. The dead can always find you. My hand is everywhere - there is no door I cannot pass, nor guardian who can withstand me.* ~
 DO~SetGlobal("ToOrcActive","ar01pb",3)~
 ==Orc04~Hail Lord Myrkul!~
-==CVShPri~Hail The Reaper. And...death to the intruders I sense near. Get them.~ DO~ ClearAllActions() StartCutSceneMode() Wait(1) ActionOverride("ToAdon",JumpToPoint([5000.3700])) ActionOverride(Player1,MoveViewObject(Myself,INSTANT)) Wait(2) EndCutSceneMode()~EXIT
+==CVShPri~Hail The Reaper. And...death to the intruders I sense near. Get them.~DO~ClearAllActions() StartCutSceneMode() Wait(1) ActionOverride("ToAdon",JumpToPoint([5000.3700])) ActionOverride(Player1,MoveViewObject(Myself,INSTANT)) Wait(2) EndCutSceneMode()~EXIT
 
 CHAIN
 IF~Global("ToBhaalActive","bd7230",1)~THEN Tosarevm Mothers1
@@ -308,7 +308,7 @@ END
 CHAIN
 IF~Global("ToTablet1","Global",5)~THEN ToPellig Tab1Start2
 ~So we have learned a bit about what is going on by now.~
-DO~ SetGlobal("ToTablet1","Global",6)~
+DO~SetGlobal("ToTablet1","Global",6)~
 ==ToCyric~Oh, Pelli-darling, I so adore your intelligence, hihi. Just - what is it that we have learned?~
 ==CVSan25J~Some B and B and M are working on a plan to find a better place to hide the tablets we search.~
 ==ToAdon~B,B and M proofs our initial suspicion about the not-yet-dead-three.~
@@ -326,9 +326,9 @@ END
 ++~Yes, let us consult Mystra and Sune, the joint wisdom of two goddesses may help.~EXIT
 
 CHAIN
-IF~ Global("ToTablet1","Global",6)~THEN ToSune Tab1Start3
+IF~Global("ToTablet1","Global",6)~THEN ToSune Tab1Start3
 ~You return with good or bad news, friends?~
-DO~ SetGlobal("ToTablet1","Global",7)~
+DO~SetGlobal("ToTablet1","Global",7)~
 ==Tomyst~Any news is welcome, I would say.~
 ==ToCyric~Don't blame the messengers, hihi. Those soon-to-be the *Dead Three* are involved, just like we had already suspected.~
 ==ToPellig~We have some correspondence between B and B and M concerning the tablets. Those renegades seek a better hiding place for their booty, if we read those scribbles correctly.~
@@ -357,9 +357,9 @@ IF~True()~THEN ToInnke sell
 ~We got ale, we got armor, we got... Ah hell, this is old hat. Ye know what it is we all got.~DO~StartStore("Inn2616",LastTalkedToBy(Myself))~EXIT
 
 CHAIN
-IF~ Global("ToTablet1","Global",7)~THEN ToBhaal Alaun1
+IF~Global("ToTablet1","Global",7)~THEN ToBhaal Alaun1
 ~YOU WILL NOT CHANGE A SINGLE SILABLE OF THIS DICTATE, OGHMA'S SLAVE!~
-DO~ SetGlobal("ToTablet1","Global",8)~
+DO~SetGlobal("ToTablet1","Global",8)~
 ==ToAlaun~I...I have noted down every word as you spoke it, my-my L-Lord.~
 ==ToBhaal~This - ALAUNDO'S PROPHESY! - will be spread through the Realms from here, this is my command. Beginning exactly one mortal year from this day, the text will be recited each noon within the walls of Candlekeep - OR Candlekeep will be destroyed down to its catacombs. This is my will.~
 ==ToAlaun~The recitations and the copies will be done as you have commanded, I-i h-have seen your power, L-Lord. No more murders, w-we do as told.~
@@ -367,9 +367,9 @@ DO~ SetGlobal("ToTablet1","Global",8)~
 ==ToBhaal~Spare me your babbling, your fear makes you a mad but useful instrument. As long as you play my tune, I will spare your pathetic Candlekeep.~DO~Polymorph(SLAYER) Wait(4) MoveToPoint([1108.788]) Wait(4) DestroySelf()~EXIT
 
 CHAIN
-IF~ Global("ToTablet1","Global",8)~THEN ToAlaun Alaun2
+IF~Global("ToTablet1","Global",8)~THEN ToAlaun Alaun2
 ~(The eyes of the monk are wide with fear, his stare is mad from the encounter he just survived.)~
-DO~ SetGlobal("ToTablet1","Global",9)~
+DO~SetGlobal("ToTablet1","Global",9)~
 ==ToKelem~Who was that visitor, did he murder those monks?~
 ==ToAlaun~The Lord of Murder shall perish
 But in his doom he shall spawn a score of mortal progeny...~
@@ -407,8 +407,8 @@ DO~SetGlobal("CVTiamal","AR6000",4)~
 ==CVTiamal~Some enslaved brown dragon and its halfbreed abnormality.~
 END
 ++~(Mumble) Abazigal is already born...~+ Intrud2
-++~We will follow them quickly and see what can be saved still.~ + Intrud2
-++~You and your kin will be revenged, this is our promise.~ + Intrud2
+++~We will follow them quickly and see what can be saved still.~+ Intrud2
+++~You and your kin will be revenged, this is our promise.~+ Intrud2
 
 CHAIN
 IF~~THEN CVTiamal  Intrud2
@@ -437,7 +437,7 @@ CHAIN
 IF~Global("ToTablet1","Global",9)~THEN ToBane Abalair
 ~Mortals dare to intrude HERE? How is that?~
 DO~SetGlobal("ToTablet1","Global",10) SetGlobal("CVabaz","AR6005",4)~
-==ToBhaal~Persistent little maggots, didn't I see them when I taught those Oghma monks their new tune?~ DO~MoveToPoint([779.495]) EscapeAreaDestroy(45)~
+==ToBhaal~Persistent little maggots, didn't I see them when I taught those Oghma monks their new tune?~DO~MoveToPoint([779.495]) EscapeAreaDestroy(45)~
 ==ToMyrkul~You saw them once already? Are they pursuing us, you mean?~
 ==ToBane~What kind of *god of murder* are you, Bhaal, to keep them alive?~
 ==ToCyric~Aren't they like little boys bickering in the playground, our soon-to-be "Dead Three", hihi.~
@@ -457,8 +457,8 @@ DO~SetGlobal("ToMyrkFi","RTF123",3)~
 ==ToKelem~Not if I get him first, Cyric, I owe him something still.~
 ==ToCyric~Try to outrun me if you dare, winner kills a god.~
 END
-++~No, stay together, Kelemvor...!~ DO~ClearAllActions() StartCutSceneMode() StartCutScene("ToBlaSt1")~EXIT
-++~Be careful, do not risk too much. We take on Myrkul meanwhile.~ DO~ClearAllActions() StartCutSceneMode() StartCutScene("ToBlaSt1")~EXIT
+++~No, stay together, Kelemvor...!~DO~ClearAllActions() StartCutSceneMode() StartCutScene("ToBlaSt1")~EXIT
+++~Be careful, do not risk too much. We take on Myrkul meanwhile.~DO~ClearAllActions() StartCutSceneMode() StartCutScene("ToBlaSt1")~EXIT
 
 CHAIN
 IF~Global("ToMyrkFi","RTF123",7)~THEN ToCyric Kelded1
@@ -523,9 +523,9 @@ DO~SetGlobal("ToTablet1","Global",15)~
 =~Do not waste time and energy on this straw-headed dummy. It will help neither us nor Mystra.~
 ==ToAdon~I get so fed up with the ignorance and stupidity of those so-called gods. Who do they think they are.~
 ==ToHelm~These are the Celestial Stairs, blasphemous mortals, I will not allow any more of your words here nor your presence.~
-==CVSan25J~ HERE, YOU TIN HEADED EPITOME OF IGNORANCE.~
+==CVSan25J~HERE, YOU TIN HEADED EPITOME OF IGNORANCE.~
 =~*She hauls the tablet you have gained at Helm who has no other chance than to catch it, less it would have falled into the nothingness around the Stairs.*~
 ==ToPellig~Let us leave while we still can. There is nothing we can do here any more.~
 =~And you, Helm, be a good doggie and retrieve the tablet to your master, he may give you an extra treat today for killing the Guardian of the Weave.~
-==ToHelm~Mortals, I warned you...~ DO~StartCutSceneMode() Wait(1) ScreenShake([2033.1900],40) Wait(2) FadeToColor([20.0],0) Wait(4) TextScreen("Tomyste") Wait(4) SetGlobal("Chapter","Global",34) StartCutScene("ToMoveAt")~ EXIT
+==ToHelm~Mortals, I warned you...~DO~StartCutSceneMode() Wait(1) ScreenShake([2033.1900],40) Wait(2) FadeToColor([20.0],0) Wait(4) TextScreen("Tomyste") Wait(4) SetGlobal("Chapter","Global",34) StartCutScene("ToMoveAt")~EXIT
 
