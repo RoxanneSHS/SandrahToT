@@ -68,6 +68,8 @@ EXTEND_TOP
 EXTEND_TOP
 ~bg2626.bcs~ ~SandrahTOT/Area/bg2626clean.baf~
 EXTEND_TOP
+~BG4809.bcs~ ~SandrahTOT/Area/BG4809clean.baf~
+EXTEND_TOP
 ~bg2614.bcs~ ~SandrahTOT/Area/BG2614Alaun.baf~
 EXTEND_TOP
 ~bg2700.bcs~ ~SandrahTOT/Area/bg2700tot.baf~ USING ~SandrahRTF/TRA/RTF-setup.tra~

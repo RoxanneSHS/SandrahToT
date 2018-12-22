@@ -24,7 +24,7 @@ CHAIN
 IF~~THEN ToKelem Sleepkel3
 ~We have a good company assembled, my dear. Even if at times there seem to be some tension between us, over all we work good and effective and one guards the other one's back if we are under common pressure.~
 END
-++~Or stab it if you are not careful...I hope you get not careless, I'd hate to loose you. Enough of my doom saying, let us sleep now.~DO~RestParty()~EXIT
+++~Or stab it if you are not careful...I hope you get not careless, I'd hate to lose you. Enough of my doom saying, let us sleep now.~DO~RestParty()~EXIT
 ++~Forget my moods, Kelemvor, we know how you can improve them, oh, yes, I know you can!~DO~RestParty()~EXIT
 
 CHAIN

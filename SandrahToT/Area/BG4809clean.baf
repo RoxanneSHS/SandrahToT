@@ -1,0 +1,9 @@
+IF
+Global("SanTotStart","Global",1)
+Global("Voloclean","BG4809",0)
+THEN
+RESPONSE #100
+SetGlobal("Voloclean","BG4809",1)
+ActionOverride("Volo",DestroySelf())
+END
+
