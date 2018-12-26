@@ -14,3 +14,14 @@ THEN
 RESPONSE #100
 Enemy()
 END
+
+IF
+GlobalGT("CVabaz","AR6005",4)
+AreaCheck("ar6005")
+Global("Getout","Locals",0)
+THEN
+RESPONSE #100
+SetGlobal("Getout","Locals",1)
+MoveToPoint([779.495])
+EscapeAreaDestroy(45)
+END

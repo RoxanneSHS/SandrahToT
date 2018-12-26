@@ -266,7 +266,7 @@ DO~SetGlobal("ToTablet1","Global",2)~
 ==ToSune~We are sure from our divinations that at least one of them and one of the tablets are in these parts of the Realms.~
 ==ToPellig~I know of two places where we might start an investigation.~
 ==CVSan25J~One may be a Bhaal temple somewhere in the vicinity of Boareskyr Bridge, Pelligram. Which is the other?~
-==ToPellig~Myrkul is worshipped by the Clan Orcs. In the Northern Woods between Secomber and Elturel there should be a stone cycle of his priests.~
+==ToPellig~Myrkul is worshipped by the Clan Orcs. In the Wood of the Dead between Secomber and Elturel there should be a stone cycle of his priests.~
 ==ToMyst~Valid places to start an investigation. We trust you in this. Sooner or later those three may become aware of your pursuit. You may be lucky - or unlucky - in that they may as well try to find and get rid of you. We can only assist you in a limited way.~
 =~Pelligram, I will entrust you with this item which will grant your company some direct access to the Weave and your spells even now.~
 ==ToPellig~The Simbul - I will be its guardian, mylady.~DO~AddJournalEntry(@030,QUEST) GiveItemCreate("Simbul","ToPellig",0,0,0) TextScreen("Tablete")~EXIT
