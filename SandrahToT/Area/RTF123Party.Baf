@@ -44,7 +44,7 @@ SetGlobal("ToMyrkFi","RTF123",1)
 CreateCreature("ohbdev04",[3493.2457],8)
 CreateCreature("ohbdev04",[3437.2387],8)
 CreateCreature("kobolda",[3355.2428],8)
-CreateCreature("ohbdev03",[2222.1817],1)
+CreateCreature("ohbdev03",[2167.1780],1)
 CreateCreature("tomyrkul",[1280.1246],13)
 END
 
