@@ -524,7 +524,7 @@ DO~SetGlobal("ToTablet1","Global",15)~
 ==ToAdon~I get so fed up with the ignorance and stupidity of those so-called gods. Who do they think they are.~
 ==ToHelm~These are the Celestial Stairs, blasphemous mortals, I will not allow any more of your words here nor your presence.~
 ==CVSan25J~HERE, YOU TIN HEADED EPITOME OF IGNORANCE.~
-=~*She hauls the tablet you have gained at Helm who has no other chance than to catch it, less it would have falled into the nothingness around the Stairs.*~
+=~*She hauls the tablet you have gained at Helm who has no other chance than to catch it, less it would have fallen into the nothingness around the Stairs.*~
 ==ToPellig~Let us leave while we still can. There is nothing we can do here any more.~
 =~And you, Helm, be a good doggie and retrieve the tablet to your master, he may give you an extra treat today for killing the Guardian of the Weave.~
 ==ToHelm~Mortals, I warned you...~DO~StartCutSceneMode() Wait(1) ScreenShake([2033.1900],40) Wait(2) FadeToColor([20.0],0) Wait(4) TextScreen("Tomyste") Wait(4) SetGlobal("Chapter","Global",34) StartCutScene("ToMoveAt")~EXIT
