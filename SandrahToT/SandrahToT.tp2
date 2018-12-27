@@ -612,3 +612,8 @@ SAY NAME1 ~Brass Key~
 SAY NAME2 ~Brass Key~
 SAY DESC ~Moander's cell key~
 
+ACTION_IF FILE_EXISTS_IN_GAME ~ddassa01.cre~ THEN BEGIN
+COPY_EXISTING ~ddassa01.cre~ ~override~
+WRITE_ASCII 0x248 ~Totgone~ #8
+END
+
