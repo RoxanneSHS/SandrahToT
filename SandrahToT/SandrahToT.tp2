@@ -267,6 +267,7 @@ COMPILE
 ~SandrahTOT/Baf/ToTorm.baf~
 ~SandrahTOT/Baf/ToBhaal.baf~
 ~SandrahTOT/Baf/TotEndBh.baf~
+~SandrahTOT/Baf/Totgone.baf~
 
 EXTEND_TOP
 ~CVSan25d.bcs~ ~SandrahTOT/Baf/CVSandrDToT.baf~
@@ -616,4 +617,7 @@ ACTION_IF FILE_EXISTS_IN_GAME ~ddassa01.cre~ THEN BEGIN
 COPY_EXISTING ~ddassa01.cre~ ~override~
 WRITE_ASCII 0x248 ~Totgone~ #8
 END
+
+COPY_EXISTING ~chalcy02.cre~ ~override~
+WRITE_ASCII 0x250 ~Totgone~ #8
 
