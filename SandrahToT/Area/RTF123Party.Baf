@@ -68,3 +68,14 @@ THEN
 RESPONSE #100
 SetGlobal("RTMoveGnoll","GLOBAL",2)
 END
+
+IF
+Global("PCstronholds","RTF123",0)
+THEN
+RESPONSE #100
+SetGlobal("PCstronholds","RTF123",1)
+SetGlobal("PCKeepOwner","GLOBAL",0)
+SetGlobal("PGFailed","GLOBAL",1)
+SetGlobal("NotifyThiefHead","GLOBAL",9)
+Continue()
+END
