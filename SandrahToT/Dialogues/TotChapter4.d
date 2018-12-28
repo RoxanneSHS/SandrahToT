@@ -240,7 +240,7 @@ IF WEIGHT #-4~Global("ToBaneHunt","Global",10)~THEN Sankaba KhalResc11
 ~There goes our capturer, it is true that in this Time of Troubles even gods can die.~
 DO~SetGlobal("ToBaneHunt","Global",11) SetGlobal("Daughresc","Tot010",1)~
 ==ToFind~There, his amulet...I must have it.~
-==Sankaba~You want the power of an evil dead god, Finder? I never would have guessed such, even if I confess, our acqaintance is still a short one.~
+==Sankaba~You want the power of an evil dead god, Finder? I never would have guessed such, even if I confess, our acquaintance is still a short one.~
 ==ToFind~It will give me the power to make my songs, tales and messages heard, Khalindra. It is the spark of a deity and by that knows neither good nor evil. It is sheer power and the user defines its alignment.~
 ==ToCyric~There you hear it, Midnight. The power of an evil god we defeat is ours to take. We do with it according to our own design.~
 ==CVSan25J~If that were only true...the dark side of an evil power may be stronger than the mortal trying to handle it. Your intention may be good at the beginning - until the power itself starts to corrupt you. Is this not what has started the whole Avatar Crisis? Those three gods, former mortals, who came into possession of Jergal's power and now just hunger for more?~
@@ -291,7 +291,7 @@ END
 
 CHAIN
 IF~Global("ToBaneHunt","Global",12) ~THEN  ToBane Tantras1
-~Those? They are still persuing us after so many mortal years?~
+~Those? They are still pursuing us after so many mortal years?~
 DO~SetGlobal("ToBaneHunt","Global",13) ~
 ==ToBhaal~Those are the same who defeated the idiot Myrkul and delivered one of the tablets to the Overfool AO.~
 ==ToBane~Not only Torm growing with each sacrifice of his stupid martyrs, no, there are also these adventurers...~
