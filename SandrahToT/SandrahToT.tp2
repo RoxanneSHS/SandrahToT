@@ -563,8 +563,8 @@ SAY NAME1 ~Ismanelda~
 SAY NAME2 ~Ismanelda~
 
 COPY ~SandrahTOT/Cre/ToHomer.cre~ ~Override~
-SAY NAME1 ~Homer Odesseiron~
-SAY NAME2 ~Homer Odesseiron~
+SAY NAME1 ~Homen Odesseiron~
+SAY NAME2 ~Homen Odesseiron~
 
 COPY ~SandrahTot/ITM/ToLiAmu.itm~ ~override~
 SAY NAME1 @019
