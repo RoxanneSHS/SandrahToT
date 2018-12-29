@@ -277,7 +277,7 @@ CHAIN
 IF~Global("TotThay","Global",6)~THEN ToHomer Totthay4
 ~More intruders? Edwin, boy, come here behind me.~
 DO~SetGlobal("TotThay","Global",7)~
-==CVSan25J~Homer Odesseiron and his nephew Edwin, I presume.~
+==CVSan25J~Homen Odesseiron and his nephew Edwin, I presume.~
 ==RTEdwin~Those unwashed Sword Coasters are just as uncivilized as you described them to me, uncle. (However, the girls outshine anything in Thay, hm.)~
 ==ToHomer~What do you want here?~
 ==ToCyric~Step aside, red robe, we have no issue with you - unless you are in league with the Bhaalists that are around here.~
