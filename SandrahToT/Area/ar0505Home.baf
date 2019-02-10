@@ -5,4 +5,4 @@ THEN
 RESPONSE #100
 SetGlobal("NoSaerk","ar0505",1)
 TriggerActivation("Saerk-Anomen3",FALSE)
-end
+END
