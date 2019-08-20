@@ -110,6 +110,11 @@ EXTEND_TOP
 EXTEND_TOP
 ~bd7200.bcs~ ~SandrahTOT/Area/bd7200tot.baf~
 
+COPY_EXISTING ~Baldur25.bcs~ ~override~
+DECOMPILE_AND_PATCH BEGIN
+REPLACE_TEXTUALLY ~!IfValidForPartyDialogue(Player1)~ ~False()~
+END
+
 COPY ~SandrahToT\Area/TOT001.ARE~ ~override\TOT001.ARE~
 COPY ~SandrahToT\Area/TOT001.mos~ ~override\TOT001.mos~
 COPY ~SandrahToT\Area/TOT001.tis~ ~override\TOT001.tis~

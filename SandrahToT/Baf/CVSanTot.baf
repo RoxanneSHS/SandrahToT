@@ -3,6 +3,11 @@ Die()
 THEN
 RESPONSE #100
 Kill(Player1)
+Kill(Player2)
+Kill(Player3)
+Kill(Player4)
+Kill(Player5)
+Kill(Player6)
 END
 
 IF
