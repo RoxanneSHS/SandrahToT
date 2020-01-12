@@ -19,7 +19,7 @@ EXTEND_TOP
 ~BG4100.bcs~ ~SandrahTOT/Area/ara100lini.baf~
 EXTEND_BOTTOM
 ~CVRoa1.bcs~ ~SandrahTOT/Area/CVRoa1lini.baf~
-EXTEND_BOTTOM
+EXTEND_TOP
 ~CVElm3.bcs~ ~SandrahTOT/Area/CVElm3Reset.baf~
 EXTEND_BOTTOM
 ~CVElm1.bcs~ ~SandrahTOT/Area/CVElm1Reset.baf~
