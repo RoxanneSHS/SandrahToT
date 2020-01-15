@@ -34,7 +34,7 @@ IF~Global("ToKelemcurse","Global",6)~THEN TOCyric App1
 ~Say, my good Midnight, do you appreciate the completely animalistic passion of your companion during your nights together, hihi?~
 DO~SetGlobal("ToKelemcurse","Global",7)~
 ==CVSan25J~Is that your sensitive attempt to ask me about Kelemvor's transformation?~
-==TOCyric~I know some women like that, the sweat, strength, power of the bull, the lion, yeah, the panther. That's what they seek in a man. Female instinct, take the strongest to defeat yourself and your children.~
+==TOCyric~I know some women like that, the sweat, strength, power of the bull, the lion, yeah, the panther. That's what they seek in a man. Female instinct, take the strongest to protect yourself and your children.~
 ==CVSan25J~Cyric, I have no children, I can quite well defend myself...and, by the way, Kelemvor's curse may rather been seen as a weakness than an advantage.~
 ==TOCyric~Hihi, and this, my beloved heroine, is exactly my point - why should a woman like you need him?~
 END
