@@ -1,5 +1,23 @@
 IF
 Global("SanTotStart","Global",1)
+GlobalLT("TOLiriquest","Global",12)
+InMyArea("RTElles")
+THEN
+RESPONSE #100
+ActionOverride("RTElles",DestroySelf())
+END
+
+IF
+Global("SanTotStart","Global",1)
+GlobalLT("TOLiriquest","Global",12)
+InMyArea("P#Deher")
+THEN
+RESPONSE #100
+ActionOverride("P#Deher",DestroySelf())
+END
+
+IF
+Global("SanTotStart","Global",1)
 Global("TOLiriquest","Global",11)
 THEN
 RESPONSE #100
