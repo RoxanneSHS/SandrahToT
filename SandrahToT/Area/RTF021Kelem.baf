@@ -8,6 +8,14 @@ CreateCreature("cvguntt",[1301.1381],4)
 END
 
 IF
+Global("EgeissagFightPlayer1","GLOBAL",1)
+Global("SanTotStart","Global",1)
+THEN
+RESPONSE #100
+SetGlobal("EgeissagFightPlayer1","GLOBAL",0)
+END
+
+IF
 Global("ToKelemcurse","Global",2)
 THEN
 RESPONSE #100
