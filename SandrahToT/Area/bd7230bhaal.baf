@@ -59,13 +59,7 @@ Global("TotJail","bd7230",0)
 THEN
 RESPONSE #100
 SetGlobal("TotJail","bd7230",1)
-CloseDoor("Door08")
-CloseDoor("Door09")
-CloseDoor("Door10")
-Wait(1)
-Lock("Door08")
-Lock("Door09")
-Lock("Door10")
+CreateCreature("Priilm",[2234.488],NW)
 Continue()
 END
 
@@ -75,5 +69,12 @@ THEN
 RESPONSE #100
 SetGlobal("TotJail","bd7230",2)
 ActionOverride("Chest_06",CreateItem("bdkey11",0,0,0))
-CreateCreature("Priilm",[2237.512],6)
+Wait(1)
+CloseDoor("Door08")
+CloseDoor("Door09")
+CloseDoor("Door10")
+Wait(1)
+Lock("Door08")
+Lock("Door09")
+Lock("Door10")
 END
