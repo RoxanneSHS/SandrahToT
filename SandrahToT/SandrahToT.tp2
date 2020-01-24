@@ -544,13 +544,13 @@ SAY NAME1 ~Martyr of Torm~
 SAY NAME2 ~Martyr of Torm~
 
 COPY_EXISTING ~boybax.cre~ ~override/boypro.cre~
-SAY NAME1 ~ Martyr's Progeny~
-SAY NAME2 ~ Martyr's Progeny~
+SAY NAME1 ~Martyr's Progeny~
+SAY NAME2 ~Martyr's Progeny~
 WRITE_ASCII 0x250 ~boypro~
 
 COPY_EXISTING ~girba1.cre~ ~override/girpro.cre~
-SAY NAME1 ~ Martyr's Progeny~
-SAY NAME2 ~ Martyr's Progeny~
+SAY NAME1 ~Martyr's Progeny~
+SAY NAME2 ~Martyr's Progeny~
 WRITE_ASCII 0x250 ~boypro~
 
 COPY_EXISTING ~Acqxzah1.cre~ ~override~
