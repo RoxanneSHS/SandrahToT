@@ -38,7 +38,7 @@ Global("ToBhaalhunt","Global",3)
 InMyArea("sendai9")
 OR(2)
 RealGlobalTimerExpired("Sendgone","ar60pb")
-HPPercentLT("sendai9",60)
+HPPercentLT("sendai9",90)
 THEN
 RESPONSE #100
 ActionOverride("sendai9",ReallyForceSpell(Myself,DRYAD_TELEPORT))
