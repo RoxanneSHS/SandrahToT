@@ -4,6 +4,7 @@ BEGIN CVSlaw
 CHAIN
 IF~Global("ToLini","BG4100",2)~THEN Tolini Pris1
 ~No, you will not get these weapons from me!!~
+DO~SetGlobal("ToLini","BG4100",3)~ 
 ==CVSlaw~Don't make me laugh, drow, you will need none of them while slaving in the mines.~
 ==Tolini~I will never be your slave, I will rather go down fighting.~
 ==CVSlaw~That's what your companions said as well, those corpses you now see all around you. Better give up while you still can.~
