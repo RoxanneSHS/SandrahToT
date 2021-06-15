@@ -72,7 +72,7 @@ EXTEND_TOP
 EXTEND_TOP
 ~bg2614.bcs~ ~SandrahTOT/Area/BG2614Alaun.baf~
 EXTEND_TOP
-~bg2700.bcs~ ~SandrahTOT/Area/bg2700tot.baf~ USING ~SandrahRTF/TRA/RTF-setup.tra~
+~bg2700.bcs~ ~SandrahTOT/Area/bg2700tot.baf~ USING ~SandrahRTF/TRA/%LANGUAGE%/RTF-setup.tra~
 EXTEND_TOP
 ~ar5202.bcs~ ~SandrahTOT/Area/ar5202nya.baf~
 EXTEND_TOP
@@ -98,7 +98,7 @@ EXTEND_TOP
 EXTEND_TOP
 ~RTF510.bcs~ ~SandrahTOT/Area/RTF510Shaba.baf~
 EXTEND_TOP
-~RTF060.bcs~ ~SandrahTOT/Area/RTF060Tot.baf~ USING ~SandrahRTF/TRA/RTF-setup.tra~
+~RTF060.bcs~ ~SandrahTOT/Area/RTF060Tot.baf~ USING ~SandrahRTF/TRA/%LANGUAGE%/RTF-setup.tra~
 EXTEND_TOP
 ~RTF070.bcs~ ~SandrahTOT/Area/RTF070Tot.baf~
 EXTEND_TOP
