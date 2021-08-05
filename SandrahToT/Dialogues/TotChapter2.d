@@ -38,7 +38,7 @@ END
 CHAIN
 IF~Global("TOKelemQuest","Global",2)~THEN ToKelem Whatwrong1
 ~Some of your reactions in the elven city were really disturbing, my love. You seem to know more than...how can I say...it is like you were a fortune teller.~
-DO~SetGlobal("TOKelemQuest","Global",3) AddJournalEntry(@024,QUEST) RealSetGlobalTimer("ToGodsearchT","Global",600)~
+DO~SetGlobal("TOKelemQuest","Global",3) AddJournalEntry(@3024,QUEST) RealSetGlobalTimer("ToGodsearchT","Global",600)~
 ==CVSan25J~These things appear like some deja vu at times, like I met people before whom I have never seen.~
 ==ToKelem~This Bodhi and her brother Irenicus?~
 ==CVSan25J~They play a role in my life, and they are dangerous, more I cannot say.~
@@ -102,8 +102,8 @@ DO~SetGlobal("TOKelemQuest","Global",5)RealSetGlobalTimer("ToGodsearchT","Global
 ==CVSan25J~I had never considered a goddess to be a being needing protection, but you may well be right. If your goddess is vulnerable on the Prime she better not cross the wrong mortals or even one of her evil competitors. What do you propose?~
 ==ToAdon~There is a Sune temple in the north of Waterdeep. I suggest to go there to gain information. I have no plan yet laid out, it is too early for that. We should just try to gather the facts about the whole situation.~
 END
-++~A valid proposal, we may as well check for my goddess as well.~DO~AddJournalEntry(@024,QUEST)~EXIT
-++~I was considering Waterdeep already to inquire at Mystra's temple - we put Sune's on our list for visiting.~DO~AddJournalEntry(@024,QUEST)~EXIT
+++~A valid proposal, we may as well check for my goddess as well.~DO~AddJournalEntry(@3024,QUEST)~EXIT
+++~I was considering Waterdeep already to inquire at Mystra's temple - we put Sune's on our list for visiting.~DO~AddJournalEntry(@3024,QUEST)~EXIT
 
 CHAIN
 IF~Global("ToGodwalk","Global",1)~THEN ToGoWa02 Umber1
@@ -142,9 +142,9 @@ DO~SetGlobal("ToGodwalk","Global",4)~
 ==TOCyric~Will you hold my hand, my dear, while we watch that spectacle?~
 ==ToPellig~No, but I may continue to endure your company if you - like the rest of our group - embark on the quest to find the culprits and retrieve the tablets.~
 END
-++~Pelligram is right, it is the only way to get those overpowered nursery childs back to where they belong and where they can do only limited harm to the mortals.~DO~AddJournalEntry(@025,QUEST)~EXIT
-++~Not only would we do the Prime a favour, we may gain ourselves significantly in the process.~DO~AddJournalEntry(@025,QUEST)~EXIT
-++~Apart from AO's gratitude we may even get the chance to eliminate some evil bastards while they are vulnerable.~DO~AddJournalEntry(@025,QUEST)~EXIT
+++~Pelligram is right, it is the only way to get those overpowered nursery childs back to where they belong and where they can do only limited harm to the mortals.~DO~AddJournalEntry(@3025,QUEST)~EXIT
+++~Not only would we do the Prime a favour, we may gain ourselves significantly in the process.~DO~AddJournalEntry(@3025,QUEST)~EXIT
+++~Apart from AO's gratitude we may even get the chance to eliminate some evil bastards while they are vulnerable.~DO~AddJournalEntry(@3025,QUEST)~EXIT
 
 CHAIN
 IF WEIGHT #-2~Global("ToGodwalk","Global",5)~THEN CVPotngi Malar
@@ -165,7 +165,7 @@ END
 
 CHAIN
 IF~~THEN CVPotngi Malar2
-~These gathered forces may be some challenge even for you, friends. You should get some silver weapons for this task. And you may have use of these potions if you decide to face them.~DO~GiveItemCreate("potn55",Player1,3,0,0) AddJournalEntry(@026,QUEST) EscapeAreaDestroy(60)~EXIT
+~These gathered forces may be some challenge even for you, friends. You should get some silver weapons for this task. And you may have use of these potions if you decide to face them.~DO~GiveItemCreate("potn55",Player1,3,0,0) AddJournalEntry(@3026,QUEST) EscapeAreaDestroy(60)~EXIT
 
 CHAIN
 IF~Global("ToGodwalk","Global",7)~THEN Tomalar Malar3
@@ -204,7 +204,7 @@ DO~SetGlobal("ToWaukGo","Global",4)~
 =~The portal is ready for your use.~
 ==ToCyric~Hihi, not an ambush like those priests were made to believe but a clever escape plan. My respect, Waukeen.~
 ==ToAdon~This kidnapping obviously is a business case of a quite peculiar nature...~
-==Grazzt02~Step through the portal, fair Golden Lady, I will take care of these unexpected intruders.~DO~AddJournalEntry(@027,QUEST) ClearAllActions() StartCutsceneMode() StartCutScene("ToWaEsc")~EXIT
+==Grazzt02~Step through the portal, fair Golden Lady, I will take care of these unexpected intruders.~DO~AddJournalEntry(@3027,QUEST) ClearAllActions() StartCutsceneMode() StartCutScene("ToWaEsc")~EXIT
 
 CHAIN
 IF WEIGHT #-4~Global("ToWaukGo","Global",6)~THEN CVWDWauk WauGo2
@@ -269,7 +269,7 @@ DO~SetGlobal("ToTablet1","Global",2)~
 ==ToPellig~Myrkul is worshipped by the Clan Orcs. In the Wood of the Dead between Secomber and Elturel there should be a stone cycle of his priests.~
 ==ToMyst~Valid places to start an investigation. We trust you in this. Sooner or later those three may become aware of your pursuit. You may be lucky - or unlucky - in that they may as well try to find and get rid of you. We can only assist you in a limited way.~
 =~Pelligram, I will entrust you with this item which will grant your company some direct access to the Weave and your spells even now.~
-==ToPellig~The Simbul - I will be its guardian, mylady.~DO~AddJournalEntry(@030,QUEST) GiveItemCreate("Simbul","ToPellig",0,0,0) TextScreen("Tablete")~EXIT
+==ToPellig~The Simbul - I will be its guardian, mylady.~DO~AddJournalEntry(@3030,QUEST) GiveItemCreate("Simbul","ToPellig",0,0,0) TextScreen("Tablete")~EXIT
 
 CHAIN
 IF~Global("ToOrcActive","ar01pb",2) ~THEN CVShPri InTot1

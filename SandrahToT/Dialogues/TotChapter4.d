@@ -41,7 +41,7 @@ IF~~THEN ToCyric Reunite2
 ==ToCyric~Really?~
 ==ToPellig~Anyway, Tantras would be the place we should go, either to capture Bane or even better to capture Bane AND the tablet.~
 END
-++~The way to reach Tantras from here would be to sail the Sea of Fallen Stars passing Westgate and the Pirate Isles and then turning north towards Ravens Bluff. And, the nearest place to embark on a ship would be Mornbryn's Shield east of Eversult.~DO~RevealAreaOnMap("Tot006") AddJournalEntry(@040,QUEST)~EXIT
+++~The way to reach Tantras from here would be to sail the Sea of Fallen Stars passing Westgate and the Pirate Isles and then turning north towards Ravens Bluff. And, the nearest place to embark on a ship would be Mornbryn's Shield east of Eversult.~DO~RevealAreaOnMap("Tot006") AddJournalEntry(@3040,QUEST)~EXIT
 
 CHAIN
 IF~Global("ToBaneHunt","Global",4)~THEN ToPellig WhoFath1
@@ -134,12 +134,12 @@ END
 CHAIN
 IF~~THEN Acqxzah1 HireShip3
 ~Bring me my son and I'll give you passages to the Nine Hells and back if you want.~
-==RT38Inn~The road into town is just north of my inn and you cannot miss the temple at the market place.~DO~AddJournalEntry(@044,QUEST)~EXIT
+==RT38Inn~The road into town is just north of my inn and you cannot miss the temple at the market place.~DO~AddJournalEntry(@3044,QUEST)~EXIT
 
 CHAIN
 IF WEIGHT #-2~Global("ToBaneHunt","Global",12) Global("Sailors","RTF381",2)~THEN Acqxzah1 HireShip11
 ~My son has returned, you have saved him. Where ever you want to travel, I will take you.~
-DO~SetGlobal("Sailors","RTF381",3) EraseJournalEntry(@044)~
+DO~SetGlobal("Sailors","RTF381",3) EraseJournalEntry(@3044)~
 END
 ++~We need to rest and purchase some items first. We will come back to you in a while.~EXIT
 ++~We want to sail to Tantras.~+ HireShip13
@@ -155,7 +155,7 @@ CHAIN
 IF~~THEN Acqxzah1 HireShip13
 ~Aye, Tantras...~
 DO~SetGlobal("Sailors","RTF381",4)~
-=~I heard there are strange and dangerous things going on there. The harbour is closed it is said. But for you - my plate keel boat can drop you on a shore just north of the town.~DO~AddJournalEntry(@047,QUEST) ClearAllActions() StartCutSceneMode() StartCutScene("ToMovTan") ~EXIT
+=~I heard there are strange and dangerous things going on there. The harbour is closed it is said. But for you - my plate keel boat can drop you on a shore just north of the town.~DO~AddJournalEntry(@3047,QUEST) ClearAllActions() StartCutSceneMode() StartCutScene("ToMovTan") ~EXIT
 
 CHAIN
 IF~Global("PriorTot","rtf145",2)~THEN ToOlive Help1

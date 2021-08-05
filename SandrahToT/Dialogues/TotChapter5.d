@@ -61,8 +61,8 @@ CHAIN
 IF~~THEN ToGorion Meetbridge6
 ~The Bhaalists under the priestess Nyalee have recently overrun a temple of Mystra in the Forest of Mir south of Saradush taking advantage of the Lady of Mysteries' current absence.~
 END
-++~It would not astonish me if they used fire giants to accomplish it. We should go there.~DO ~AddJournalEntry(@051,QUEST)~EXIT
-++~A good place to raise fire giants far away from prying eyes. We should go there.~DO ~AddJournalEntry(@051,QUEST)~EXIT
+++~It would not astonish me if they used fire giants to accomplish it. We should go there.~DO ~AddJournalEntry(@3051,QUEST)~EXIT
+++~A good place to raise fire giants far away from prying eyes. We should go there.~DO ~AddJournalEntry(@3051,QUEST)~EXIT
 
 CHAIN
 IF WEIGHT #-5~Global("Tomonst","ar5202",1)~THEN HGNya01 MeetTot

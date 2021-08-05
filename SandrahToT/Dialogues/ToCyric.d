@@ -155,7 +155,7 @@ DO~SetGlobal("CyrElmi","ar0505",3)~
 CHAIN
 IF~Global("ToBaneHunt","Global",16) ~THEN ToCyric Banedone1
 ~Another bunch of foolish celestials gone. I will soon claim Bane's portfolio from AO.~
-DO~SetGlobal("ToBaneHunt","Global",17) EraseJournalEntry(@040) EraseJournalEntry(@047) SetGlobal("Chapter","Global",35) AddJournalEntry(@050,QUEST)~
+DO~SetGlobal("ToBaneHunt","Global",17) EraseJournalEntry(@3040) EraseJournalEntry(@3047) SetGlobal("Chapter","Global",35) AddJournalEntry(@3050,QUEST)~
 ==ToPellig~Your ambition is still there? You despise them so much and still want to be one of them?~
 ==TOCyric~They were once mortals but have proven they were not worth their ascension. WE have proven we're better, hihi. There is replacement required and tell me, Pelli-darling, who will be better qualified than those who slay the fools and retrieve the tablets?~
 ==ToAdon~I would wait with making demands until we really finished the quest - for myself, I would not want to join the *circle* of those useless deities, evil or good. The only thing I agree with, Cyric, is that those fools are a useless bunch.~

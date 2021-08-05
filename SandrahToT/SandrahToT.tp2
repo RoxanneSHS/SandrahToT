@@ -244,7 +244,7 @@ APPEND ~pdialog.2da~
 ~TODrizzt TODriztP TODrizzt TODriztD TODriztP TODrizzt TODriztD TODrizzt~
 UNLESS ~TODrizzt~
 
-ADD_JOURNAL @015 @016 @020 @024 @025 @026 @027 @030 @040 @044 @047 @050 @051 @052 USING ~SandrahToT/TRA/SandrahToT.tra~
+ADD_JOURNAL @3015 @3016 @3020 @3024 @3025 @3026 @3027 @3030 @3040 @3044 @3047 @3050 @3051 @3052 USING ~SandrahToT/TRA/SandrahToT.tra~
 
 COMPILE
 ~SandrahTOT/Baf/CVSantot.baf~
@@ -323,8 +323,8 @@ REPLACE ~ 99996~ @013
 REPLACE ~ 99996~ @013
 
 COPY ~SandrahTOT/Baf/Tablete.2DA~ ~override~
-REPLACE ~ 289371~ @030
-REPLACE ~ 289371~ @030
+REPLACE ~ 289371~ @3030
+REPLACE ~ 289371~ @3030
 
 COPY ~SandrahTOT/Baf/Tomyste.2DA~ ~override~
 REPLACE ~ 289371~ @038

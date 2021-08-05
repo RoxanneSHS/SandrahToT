@@ -41,5 +41,5 @@ ActionOverride("Tokelem",DestroyItem("ImoSlHP1"))
 Wait(2)
 ApplySpellRES("CVSLEEP","Tokelem")
 SetGlobal("ToKelemcurse","Global",4)
-AddJournalEntry(@016,QUEST)
+AddJournalEntry(@3016,QUEST)
 END

@@ -12,7 +12,7 @@ DO~SetGlobal("ToBhaalFin","Global",3)~
 ==ToElmi~Yes, they still are, the lights of my life. I am aware of the loss I have to face once the spawn is born...Khalindra...the children will be my reason to carry on...~
 ==CVSan25J~You will be blessed by a goddess for that, Elminster. You and the harpers will be their guardians. Those two and another one you will find in Bhaal's temple near Boareskyr Bridge.~
 ==ToElmi~Thou need to take a similar route to find and eliminate the Slayer. He is on his way to Dragonspear Castle to reach a portal to Tantras. He needs to pass Boareskyr Bridge to get there.~DO~EscapeAreaObject("WDTown")~
-==CVSan25J~We will overtake him and await him at the bridge. Bhaal ends there and will never return.~DO~AddJournalEntry(@052,QUEST)EraseJournalEntry(@51)~EXIT
+==CVSan25J~We will overtake him and await him at the bridge. Bhaal ends there and will never return.~DO~AddJournalEntry(@3052,QUEST)EraseJournalEntry(@51)~EXIT
 
 CHAIN
 IF~Global("ToBhaalFin","Global",4)~THEN ToCyric Boarshow1

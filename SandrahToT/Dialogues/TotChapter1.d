@@ -77,8 +77,8 @@ IF~~THEN Tolini TOLiniQuest3
 =~...the Dragon's Hoard are an organisation specialised in assassination, slave trade and the retrieval of *unachievable* artefacts. They are led by a drow wizard named Nisstyre. They are rumoured to have strongholds at Skullport and High Forest. And that, my friends, is about all I know about them. ~
 =~Ah, and yes, they have Windwalker and they knew I was after it, that is why they captured me and tried to force me into slavery in their new mine.~
 END
-++~Provided we take up that quest, the place to start investigating would be Waterdeep. Skullport would be somewhere within Undermountain.~DO~AddJournalEntry(@015,QUEST) AddexperienceParty(6000) RestParty()~EXIT
-++~The High Forest is out of question without any further hints. That would be searching a needle in a haystack. Skullport is unaccessible they say...Or shall I say *it was* - because WE never tried until now.~DO~AddJournalEntry(@015,QUEST) AddexperienceParty(7000) RestParty()~EXIT
+++~Provided we take up that quest, the place to start investigating would be Waterdeep. Skullport would be somewhere within Undermountain.~DO~AddJournalEntry(@3015,QUEST) AddexperienceParty(6000) RestParty()~EXIT
+++~The High Forest is out of question without any further hints. That would be searching a needle in a haystack. Skullport is unaccessible they say...Or shall I say *it was* - because WE never tried until now.~DO~AddJournalEntry(@3015,QUEST) AddexperienceParty(7000) RestParty()~EXIT
 ++~I am not sure we should embark on this quest.~DO~IncrementGlobal("Sanpoints","Global",-1) ScreenShake([1600.1604],5)Wait(2) ReallyForceSpellRES("TOSpint","CVSandr") ~EXTERN Tocyric TOLiniQuest4
 
 CHAIN
@@ -86,8 +86,8 @@ IF~~THEN Tocyric TOLiniQuest4
 ~I'd call everyone aside our beloved Midnight a coward for such words, hihi, but maybe our heroine is just a bit too cautious today. My dear, no risk no fun!~
 ==TOPellig~For once mad Cyric is right, Midnight. There is a risk, but Eilistraee's followers are very close to those of your own goddess Mystra, it is almost as if you were tasked by her.~
 END
-++~So be it. Let us go to Waterdeep.~DO~AddJournalEntry(@015,QUEST) RestParty()~EXIT
-++~This may really be a quest for Mystra, so be it.~DO~AddJournalEntry(@015,QUEST) RestParty()~EXIT
+++~So be it. Let us go to Waterdeep.~DO~AddJournalEntry(@3015,QUEST) RestParty()~EXIT
+++~This may really be a quest for Mystra, so be it.~DO~AddJournalEntry(@3015,QUEST) RestParty()~EXIT
 
 CHAIN
 IF~Global("TOLiriquest","Global",4)~THEN Tolini TOLiniQuest10
@@ -211,7 +211,7 @@ DO~SetGlobal("TOLiriquest","Global",11)~
 ==ToKelem~When I look into Liriel's face, I see despair. There may be some difficulty expected with that place we seek.~
 ==Tolini~There may or maybe not. (Sigh) Maybe in your company we have a chance. The place is in the High Forest of Tethir.~
 ==CVSan25J~Elven territory, not the best place for a drow to visit.~
-==Tolini~You hit the spot, Midnight. We need to go to a clearing just outside of Suldanessalar. It is not to be expected that we can go there unnoticed by my surface brothers. I can just hope, they give a dark elf the chance to declare her alignment before they perforate me with arrows.~DO~AddexperienceParty(12200) AddJournalEntry(@020,QUEST)~EXIT
+==Tolini~You hit the spot, Midnight. We need to go to a clearing just outside of Suldanessalar. It is not to be expected that we can go there unnoticed by my surface brothers. I can just hope, they give a dark elf the chance to declare her alignment before they perforate me with arrows.~DO~AddexperienceParty(12200) AddJournalEntry(@3020,QUEST)~EXIT
 
 CHAIN
 IF WEIGHT #-7~Global("TOLiriquest","Global",12)~THEN C6Elhan2 Found5

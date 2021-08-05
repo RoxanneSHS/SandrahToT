@@ -24,7 +24,7 @@ THEN
 RESPONSE #100
 SetGlobal("adalon","ar2807",5)
 TriggerActivation("tran2800",TRUE)
-EraseJournalEntry(@020)
-EraseJournalEntry(@015)
+EraseJournalEntry(@3020)
+EraseJournalEntry(@3015)
 AddexperienceParty(40000)
 END
