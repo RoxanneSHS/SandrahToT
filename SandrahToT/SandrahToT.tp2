@@ -3,10 +3,11 @@
 BACKUP ~SandrahTOT/backup~
 AUTHOR ~Roxanne - https://baldursextendedworld.com/Sandrah/ or roxanne@baldursextendedworld.com~
 
-VERSION ~v2.05~
+VERSION ~v2.06~
 AUTO_TRA ~SandrahTot/TRA/%s~
 
-LANGUAGE ~English~ ~english~ ~SandrahTot/Tra/SandrahTot.tra~
+LANGUAGE ~English~ ~english~ ~SandrahTot/Tra/English/SandrahTot.tra~
+LANGUAGE ~Russian~ ~russian~ ~SandrahTot/Tra/Russian/SandrahTot.tra~
 
 BEGIN
 ~Sandrah Time of Troubles Revisited Areas~
@@ -152,8 +153,8 @@ COMPILE ~SandrahToT\Area/TOT005.BAF~
 COMPILE ~SandrahToT\Area/TOTG05.BAF~
 
 COPY ~SandrahToT\Area/TOT006.ARE~ ~override\TOT006.ARE~
-     SAY 0x3e0c ~Mornbryn's Shield~
-     SAY 0x3dd8 ~Tantras~
+     SAY 0x3e0c  @058
+     SAY 0x3dd8  @059
 COPY ~SandrahToT\Area/TOT006.mos~ ~override\TOT006.mos~
 COPY ~SandrahToT\Area/TOT006.tis~ ~override\TOT006.tis~
 COPY ~SandrahToT\Area/TOT006.wed~ ~override\TOT006.wed~
@@ -244,7 +245,7 @@ APPEND ~pdialog.2da~
 ~TODrizzt TODriztP TODrizzt TODriztD TODriztP TODrizzt TODriztD TODrizzt~
 UNLESS ~TODrizzt~
 
-ADD_JOURNAL @3015 @3016 @3020 @3024 @3025 @3026 @3027 @3030 @3040 @3044 @3047 @3050 @3051 @3052 USING ~SandrahToT/TRA/SandrahToT.tra~
+ADD_JOURNAL @3015 @3016 @3020 @3024 @3025 @3026 @3027 @3030 @3040 @3044 @3047 @3050 @3051 @3052 USING ~SandrahToT/TRA/%LANGUAGE%/SandrahToT.tra~
 
 COMPILE
 ~SandrahTOT/Baf/CVSantot.baf~
@@ -357,23 +358,23 @@ REPLACE ~ 99993~ @056
 COPY ~SandrahTOT/Misc~ ~Override~
 
 COPY ~SandrahTOT/Cre/Toadon.cre~ ~Override~
-SAY NAME1 Adon
-SAY NAME2 Adon
+SAY NAME1 @060
+SAY NAME2 @060
 SAY BIO @004
 
 COPY ~SandrahTOT/Cre/Tokelem.cre~ ~Override~
-SAY NAME1 Kelemvor
-SAY NAME2 Kelemvor
+SAY NAME1 @061
+SAY NAME2 @061
 SAY BIO @005
 
 COPY ~SandrahTOT/Cre/Tocyric.cre~ ~Override~
-SAY NAME1 Cyric
-SAY NAME2 Cyric
+SAY NAME1 @062
+SAY NAME2 @062
 SAY BIO @006
 
 COPY ~SandrahTOT/Cre/ToPellig.CRE~ ~override~
-SAY NAME1 Pelligram
-SAY NAME2 Pelligram
+SAY NAME1 @063
+SAY NAME2 @063
 SAY BIO @007
 
 COPY ~SandrahTOT/Cre/ToLini.CRE~ ~override~
@@ -386,28 +387,28 @@ SAY NAME1 @008
 SAY NAME2 @008
 
 COPY ~SandrahTOT/Cre/Ammerc77.cre~ ~Override~
-SAY NAME1 ~Mercenary~
-SAY NAME2 ~Mercenary~
+SAY NAME1 @064
+SAY NAME2 @064
 
 COPY ~SandrahTOT/Cre/CVBandf5.cre~ ~Override~
-SAY NAME1 ~Dragon's Hoard Lieutenant~
-SAY NAME2 ~Dragon's Hoard Lieutenant~
+SAY NAME1 @065
+SAY NAME2 @065
 
 COPY ~SandrahTOT/Cre/CVGuntt.cre~ ~Override~
-SAY NAME1 ~Guntharr Lyonsbane~
-SAY NAME2 ~Guntharr Lyonsbane~
+SAY NAME1 @066
+SAY NAME2 @066
 
 COPY ~SandrahTOT/Cre/TodrowL.cre~ ~Override~
-SAY NAME1 ~Tsabrak~
-SAY NAME2 ~Tsabrak~
+SAY NAME1 @067
+SAY NAME2 @067
 
 COPY ~SandrahTOT/Cre/ToNyssty.cre~ ~Override~
-SAY NAME1 ~Nisstyre~
-SAY NAME2 ~Nisstyre~
+SAY NAME1 @068
+SAY NAME2 @068
 
 COPY ~SandrahTOT/Cre/Todrizzt.cre~ ~Override~
-SAY NAME1 Drizzt
-SAY NAME2 Drizzt
+SAY NAME1 #12264
+SAY NAME2 #12264
 SAY BIO @017
 
 COPY ~SandrahTOT/Cre/Toiren.cre~ ~Override~
@@ -415,163 +416,163 @@ SAY NAME1 @021
 SAY NAME2 @021
 
 COPY ~SandrahTOT/Cre/Tobodhi.cre~ ~Override~
-SAY NAME1 Bodhi
-SAY NAME2 Bodhi
+SAY NAME1 #22092
+SAY NAME2 #22092
 
 COPY ~SandrahTOT/Cre/ToCente.cre~ ~Override~
-SAY NAME1 ~Centeol~
-SAY NAME2 ~Centeol~
+SAY NAME1 #12242
+SAY NAME2 #12242
 
 COPY ~SandrahTOT/Cre/Togowa01.cre~ ~Override~
-SAY NAME1 Pirat
-SAY NAME2 Pirat
+SAY NAME1 #47475
+SAY NAME2 #47475
 
 COPY ~SandrahTOT/Cre/Togowa02.cre~ ~Override~
-SAY NAME1 Pirat
-SAY NAME2 Pirat
+SAY NAME1 #47475
+SAY NAME2 #47475
 
 COPY ~SandrahTOT/Cre/Tomalar.cre~ ~Override~
-SAY NAME1 Malar
-SAY NAME2 Malar
+SAY NAME1 @069
+SAY NAME2 @069
 
 COPY ~SandrahTOT/Cre/Towaukee.cre~ ~Override~
-SAY NAME1 ~Waukeen~
-SAY NAME2 ~Waukeen~
+SAY NAME1 @070
+SAY NAME2 @070
 
 COPY ~SandrahTOT/Cre/CVDrud4.cre~ ~Override~
-SAY NAME1 ~Shadow Druid~
-SAY NAME2 ~Shadow Druid~
+SAY NAME1 #43845
+SAY NAME2 #43845
 
 COPY ~SandrahTOT/Cre/Tomyst.cre~ ~Override~
-SAY NAME1 Mystra
-SAY NAME2 Mystra
+SAY NAME1 @071
+SAY NAME2 @071
 
 COPY ~SandrahTOT/Cre/Tosune.cre~ ~Override~
-SAY NAME1 Sune
-SAY NAME2 Sune
+SAY NAME1 @072
+SAY NAME2 @072
 
 COPY ~SandrahTOT/Cre/Tobhaal.cre~ ~Override~
-SAY NAME1 Bhaal
-SAY NAME2 Bhaal
+SAY NAME1 #5058
+SAY NAME2 #5058
 
 COPY ~SandrahTOT/Cre/Toalaun.cre~ ~Override~
-SAY NAME1 Ulraunt
-SAY NAME2 Ulraunt
+SAY NAME1 #8365
+SAY NAME2 #8365
 
 COPY ~SandrahTOT/Cre/Toaliann.cre~ ~Override~
-SAY NAME1 Alianna
-SAY NAME2 Alianna
+SAY NAME1 #69991
+SAY NAME2 #69991
 
 COPY ~SandrahTOT/Cre/Tosarevm.cre~ ~Override~
-SAY NAME1 Saliera
-SAY NAME2 Saliera
+SAY NAME1 @073
+SAY NAME2 @073
 
 COPY ~SandrahTOT/Cre/Totmel.cre~ ~Override~
-SAY NAME1 Melissan
-SAY NAME2 Melissan
+SAY NAME1 #69026
+SAY NAME2 #69026
 
 COPY ~SandrahTOT/Cre/ToHelm.cre~ ~Override~
-SAY NAME1 Helm
-SAY NAME2 Helm
+SAY NAME1 @074
+SAY NAME2 @074
 
 COPY ~SandrahTOT/Cre/ToBane.cre~ ~Override~
-SAY NAME1 Bane
-SAY NAME2 Bane
+SAY NAME1 @075
+SAY NAME2 @075
 
 COPY ~SandrahTOT/Cre/ToTorm.cre~ ~Override~
-SAY NAME1 Torm
-SAY NAME2 Torm
+SAY NAME1 @076
+SAY NAME2 @076
 
 COPY ~SandrahTOT/Cre/ToMyrkul.cre~ ~Override~
-SAY NAME1 Myrkul
-SAY NAME2 Myrkul
+SAY NAME1 @077
+SAY NAME2 @077
 
 COPY ~SandrahTOT/Cre/ToPriHel.cre~ ~Override~
-SAY NAME1 ~Priest of Helm~
-SAY NAME2 ~Priest of Helm~
+SAY NAME1 #11418
+SAY NAME2 #11418
 
 COPY ~SandrahTOT/Cre/ToDragba.cre~ ~Override~
-SAY NAME1 ~Brown Dragon~
-SAY NAME2 ~Brown Dragon~
+SAY NAME1 #67085
+SAY NAME2 #67085
 
 COPY ~SandrahTOT/Cre/Toabaz.cre~ ~Override~
-SAY NAME1 ~Abazigal~
-SAY NAME2 ~Abazigal~
+SAY NAME1 #70750
+SAY NAME2 #70750
 
 COPY ~SandrahTOT/Cre/ToDedMon.cre~ ~Override~
-SAY NAME1 ~Monk of Oghma~
-SAY NAME2 ~Monk of Oghma~
+SAY NAME1 @078
+SAY NAME2 @078
 
 COPY ~SandrahTOT/Cre/ToElmi.cre~ ~Override~
-SAY NAME1 ~Elminster~
-SAY NAME2 ~Elminster~
+SAY NAME1 #12265
+SAY NAME2 #12265
 
 COPY_EXISTING ~innke2.cre~ ~override/ToInnke.cre~
-SAY NAME1 Gustaf
-SAY NAME2 Gustaf
+SAY NAME1 @079
+SAY NAME2 @079
 WRITE_ASCII 0x2cc ~Toinnke~
 
 COPY ~SandrahTOT/Cre/ToOlive.cre~ ~Override~
-SAY NAME1 ~Olive Ruskettle~
-SAY NAME2 ~Olive Ruskettle~
+SAY NAME1 @080
+SAY NAME2 @080
 
 COPY ~SandrahTOT/Cre/ToFind.cre~ ~Override~
-SAY NAME1 ~Finder Wyvernspur~
-SAY NAME2 ~Finder Wyvernspur~
+SAY NAME1 @081
+SAY NAME2 @081
 
 COPY ~SandrahTOT/Cre/ToNarth.cre~ ~Override~
-SAY NAME1 ~Narthil~
-SAY NAME2 ~Narthil~
+SAY NAME1 @082
+SAY NAME2 @082
 
 COPY ~SandrahTOT/Cre/ToMoand.cre~ ~Override~
-SAY NAME1 ~Moander~
-SAY NAME2 ~Moander~
+SAY NAME1 @083
+SAY NAME2 @083
 
 COPY ~SandrahTOT/Cre/ToKapapa.cre~ ~Override~
-SAY NAME1 ~Glarasteer~
-SAY NAME2 ~Glarasteer~
+SAY NAME1 @084
+SAY NAME2 @084
 
 COPY ~SandrahTOT/Cre/Tomart1.cre~ ~Override~
-SAY NAME1 ~Martyr of Torm~
-SAY NAME2 ~Martyr of Torm~
+SAY NAME1 @085
+SAY NAME2 @085
 
 COPY ~SandrahTOT/Cre/Tomart2.cre~ ~Override~
-SAY NAME1 ~Martyr of Torm~
-SAY NAME2 ~Martyr of Torm~
+SAY NAME1 @085
+SAY NAME2 @085
 
 COPY ~SandrahTOT/Cre/Tomart3.cre~ ~Override~
-SAY NAME1 ~Martyr of Torm~
-SAY NAME2 ~Martyr of Torm~
+SAY NAME1 @085
+SAY NAME2 @085
 
 COPY_EXISTING ~boybax.cre~ ~override/boypro.cre~
-SAY NAME1 ~Martyr's Progeny~
-SAY NAME2 ~Martyr's Progeny~
+SAY NAME1 @086
+SAY NAME2 @086
 WRITE_ASCII 0x250 ~boypro~
 
 COPY_EXISTING ~girba1.cre~ ~override/girpro.cre~
-SAY NAME1 ~Martyr's Progeny~
-SAY NAME2 ~Martyr's Progeny~
+SAY NAME1 @086
+SAY NAME2 @086
 WRITE_ASCII 0x250 ~boypro~
 
 COPY_EXISTING ~Acqxzah1.cre~ ~override~
 WRITE_ASCII 0x280 ~Acqxzah1~
 
 COPY_EXISTING ~Gorion.cre~ ~override/Togorion.cre~
-SAY NAME1 Gorion
-SAY NAME2 Gorion
+SAY NAME1 #11020
+SAY NAME2 #11020
 WRITE_ASCII 0x2cc ~Togorion~
 
 COPY ~SandrahTOT/Cre/Sendai9.cre~ ~Override~
-SAY NAME1 ~Sendai~
-SAY NAME2 ~Sendai~
+SAY NAME1 #18994
+SAY NAME2 #18994
 
 COPY ~SandrahTOT/Cre/ToIsmad.cre~ ~Override~
-SAY NAME1 ~Ismanelda~
-SAY NAME2 ~Ismanelda~
+SAY NAME1 @087
+SAY NAME2 @087
 
 COPY ~SandrahTOT/Cre/ToHomer.cre~ ~Override~
-SAY NAME1 ~Homen Odesseiron~
-SAY NAME2 ~Homen Odesseiron~
+SAY NAME1 @088
+SAY NAME2 @088
 
 COPY ~SandrahTot/ITM/ToLiAmu.itm~ ~override~
 SAY NAME1 @019
@@ -589,20 +590,20 @@ SAY NAME2 @045
 SAY DESC @046
 
 COPY ~SandrahTot/ITM/Toscrl1.itm~ ~override~
-SAY NAME1 Letter
-SAY NAME2 Letter
-SAY UNIDENTIFIED_DESC Letter
+SAY NAME1 #13195
+SAY NAME2 #13195
+SAY UNIDENTIFIED_DESC #13195
 SAY DESC @031
 
 COPY ~SandrahTot/ITM/Toscrl2.itm~ ~override~
-SAY NAME1 Letter
-SAY NAME2 Letter
-SAY UNIDENTIFIED_DESC Letter
+SAY NAME1 #13195
+SAY NAME2 #13195
+SAY UNIDENTIFIED_DESC #13195
 SAY DESC @032
 
 COPY ~SandrahTot/ITM/ToDrabok.ITM~ ~override~
-SAY NAME1 ~Ancient Book~
-SAY NAME2 ~Ancient Book~
+SAY NAME1 @089
+SAY NAME2 @089
 SAY DESC @033
 
 COPY ~SandrahTot/ITM/Totabl1.itm~ ~override~
@@ -616,9 +617,9 @@ SAY NAME2 @035
 SAY DESC @037
 
 COPY ~SandrahTot/ITM/Tot1key.itm~ ~override~
-SAY NAME1 ~Brass Key~
-SAY NAME2 ~Brass Key~
-SAY DESC ~Moander's cell key~
+SAY NAME1 @090
+SAY NAME2 @090
+SAY DESC @091
 
 ACTION_IF FILE_EXISTS_IN_GAME ~ddassa01.cre~ THEN BEGIN
 COPY_EXISTING ~ddassa01.cre~ ~override~
