@@ -1,6 +1,6 @@
-@0    = ~Do you have any silver weapon for sale?~
-@1    = ~I have acquired this sword recently, the former owner swore it was Balduran's sword. Be that true or not, it is a silver weapon and for 1800GP it can be yours.~
-@2    = ~No, thank you, I think it is forgery.~
-@3    = ~I buy the item, not the story, so here is your gold.~
-@4    = ~I may come back if I have enough money.~
-@5    = ~I have acquired this dagger recently, the former owner swore it was a werebane. Be that true or not, it is a silver weapon and for 1800GP it can be yours.~
+@0    = ~Вы продаете серебряное оружие?~
+@1    = ~Я совсем недавно приобрел этот меч, и его бывший владелец клялся, что это меч самого Балдурана. И это как раз серебряное оружие, которое за 1800 золотых может стать вашим.~
+@2    = ~Нет, спасибо, я думаю, что это подделка.~
+@3    = ~Я куплю оружие, но меня не интересует его история - вот ваше золото.~
+@4    = ~Я вернусь, когда у меня будет достаточно золота.~
+@5    = ~Я совсем недавно приобрел этот кинжал, и его бывший владелец клялся, что это кинжал "Погибель Оборотней". И это как раз серебряное оружие, которое за 1800 золотых может стать вашим.~
