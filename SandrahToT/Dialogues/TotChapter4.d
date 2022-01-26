@@ -210,9 +210,11 @@ IF~NumTimesTalkedTo(0)~THEN ToMoand KhalResc0
 ==ToMoand@123
 ==ToCyric@124
 ==CVSan25J@125
-==ToDrizzt@126
+==ToDrizzt IF~InParty("ToDrizzt")~THEN @126
+==ToAdon IF~!InParty("ToDrizzt")~THEN @126
 ==CVSan25J@127
-==ToDrizzt@128
+==ToDrizztIF~InParty("ToDrizzt")~THEN @128
+==ToAdon IF~!InParty("ToDrizzt")~THEN @220
 ==ToMoand@129DO~Enemy()~EXIT
 
 CHAIN
