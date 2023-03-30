@@ -181,3 +181,17 @@ RESPONSE #100
 ReallyForceSpell(Myself,CLERIC_HEAL)
 Continue()
 END
+
+IF
+!Global("GavePocketPlane","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("GavePocketPlane","GLOBAL",0)
+END
+
+IF
+HaveSpellRES("Spin649")
+THEN
+RESPONSE #100
+RemoveSpellRES("Spin649")
+END

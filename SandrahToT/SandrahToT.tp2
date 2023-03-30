@@ -44,7 +44,7 @@ EXTEND_BOTTOM
 ~ar2800.bcs~ ~SandrahTOT/Area/Ar2800Tolini.baf~
 EXTEND_BOTTOM
 ~ar2807.bcs~ ~SandrahTOT/Area/Ar2807Tolini.baf~
-EXTEND_BOTTOM
+EXTEND_TOP
 ~ar2600.bcs~ ~SandrahTOT/Area/ar2600Omen.baf~
 EXTEND_TOP
 ~BG0900.bcs~ ~SandrahTOT/Area/BG0900Gori.baf~

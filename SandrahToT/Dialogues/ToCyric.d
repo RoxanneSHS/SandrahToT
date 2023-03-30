@@ -133,7 +133,7 @@ DO~SetGlobal("CyrElmi","ar0505",2)~
 ==ToCyric@84
 ==Toelmi@85
 ==TOCyric@86
-==ToElmi@87DO~StartCutSceneMode() Wait(2) Polymorph(CAT) Wait(6) DisplayStringWait("Toelmi",@041) Wait(6) Polymorph(ELMINSTER) Wait(2) EndCutSceneMode()~EXIT
+==ToElmi@87DO~StartCutSceneMode() Wait(2) Polymorph(CAT) Wait(6) DisplayStringWait("Toelmi",@112) Wait(6) Polymorph(ELMINSTER) Wait(2) EndCutSceneMode()~EXIT
 
 CHAIN
 IF~Global("CyrElmi","ar0505",2)~THEN ToCyric WhoFath2
