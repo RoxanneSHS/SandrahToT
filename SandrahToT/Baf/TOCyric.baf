@@ -157,8 +157,7 @@ ActionOverride(Player3,GiveItem("RTGodsb","TOCyric"))
 ActionOverride(Player4,GiveItem("RTGodsb","TOCyric"))
 ActionOverride(Player5,GiveItem("RTGodsb","TOCyric"))
 ActionOverride(Player6,GiveItem("RTGodsb","TOCyric"))
-EquipItem("RTGodsb")
-DisplayStringHead(Myself,@009)
+DisplayStringHead(Myself,@1009)
 END
 
 IF
