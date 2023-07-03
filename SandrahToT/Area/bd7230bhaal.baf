@@ -12,6 +12,7 @@ CreateCreature("BDCult20",[2257.1045],11)
 CreateCreature("stalke",[2300.1605],6)
 CreateCreature("stalke",[1632.2248],14)
 CreateCreature("stalke",[1548.1689],10)
+SetGlobal("HadBhaal25Dream1","GLOBAL",2)
 END
 
 IF
