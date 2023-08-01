@@ -1,0 +1,74 @@
+IF
+	Global("ToTablet1","Global",16)
+	InMyArea("CVSandr")
+	InMyArea("Tolini")
+	InMyArea("ToPellig")
+	InMyArea("ToAdon")
+	InMyArea("ToCyric")
+	!InMyArea(Player6)
+THEN
+	RESPONSE #100
+		ActionOverride(Player6,LeaveParty())
+		ActionOverride(Player6,DestroySelf())
+		Continue()
+END
+
+IF
+	Global("ToTablet1","Global",16)
+	InMyArea("CVSandr")
+	InMyArea("Tolini")
+	InMyArea("ToPellig")
+	InMyArea("ToAdon")
+	InMyArea("ToCyric")
+	!InMyArea(Player2)
+THEN
+	RESPONSE #100
+		ActionOverride(Player2,LeaveParty())
+		ActionOverride(Player2,DestroySelf())
+		Continue()
+END
+
+IF
+	Global("ToTablet1","Global",16)
+	InMyArea("CVSandr")
+	InMyArea("Tolini")
+	InMyArea("ToPellig")
+	InMyArea("ToAdon")
+	InMyArea("ToCyric")
+	!InMyArea(Player3)
+THEN
+	RESPONSE #100
+		ActionOverride(Player3,LeaveParty())
+		ActionOverride(Player3,DestroySelf())
+		Continue()
+END
+
+IF
+	Global("ToTablet1","Global",16)
+	InMyArea("CVSandr")
+	InMyArea("Tolini")
+	InMyArea("ToPellig")
+	InMyArea("ToAdon")
+	InMyArea("ToCyric")
+	!InMyArea(Player4)
+THEN
+	RESPONSE #100
+		ActionOverride(Player4,LeaveParty())
+		ActionOverride(Player4,DestroySelf())
+		Continue()
+END
+
+IF
+	Global("ToTablet1","Global",16)
+	InMyArea("CVSandr")
+	InMyArea("Tolini")
+	InMyArea("ToPellig")
+	InMyArea("ToAdon")
+	InMyArea("ToCyric")
+	!InMyArea(Player5)
+THEN
+	RESPONSE #100
+		ActionOverride(Player5,LeaveParty())
+		ActionOverride(Player5,DestroySelf())
+		Continue()
+END
