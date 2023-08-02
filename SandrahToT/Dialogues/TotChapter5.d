@@ -139,9 +139,9 @@ DO~SetGlobal("Tosendai","ar60pb",3)~
 ==NTAshma@77EXIT
 
 CHAIN
-IF~Global("Tosendai","ar60pb",12)~THEN Tolini ToBlahand3
+IF~OR(2) Global("Tosendai","ar60pb",12) Global("Tosendai2","ar60pb",2)~THEN Tolini ToBlahand3
 @78
-DO~SetGlobal("Tosendai","ar60pb",13) SetGlobal("ToBhaalhunt","Global",4)~
+DO~SetGlobal("Tosendai","ar60pb",13) SetGlobal("ToBhaalhunt","Global",4) SetGlobal("Tosendai2","ar60pb",3)~
 ==ToCyric@79
 =@80
 ==ToAdon@81

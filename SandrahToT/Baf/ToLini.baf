@@ -59,9 +59,10 @@ SetGlobal("ToBaneHunt","Global",7)
 END
 
 IF
-OR(2)
+OR(3)
 Global("ToBaneHunt","Global",6)
 Global("Tosendai","ar60pb",12)
+Global("Tosendai2","ar60pb",2)
 !See([ENEMY])
 See("CVSandr")
 !StateCheck("CVSandr",CD_STATE_NOTVALID)

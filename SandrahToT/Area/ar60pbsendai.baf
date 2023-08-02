@@ -71,3 +71,13 @@ RESPONSE #100
 SetGlobal("Tosendai","ar60pb",12)
 END
 
+IF
+Global("ToBhaalhunt","Global",3)
+GlobalGT("Tosendai","ar60pb",3)
+Global("Tosendai2","ar60pb",0)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("Tosendai2","ar60pb",2)
+END
+
