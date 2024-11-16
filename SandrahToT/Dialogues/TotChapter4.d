@@ -269,7 +269,7 @@ DO~SetGlobal("Boyfind","Tot009",4) AddexperienceParty(6000) ReputationInc(1)~
 ==ToOlive@157DO ~MoveBetweenAreas("RTF145",[1931.1540],4)~EXIT
 
 CHAIN
-IF~Global("ToBaneHunt","Global",11) ~THEN  ToOlive CanSail1
+IF~Global("ToBaneHunt","Global",11) AreaCheck("RTF145")~THEN  ToOlive CanSail1
 @158
 DO~SetGlobal("ToBaneHunt","Global",12) ~
 ==ToFind@159
