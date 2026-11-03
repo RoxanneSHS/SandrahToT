@@ -85,7 +85,7 @@ END
 CHAIN
 IF~~THEN HGNya01 MeetTot2
 @49
-DO~Enemy()ActionOverride("Yagaspir",Enemy()) ActionOverride("CVSandr",Attack("HGNya01"))~EXIT
+DO~Enemy()ActionOverride("Yagaspir",Enemy( )) ActionOverride("CVSandr",Attack("HGNya01"))~EXIT
 
 CHAIN
 IF~~THEN HGNya01 MeetTot3

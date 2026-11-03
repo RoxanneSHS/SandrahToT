@@ -16,18 +16,18 @@ JoinParty()
 END
 
 IF
-GlobalLT("ToTablet1","Global",4)
+GlobalLT("ToTablet1","GLOBAL",4)
 PartyHasItemIdentified("ToScrl1")
 PartyHasItemIdentified("ToScrl2")
 !AreaCheck("bd7230")
 !AreaCheck("ar01pb")
 THEN
 RESPONSE #100
-SetGlobal("ToTablet1","Global",4)
+SetGlobal("ToTablet1","GLOBAL",4)
 END
 
 IF
-Global("ToTablet1","Global",4)
+Global("ToTablet1","GLOBAL",4)
 !AreaCheck("bd7230")
 !AreaCheck("ar01pb")
 CombatCounter(0)
@@ -35,12 +35,12 @@ CombatCounter(0)
 Delay(6)
 THEN
 RESPONSE #100
-SetGlobal("ToTablet1","Global",5)
+SetGlobal("ToTablet1","GLOBAL",5)
 END
 
 IF
 AreaCheck("bg2608")
-Global("Chapter","Global",32)
+Global("Chapter","GLOBAL",32)
 Global("SanPelcyr1","bg2608",0)
 Delay(12)
 THEN
@@ -50,7 +50,7 @@ END
 
 IF
 Global("ToPelGodsb2","LOCALS",0)
-GlobalGT("Totablet1","Global",8)
+GlobalGT("Totablet1","GLOBAL",8)
 Dead("ToKelem")
 AreaType(CITY)
 See("Tolini")
@@ -60,25 +60,25 @@ SetGlobal("ToPelGodsb2","LOCALS",1)
 END
 
 IF
-Global("ToBaneHunt","Global",3)
+Global("ToBaneHunt","GLOBAL",3)
 AreaCheck("ar0500")
 CombatCounter(0)
 !See([ENEMY])
 Delay(12)
 THEN
 RESPONSE #100
-SetGlobal("ToBaneHunt","Global",4)
+SetGlobal("ToBaneHunt","GLOBAL",4)
 END
 
 IF
-Global("ToBaneHunt","Global",7)
+Global("ToBaneHunt","GLOBAL",7)
 AreaCheck("rtf038")
 OR(2)
 See("Paints")
 See("rabbit")
 THEN
 RESPONSE #100
-SetGlobal("ToBaneHunt","Global",8)
+SetGlobal("ToBaneHunt","GLOBAL",8)
 END
 
 IF
@@ -117,12 +117,12 @@ IF
 OR(10)
 Global("TotPeople","CVDre2",2)
 Global("ToPellJoin","RTF123",1)
-Global("ToTablet1","Global",5)
-Global("ToBaneHunt","Global",4)
-Global("ToBaneHunt","Global",8)
+Global("ToTablet1","GLOBAL",5)
+Global("ToBaneHunt","GLOBAL",4)
+Global("ToBaneHunt","GLOBAL",8)
 Global("Tomonst","ar5202",6)
 Global("Tosendai","ar60pb",2)
-Global("ToBhaalFin","Global",9)
+Global("ToBhaalFin","GLOBAL",9)
 Global("SanPelcyr1","bg2608",1)
 Global("ToPelGodsb2","LOCALS",1)
 !StateCheck(Myself,CD_STATE_NOTVALID)
@@ -154,7 +154,7 @@ DisplayStringHead(Myself,@042)
 END
 
 IF
-GlobalGT("ToTablet1","Global",1)
+GlobalGT("ToTablet1","GLOBAL",1)
 !HasItem("Simbul",Myself)
 !AreaCheck("RTF026")
 !HasItem("Simbul",Player1)

@@ -84,12 +84,12 @@ THEN
 RESPONSE #100
 SetPlayerSound(Myself,@014,EXISTANCE5)
 SetGlobal("TotBioChange","LOCALS",1)
-SetGlobal("SanPidPack","Global",18)
+SetGlobal("SanPidPack","GLOBAL",18)
 END
 
 IF
-GlobalGT("TOKelemQuest","Global",2)
-Global("ToGodwalk","Global",0)
+GlobalGT("TOKelemQuest","GLOBAL",2)
+Global("ToGodwalk","GLOBAL",0)
 AreaType(OUTDOOR)
 !AreaType(CITY)
 !AreaCheck("ar2600")
@@ -98,7 +98,7 @@ Delay(12)
 CombatCounter(0)
 THEN
 RESPONSE #100
-SetGlobal("ToGodwalk","Global",1)
+SetGlobal("ToGodwalk","GLOBAL",1)
 CreateCreatureObjectOffset("ToGoWa01",Myself,[125.125])
 CreateCreatureObjectOffset("ToGoWa02",Myself,[75.75])
 CreateCreatureObjectOffset("ToGoWa01",Myself,[75.-75])
@@ -107,7 +107,7 @@ CreateCreatureObjectOffset("ToGoWa01",Myself,[125.-125])
 END
 
 IF
-Global("ToGodwalk","Global",2)
+Global("ToGodwalk","GLOBAL",2)
 OR(16)
 AreaCheck("BG0002")
 AreaCheck("BG4802")
@@ -127,40 +127,40 @@ AreaCheck("BG3402")
 AreaCheck("ar0901")
 THEN
 RESPONSE #100
-SetGlobal("ToGodwalk","Global",3)
+SetGlobal("ToGodwalk","GLOBAL",3)
 CreateCreatureObjectOffset("Prihel",Myself,[25.25])
 ActionOverride("Prihel",Dialog(Player1))
 END
 
 IF
-Global("ToGodwalk","Global",4)
+Global("ToGodwalk","GLOBAL",4)
 AreaType(CITY)
 AreaType(OUTDOOR)
 THEN
 RESPONSE #100
-SetGlobal("ToGodwalk","Global",5)
+SetGlobal("ToGodwalk","GLOBAL",5)
 CreateCreatureObjectOffset("CVPotngi",Myself,[125.125])
 END
 
 IF
-GlobalGT("ToGodwalk","Global",5)
+GlobalGT("ToGodwalk","GLOBAL",5)
 AreaCheck("CVRoa2")
 OR(2)
 See("Barrel3")
 See("Chest1")
-Global("ToWaukGo","Global",0)
+Global("ToWaukGo","GLOBAL",0)
 THEN
 RESPONSE #100
-SetGlobal("ToWaukGo","Global",1)
+SetGlobal("ToWaukGo","GLOBAL",1)
 CreateCreatureObjectOffset("CVwdwauk",Myself,[55.55])
 ActionOverride("CVwdwauk",Dialog(Player1))
 END
 
 IF
-Global("NewHp","Locals",0)
+Global("NewHp","LOCALS",0)
 THEN
 RESPONSE #100
-SetGlobal("NewHp","Locals",1)
+SetGlobal("NewHp","LOCALS",1)
 ReallyForceSpellRES("Tothpmi",Myself)
 END
 
@@ -180,4 +180,3 @@ THEN
 RESPONSE #100
 SetGlobal("RTMoveGnoll","GLOBAL",0) 
 END
-
